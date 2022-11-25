@@ -1,0 +1,39 @@
+.editor__top.editor__top__two {
+	align-items: flex-start;
+	.editor__top__left {
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		border-bottom: none;
+		h2 {
+			position: relative;
+			display: inline-block;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 800;
+			width: 100%;
+			max-width: 240px;
+			font-size: 32px;
+			line-height: 40px;
+			color: #031B4B;
+		}
+	}
+	.editor__right.editor__top__right {
+		border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+	}
+}
+
+
+@media (max-width: 992px) {
+	.editor__top.editor__top__two {
+		.editor__top__left {
+			padding-bottom: 32px;
+			h2 {
+				max-width: 100%;
+			}
+		}
+		.editor__right.editor__top__right {
+			padding-bottom: 8px;
+		}
+	}
+}

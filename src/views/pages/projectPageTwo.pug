@@ -1,0 +1,16 @@
+extends ../layouts/default
+
+block variables
+	- const title = "ProjectTwo Page";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	include ../../blocks/modules/block-text-two/block-text-two
+	include ../../blocks/modules/block-text-three/block-text-three
+	
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
