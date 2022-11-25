@@ -16,21 +16,25 @@
 	&__item {
 		position: relative;
 		display: flex;
-		flex: 1 0 auto;
-		max-width: 538px;
-		margin-left: auto;
-		margin-right: auto;
+		flex: 1 0 calc(50% - 32px);	
 		margin-bottom: 32px;
 		flex-flow: column nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
 		background: #fff;
 		padding-bottom: 320px;
+		&:nth-child(2n+1) {
+			margin-right: 15px;
+		}
+		&:nth-child(2n) {
+			margin-left: 15px;
+		}
 		h2 {
 			position: relative;
 			width: 100%;
 			padding-top: 32px;
 			padding-left: 32px;
+			padding-right: 32px;
 			margin-bottom: 100px;
 			font-family: 'Manrope';
 			font-style: normal;
@@ -45,6 +49,7 @@
 			width: 100%;
 			padding-top: 32px;
 			padding-left: 32px;
+			padding-right: 32px;
 			margin-bottom: 32px;
 			font-family: 'Manrope';
 			font-style: normal;
@@ -62,5 +67,80 @@
 			object-fit: cover;
 			object-position: 50% 50%;
 		}
+	}
+}
+
+@media (max-width: 992px) {
+	.editor__tree {
+		&__item {
+			flex: 1 0 calc(50% - 24px);	
+			margin-bottom: 24px;
+			&:nth-child(2n+1) {
+				margin-right: 12px;
+			}
+			&:nth-child(2n) {
+				margin-left: 12px;
+			}
+		}
+	}
+}
+@media (max-width: 860px) {
+	.editor__tree {
+		&__item {
+			flex: 1 1 calc(50% - 16px);	
+			margin-bottom: 16px;
+			&:nth-child(2n+1) {
+				margin-right: 8px;
+			}
+			&:nth-child(2n) {
+				margin-left: 8px;
+			}
+		}
+	}
+	.editor__tree__item {
+		h2 {
+			font-size: 24px;
+			line-height: 28px;
+			padding-right: 20px;
+		}
+		p{
+			padding-right: 20px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+@media (max-width: 680px) {
+	.editor__tree {
+		&__item {
+			flex: 1 1 100%;	
+			margin-bottom: 16px;
+			&:nth-child(2n+1) {
+				margin-right: 0px;
+			}
+			&:nth-child(2n) {
+				margin-left: 0px;
+			}
+		}
+	}
+	.editor__tree__item {
+		h2 {
+			font-size: 24px;
+			line-height: 28px;
+			padding-right: 20px;
+		}
+		p{
+			padding-right: 20px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+@media (max-width: 360px) {
+	.editor__tree__item h2 {
+		margin-bottom: 32px;
+	}
+	.section__editor__tree .container {
+		padding-top: 40px;
 	}
 }
