@@ -36,10 +36,12 @@
 		&:hover {
 			background: #fff;
 			transition: all .5s;
+			text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
 		}
 		&:focus {
 			 background: #fff;
 			 color: #104CA6;
+			 text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
 		}
 
 	}

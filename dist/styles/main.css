@@ -288,6 +288,9 @@ html {
   position: relative;
   display: inline-block;
   margin-right: 17px;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 20px;
 }
 
 .header__other__search img {
@@ -295,6 +298,12 @@ html {
   width: 40px;
   object-fit: contain;
   object-position: 50% 50%;
+}
+
+.header__other__search:hover {
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
 }
 
 .header__other__soc {
@@ -314,6 +323,12 @@ html {
   object-position: 50% 50%;
   margin-right: 20px;
   margin-right: 8px;
+  opacity: 1;
+}
+
+.header__other__soc__icon:hover img {
+  transition: all 0.3s;
+  opacity: 0.5;
 }
 
 .header__other__lang {
@@ -326,6 +341,13 @@ html {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.header__other__lang:hover {
+  transition: all 0.3s;
+  opacity: 0.5;
 }
 
 .header__other__mob {
@@ -375,11 +397,13 @@ html {
 .topMenu__item:hover {
   background: #fff;
   transition: all 0.5s;
+  text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
 }
 
 .topMenu__item:focus {
   background: #fff;
   color: #104CA6;
+  text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
 }
 
 .topMenu__item.topMenu__item__department {
