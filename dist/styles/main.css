@@ -210,16 +210,24 @@ html {
   width: 100%;
 }
 
+.header__decs__link {
+  position: relative;
+  display: block;
+  margin-right: 31px;
+  height: 51px;
+}
+
 .header__decs__logo {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 51px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  margin-right: 31px;
 }
 
 .header__decs__name {
+  display: block;
+  position: relative;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
@@ -293,6 +301,7 @@ html {
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .header__other__mob {
@@ -418,8 +427,14 @@ html {
   display: flex;
   position: relative;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: stretch;
   width: 100%;
+  height: 100%;
+}
+
+.editor__left,
+.editor__right {
+  height: auto;
 }
 
 .editor__left a,
@@ -444,7 +459,7 @@ html {
 .editor__left {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 31%;
   max-width: 368px;
   flex-flow: column nowrap;
   margin-right: 32px;
@@ -506,7 +521,7 @@ a.editor__link::after {
 .editor__right {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 69%;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -514,8 +529,11 @@ a.editor__link::after {
 
 .editor__right img {
   position: relative;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
+  min-height: 240px;
   object-fit: cover;
   object-position: 50% 50%;
 }
@@ -546,6 +564,7 @@ a.editor__link::after {
 .editor__content {
   position: relative;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -702,6 +721,7 @@ a.editor__link::after {
   }
 
   .header__decs {
+    max-width: 70%;
     justify-content: space-between;
   }
 
@@ -717,8 +737,16 @@ a.editor__link::after {
     padding-top: 40px;
   }
 
+  .editor__right {
+    width: 100%;
+  }
+
   .editor__right img {
     height: 258px;
+  }
+
+  .editor__left {
+    width: 100%;
   }
 
   .editor__left.editor__top__left {
@@ -795,6 +823,16 @@ a.editor__link::after {
 }
 
 @media (max-width: 768px) {
+  .section__header .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__decs {
+    max-width: 80%;
+    justify-content: flex-start;
+  }
+
   .editor__left.editor__content__left {
     margin-right: 24px;
     max-width: 224px;
@@ -839,18 +877,22 @@ a.editor__link::after {
     line-height: 16px;
   }
 
-  .header__decs__logo {
+  .header__decs__name {
+    max-width: 200px;
+    text-align: left;
+  }
+
+  .header__decs__link {
     margin-right: 16px;
   }
 
-  .header__decs {
-    width: 220px;
-    max-width: none;
+  .section__header {
+    padding: 10px 0;
   }
 
-  .section__header .container {
-    padding-left: 20px;
-    padding-right: 20px;
+  .header__decs {
+    width: 280px;
+    max-width: none;
   }
 
   .header__other__mob {
