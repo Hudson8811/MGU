@@ -422,6 +422,11 @@ a.block__textOne__link::after {
   background: #F4F3F0;
 }
 
+.section__topMenu .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .topMenu {
   display: flex;
   position: relative;
@@ -854,6 +859,11 @@ a.block__textOne__link::after {
     padding: 8px 16px;
   }
 
+  .section__topMenu .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .column__left.block__textOne {
     padding-right: 10px;
   }
@@ -1097,7 +1107,7 @@ a.block__textOne__link::after {
 
   .block__textThree__item {
     flex: 1 1 100%;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .block__textThree__item:nth-child(2n+1) {
