@@ -422,6 +422,11 @@ html {
 }
 
 .breadcrumbs__item:last-child {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
   color: #104CA6;
 }
 
@@ -652,6 +657,7 @@ a.editor__link::after {
   align-items: flex-start;
   background: #fff;
   padding-bottom: 320px;
+  text-decoration: none;
 }
 
 .editor__tree__item:nth-child(2n+1) {

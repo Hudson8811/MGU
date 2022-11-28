@@ -40,6 +40,11 @@
 			content: url(../img/projectPage/breadcrumbs__item__icon.svg);
 		}
 		&:last-child {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 16px;
 			color: #104CA6;
 			&::after {
 				content: none
