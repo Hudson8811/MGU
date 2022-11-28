@@ -403,7 +403,7 @@ html {
 .breadcrumbs__item::after {
   position: relative;
   margin-left: 8px;
-  content: url(../../../img/svg/breadcrumbs__item__icon.svg);
+  content: url(../../../img/projectPage/breadcrumbs__item__icon.svg);
 }
 
 .breadcrumbs__item:last-child {
@@ -515,7 +515,7 @@ a.editor__link::after {
   right: -20px;
   top: 3px;
   display: inline-block;
-  content: url(../../../img/svg/editor__link.svg);
+  content: url(../../../img/projectPage/editor__link.svg);
 }
 
 .editor__right {
