@@ -196,6 +196,64 @@ html {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #104CA6;
+  transition: all 0.5s;
+}
+
+a:hover {
+  transition: all 0.5s;
+  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
+}
+
+a.block__textOne__link {
+  position: relative;
+  display: inline-block;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: -12px;
+  line-height: 20px;
+  margin-bottom: 24px;
+  color: #104CA6;
+  transition: all 0.5s;
+  padding: 10px 28px 10px 12px;
+}
+
+a.block__textOne__link:hover {
+  transition: all 0.5s;
+  padding: 10px 28px 10px 12px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  color: #104CA6;
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+}
+
+a.block__textOne__link:hover:after {
+  transition: all 0.5s;
+  transform: rotate(90deg);
+  transform-origin: 8px 8px;
+}
+
+a.block__textOne__link::after {
+  transition: all 0.5s;
+  transform: rotate(0deg);
+  transform-origin: 8px 8px;
+  position: absolute;
+  right: 4px;
+  top: 13px;
+  display: inline-block;
+  content: url(../img/projectPage/editor__link.svg);
+}
+
 .section__header {
   display: flex;
   position: relative;
@@ -397,13 +455,13 @@ html {
 .topMenu__item:hover {
   background: #fff;
   transition: all 0.5s;
-  text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
+  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 }
 
 .topMenu__item:focus {
   background: #fff;
   color: #104CA6;
-  text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
+  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 }
 
 .topMenu__item.topMenu__item__department {
@@ -453,7 +511,7 @@ html {
 
 .breadcrumbs__item:hover {
   transition: all 0.3s;
-  text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
+  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
   color: #104CA6;
 }
 
@@ -513,25 +571,6 @@ html {
   height: auto;
 }
 
-.column__left a,
-.column__right a {
-  text-decoration: none;
-  cursor: pointer;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #104CA6;
-  margin-bottom: 32px;
-  transition: all 0.5s;
-}
-
-.column__left a:hover,
-.column__right a:hover {
-  color: #031B4B;
-}
-
 .column__left {
   flex: 1 0 368px;
 }
@@ -571,35 +610,6 @@ html {
   color: #031B4B;
 }
 
-a.editor__link {
-  position: relative;
-  display: inline-block;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: #104CA6;
-  transition: all 0.5s;
-}
-
-a.editor__link:hover:after {
-  transition: all 0.5s;
-  transform: rotate(90deg);
-  transform-origin: 8px 8px;
-}
-
-a.editor__link::after {
-  transition: all 0.5s;
-  transform: rotate(0deg);
-  transform-origin: 8px 8px;
-  position: absolute;
-  right: -20px;
-  top: 3px;
-  display: inline-block;
-  content: url(../img/projectPage/editor__link.svg);
-}
-
 .column__right {
   position: relative;
   display: flex;
@@ -625,7 +635,7 @@ a.editor__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   color: #031B4B;
   margin-bottom: 32px;
@@ -640,11 +650,11 @@ a.editor__link::after {
   padding-bottom: 40px;
 }
 
-.column__left.block__textOne__left {
+.column__left.block__textOne {
   border-top: 1px solid rgba(0, 85, 182, 0.3);
 }
 
-.column__right.block__textOne__right {
+.column__right.block__textOne {
   border-top: 1px solid rgba(0, 85, 182, 0.3);
 }
 
@@ -656,29 +666,41 @@ a.editor__link::after {
   align-items: flex-start;
 }
 
-.column__left.block__textOne__left {
+.column__left.block__textOne {
   justify-content: flex-start;
   padding-top: 40px;
   padding-right: 100px;
 }
 
-.column__right.block__textOne__right {
+.column__right.block__textOne {
   justify-content: flex-start;
   padding-top: 40px;
 }
 
-.editor__top.editor__top__two {
+.section__header__two {
+  padding-top: 60px;
+  background: #F4F3F0;
+}
+
+.section__header__two .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header__two {
+  display: flex;
+  position: relative;
   align-items: flex-start;
 }
 
-.editor__top.editor__top__two .editor__top__left {
+.header__two__left {
   display: flex;
   position: relative;
   align-items: flex-start;
   border-bottom: none;
 }
 
-.editor__top.editor__top__two .editor__top__left h2 {
+.header__two__left h2 {
   position: relative;
   display: inline-block;
   font-family: "Manrope";
@@ -691,73 +713,104 @@ a.editor__link::after {
   color: #031B4B;
 }
 
-.editor__top.editor__top__two .editor__right.editor__top__right {
+.column__right.header__two__right {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
   border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+  padding-bottom: 40px;
 }
 
-.section__editor__tree {
+.column__right.header__two__right p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #031B4B;
+  margin-bottom: 0;
+}
+
+.section__block__textThree {
   background: #F4F3F0;
 }
 
-.section__editor__tree .container {
+.section__block__textThree .container {
   flex-flow: column nowrap;
   padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.editor__tree {
+.block__textThree {
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  align-items: stretch;
+  align-items: flex-start;
   width: 100%;
   padding-bottom: 80px;
 }
 
-.editor__tree__item {
+.block__textThree__item {
   position: relative;
   display: flex;
   flex: 1 0 calc(50% - 32px);
   margin-bottom: 32px;
+  height: 592px;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
   background: #fff;
-  padding-bottom: 320px;
   text-decoration: none;
+  transition: all 0.5s;
+  overflow: hidden;
 }
 
-.editor__tree__item:nth-child(2n+1) {
+.block__textThree__item:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+}
+
+.block__textThree__item:hover h2 {
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+
+.block__textThree__item:hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.block__textThree__item:nth-child(2n+1) {
   margin-right: 15px;
 }
 
-.editor__tree__item:nth-child(2n) {
+.block__textThree__item:nth-child(2n) {
   margin-left: 15px;
 }
 
-.editor__tree__item h2 {
+.block__textThree__item h2 {
   position: relative;
   width: 100%;
   padding-top: 32px;
   padding-left: 32px;
   padding-right: 32px;
-  margin-bottom: 100px;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
   line-height: 40px;
   color: #104CA6;
+  transition: all 0.5s;
 }
 
-.editor__tree__item p {
+.block__textThree__item p {
   position: relative;
   display: inline-block;
   width: 100%;
-  padding-top: 32px;
   padding-left: 32px;
   padding-right: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 352px;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
@@ -766,19 +819,32 @@ a.editor__link::after {
   color: #104CA6;
 }
 
-.editor__tree__item img {
+.block__textThree__item img {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 320px;
+  overflow: hidden;
   object-fit: cover;
   object-position: 50% 50%;
+  transform: scale(1);
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 1200px) {
+  .section .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .header__logo__name span {
     display: none;
+  }
+
+  .section__header .container {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .topMenu__item {
@@ -788,7 +854,7 @@ a.editor__link::after {
     padding: 8px 16px;
   }
 
-  .column__left.block__textOne__left {
+  .column__left.block__textOne {
     padding-right: 10px;
   }
 
@@ -819,9 +885,42 @@ a.editor__link::after {
   .column__right {
     flex: 1 1 auto;
   }
+
+  .header__two {
+    flex-flow: column;
+  }
+
+  .column__left.header__two__left {
+    flex: 1 0 auto;
+    margin-bottom: 32px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .column__left.header__two__left h2 {
+    width: 100%;
+  }
+
+  .section__header__two {
+    padding-top: 40px;
+  }
+
+  .section__header__two .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section__block__textThree .container {
+    padding-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+  .section .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .header__logo__name span {
     display: none;
   }
@@ -836,8 +935,8 @@ a.editor__link::after {
   }
 
   .section__header .container {
-    padding-left: 37px;
-    padding-right: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header__other__mob {
@@ -879,59 +978,35 @@ a.editor__link::after {
     margin-right: 0;
   }
 
-  .column__left.block__textOne__left {
+  .column__left.block__textOne {
     margin-right: 24px;
   }
-}
 
-@media (max-width: 992px) {
-  .editor__top.editor__top__two .editor__top__left {
-    padding-bottom: 32px;
+  .section.section__editor .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .editor__top.editor__top__two .editor__top__left h2 {
-    max-width: 100%;
-  }
-
-  .editor__top.editor__top__two .editor__right.editor__top__right {
-    padding-bottom: 8px;
-  }
-
-  .editor__tree__item {
-    flex: 1 0 calc(50% - 24px);
-    margin-bottom: 24px;
-  }
-
-  .editor__tree__item:nth-child(2n+1) {
-    margin-right: 12px;
-  }
-
-  .editor__tree__item:nth-child(2n) {
-    margin-left: 12px;
-  }
-}
-
-@media (max-width: 860px) {
-  .editor__tree__item {
+  .block__textThree__item {
     flex: 1 1 calc(50% - 16px);
     margin-bottom: 16px;
   }
 
-  .editor__tree__item:nth-child(2n+1) {
+  .block__textThree__item:nth-child(2n+1) {
     margin-right: 8px;
   }
 
-  .editor__tree__item:nth-child(2n) {
+  .block__textThree__item:nth-child(2n) {
     margin-left: 8px;
   }
 
-  .editor__tree__item h2 {
+  .block__textThree__item h2 {
     font-size: 24px;
     line-height: 28px;
     padding-right: 20px;
   }
 
-  .editor__tree__item p {
+  .block__textThree__item p {
     padding-right: 20px;
     font-size: 14px;
     line-height: 20px;
@@ -980,7 +1055,7 @@ a.editor__link::after {
     flex-flow: column nowrap;
   }
 
-  .column__left.block__textOne__left {
+  .column__left.block__textOne {
     margin-right: 0px;
     max-width: none;
   }
@@ -993,50 +1068,56 @@ a.editor__link::after {
     padding-bottom: 32px;
   }
 
-  .column__left.block__textOne__left {
+  .column__left.block__textOne {
     padding-top: 32px;
   }
 
-  .column__right.block__textOne__right {
+  .column__right.block__textOne {
     padding-top: 32px;
   }
 
-  .column__right.block__textOne__right p {
+  .column__right.block__textOne p {
     margin-bottom: 32px;
   }
-}
 
-@media (max-width: 680px) {
-  .editor__tree__item {
+  .column__right,
+  .column__left {
+    padding-bottom: 32px;
+  }
+
+  .column__left.header__two__left {
+    flex: 1 0 auto;
+    margin-bottom: 0px;
+  }
+
+  .section__header__two .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .block__textThree__item {
     flex: 1 1 100%;
     margin-bottom: 16px;
   }
 
-  .editor__tree__item:nth-child(2n+1) {
+  .block__textThree__item:nth-child(2n+1) {
     margin-right: 0px;
   }
 
-  .editor__tree__item:nth-child(2n) {
+  .block__textThree__item:nth-child(2n) {
     margin-left: 0px;
   }
 
-  .editor__tree__item h2 {
+  .block__textThree__item h2 {
     font-size: 24px;
     line-height: 28px;
     padding-right: 20px;
   }
 
-  .editor__tree__item p {
+  .block__textThree__item p {
     padding-right: 20px;
     font-size: 14px;
     line-height: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -1052,16 +1133,6 @@ a.editor__link::after {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-  }
-}
-
-@media (max-width: 360px) {
-  .editor__tree__item h2 {
-    margin-bottom: 32px;
-  }
-
-  .section__editor__tree .container {
-    padding-top: 40px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
