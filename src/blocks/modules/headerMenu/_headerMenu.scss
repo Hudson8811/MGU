@@ -18,13 +18,14 @@
 		display: inline-block;
 		width: auto;
 		flex: 1 0 auto;
-		padding: 12px 25px;
+		padding: 10px 25px;
 		border-right: 1px solid #fff;
 		border-left: 1px solid #fff;
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 700;
 		font-size: 16px;
+		text-align: center;
 		line-height: 24px;
 		color: #104CA6;
 		background: #F4F3F0;
@@ -47,6 +48,7 @@
 .topMenu__item.topMenu__item__department {
 	background: #AF8F46;
 	color: #fff;
+	min-width: 151px;
 	&:hover {
 		color: #104CA6;
 		background: #fff;
@@ -58,14 +60,15 @@
 	}
 }
 
-@media (max-width: 1200px) {
+@include max(lg) {
 	.topMenu__item {
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 20px;
+		padding: 8px 16px;
 	}
 }
-@media (max-width: 1046px) {
+@include max(md) { 
 	.section__topMenu {
 		display: none;
 	}

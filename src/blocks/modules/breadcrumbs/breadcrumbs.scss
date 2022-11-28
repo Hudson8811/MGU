@@ -6,7 +6,6 @@
 	align-items: center;
 	padding-top: 6px;
 	padding-bottom: 18px;
-	padding-left: 25px;
 	&__item {
 		position: relative;
 		width: auto;
@@ -22,6 +21,12 @@
 		margin-right: 8px;
 		height: 16px;
 		color: rgba(0, 85, 182, 0.5);
+		transition: all .3s;
+		&:hover {
+			transition: all .3s;
+			text-shadow: 0 0 0.35px #104CA6, 0 0 0.35px #104CA6;
+			color: #104CA6;
+		}
 		&__icon {
 			position: absolute;
 			top: 0;
@@ -53,7 +58,7 @@
 	}
 
 }
-@media (max-width: 576px) {
+@include max(sm) {
 	.section__breadcrumbs {
 		display: none;
 	}
