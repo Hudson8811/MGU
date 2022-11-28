@@ -348,12 +348,27 @@ html {
 }
 
 .topMenu__item:hover {
-  background: #AF8F46;
-  color: #fff;
+  background: #fff;
   transition: all 0.5s;
 }
 
 .topMenu__item:focus {
+  background: #fff;
+  color: #104CA6;
+}
+
+.topMenu__item.topMenu__item__department {
+  background: #AF8F46;
+  color: #fff;
+}
+
+.topMenu__item.topMenu__item__department:hover {
+  color: #104CA6;
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.topMenu__item.topMenu__item__department:focus {
   background: #fff;
   color: #104CA6;
 }

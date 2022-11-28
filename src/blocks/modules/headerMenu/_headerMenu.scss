@@ -33,8 +33,7 @@
 		transition: all .5s;
 		white-space: nowrap;
 		&:hover {
-			background: #AF8F46;
-			color: #fff;
+			background: #fff;
 			transition: all .5s;
 		}
 		&:focus {
@@ -44,6 +43,19 @@
 
 	}
 
+}
+.topMenu__item.topMenu__item__department {
+	background: #AF8F46;
+	color: #fff;
+	&:hover {
+		color: #104CA6;
+		background: #fff;
+		transition: all .5s;
+	}
+	&:focus {
+		 background: #fff;
+		 color: #104CA6;
+	}
 }
 
 @media (max-width: 1200px) {
