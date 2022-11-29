@@ -179,9 +179,9 @@ html {
 
 .container {
   box-sizing: border-box;
-  width: 1600px;
+  width: 1168px;
   max-width: 95%;
-  max-width: calc(100% - 60px);
+  max-width: calc(100% - 0px);
   margin: 0 auto;
 }
 
@@ -799,27 +799,12 @@ a.block__textOne__link::after {
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 1720px) {
-  .container {
-    width: 1400px;
-  }
-}
-
-@media screen and (max-width: 1560px) {
-  .container {
-    width: 1168px;
-    max-width: calc(100% - 0px);
-  }
-}
-
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .container {
     width: 1168px;
     max-width: calc(100% - 64px);
   }
-}
 
-@media only screen and (max-width: 1200px) {
   .header__logo__name span {
     display: none;
   }
@@ -892,13 +877,11 @@ a.block__textOne__link::after {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .container {
     max-width: calc(100% - 64px);
   }
-}
 
-@media only screen and (max-width: 992px) {
   .header__logo__name span {
     display: none;
   }
@@ -986,13 +969,11 @@ a.block__textOne__link::after {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .container {
     max-width: calc(100% - 40px);
   }
-}
 
-@media only screen and (max-width: 700px) {
   .header__logo__name {
     font-size: 14px;
     line-height: 16px;
