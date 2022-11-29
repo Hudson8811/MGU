@@ -214,12 +214,11 @@ a.block__textOne__link {
   margin-bottom: 24px;
   color: #104CA6;
   transition: all 0.5s;
-  padding: 10px 28px 10px 12px;
+  padding: 4px 28px 4px 12px;
 }
 
 a.block__textOne__link:hover {
   transition: all 0.5s;
-  padding: 10px 28px 10px 12px;
   background: #FFFFFF;
   border-radius: 30px;
   color: #104CA6;
@@ -230,9 +229,9 @@ a.block__textOne__link::after {
   transition: all 0.5s;
   position: absolute;
   right: 4px;
-  top: 13px;
+  top: 6px;
   display: inline-block;
-  content: url(../img/projectPage/editor__link.svg);
+  content: url(../img/svg/editor__link__2.svg);
 }
 
 .section__header {
