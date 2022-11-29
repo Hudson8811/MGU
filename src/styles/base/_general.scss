@@ -1,19 +1,53 @@
+// .container {
+// 	position: relative;
+// 	display: flex;
+// 	justify-content: flex-start;
+// 	align-items: flex-start;
+// 	width: 100%;
+// 	max-width: 1168px;
+// 	padding-left: 0px;
+// 	padding-right: 0px;
+// }
+// .section {
+// 	position: relative;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: flex-start;
+// 	width: 100%;
+// }
 .container {
-	position: relative;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	width: 100%;
-	max-width: 1168px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.section {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	width: 100%;
+	box-sizing: border-box;
+	width: 1600px;
+	max-width: 95%;
+	max-width: calc(100% - 30px * 2);
+	margin: 0 auto;
+
+	@media screen and (max-width: 1720px) {
+			//1680
+			width: 1400px;
+	}
+
+	@media screen and (max-width: 1560px) {
+			//1440
+			width: 1168px;
+			max-width: calc(100% - 0px);
+	}
+
+	@media screen and (max-width: 1200px) {
+			//1024
+			width: 1168px;
+			max-width: calc(100% - 32px * 2);
+	}
+
+	@media screen and (max-width: 992px) {
+			//640
+			max-width: calc(100% - 32px * 2);
+	}
+
+	@media screen and (max-width: 700px) {
+			//375
+			max-width: calc(100% - 20px * 2);
+	}
 }
 
 a {
@@ -63,15 +97,15 @@ a.block__textOne__link {
 		content: url(../img/projectPage/editor__link.svg);
 	}
 }
-@include max(lg) {
-	.section .container {
-		padding-left: 32px;
-		padding-right: 32px;
-	}
-}
-@include max(md) {
-	.section .container {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}
+// @include max(lg) {
+// 	.section .container {
+// 		padding-left: 32px;
+// 		padding-right: 32px;
+// 	}
+// }
+// @include max(md) {
+// 	.section .container {
+// 		padding-left: 20px;
+// 		padding-right: 20px;
+// 	}
+// }

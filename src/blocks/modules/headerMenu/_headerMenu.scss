@@ -1,8 +1,4 @@
 .section__topMenu {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
 	width: 100%;
 	position: relative;
 	background: #F4F3F0;
@@ -69,12 +65,12 @@
 		line-height: 20px;
 		padding: 8px 16px;
 	}
-	.section__topMenu {
-		.container {
-			padding-left: 32px;
-			padding-right: 32px;
-		}
-	}
+	// .section__topMenu {
+	// 	.container {
+	// 		padding-left: 32px;
+	// 		padding-right: 32px;
+	// 	}
+	// }
 }
 @include max(md) { 
 	.section__topMenu {

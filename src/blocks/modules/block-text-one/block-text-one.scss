@@ -151,13 +151,13 @@
 	.column__left.block__textOne {
 		margin-right: 24px;
 	}
-	.section.section__editor {
-		.container  {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
+	// .section.section__editor {
+	// 	.container  {
+	// 		padding-left: 20px;
+	// 		padding-right: 20px;
+	// 	}
 
-	}
+	// }
 }
 
 @include max(sm) {

@@ -1,10 +1,6 @@
 .section__header__two {
 	padding-top: 60px;
 	background: #F4F3F0;
-	.container {
-		padding-left: 0;
-		padding-right: 0;
-	}
 }
 	
 .header__two {
@@ -65,10 +61,6 @@
 	}
 	.section__header__two {
 		padding-top: 40px;
-		.container {
-			padding-left: 32px;
-			padding-right: 32px;
-		}
 	}
 }
 @include max(sm) { 
@@ -76,10 +68,5 @@
 		flex: 1 0 auto;
 		margin-bottom: 0px;
 	}
-	.section__header__two {
-		.container {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-	}
+
 }
