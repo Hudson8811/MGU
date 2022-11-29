@@ -27,12 +27,18 @@
 	}
 
 }
+.column__left.header__two__left {
+	border-top: none;
+	padding-top: 0;
+}
 .column__right.header__two__right {
 	display: flex;
 	position: relative;
 	align-items: flex-start;
 	border-bottom: 1px solid rgba(0, 85, 182, 0.3);
 	padding-bottom: 40px;
+	border-top: none;
+	padding-top: 0;
 	p {
 		font-family: 'Manrope';
 		font-style: normal;
