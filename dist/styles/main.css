@@ -583,10 +583,10 @@ a.block__textOne__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  font-feature-settings: "ss01" on;
+  font-size: 17px;
+  line-height: 24px;
   color: #031B4B;
+  margin-bottom: 32px;
 }
 
 .column__left {
@@ -614,18 +614,6 @@ a.block__textOne__link::after {
   min-height: 240px;
   object-fit: cover;
   object-position: 50% 50%;
-}
-
-.column__right p {
-  position: relative;
-  width: 100%;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
-  color: #031B4B;
-  margin-bottom: 32px;
 }
 
 .column__left.header__one__left {
@@ -1074,7 +1062,7 @@ a.block__textOne__link::after {
     padding-top: 32px;
   }
 
-  .column__right p {
+  .block__textTwo p {
     margin-bottom: 32px;
   }
 

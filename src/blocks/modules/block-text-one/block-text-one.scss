@@ -54,11 +54,10 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 14px;
-		line-height: 20px;
-		font-feature-settings: 'ss01' on;
+		font-size: 17px;
+		line-height: 24px;
 		color: #031B4B;
-
+		margin-bottom: 32px;
 	}
 }
 .column__left {
@@ -88,17 +87,7 @@
 		object-fit: cover;
 		object-position: 50% 50%;
 	}
-	p {
-		position: relative;
-		width: 100%;
-		font-family: 'Manrope';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 17px;
-		line-height: 24px;
-		color: #031B4B;
-		margin-bottom: 32px;
-	}
+
 }
 .column__left.header__one__left {
 	justify-content: flex-end;
@@ -208,6 +197,9 @@
 	}
 	.column__right{
 		padding-top: 32px;
+
+	}
+	.block__textTwo {
 		p {
 			margin-bottom: 32px;
 		}
