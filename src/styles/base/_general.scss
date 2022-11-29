@@ -53,16 +53,9 @@ a.block__textOne__link {
 		color: #104CA6;
 		text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
 
-		&:after {
-			transition: all .5s;
-			transform: rotate(90deg);
-			transform-origin: 8px 8px;
-		}
 	}
 	&::after {
 		transition: all .5s;
-		transform: rotate(0deg);
-		transform-origin: 8px 8px;
 		position: absolute;
 		right: 4px;
 		top: 13px;

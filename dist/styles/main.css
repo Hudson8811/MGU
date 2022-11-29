@@ -237,16 +237,8 @@ a.block__textOne__link:hover {
   text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
 }
 
-a.block__textOne__link:hover:after {
-  transition: all 0.5s;
-  transform: rotate(90deg);
-  transform-origin: 8px 8px;
-}
-
 a.block__textOne__link::after {
   transition: all 0.5s;
-  transform: rotate(0deg);
-  transform-origin: 8px 8px;
   position: absolute;
   right: 4px;
   top: 13px;
