@@ -34,7 +34,7 @@
 			transition: all .5s;
 			text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 		}
-		&:focus {
+		&.active__toopMenu {
 			 background: #fff;
 			 color: #104CA6;
 			 text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
@@ -52,7 +52,7 @@
 		background: #fff;
 		transition: all .5s;
 	}
-	&:focus {
+	&.active__toopMenu {
 		 background: #fff;
 		 color: #104CA6;
 	}

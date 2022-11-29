@@ -6,7 +6,7 @@
 	align-items: center;
 	padding-top: 6px;
 	padding-bottom: 18px;
-	margin-left: 26px;
+	padding-left: 26px;
 	
 	&__item {
 		position: relative;
@@ -62,12 +62,12 @@
 }
 @include max(xmd) {
 	.breadcrumbs {
-		margin-left: 17px;
+		padding-left: 17px;
 	}
 }
 @include max(md) {
 	.breadcrumbs {
-		margin-left: 0px;
+		padding-left: 0px;
 	}
 }
 @include max(sm) {
