@@ -81,9 +81,7 @@
 		position: relative;
 		display: block;
 		width: 100%;
-		height: 500px;
-		object-fit: cover;
-		object-position: 50% 50%;
+		height: auto;
 		margin-bottom: 40px;
 	}
 	h2 {
@@ -295,7 +293,7 @@
 		display: block;
 		font-family: 'Manrope';
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 800;
 		font-size: 32px;
 		line-height: 40px;
 		color: #031B4B;
