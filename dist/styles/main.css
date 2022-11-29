@@ -625,6 +625,7 @@ a.block__textOne__link::after {
 
 .block__textTwo h2 {
   position: relative;
+  display: block;
   width: 100%;
   font-family: "Manrope";
   font-style: normal;
@@ -637,6 +638,7 @@ a.block__textOne__link::after {
 
 .block__textTwo h3 {
   position: relative;
+  display: block;
   width: 100%;
   font-family: "Manrope";
   font-style: normal;
@@ -678,10 +680,12 @@ a.block__textOne__link::after {
 
 .block__textTwo ul {
   position: relative;
+  display: block;
   width: 100%;
   padding-left: 25px;
   margin-bottom: 40px;
   padding-top: 0;
+  margin-top: 0;
 }
 
 .block__textTwo ul li {
@@ -712,9 +716,11 @@ a.block__textOne__link::after {
 .block__textTwo ol {
   width: 100%;
   position: relative;
+  display: block;
   padding-left: 25px;
   margin-bottom: 40px;
   padding-top: 0;
+  margin-top: 0;
 }
 
 .block__textTwo ol li {
@@ -730,11 +736,16 @@ a.block__textOne__link::after {
 
 .block__textTwo table {
   position: relative;
+  display: block;
   width: 100%;
-  border-top: 1px solid rgba(0, 85, 182, 0.3);
-  border-bottom: 1px solid rgba(0, 85, 182, 0.3);
   margin-bottom: 40px;
   border-collapse: collapse;
+  overflow: auto;
+}
+
+.block__textTwo table tbody {
+  position: relative;
+  width: 100%;
 }
 
 .block__textTwo table tr {
@@ -1300,6 +1311,12 @@ a.block__textOne__link::after {
     padding-top: 32px;
   }
 
+  .block__textTwo {
+    width: calc(100vw - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .block__textTwo p {
     margin-bottom: 32px;
   }
@@ -1325,10 +1342,6 @@ a.block__textOne__link::after {
   }
 
   .block__textTwo a {
-    margin-bottom: 32px;
-  }
-
-  .block__textTwo table {
     margin-bottom: 32px;
   }
 
@@ -1387,6 +1400,26 @@ a.block__textOne__link::after {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .block__textTwo ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .block__textTwo ol li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .block__textTwo table {
+    margin-bottom: 32px;
+  }
+
+  .block__textTwo table tr th {
+    width: 200px;
   }
 
   .column__left.header__one__left h2 {
