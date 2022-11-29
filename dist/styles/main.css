@@ -304,7 +304,7 @@ a.block__textOne__link::after {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  max-width: 390px;
+  max-width: 405px;
 }
 
 .header__other__dates {
@@ -313,7 +313,7 @@ a.block__textOne__link::after {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 15px;
   color: #FFFFFF;
   margin-right: 24px;
@@ -371,7 +371,7 @@ a.block__textOne__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -474,7 +474,7 @@ a.block__textOne__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 10px;
   line-height: 16px;
   margin-right: 8px;
@@ -491,11 +491,10 @@ a.block__textOne__link::after {
 
 .breadcrumbs__item__icon {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   display: inline;
   width: 12px;
-  height: 12px;
   margin-right: 8px;
 }
 
@@ -553,6 +552,18 @@ a.block__textOne__link::after {
   flex: 1 1 auto;
 }
 
+.block__textOne {
+  position: relative;
+  width: 100%;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "ss01" on;
+  color: #031B4B;
+}
+
 .block__textOne h2 {
   position: relative;
   display: inline-block;
@@ -574,6 +585,18 @@ a.block__textOne__link::after {
   line-height: 20px;
   font-feature-settings: "ss01" on;
   color: #031B4B;
+}
+
+.block__textTwo {
+  position: relative;
+  width: 100%;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #031B4B;
+  margin-bottom: 32px;
 }
 
 .block__textTwo p {
@@ -1120,6 +1143,12 @@ a.block__textOne__link::after {
 }
 
 @media only screen and (max-width: 450px) {
+  .block__textTwo {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .block__textTwo p {
     font-weight: 400;
     font-size: 14px;

@@ -24,6 +24,15 @@
 	flex: 1 1 auto;
 }
 .block__textOne {
+	position: relative;
+	width: 100%;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	font-feature-settings: 'ss01' on;
+	color: #031B4B;
 	h2 {
 		position: relative;
 		display: inline-block;
@@ -48,6 +57,15 @@
 	}
 }
 .block__textTwo {
+	position: relative;
+	width: 100%;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 24px;
+	color: #031B4B;
+	margin-bottom: 32px;
 	p {
 		position: relative;
 		width: 100%;
@@ -210,6 +228,9 @@
 }
 @include max(xs) {
 	.block__textTwo {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
 		p {
 			font-weight: 400;
 			font-size: 14px;
