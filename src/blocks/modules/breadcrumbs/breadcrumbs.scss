@@ -16,7 +16,7 @@
 		align-items: flex-end;
 		font-family: 'Manrope';
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 700;
 		font-size: 13px;
 		margin-top: 10px;
 		line-height: 16px;
@@ -28,6 +28,9 @@
 			transition: all .3s;
 			text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 			color: #104CA6;
+			&:last-child {
+				text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+			}
 		}
 		&__icon {
 			position: absolute;
@@ -49,7 +52,7 @@
 			font-family: 'Manrope';
 			font-style: normal;
 			font-weight: 700;
-			font-size: 12px;
+			font-size: 13px;
 			line-height: 16px;
 			color: #104CA6;
 			&::after {

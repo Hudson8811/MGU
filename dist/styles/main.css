@@ -319,6 +319,7 @@ a.block__textOne__link::after {
   line-height: 15px;
   color: #FFFFFF;
   margin-right: 24px;
+  white-space: nowrap;
 }
 
 .header__other__search {
@@ -475,7 +476,7 @@ a.block__textOne__link::after {
   align-items: flex-end;
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 13px;
   margin-top: 10px;
   line-height: 16px;
@@ -489,6 +490,10 @@ a.block__textOne__link::after {
   transition: all 0.3s;
   text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
   color: #104CA6;
+}
+
+.breadcrumbs__item:hover:last-child {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
 }
 
 .breadcrumbs__item__icon {
@@ -514,7 +519,7 @@ a.block__textOne__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
   color: #104CA6;
 }
@@ -615,7 +620,6 @@ a.block__textOne__link::after {
 
 .block__textTwo img {
   position: relative;
-  display: block;
   width: 100%;
   height: auto;
   margin-bottom: 40px;
@@ -623,7 +627,6 @@ a.block__textOne__link::after {
 
 .block__textTwo h2 {
   position: relative;
-  display: block;
   width: 100%;
   font-family: "Manrope";
   font-style: normal;
@@ -636,7 +639,6 @@ a.block__textOne__link::after {
 
 .block__textTwo h3 {
   position: relative;
-  display: block;
   width: 100%;
   font-family: "Manrope";
   font-style: normal;
@@ -732,13 +734,17 @@ a.block__textOne__link::after {
   color: #031B4B;
 }
 
+.block__textTwo .textTwo__table {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
 .block__textTwo table {
   position: relative;
-  display: block;
   width: 100%;
   margin-bottom: 40px;
   border-collapse: collapse;
-  overflow: auto;
 }
 
 .block__textTwo table tbody {
@@ -753,41 +759,37 @@ a.block__textOne__link::after {
   border-bottom: 1px solid rgba(0, 85, 182, 0.3);
 }
 
-.block__textTwo table tr:first-child th {
+.block__textTwo table tr th {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   padding-top: 48px;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-bottom: 8px;
   color: rgba(0, 85, 182, 0.5);
+  text-align: left;
 }
 
-.block__textTwo table tr:first-child th:first-child {
+.block__textTwo table tr th + th + th {
+  text-align: right;
+}
+
+.block__textTwo table tr td {
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: rgba(0, 85, 182, 0.5);
-  white-space: nowrap;
-  padding-bottom: 8px;
-}
-
-.block__textTwo table tr:first-child th:last-child {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: rgba(0, 85, 182, 0.5);
-  white-space: nowrap;
-  padding-bottom: 8px;
-}
-
-.block__textTwo table tr th {
+  color: #031B4B;
+  text-align: left;
+  width: 100px;
   padding: 20px 8px;
+}
+
+.block__textTwo table tr td b {
   text-align: left;
   font-family: "Manrope";
   font-style: normal;
@@ -797,25 +799,12 @@ a.block__textOne__link::after {
   color: #031B4B;
 }
 
-.block__textTwo table tr th:first-child {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #031B4B;
-  width: 168px;
+.block__textTwo table tr td + b {
+  width: 300px;
 }
 
-.block__textTwo table tr th:last-child {
+.block__textTwo table tr td + td + td {
   text-align: right;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #031B4B;
-  width: 144px;
 }
 
 .column__left {
@@ -1012,7 +1001,8 @@ a.block__textOne__link::after {
 
 .block__textThree__item:hover h2 {
   transition: all 0.5s;
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
 }
 
 .block__textThree__item:hover img {
@@ -1307,12 +1297,6 @@ a.block__textOne__link::after {
 
   .column__right {
     padding-top: 32px;
-  }
-
-  .block__textTwo {
-    width: calc(100vw - 40px);
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .block__textTwo p {

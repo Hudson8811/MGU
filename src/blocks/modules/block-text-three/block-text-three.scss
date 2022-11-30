@@ -50,7 +50,8 @@
 
 			h2 {
 				transition: all .5s;
-				text-decoration: underline;
+				text-decoration-line: underline;
+				text-decoration-thickness: 1px;
 			}
 			img {
 				transition: all .5s;

@@ -79,14 +79,12 @@
 	}
 	img {
 		position: relative;
-		display: block;
 		width: 100%;
 		height: auto;
 		margin-bottom: 40px;
 	}
 	h2 {
 		position: relative;
-		display: block;
 		width: 100%;
 		font-family: 'Manrope';
 		font-style: normal;
@@ -99,7 +97,6 @@
 	}
 	h3 {
 		position: relative;
-		display: block;
 		width: 100%;
 		font-family: 'Manrope';
 		font-style: normal;
@@ -184,13 +181,16 @@
 			color: #031B4B;
 		}
 	}
+	.textTwo__table {
+		position: relative;
+		width: 100%;
+		overflow: auto;
+	}
 	table {
 		position: relative;
-		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		border-collapse: collapse;
-		overflow: auto;
 		tbody {
 			position: relative;
 			width: 100%;
@@ -200,66 +200,49 @@
 			vertical-align: text-top;
 			border-top: 1px solid rgba(0, 85, 182, 0.3);
 			border-bottom: 1px solid rgba(0, 85, 182, 0.3);
-			&:first-child {
-				th {
-					font-family: 'Manrope';
-					font-style: normal;
-					font-weight: 500;
-					font-size: 14px;
-					line-height: 20px;
-					padding-top: 48px;
-					padding-bottom: 8px;
-					color: rgba(0, 85, 182, 0.5);
-					&:first-child {
-						font-family: 'Manrope';
-						font-style: normal;
-						font-weight: 500;
-						font-size: 14px;
-						line-height: 20px;
-						color: rgba(0, 85, 182, 0.5);
-						white-space: nowrap;
-						padding-bottom: 8px;
-					}
-					&:last-child {
-						font-family: 'Manrope';
-						font-style: normal;
-						font-weight: 500;
-						font-size: 14px;
-						line-height: 20px;
-						color: rgba(0, 85, 182, 0.5);
-						white-space: nowrap;
-						padding-bottom: 8px;
-					}
-				}
-			}
 			th {
-				padding: 20px 8px;
-				text-align: left;
 				font-family: 'Manrope';
 				font-style: normal;
-				font-weight: 700;
-				font-size: 17px;
-				line-height: 24px;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 20px;
+				padding-top: 48px;
+				padding-left: 8px;
+				padding-right: 8px;
+				padding-bottom: 8px;
+				color: rgba(0, 85, 182, 0.5);
+				text-align: left;
+				
+			}
+			th + th + th {
+				text-align: right;
+			}
+			td  {
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
 				color: #031B4B;
-				&:first-child {
+				text-align: left;
+				width: 100px;
+				padding: 20px 8px;
+				b{
+					text-align: left;
 					font-family: 'Manrope';
 					font-style: normal;
-					font-weight: 400;
-					font-size: 14px;
-					line-height: 20px;
+					font-weight: 700;
+					font-size: 17px;
+					line-height: 24px;
 					color: #031B4B;
-					width: 168px;
 				}
-				&:last-child {
-					text-align: right;
-					font-family: 'Manrope';
-					font-style: normal;
-					font-weight: 400;
-					font-size: 14px;
-					line-height: 20px;
-					color: #031B4B;
-					width: 144px;
-				}
+				
+			}
+			td + b {
+				width: 300px;
+			}
+			td + td + td {
+				text-align: right;
 			}
 		}
 	}
@@ -405,9 +388,6 @@
 
 	}
 	.block__textTwo {
-		width: calc(100vw - 40px);
-		margin-left: auto;
-		margin-right: auto;
 		p {
 			margin-bottom: 32px;
 		}
