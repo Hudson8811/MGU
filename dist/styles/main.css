@@ -741,7 +741,7 @@ a.block__textOne__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.9412rem;
+  font-size: 1rem;
   line-height: 24px;
   color: #104CA6;
   transition: all 0.5s;
@@ -1517,6 +1517,7 @@ a.block__textOne__link::after {
 
   .block__textTwo a {
     margin-bottom: 32px;
+    font-size: 0.8235rem;
   }
 
   .block__textTwo ul {
