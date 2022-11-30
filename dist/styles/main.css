@@ -208,7 +208,7 @@ html {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 24px;
   color: #031B4B;
 }
@@ -229,7 +229,7 @@ a {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.8235rem;
   line-height: 20px;
   color: #104CA6;
   transition: all 0.5s;
@@ -246,7 +246,7 @@ a.block__textOne__link {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.8235rem;
   margin-left: -12px;
   line-height: 20px;
   margin-bottom: 24px;
@@ -282,7 +282,7 @@ a.block__textOne__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 24px;
   border-radius: 30px;
   text-align: center;
@@ -982,7 +982,7 @@ a.block__textOne__link::after {
   font-weight: 800;
   width: 100%;
   max-width: 240px;
-  font-size: 32px;
+  font-size: 1.8824rem;
   line-height: 40px;
   color: #031B4B;
 }
@@ -1006,7 +1006,7 @@ a.block__textOne__link::after {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 24px;
   color: #031B4B;
   margin-bottom: 0;
