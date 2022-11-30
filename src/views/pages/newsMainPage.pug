@@ -7,7 +7,16 @@ block content
 	include ../../blocks/modules/header/header
 	include ../../blocks/modules/headerMenu/headerMenu
 	include ../../blocks/modules/breadcrumbs/breadcrumbs
-	include ../../blocks/modules/news-main/news-main
+	.section__newsMain
+		.container
+			.newsMain__title.newsMain__title__mob Новости
+			.layoutTwo
+				.layoutTwo__left
+					.newsMain__title.newsMain__title__desc Новости
+					include ../../blocks/components/period-select/period-select
+					include ../../blocks/components/follow-soc/follow-soc
+				.layoutTwo__right
+					include ../../blocks/modules/news-main/news-main
 	include ../../blocks/modules/footer/footer
 
 block scripts

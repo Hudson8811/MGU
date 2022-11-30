@@ -13,4 +13,7 @@
 // БЭМ-блоки
 @import "../blocks/modules/modules";
 // components
-@import "../blocks/components/components.scss";
+@import "../blocks/components/components";
+//страницы
+@import "../styles/pages/projectPage";
+@import "../styles/pages/newsMainPage";

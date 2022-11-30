@@ -76,3 +76,12 @@
 	}
 
 }
+@include max(xs) { 
+	.column__right.header__two__right {
+		p{
+			font-size: $fz14;
+			line-height: 20px;
+		}
+	}
+
+}

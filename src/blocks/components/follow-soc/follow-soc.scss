@@ -1,0 +1,31 @@
+.followSoc {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	&__title {
+		width: 100%;
+		position: relative;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 600;
+		font-size: $fz17;
+		line-height: 24px;
+		color: #104CA6;
+		margin-bottom: 16px;
+	}
+	&__items {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+
+	}
+	&__item {
+		position: relative;
+		display: inline-block;
+		margin-right: 8px;
+	}
+}

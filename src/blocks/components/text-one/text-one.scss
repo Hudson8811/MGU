@@ -1,0 +1,48 @@
+.block__textOne {
+	position: relative;
+	width: 100%;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.8235rem;
+	line-height: 20px;
+	font-feature-settings: 'ss01' on;
+	color: #031B4B;
+	h2 {
+		position: relative;
+		display: inline-block;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.8824rem;
+		line-height: 40px;
+		color: #031B4B;
+	}
+	p {
+		position: relative;
+		width: 100%;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.8235rem;
+		line-height: 20px;
+		font-feature-settings: 'ss01' on;
+		color: #031B4B;
+
+	}
+}
+@include max(md) {
+	.column__left.block__textOne {
+		margin-right: 24px;
+	}
+}
+@include max(xs) {
+	.block__textOne {
+		h2 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 1.4118rem;
+			line-height: 28px;
+		}
+	}
+}
