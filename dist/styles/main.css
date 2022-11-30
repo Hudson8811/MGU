@@ -771,6 +771,7 @@ a.block__textOne__link::after {
   padding-bottom: 8px;
   color: rgba(0, 85, 182, 0.5);
   text-align: left;
+  white-space: nowrap;
 }
 
 .block__textTwo table tr th + th + th {
@@ -785,7 +786,6 @@ a.block__textOne__link::after {
   line-height: 20px;
   color: #031B4B;
   text-align: left;
-  width: 100px;
   padding: 20px 8px;
 }
 
@@ -797,10 +797,6 @@ a.block__textOne__link::after {
   font-size: 17px;
   line-height: 24px;
   color: #031B4B;
-}
-
-.block__textTwo table tr td + b {
-  width: 300px;
 }
 
 .block__textTwo table tr td + td + td {
@@ -1196,6 +1192,16 @@ a.block__textOne__link::after {
     flex: 1 0 224px;
   }
 
+  .block__textTwo .textTwo__table {
+    position: relative;
+    width: calc(100vw - 320px);
+    overflow: auto;
+  }
+
+  .block__textTwo .textTwo__table table {
+    width: 700px;
+  }
+
   .column__left.header__one__left {
     border-bottom: none;
     max-width: none;
@@ -1268,6 +1274,16 @@ a.block__textOne__link::after {
 
   .section__breadcrumbs {
     display: none;
+  }
+
+  .block__textTwo .textTwo__table {
+    position: relative;
+    width: calc(100vw - 40px);
+    overflow: auto;
+  }
+
+  .block__textTwo .textTwo__table table {
+    width: 700px;
   }
 
   .column__right.header__one__right img {
