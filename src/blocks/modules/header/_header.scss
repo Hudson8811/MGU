@@ -40,7 +40,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 21px;
+		font-size: 1.2353rem;
 		line-height: 28px;
 		text-transform: uppercase;
 		color: #FFFFFF;
@@ -50,7 +50,7 @@
 			text-transform: none;
 			font-style: normal;
 			font-weight: 700;
-			font-size: 20px;
+			font-size: 1.1765rem;
 			line-height: 26px;
 		}
 	}
@@ -70,7 +70,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 600;
-		font-size: 13px;
+		font-size: 0.7647rem;
 		line-height: 16px;
 		color: #FFFFFF;
 		margin-right: 24px;
@@ -126,7 +126,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 13px;
+		font-size: 0.7647rem;
 		line-height: 16px;
 		text-transform: uppercase;
 		color: #FFFFFF;
@@ -181,7 +181,7 @@
 		justify-content: space-between;
 	}
 	.header__logo__name {
-		font-size: 20px;
+		font-size: 1.1765rem;
 	}
 	.header__other__search {
 		margin-right: 20px;
@@ -192,7 +192,7 @@
 }
 @include max(sm) { 
 	.header__logo__name {
-		font-size: 14px;
+		font-size: 0.8235rem;
 		line-height: 16px; 
 	}
 	.header__logo {

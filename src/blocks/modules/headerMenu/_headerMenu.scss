@@ -20,7 +20,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 16px;
+		font-size: 0.9412rem;
 		text-align: center;
 		line-height: 24px;
 		color: #104CA6;
@@ -61,7 +61,7 @@
 @include max(lg) {
 	.topMenu__item {
 		font-weight: 700;
-		font-size: 14px;
+		font-size: 0.8235rem;
 		line-height: 20px;
 		padding: 8px 16px;
 	}
