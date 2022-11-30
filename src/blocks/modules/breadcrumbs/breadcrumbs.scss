@@ -34,14 +34,17 @@
 		}
 		&__icon {
 			position: absolute;
-			top: 2px;
+			top: 1px;
 			left: 0;
 			display: inline;
 			width: 12px;
-			margin-right: 8px;
 		}
 		&:first-child {
-			padding-left: 20px;
+			width: 12px;
+			margin-right: 8px;
+			&::after {
+				content: none
+			}
 		}
 		&::after {
 			position: relative;

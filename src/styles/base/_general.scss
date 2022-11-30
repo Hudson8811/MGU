@@ -70,3 +70,36 @@ a.block__textOne__link {
 		content: url(../img/svg/editor__link__2.svg);
 	}
 }
+
+.button {
+	display: inline-block;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	background: $blueLight;
+	padding: 8px 107px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	border-radius: 30px;
+	text-align: center;
+	position: relative;
+	outline: none;
+	transition: all .5s ease;
+	cursor: pointer;
+	&:focus, &:hover {
+		text-decoration: none;
+		color: #fff; 
+	}
+	&:hover {
+		transition: all .5s ease;
+		background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
+	}
+	&:active {
+		background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
+	}
+}
+
+//Сетка №2

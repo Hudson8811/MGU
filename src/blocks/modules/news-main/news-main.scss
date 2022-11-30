@@ -1,0 +1,90 @@
+.section__newsMain {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding-top: 60px;
+	background: $lightBg;
+}
+.layoutTwo {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	&__left {
+		position: relative;
+		display: flex;
+		flex: 1 0 336px;
+		margin-right: 64px;
+	}
+	&__right {
+		position: relative;
+		display: flex;
+		flex: 1 1 auto;
+	}
+
+}
+
+.periodSelect {
+	position: relative;
+	width: 100%;
+	height: 208px;
+	background: #fff;
+	padding: 32px;
+	display: flex;
+	flex-flow: column nowrap;
+	&__title {
+		position: relative;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 16px;
+		color: #031B4B;
+		margin-bottom: 16px;
+	}
+	&__value {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		height: 40px;
+		width: 100%;
+		margin-bottom: 32px;		
+		&__month {
+			position: relative;
+			box-sizing: border-box; 
+			width: 100%;
+			margin-right: 32px;
+			border: none;
+			border-bottom: 1px solid #031B4B;
+			color: #031B4B;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 17px;
+			line-height: 24px;
+			option {
+				border: none;
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 17px;
+				line-height: 24px;
+				color: #031B4B;
+			}
+		}
+		&__years {
+			position: relative;
+			box-sizing: border-box; 
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid #031B4B;
+			color: #031B4B;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 17px;
+			line-height: 24px;
+
+		}
+	}
+}
