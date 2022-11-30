@@ -1490,6 +1490,9 @@ a.block__textOne__link::after {
 
   .block__textTwo p {
     margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 0.8235rem;
+    line-height: 20px;
   }
 
   .block__textTwo img {
@@ -1562,12 +1565,6 @@ a.block__textOne__link::after {
 
 @media only screen and (max-width: 450px) {
   .block__textTwo {
-    font-weight: 400;
-    font-size: 0.8235rem;
-    line-height: 20px;
-  }
-
-  .block__textTwo p {
     font-weight: 400;
     font-size: 0.8235rem;
     line-height: 20px;

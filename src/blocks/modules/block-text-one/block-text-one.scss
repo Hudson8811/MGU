@@ -405,6 +405,9 @@
 	.block__textTwo {
 		p {
 			margin-bottom: 32px;
+				font-weight: 400;
+				font-size: 0.8235rem;
+				line-height: 20px;
 		}
 		img {
 			margin-bottom: 32px;
@@ -440,11 +443,7 @@
 		font-weight: 400;
 		font-size: 0.8235rem;
 		line-height: 20px;
-		p {
-			font-weight: 400;
-			font-size: 0.8235rem;
-			line-height: 20px;
-		}
+
 		ul {
 			li {
 				font-weight: 400;
