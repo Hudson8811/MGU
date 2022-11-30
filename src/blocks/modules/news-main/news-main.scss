@@ -73,3 +73,32 @@
 	}
 
 }
+@include max(sm) {
+	.newsMain__item {
+		flex-flow: column nowrap;
+		&__img {
+			width: 100%;
+			margin-bottom: 8px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.newsMain__item__desc__date {
+		margin-bottom: 24px;
+	}
+	.newsMain__item__desc__title {
+		font-weight: 800;
+		font-size: $fz20;
+		line-height: 26px;
+	}
+	.newsMain__item__desc__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: $fz14;
+		line-height: 20px;
+	}
+	.newsMain__item {
+		padding-bottom: 32px;
+	}
+}

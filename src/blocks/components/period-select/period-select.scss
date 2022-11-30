@@ -7,63 +7,137 @@
 	display: flex;
 	flex-flow: column nowrap;
 	margin-bottom: 40px;
-	&__title {
+	&__date {
 		position: relative;
-		font-family: 'Manrope';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 13px;
-		line-height: 16px;
-		color: #031B4B;
-		margin-bottom: 16px;
-	}
-	&__value {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		height: 40px;
 		width: 100%;
-		margin-bottom: 32px;		
-		&__month {
+		display: flex;
+		flex-flow: column nowrap;
+		&__title {
 			position: relative;
-			box-sizing: border-box; 
-			width: 100%;
-			margin-right: 32px;
-			border: none;
-			border-bottom: 1px solid #031B4B;
-			color: #031B4B;
 			font-family: 'Manrope';
 			font-style: normal;
-			font-weight: 700;
-			font-size: 17px;
-			line-height: 24px;
-			option {
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 16px;
+			color: #031B4B;
+			margin-bottom: 16px;
+		}
+		&__value {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			height: 40px;
+			width: 100%;
+			margin-bottom: 32px;		
+			&__month {
+				position: relative;
+				box-sizing: border-box; 
+				width: 100%;
+				margin-right: 32px;
 				border: none;
+				border-bottom: 1px solid #031B4B;
+				color: #031B4B;
 				font-family: 'Manrope';
 				font-style: normal;
-				font-weight: 400;
+				font-weight: 700;
 				font-size: 17px;
 				line-height: 24px;
+				option {
+					border: none;
+					font-family: 'Manrope';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 17px;
+					line-height: 24px;
+					color: #031B4B;
+				}
+
+			}
+			&__years {
+				position: relative;
+				box-sizing: border-box; 
+				width: 100%;
+				border: none;
+				border-bottom: 1px solid #031B4B;
 				color: #031B4B;
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 17px;
+				line-height: 24px;
+	
 			}
 		}
-		&__years {
-			position: relative;
-			box-sizing: border-box; 
-			width: 100%;
-			border: none;
-			border-bottom: 1px solid #031B4B;
-			color: #031B4B;
-			font-family: 'Manrope';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 17px;
-			line-height: 24px;
-
-		}
+	}
+	&__button {
+		height: 40px;
 	}
 }
 
 @include max(lg) {
+	.periodSelect {
+		flex-flow: row nowrap;
+	}
+	.periodSelect {
+		height: 120px;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 24px;
+		margin-right: 60px;
+		margin-bottom: 0;
+	}
+	.periodSelect__date {
+		margin-right: 40px;
+		width: 272px;
+		&__value {
+			margin-bottom: 0;
+			
 
+		}
+	}
+	.periodSelect__button {
+		width: 224px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@include max(md) {
+	.periodSelect  {
+		margin-right: 0;
+		margin-bottom: 24px;
+	}
+}
+@include max(sm) {
+	.periodSelect__date {
+		flex: 1 0 220px;
+		margin-right: 32px;
+		max-width: 220px;
+	}
+	.periodSelect__button {
+		display: flex;
+		flex: 1 1 auto;
+		max-width: 224px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@include max(xs) {
+	.periodSelect {
+		flex-flow: column nowrap;
+		height: 192px;
+		justify-content: center;
+		align-items: center;
+	}
+	.periodSelect__date {
+		flex: 1 0 auto;
+		max-width: 100%;
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 32px;
+	}
+	.periodSelect__button {
+		flex: 1 0 auto;
+		max-width: 100%;
+		width: 100%;
+	}
 }

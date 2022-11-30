@@ -50,8 +50,12 @@
 		flex-flow: column nowrap;
 	}
 	.layoutTwo__left {
-		margin-bottom: 60px;
+		margin-bottom: 44px;
 		flex-flow: row nowrap;
+		justify-content: flex-end;
+		margin-right: 0;
+		flex: 1 0 auto;
+		align-items: flex-end;
 	}
 	.newsMain__title__mob  {
 		display: block;
@@ -60,5 +64,18 @@
 	.newsMain__title__desc {
 		display: none;
 	}
+	.periodSelect {
+		flex: 1 1 auto
+	}
+	.followSoc {
+		flex: 1 0 199px
+	}
 }
-
+@include max(md) {
+	.layoutTwo__left {
+		margin-bottom: 60px;
+	}
+	.layoutTwo__left {
+		flex-flow: column nowrap;
+	}
+}

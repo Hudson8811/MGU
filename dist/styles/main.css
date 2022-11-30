@@ -1137,7 +1137,14 @@ a.block__textOne__link::after {
   margin-bottom: 40px;
 }
 
-.periodSelect__title {
+.periodSelect__date {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.periodSelect__date__title {
   position: relative;
   font-family: "Manrope";
   font-style: normal;
@@ -1148,7 +1155,7 @@ a.block__textOne__link::after {
   margin-bottom: 16px;
 }
 
-.periodSelect__value {
+.periodSelect__date__value {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -1157,7 +1164,7 @@ a.block__textOne__link::after {
   margin-bottom: 32px;
 }
 
-.periodSelect__value__month {
+.periodSelect__date__value__month {
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -1172,7 +1179,7 @@ a.block__textOne__link::after {
   line-height: 24px;
 }
 
-.periodSelect__value__month option {
+.periodSelect__date__value__month option {
   border: none;
   font-family: "Manrope";
   font-style: normal;
@@ -1182,7 +1189,7 @@ a.block__textOne__link::after {
   color: #031B4B;
 }
 
-.periodSelect__value__years {
+.periodSelect__date__value__years {
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -1194,6 +1201,10 @@ a.block__textOne__link::after {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+.periodSelect__button {
+  height: 40px;
 }
 
 .section__editor {
@@ -1407,6 +1418,44 @@ a.block__textOne__link::after {
     max-width: 100%;
   }
 
+  .followSoc {
+    padding-bottom: 24px;
+  }
+
+  .followSoc__title {
+    font-size: 0.8235rem;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .periodSelect {
+    flex-flow: row nowrap;
+  }
+
+  .periodSelect {
+    height: 120px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 24px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  .periodSelect__date {
+    margin-right: 40px;
+    width: 272px;
+  }
+
+  .periodSelect__date__value {
+    margin-bottom: 0;
+  }
+
+  .periodSelect__button {
+    width: 224px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .column__left {
     padding-right: 10px;
   }
@@ -1444,8 +1493,12 @@ a.block__textOne__link::after {
   }
 
   .layoutTwo__left {
-    margin-bottom: 60px;
+    margin-bottom: 44px;
     flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 0;
+    flex: 1 0 auto;
+    align-items: flex-end;
   }
 
   .newsMain__title__mob {
@@ -1455,6 +1508,14 @@ a.block__textOne__link::after {
 
   .newsMain__title__desc {
     display: none;
+  }
+
+  .periodSelect {
+    flex: 1 1 auto;
+  }
+
+  .followSoc {
+    flex: 1 0 199px;
   }
 }
 
@@ -1559,6 +1620,27 @@ a.block__textOne__link::after {
     line-height: 20px;
   }
 
+  .followSoc {
+    flex-flow: row nowrap;
+    flex: 1 0 auto;
+    padding-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .followSoc__title {
+    width: auto;
+    margin-right: 16px;
+  }
+
+  .followSoc__items {
+    width: auto;
+  }
+
+  .periodSelect {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
   .column__left {
     flex: 1 0 224px;
   }
@@ -1567,6 +1649,14 @@ a.block__textOne__link::after {
     border-bottom: none;
     max-width: none;
     margin-right: 0;
+  }
+
+  .layoutTwo__left {
+    margin-bottom: 60px;
+  }
+
+  .layoutTwo__left {
+    flex-flow: column nowrap;
   }
 }
 
@@ -1611,6 +1701,40 @@ a.block__textOne__link::after {
   .column__left.header__two__left {
     flex: 1 0 auto;
     margin-bottom: 0px;
+  }
+
+  .newsMain__item {
+    flex-flow: column nowrap;
+  }
+
+  .newsMain__item__img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .newsMain__item__img img {
+    width: 100%;
+  }
+
+  .newsMain__item__desc__date {
+    margin-bottom: 24px;
+  }
+
+  .newsMain__item__desc__title {
+    font-weight: 800;
+    font-size: 1.1765rem;
+    line-height: 26px;
+  }
+
+  .newsMain__item__desc__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8235rem;
+    line-height: 20px;
+  }
+
+  .newsMain__item {
+    padding-bottom: 32px;
   }
 
   .block__textTwo .textTwo__table {
@@ -1700,6 +1824,20 @@ a.block__textOne__link::after {
     line-height: 20px;
   }
 
+  .periodSelect__date {
+    flex: 1 0 220px;
+    margin-right: 32px;
+    max-width: 220px;
+  }
+
+  .periodSelect__button {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 224px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .column__right.header__one__right img {
     height: 240px;
   }
@@ -1761,6 +1899,27 @@ a.block__textOne__link::after {
 
   .block__textTwo table {
     margin-bottom: 32px;
+  }
+
+  .periodSelect {
+    flex-flow: column nowrap;
+    height: 192px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .periodSelect__date {
+    flex: 1 0 auto;
+    max-width: 100%;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .periodSelect__button {
+    flex: 1 0 auto;
+    max-width: 100%;
+    width: 100%;
   }
 
   .column__left.header__one__left h2 {

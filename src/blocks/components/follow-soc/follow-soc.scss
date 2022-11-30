@@ -29,3 +29,28 @@
 		margin-right: 8px;
 	}
 }
+@include max(lg) {
+	.followSoc {
+		padding-bottom: 24px;
+		&__title {
+			font-size: $fz14;
+			font-weight: 700;
+			line-height: 20px;
+		}
+	}
+}
+@include max(md) {
+	.followSoc {
+		flex-flow: row nowrap;
+		flex: 1 0 auto;
+		padding-bottom: 0;
+		justify-content: flex-start;
+		&__title {
+			width: auto;
+			margin-right: 16px;
+		}
+		&__items {
+			width: auto;
+		}
+	}
+}
