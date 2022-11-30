@@ -429,9 +429,19 @@
 
 		ul {
 			margin-bottom: 32px;
+			li {
+				font-weight: 400;
+				font-size: 0.8235rem;
+				line-height: 20px;
+			}
 		}
 		ol {
 			margin-bottom: 32px;
+			li {
+				font-weight: 400;
+				font-size: 0.8235rem;
+				line-height: 20px;
+			}
 		}
 	}
 	.column__right,.column__left {
@@ -444,27 +454,8 @@
 		font-size: 0.8235rem;
 		line-height: 20px;
 
-		ul {
-			li {
-				font-weight: 400;
-				font-size: 0.8235rem;
-				line-height: 20px;
-			}
-		}
-		ol {
-			li {
-				font-weight: 400;
-				font-size: 0.8235rem;
-				line-height: 20px;
-			}
-		}
 		table {
 			margin-bottom: 32px;
-			tr {
-				th { 
-					width: 200px;
-				}
-			}
 		}
 	}
 	.column__left.header__one__left {

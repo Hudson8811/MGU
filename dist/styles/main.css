@@ -1523,8 +1523,20 @@ a.block__textOne__link::after {
     margin-bottom: 32px;
   }
 
+  .block__textTwo ul li {
+    font-weight: 400;
+    font-size: 0.8235rem;
+    line-height: 20px;
+  }
+
   .block__textTwo ol {
     margin-bottom: 32px;
+  }
+
+  .block__textTwo ol li {
+    font-weight: 400;
+    font-size: 0.8235rem;
+    line-height: 20px;
   }
 
   .column__right,
@@ -1570,24 +1582,8 @@ a.block__textOne__link::after {
     line-height: 20px;
   }
 
-  .block__textTwo ul li {
-    font-weight: 400;
-    font-size: 0.8235rem;
-    line-height: 20px;
-  }
-
-  .block__textTwo ol li {
-    font-weight: 400;
-    font-size: 0.8235rem;
-    line-height: 20px;
-  }
-
   .block__textTwo table {
     margin-bottom: 32px;
-  }
-
-  .block__textTwo table tr th {
-    width: 200px;
   }
 
   .column__left.header__one__left h2 {
