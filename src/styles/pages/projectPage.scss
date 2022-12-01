@@ -57,7 +57,7 @@
 		font-style: normal;
 		font-weight: 800;
 		font-size: $fz32;
-		line-height: 40px;
+		line-height: $lh40;
 		color: #031B4B;
 	}
 }
@@ -155,7 +155,7 @@
 		padding-bottom: 32px;
 		h2 {
 			font-size: $fz24;
-			line-height: 28px;
+			line-height: $lh28;
 		}
 		
 	}
@@ -180,7 +180,7 @@
 			font-style: normal;
 			font-weight: 700;
 			font-size: $fz24;
-			line-height: 28px;
+			line-height: $lh28;
 		}
 
 	}

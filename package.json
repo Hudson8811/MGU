@@ -7,7 +7,6 @@
         "url": ""
     },
     "license": "GPL-3.0-only",
-
     "scripts": {
         "dev": "gulp",
         "build": "gulp prod --production",
@@ -27,7 +26,6 @@
         "bem-c": "bem create $* -l src/blocks/components",
         "bem-m": "bem create $* -l src/blocks/modules"
     },
-
     "devDependencies": {
         "@babel/core": "^7.17.5",
         "@babel/eslint-parser": "^7.17.0",
@@ -75,18 +73,17 @@
         "stylelint-selector-bem-pattern": "^2.1.1",
         "yargs": "^17.3.1"
     },
-
     "dependencies": {
+        "jquery": "^3.6.1",
+        "select2": "^4.1.0-rc.0",
         "webpack": "^5.70.0",
         "webpack-stream": "^7.0.0"
     },
-
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
         }
     },
-
     "lint-staged": {
         "*.scss": [
             "stylelint --fix --allow-empty-input"

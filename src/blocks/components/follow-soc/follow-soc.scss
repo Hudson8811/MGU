@@ -12,7 +12,7 @@
 		font-style: normal;
 		font-weight: 600;
 		font-size: $fz17;
-		line-height: 24px;
+		line-height: $lh24;
 		color: #104CA6;
 		margin-bottom: 16px;
 	}
@@ -35,7 +35,7 @@
 		&__title {
 			font-size: $fz14;
 			font-weight: 700;
-			line-height: 20px;
+			line-height: $lh20;
 		}
 	}
 }

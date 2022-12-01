@@ -22,7 +22,7 @@
 		font-weight: 700;
 		font-size: $fz16;
 		text-align: center;
-		line-height: 24px;
+		line-height: $lh24;
 		color: #104CA6;
 		background: #F4F3F0;
 		text-decoration: none;
@@ -62,7 +62,7 @@
 	.topMenu__item {
 		font-weight: 700;
 		font-size: $fz14;
-		line-height: 20px;
+		line-height: $lh20;
 		padding: 8px 16px;
 	}
 

@@ -43,7 +43,7 @@
 				font-style: normal;
 				font-weight: 500;
 				font-size: $fz14;
-				line-height: 20px;
+				line-height: $lh20;
 				color: #104CA6;
 				margin-bottom: 32px;
 			}
@@ -56,7 +56,7 @@
 				font-style: normal;
 				font-weight: 800;
 				font-size: $fz24;
-				line-height: 28px;
+				line-height: $lh28;
 				color: #104CA6;
 			}
 			&__text {
@@ -66,7 +66,7 @@
 				font-style: normal;
 				font-weight: 400;
 				font-size: $fz16;
-				line-height: 24px;
+				line-height: $lh24;
 				color: #031B4B;
 			}
 		}
@@ -90,13 +90,13 @@
 	.newsMain__item__desc__title {
 		font-weight: 800;
 		font-size: $fz20;
-		line-height: 26px;
+		line-height: $lh26;
 	}
 	.newsMain__item__desc__text {
 		font-style: normal;
 		font-weight: 400;
 		font-size: $fz14;
-		line-height: 20px;
+		line-height: $lh20;
 	}
 	.newsMain__item {
 		padding-bottom: 32px;

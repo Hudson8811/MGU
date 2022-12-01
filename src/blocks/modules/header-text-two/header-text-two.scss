@@ -22,7 +22,7 @@
 		width: 100%;
 		max-width: 240px;
 		font-size: $fz32;
-		line-height: 40px;
+		line-height: $lh40;
 		color: #031B4B;
 	}
 
@@ -39,16 +39,6 @@
 	padding-bottom: 40px;
 	border-top: none;
 	padding-top: 0;
-	p {
-		font-family: 'Manrope';
-		font-style: normal;
-		font-weight: 400;
-		font-size: $fz17;
-		line-height: 24px;
-		color: #031B4B;
-		margin-bottom: 0;
-
-	}
 }
 
 
@@ -76,12 +66,4 @@
 	}
 
 }
-@include max(xs) { 
-	.column__right.header__two__right {
-		p{
-			font-size: $fz14;
-			line-height: 20px;
-		}
-	}
 
-}

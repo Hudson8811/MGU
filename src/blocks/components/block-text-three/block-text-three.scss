@@ -74,7 +74,7 @@
 			font-style: normal;
 			font-weight: 800;
 			font-size: $fz32;
-			line-height: 40px;
+			line-height: $lh40;
 			color: #104CA6;
 			transition: all .5s;
 		}
@@ -89,7 +89,7 @@
 			font-style: normal;
 			font-weight: 500;
 			font-size: $fz16;
-			line-height: 20px;
+			line-height: $lh24;
 			color: #104CA6;
 		}
 
@@ -120,13 +120,13 @@
 	.block__textThree__item {
 		h2 {
 			font-size: $fz24;
-			line-height: 28px;
+			line-height: $lh28;
 			padding-right: 20px;
 		}
 		p{
 			padding-right: 20px;
 			font-size: $fz14;
-			line-height: 20px;
+			line-height: $lh20;
 		}
 	}
 }
@@ -146,17 +146,13 @@
 	.block__textThree__item {
 		h2 {
 			font-size: $fz24;
-			line-height: 28px;
+			line-height: $lh28;
 			padding-right: 20px;
 		}
 		p{
 			padding-right: 20px;
 			font-size: $fz14;
-			line-height: 20px;
+			line-height: $lh20;
 		}
-	}
-	.column__right.header__two__right p {
-		font-size: $fz14;
-		line-height: 24px;
 	}
 }

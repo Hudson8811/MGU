@@ -41,7 +41,7 @@
 		font-style: normal;
 		font-weight: 700;
 		font-size: $fz21;
-		line-height: 28px;
+		line-height: $lh28;
 		text-transform: uppercase;
 		color: #FFFFFF;
 		word-spacing: 4px;
@@ -51,7 +51,7 @@
 			font-style: normal;
 			font-weight: 700;
 			font-size: $fz20;
-			line-height: 26px;
+			line-height: $lh26;
 		}
 	}
 	
@@ -71,7 +71,7 @@
 		font-style: normal;
 		font-weight: 600;
 		font-size: $fz13;
-		line-height: 16px;
+		line-height: $lh16;
 		color: #FFFFFF;
 		margin-right: 24px;
 		white-space: nowrap;
@@ -127,7 +127,7 @@
 		font-style: normal;
 		font-weight: 700;
 		font-size: $fz13;
-		line-height: 16px;
+		line-height: $lh16;
 		text-transform: uppercase;
 		color: #FFFFFF;
 		text-decoration: none;
@@ -193,7 +193,7 @@
 @include max(sm) { 
 	.header__logo__name {
 		font-size: $fz14;
-		line-height: 16px; 
+		line-height: $lh16; 
 	}
 	.header__logo {
 		max-width: 222px;

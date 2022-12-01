@@ -5,7 +5,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: $fz14;
-	line-height: 20px;
+	line-height: $lh20;
 	font-feature-settings: 'ss01' on;
 	color: #031B4B;
 	h2 {
@@ -15,7 +15,7 @@
 		font-style: normal;
 		font-weight: 700;
 		font-size: $fz32;
-		line-height: 40px;
+		line-height: $lh40;
 		color: #031B4B;
 	}
 	p {
@@ -25,10 +25,10 @@
 		font-style: normal;
 		font-weight: 400;
 		font-size: $fz14;
-		line-height: 20px;
+		line-height: $lh20;
 		font-feature-settings: 'ss01' on;
 		color: #031B4B;
-
+		
 	}
 }
 @include max(md) {
@@ -42,7 +42,7 @@
 			font-style: normal;
 			font-weight: 700;
 			font-size: $fz24;
-			line-height: 28px;
+			line-height: $lh28;
 		}
 	}
 }
