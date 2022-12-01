@@ -4,7 +4,7 @@
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: $fz17;
 	line-height: 24px;
 	color: #031B4B;
 	margin-bottom: 32px;
@@ -14,7 +14,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 1rem;
+		font-size: $fz17;
 		line-height: 24px;
 		color: #031B4B;
 		margin-bottom: 32px;
@@ -31,7 +31,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 1.1765rem;
+		font-size: $fz20;
 		line-height: 26px;
 		color: #031B4B;
 		margin-bottom: 40px;
@@ -43,7 +43,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 1rem;
+		font-size: $fz17;
 		line-height: 24px;
 		color: #031B4B;
 		margin-bottom: 40px;	
@@ -61,7 +61,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 1rem;
+		font-size: $fz17;
 		line-height: 24px;
 		color: #104CA6;
 		transition: all .5s;
@@ -85,7 +85,7 @@
 			font-family: 'Manrope';
 			font-style: normal;
 			font-weight: 400;
-			font-size: 1rem;
+			font-size: $fz17;
 			line-height: 24px;
 			color: #031B4B;
 			list-style-type: none;
@@ -118,7 +118,7 @@
 			font-family: 'Manrope';
 			font-style: normal;
 			font-weight: 400;
-			font-size: 1rem;
+			font-size: $fz17;
 			line-height: 24px;
 			color: #031B4B;
 		}
@@ -146,7 +146,7 @@
 				font-family: 'Manrope';
 				font-style: normal;
 				font-weight: 500;
-				font-size: 0.8235rem;
+				font-size: $fz14;
 				line-height: 20px;
 				padding-top: 48px;
 				padding-left: 8px;
@@ -164,7 +164,7 @@
 				font-family: 'Manrope';
 				font-style: normal;
 				font-weight: 400;
-				font-size: 0.8235rem;
+				font-size: $fz14;
 				line-height: 20px;
 				color: #031B4B;
 				text-align: left;
@@ -174,7 +174,7 @@
 					font-family: 'Manrope';
 					font-style: normal;
 					font-weight: 700;
-					font-size: 1rem;
+					font-size: $fz17;
 					line-height: 24px;
 					color: #031B4B;
 				}
@@ -209,7 +209,7 @@
 		p {
 			margin-bottom: 32px;
 				font-weight: 400;
-				font-size: 0.8235rem;
+				font-size: $fz14;
 				line-height: 20px;
 		}
 		img {
@@ -228,14 +228,14 @@
 		}
 		a {
 			margin-bottom: 32px;
-			font-size: 0.8235rem;
+			font-size: $fz14;
 		}
 
 		ul {
 			margin-bottom: 32px;
 			li {
 				font-weight: 400;
-				font-size: 0.8235rem;
+				font-size: $fz14;
 				line-height: 20px;
 			}
 		}
@@ -243,7 +243,7 @@
 			margin-bottom: 32px;
 			li {
 				font-weight: 400;
-				font-size: 0.8235rem;
+				font-size: $fz14;
 				line-height: 20px;
 			}
 		}
@@ -252,7 +252,7 @@
 @include max(xs) {
 	.block__textTwo {
 		font-weight: 400;
-		font-size: 0.8235rem;
+		font-size: $fz14;
 		line-height: 20px;
 
 		table {

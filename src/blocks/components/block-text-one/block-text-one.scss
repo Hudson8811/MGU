@@ -4,7 +4,7 @@
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 0.8235rem;
+	font-size: $fz14;
 	line-height: 20px;
 	font-feature-settings: 'ss01' on;
 	color: #031B4B;
@@ -14,7 +14,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 1.8824rem;
+		font-size: $fz32;
 		line-height: 40px;
 		color: #031B4B;
 	}
@@ -24,7 +24,7 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 0.8235rem;
+		font-size: $fz14;
 		line-height: 20px;
 		font-feature-settings: 'ss01' on;
 		color: #031B4B;
@@ -41,7 +41,7 @@
 		h2 {
 			font-style: normal;
 			font-weight: 700;
-			font-size: 1.4118rem;
+			font-size: $fz24;
 			line-height: 28px;
 		}
 	}

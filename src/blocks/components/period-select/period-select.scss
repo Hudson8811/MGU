@@ -17,7 +17,7 @@
 			font-family: 'Manrope';
 			font-style: normal;
 			font-weight: 400;
-			font-size: 13px;
+			font-size: $fz13;
 			line-height: 16px;
 			color: #031B4B;
 			margin-bottom: 16px;
@@ -40,14 +40,14 @@
 				font-family: 'Manrope';
 				font-style: normal;
 				font-weight: 700;
-				font-size: 17px;
+				font-size: $fz17;
 				line-height: 24px;
 				option {
 					border: none;
 					font-family: 'Manrope';
 					font-style: normal;
 					font-weight: 400;
-					font-size: 17px;
+					font-size: $fz17;
 					line-height: 24px;
 					color: #031B4B;
 				}
@@ -63,7 +63,7 @@
 				font-family: 'Manrope';
 				font-style: normal;
 				font-weight: 700;
-				font-size: 17px;
+				font-size: $fz17;
 				line-height: 24px;
 	
 			}

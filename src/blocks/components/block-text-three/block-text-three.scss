@@ -73,7 +73,7 @@
 			font-family: 'Manrope';
 			font-style: normal;
 			font-weight: 800;
-			font-size: 1.8824rem;
+			font-size: $fz32;
 			line-height: 40px;
 			color: #104CA6;
 			transition: all .5s;
@@ -88,7 +88,7 @@
 			font-family: 'Manrope';
 			font-style: normal;
 			font-weight: 500;
-			font-size: 0.8235rem;
+			font-size: $fz16;
 			line-height: 20px;
 			color: #104CA6;
 		}
@@ -119,13 +119,13 @@
 	}
 	.block__textThree__item {
 		h2 {
-			font-size: 1.4118rem;
+			font-size: $fz24;
 			line-height: 28px;
 			padding-right: 20px;
 		}
 		p{
 			padding-right: 20px;
-			font-size: 0.8235rem;
+			font-size: $fz14;
 			line-height: 20px;
 		}
 	}
@@ -145,14 +145,18 @@
 	}
 	.block__textThree__item {
 		h2 {
-			font-size: 1.4118rem;
+			font-size: $fz24;
 			line-height: 28px;
 			padding-right: 20px;
 		}
 		p{
 			padding-right: 20px;
-			font-size: 0.8235rem;
+			font-size: $fz14;
 			line-height: 20px;
 		}
+	}
+	.column__right.header__two__right p {
+		font-size: $fz14;
+		line-height: 24px;
 	}
 }

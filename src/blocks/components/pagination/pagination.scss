@@ -1,0 +1,40 @@
+.pagination {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__prev   {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 36px;
+		height: 36px;
+		border-radius: 30px;
+		background: #fff;
+		padding-bottom: 4px;
+		&::after {
+			position: relative;
+			display: inline-block;
+			content: url(../img/svg/pagination__arrow.svg);
+			transform: rotate(180deg);
+		}
+	}
+	&__next {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 36px;
+		height: 36px;
+		border-radius: 30px;
+		background: #fff;
+		padding-top: 4px;
+		&::after {
+			position: relative;
+			display: inline-block;
+			content: url(../img/svg/pagination__arrow.svg);
+		}
+	}
+}
