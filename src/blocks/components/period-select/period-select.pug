@@ -1,11 +1,8 @@
 .periodSelect
 	.periodSelect__date
 		.periodSelect__date__title Выбрать период
-		.periodSelect__date__value 
-			select.periodSelect__date__value__month(name="") 
-				<option>Январь</option>  
-				<option>Февраль</option>  
-				<option>Март</option>  
+		.periodSelect__date__value
+			<select class="js-example-responsive" style="width: 75%">
 				<option>Апрель</option>  
 				<option>Май</option>  
 				<option>Июнь</option>  
@@ -14,10 +11,26 @@
 				<option>Октябрь</option> 
 				<option>Ноябрь</option> 
 				<option>Декабрь</option> 
-			select.periodSelect__date__value__years(name="") 
-				<option>2022</option>
-				<option>2021</option>
-				<option>2020</option>
-				<option>2019</option>
-				<option>2018</option>
+			</select>
+			<select class="js-example-responsive" multiple="multiple" style="width: 25%">
+			</select>
+			//- select.js-example-basic-single(name="state")
+			//- 	<option value="WY">Январь</option>  
+			//- 	<option value="WY">Январь</option>  
+			//- 	<option value="WY">Февраль</option>  
+			//- 	<option>Март</option>  
+			//- 	<option>Апрель</option>  
+			//- 	<option>Май</option>  
+			//- 	<option>Июнь</option>  
+			//- 	<option>Июль</option>  
+			//- 	<option>Сентябрь</option>  
+			//- 	<option>Октябрь</option> 
+			//- 	<option>Ноябрь</option> 
+			//- 	<option>Декабрь</option> 
+			//- select.periodSelect__date__value__years(name="") 
+			//- 	<option>2022</option>
+			//- 	<option>2021</option>
+			//- 	<option>2020</option>
+			//- 	<option>2019</option>
+			//- 	<option>2018</option>
 	a.button.periodSelect__button  искать

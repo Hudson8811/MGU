@@ -7,7 +7,12 @@
   \**************************************************************/
 /***/ (function() {
 
-
+$(window).on('load', function () {
+  $('.js-example-responsive').select2({
+    theme: "classic",
+    placeholder: 'Select an option'
+  });
+});
 
 /***/ }),
 
