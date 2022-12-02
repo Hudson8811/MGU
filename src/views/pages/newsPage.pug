@@ -1,18 +1,25 @@
+extends ../layouts/default
+
 block variables
-	- const title = "Project Page";
+	- const title = "News Page";
 
 block content
 	include ../../blocks/modules/header/header
 	include ../../blocks/modules/headerMenu/headerMenu
 	include ../../blocks/modules/breadcrumbs/breadcrumbs
 	//- include ../../blocks/modules/block-text-one/block-text-one
-	.section.section__editor
+	.news
 		.container
 			.header__one
 				.column__left.header__one__left
-					h1  Инструментальный  аэрозольный комплекс
+					.news__header__wrap
+						.news__date 01 июня 2022
+						h1  Инструментальный  аэрозольный комплекс
+					include ../../blocks/components/declaration-soc/declaration-soc
 				.column__right.header__one__right
-					img(src="img/projectPage/project__top__picture.png", alt="")
+					img(src="img/projectPage/project__top__picture__2.png", alt="")
+					include ../../blocks/components/declaration-soc/declaration-soc
+
 			.block__text__wrap
 				.column__left
 					include ../../blocks/components/block-text-one/block-text-one
