@@ -27,6 +27,12 @@
 		position: relative;
 		display: inline-block;
 		margin-right: 8px;
+		transition: all .5s;
+		margin: 2px;
+		opacity: 1;
+		&:hover {
+			opacity: .6;
+		}
 	}
 }
 @include max(lg) {

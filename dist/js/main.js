@@ -7,12 +7,13 @@
   \**************************************************************/
 /***/ (function() {
 
-$(window).on('load', function () {
-  $('.js-example-responsive').select2({
-    theme: "classic",
-    placeholder: 'Select an option'
-  });
-});
+// $(window).on('load', () => {
+// 	console.log("привет")
+// 	$('.js-example-responsive').select2({
+// 		theme: "classic",
+// 		placeholder: 'Select an option'
+// 	});
+// });
 
 /***/ }),
 
@@ -79,12 +80,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
 /* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./import/components */ "./src/js/import/components.js");
-/* harmony import */ var _node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../node_modules/select2/dist/js/select2.min.js */ "./node_modules/select2/dist/js/select2.min.js");
-/* harmony import */ var _node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
-
+// import "./../../node_modules/select2/dist/js/select2.min.js";
+// $(window).on('load', () => {
+// 	console.log("привет")
+// 	$('.js-example-responsive').select2({
+// 		theme: "classic",
+// 		placeholder: 'Select an option'
+// 	});
+// });
+document.addEventListener('DOMContentLoaded', function () {
+  console.log("привет");
+});
 
 /***/ })
 

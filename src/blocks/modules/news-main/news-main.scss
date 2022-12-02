@@ -14,6 +14,8 @@
 		padding-bottom: 48px;
 		margin-bottom: 48px;
 		border-bottom: 1px solid rgba(0, 85, 182, 0.5);
+		transition: all .3;
+
 		&__img {
 			position: relative;
 			display: block;
@@ -69,6 +71,17 @@
 				line-height: $lh24;
 				color: #031B4B;
 			}
+		}
+	}
+
+}
+.newsMain__item:hover {
+	.newsMain__item__desc__title {
+		transition: all .3s;
+		text-decoration-line: underline;
+		text-decoration-thickness: 1px;
+		&:hover {
+			text-shadow: none;
 		}
 	}
 

@@ -1367,6 +1367,7 @@ a.block__textOne__link::after {
   padding-bottom: 48px;
   margin-bottom: 48px;
   border-bottom: 1px solid rgba(0, 85, 182, 0.5);
+  transition: all 0.3;
 }
 
 .newsMain__item__img {
@@ -1429,6 +1430,16 @@ a.block__textOne__link::after {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #031B4B;
+}
+
+.newsMain__item:hover .newsMain__item__desc__title {
+  transition: all 0.3s;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.newsMain__item:hover .newsMain__item__desc__title:hover {
+  text-shadow: none;
 }
 
 .block__textOne {
@@ -1808,6 +1819,13 @@ a.block__textOne__link::after {
   position: relative;
   display: inline-block;
   margin-right: 8px;
+  transition: all 0.5s;
+  margin: 2px;
+  opacity: 1;
+}
+
+.followSoc__item:hover {
+  opacity: 0.6;
 }
 
 .periodSelect {
@@ -1850,8 +1868,9 @@ a.block__textOne__link::after {
 
 .periodSelect__date__value__month {
   position: relative;
+  display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  width: 144px;
   margin-right: 32px;
   border: none;
   border-bottom: 1px solid #031B4B;
@@ -1873,10 +1892,28 @@ a.block__textOne__link::after {
   color: #031B4B;
 }
 
+.periodSelect__date__value__month option:checked {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031B4B;
+}
+
+.periodSelect__date__value__month option:hover {
+  background: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031B4B;
+}
+
 .periodSelect__date__value__years {
   position: relative;
   box-sizing: border-box;
   width: 100%;
+  max-width: 96px;
   border: none;
   border-bottom: 1px solid #031B4B;
   color: #031B4B;
@@ -1885,6 +1922,33 @@ a.block__textOne__link::after {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.periodSelect__date__value__years option {
+  border: none;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+}
+
+.periodSelect__date__value__years option:checked {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031B4B;
+}
+
+.periodSelect__date__value__years option:hover {
+  background: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031B4B;
 }
 
 .periodSelect__button {
@@ -1899,7 +1963,15 @@ a.block__textOne__link::after {
   align-items: center;
 }
 
-.pagination__prev {
+.pagination__items {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.pagination__item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1907,8 +1979,34 @@ a.block__textOne__link::after {
   width: 36px;
   height: 36px;
   border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.5s;
+  margin: 2px;
+}
+
+.pagination__item__active {
+  background: #104CA6;
+  color: #fff;
+}
+
+.pagination__item:hover {
+  transition: all 0.5s;
+  background: #D8E0EC;
+}
+
+.pagination__prev {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 30px;
   background: #fff;
   padding-bottom: 4px;
+  padding-right: 3px;
+  transition: all 0.5s;
 }
 
 .pagination__prev::after {
@@ -1918,22 +2016,40 @@ a.block__textOne__link::after {
   transform: rotate(180deg);
 }
 
+.pagination__prev:hover {
+  transition: all 0.5s;
+  background: #D8E0EC;
+}
+
 .pagination__next {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   width: 36px;
   height: 36px;
   border-radius: 30px;
   background: #fff;
-  padding-top: 4px;
+  padding-top: 5px;
+  padding-left: 4px;
+  transition: all 0.5s;
 }
 
 .pagination__next::after {
   position: relative;
   display: inline-block;
   content: url(../img/svg/pagination__arrow.svg);
+}
+
+.pagination__next:hover {
+  transition: all 0.5s;
+  background: #D8E0EC;
+}
+
+.pagination__item.pagination__item__active:hover {
+  background: #104CA6;
+  color: #fff;
 }
 
 .section__editor {
