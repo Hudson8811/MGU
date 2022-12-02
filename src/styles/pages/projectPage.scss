@@ -51,7 +51,7 @@
 	border-top: none;
 	padding-right: 0;
 	padding-top: 0;
-	h2 {
+	h1 {
 		display: block;
 		font-family: 'Manrope';
 		font-style: normal;
@@ -153,7 +153,7 @@
 	}
 	.column__left.header__one__left {
 		padding-bottom: 32px;
-		h2 {
+		h1 {
 			font-size: $fz24;
 			line-height: $lh28;
 		}
@@ -176,7 +176,7 @@
 }
 @include max(xs) {
 	.column__left.header__one__left {
-		h2 {
+		h1 {
 			font-style: normal;
 			font-weight: 700;
 			font-size: $fz24;

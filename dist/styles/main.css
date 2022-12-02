@@ -1322,7 +1322,7 @@ a:hover {
   border-bottom: none;
 }
 
-.header__two__left h2 {
+.header__two__left h1 {
   position: relative;
   display: inline-block;
   font-family: "Manrope";
@@ -2220,7 +2220,7 @@ button.declaration__item__button {
   padding-top: 0;
 }
 
-.column__left.header__one__left h2 {
+.column__left.header__one__left h1 {
   display: block;
   font-family: "Manrope";
   font-style: normal;
@@ -2369,7 +2369,7 @@ button.declaration__item__button {
     margin-right: 0;
   }
 
-  .column__left.header__two__left h2 {
+  .column__left.header__two__left h1 {
     width: 100%;
   }
 
@@ -2825,7 +2825,7 @@ button.declaration__item__button {
     padding-bottom: 32px;
   }
 
-  .column__left.header__one__left h2 {
+  .column__left.header__one__left h1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
@@ -2887,7 +2887,7 @@ button.declaration__item__button {
     width: 100%;
   }
 
-  .column__left.header__one__left h2 {
+  .column__left.header__one__left h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
