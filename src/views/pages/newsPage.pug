@@ -1,0 +1,24 @@
+block variables
+	- const title = "Project Page";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	//- include ../../blocks/modules/block-text-one/block-text-one
+	.section.section__editor
+		.container
+			.header__one
+				.column__left.header__one__left
+					h1  Инструментальный  аэрозольный комплекс
+				.column__right.header__one__right
+					img(src="img/projectPage/project__top__picture.png", alt="")
+			.block__text__wrap
+				.column__left
+					include ../../blocks/components/block-text-one/block-text-one
+				.column__right
+					include ../../blocks/components/block-text-two/block-text-two
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")

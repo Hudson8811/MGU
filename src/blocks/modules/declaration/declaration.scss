@@ -37,11 +37,13 @@
 }
 .declaration__item .block__textTwo  {
 	margin-bottom: 32px;
+	margin-top: 32px;
+	a.block__textOne__link {
+		text-decoration: none;
+	}
 }
 button.declaration__item__button {
-	position: absolute;
-	bottom: 32px;
-	left: 32px;
+	position: relative;
 	width: auto;
 	padding: 4px 16px;
 	font-family: 'Manrope';

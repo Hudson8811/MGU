@@ -45,15 +45,35 @@ __webpack_require__.r(__webpack_exports__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
   console.log("привет");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.declaration__item__button').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.declaration__button__one').click(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text() == 'читать объявление полностью') {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text('скрыть');
     } else {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text('читать объявление полностью');
     }
-    console.log(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent());
-    console.log(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text());
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().find(".block__textTwo__hidden").toggle();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().find(".declaration__button__two").toggle();
+    var btnTwo = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().find(".declaration__button__two");
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(btnTwo).text() == 'читать объявление полностью') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(btnTwo).text('скрыть');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(btnTwo).text('читать объявление полностью');
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.declaration__button__two').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text() == 'читать объявление полностью') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text('скрыть');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text('читать объявление полностью');
+    }
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().find(".block__textTwo__hidden").toggle();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().find(".declaration__button__one").toggle();
+    var btnOne = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().find(".declaration__button__one");
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(btnOne).text() == 'читать объявление полностью') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(btnOne).text('скрыть');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(btnOne).text('читать объявление полностью');
+    }
   });
 });
 
