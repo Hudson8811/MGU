@@ -51,9 +51,11 @@
 		flex: 1 0 auto;
 		padding-bottom: 0;
 		justify-content: flex-start;
+		align-items: center;
 		&__title {
 			width: auto;
 			margin-right: 16px;
+			margin-bottom: 0;
 		}
 		&__items {
 			width: auto;

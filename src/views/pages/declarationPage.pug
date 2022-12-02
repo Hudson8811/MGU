@@ -1,13 +1,13 @@
 extends ../layouts/default
 
 block variables
-	- const title = "News Main Page";
+	- const title = "Declaration Page";
 
 block content
 	include ../../blocks/modules/header/header
 	include ../../blocks/modules/headerMenu/headerMenu
 	include ../../blocks/modules/breadcrumbs/breadcrumbs
-	.section__newsMain
+	.section__declaration
 		.container
 			.newsMain__title.newsMain__title__mob Новости
 			.layoutTwo
@@ -16,7 +16,7 @@ block content
 					include ../../blocks/components/period-select/period-select
 					include ../../blocks/components/follow-soc/follow-soc
 				.layoutTwo__right
-					include ../../blocks/modules/news-main/news-main
+					include ../../blocks/modules/declaration/declaration
 					include ../../blocks/components/pagination/pagination
 
 	include ../../blocks/modules/footer/footer

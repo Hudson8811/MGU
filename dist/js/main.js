@@ -5,15 +5,57 @@
 /*!**************************************************************!*\
   !*** ./src/blocks/components/period-select/period-select.js ***!
   \**************************************************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../../node_modules/select2/dist/js/select2.min.js */ "./node_modules/select2/dist/js/select2.min.js");
+/* harmony import */ var _node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
 
 // $(window).on('load', () => {
 // 	console.log("привет")
-// 	$('.js-example-responsive').select2({
-// 		theme: "classic",
+// 	$('.periodSelect__date__value__month').select2({
+// 		theme: "custom-theme",
+// 		language: 'ru',
+// 		// width: '100%',
+// 		// dropdownAutoWidth: true,
+// 	});
+// 	$('.periodSelect__date__value__years').select2({
+// 		theme: "castom",
 // 		placeholder: 'Select an option'
 // 	});
 // });
+
+/***/ }),
+
+/***/ "./src/blocks/modules/declaration/declaration.js":
+/*!*******************************************************!*\
+  !*** ./src/blocks/modules/declaration/declaration.js ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
+  console.log("привет");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.declaration__item__button').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text() == 'читать объявление полностью') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text('скрыть');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text('читать объявление полностью');
+    }
+    console.log(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent());
+    console.log(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text());
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().find(".block__textTwo__hidden").toggle();
+  });
+});
 
 /***/ }),
 
@@ -46,7 +88,6 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_components_period_select_period_select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../blocks/components/period-select/period-select */ "./src/blocks/components/period-select/period-select.js");
-/* harmony import */ var _blocks_components_period_select_period_select__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_components_period_select_period_select__WEBPACK_IMPORTED_MODULE_0__);
 
 
 /***/ }),
@@ -63,6 +104,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_declaration_declaration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/declaration/declaration */ "./src/blocks/modules/declaration/declaration.js");
+
 
 
 
@@ -76,24 +119,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../node_modules/jquery/dist/jquery.min.js */ "./node_modules/jquery/dist/jquery.min.js");
-/* harmony import */ var _node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
-/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./import/components */ "./src/js/import/components.js");
+/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
+/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/components */ "./src/js/import/components.js");
 
 
-
-// import "./../../node_modules/select2/dist/js/select2.min.js";
-// $(window).on('load', () => {
-// 	console.log("привет")
-// 	$('.js-example-responsive').select2({
-// 		theme: "classic",
-// 		placeholder: 'Select an option'
-// 	});
-// });
-document.addEventListener('DOMContentLoaded', function () {
-  console.log("привет");
-});
 
 /***/ })
 

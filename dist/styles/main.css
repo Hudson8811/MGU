@@ -941,7 +941,7 @@ a:hover {
   text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 }
 
-a.block__textOne__link {
+.block__textTwo a.block__textOne__link {
   position: relative;
   display: inline-block;
   font-family: "Manrope";
@@ -955,15 +955,16 @@ a.block__textOne__link {
   padding: 4px 28px 4px 12px;
 }
 
-a.block__textOne__link:hover {
+.block__textTwo a.block__textOne__link:hover {
   transition: all 0.5s;
   background: #FFFFFF;
   border-radius: 30px;
   color: #104CA6;
+  text-decoration: none;
   text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
 }
 
-a.block__textOne__link::after {
+.block__textTwo a.block__textOne__link::after {
   transition: all 0.5s;
   position: absolute;
   right: 4px;
@@ -1440,6 +1441,70 @@ a.block__textOne__link::after {
 
 .newsMain__item:hover .newsMain__item__desc__title:hover {
   text-shadow: none;
+}
+
+.declaration__item {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.declaration__item:last-child {
+  margin-bottom: 60px;
+}
+
+.declaration__item__date {
+  color: #946F11;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 32px;
+}
+
+.declaration__item__title {
+  position: relative;
+  text-align: left;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #031B4B;
+  margin-bottom: 24px;
+}
+
+.declaration__item .block__textTwo.block__textTwo__hidden {
+  padding-bottom: 32px;
+}
+
+.declaration__item .block__textTwo.block__textTwo__hidden img {
+  padding-top: 32px;
+  border-top: 1px solid rgba(0, 85, 182, 0.5);
+}
+
+.declaration__item .block__textTwo {
+  margin-bottom: 32px;
+}
+
+button.declaration__item__button {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  width: auto;
+  padding: 4px 16px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #104CA6;
+  background: #F4F3F0;
+  border-radius: 4px;
+  border: none;
 }
 
 .block__textOne {
@@ -2052,6 +2117,53 @@ a.block__textOne__link::after {
   color: #fff;
 }
 
+.declaration__item__soc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.declaration__item__soc__title {
+  position: relative;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  color: #739FF3;
+  margin-right: 8px;
+}
+
+.declaration__item__soc__items {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.declaration__item__soc__item {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  transition: all 0.5s;
+  margin-right: 8px;
+  opacity: 0.8;
+  transition: all 0.3;
+}
+
+.declaration__item__soc__item img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 0 !important;
+}
+
+.declaration__item__soc__item:hover {
+  transition: all 0.3;
+  opacity: 1;
+}
+
 .section__editor {
   background: #F4F3F0;
 }
@@ -2213,6 +2325,15 @@ a.block__textOne__link::after {
 .newsMain__title__desc {
   display: block;
   margin-bottom: 60px;
+}
+
+.section__declaration {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+  background: #F4F3F0;
+  padding-bottom: 115px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2471,11 +2592,13 @@ a.block__textOne__link::after {
     flex: 1 0 auto;
     padding-bottom: 0;
     justify-content: flex-start;
+    align-items: center;
   }
 
   .followSoc__title {
     width: auto;
     margin-right: 16px;
+    margin-bottom: 0;
   }
 
   .followSoc__items {
@@ -2583,6 +2706,19 @@ a.block__textOne__link::after {
     padding-bottom: 32px;
   }
 
+  .declaration__item__title {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .declaration__item {
+    padding: 24px;
+  }
+
+  button.declaration__item__button {
+    left: 24px;
+  }
+
   .block__textTwo .textTwo__table {
     position: relative;
     width: calc(100vw - 40px);
@@ -2606,7 +2742,7 @@ a.block__textOne__link::after {
   }
 
   .block__textTwo img {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .block__textTwo p a,

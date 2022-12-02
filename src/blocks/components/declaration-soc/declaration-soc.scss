@@ -1,0 +1,41 @@
+.declaration__item__soc {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	height: auto;
+	margin-bottom: 10px;
+	&__title {
+		position: relative;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 17px;
+		line-height: 24px;
+		color: #739FF3;
+		margin-right: 8px;
+	}
+	&__items {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    transition: all 0.5s;
+    margin-right: 8px;
+    opacity: .8;
+		transition: all .3;
+		img {
+			max-width: 100%;
+			display: block;
+			margin-bottom: 0 !important;
+		}
+		&:hover {
+			transition: all .3;
+			opacity: 1;
+		}
+	}
+}
