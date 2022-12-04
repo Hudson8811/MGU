@@ -30,10 +30,48 @@
 		color: #031B4B;
 		
 	}
+	blockquote {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(7, 52, 120, 0.8);		
+	}
+	img {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-bottom: 32px;
+	}
+}
+.block__text__color {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #104CA6;
+	margin-bottom: 244px;
+	&__line {
+		position: relative;
+		display: none;
+		height: 1px;
+		width: 50%;
+		border-top: 1px solid #104CA6;
+		&:first-child {
+			margin-bottom: 12px;
+		}
+		&:last-child {
+			margin-top: 12px;
+		}
+		
+	}
 }
 @include max(md) {
 	.column__left.block__textOne {
 		margin-right: 24px;
+	}
+	.block__textOne {
+		.block__text__color {
+			display: none;
+		}
 	}
 }
 @include max(xs) {

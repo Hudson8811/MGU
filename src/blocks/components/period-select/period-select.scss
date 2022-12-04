@@ -35,38 +35,6 @@
 				box-sizing: border-box; 
 				width: 144px;
 				margin-right: 32px;
-				border: none;
-				border-bottom: 1px solid #031B4B;
-				color: #031B4B;
-				font-family: 'Manrope';
-				font-style: normal;
-				font-weight: 700;
-				font-size: $fz17;
-				line-height: $lh24;
-				option {
-					border: none;
-					font-family: 'Manrope';
-					font-style: normal;
-					font-weight: 400;
-					font-size: $fz17;
-					line-height: $lh24;
-					color: #031B4B;
-					&:checked {
-						font-family: 'Manrope';
-						font-style: normal;
-						font-weight: 700;
-						font-size: 16px;
-						line-height: 24px;
-						color: #031B4B;
-					}
-					&:hover {
-						background: #fff;
-						font-weight: 700;
-						font-size: 16px;
-						line-height: 24px;
-						color: #031B4B;
-					}
-				}
 
 			}
 			&__years {
@@ -82,30 +50,6 @@
 				font-weight: 700;
 				font-size: $fz17;
 				line-height: $lh24;
-				option {
-					border: none;
-					font-family: 'Manrope';
-					font-style: normal;
-					font-weight: 400;
-					font-size: $fz17;
-					line-height: $lh24;
-					color: #031B4B;
-					&:checked {
-						font-family: 'Manrope';
-						font-style: normal;
-						font-weight: 700;
-						font-size: 16px;
-						line-height: 24px;
-						color: #031B4B;
-					}
-					&:hover {
-						background: #fff;
-						font-weight: 700;
-						font-size: 16px;
-						line-height: 24px;
-						color: #031B4B;
-					}
-				}
 	
 			}
 		}
@@ -114,6 +58,42 @@
 		height: 40px;
 	}
 }
+.select2-container {
+	border: none;
+	border-bottom: 1px solid #031B4B;
+	color: #031B4B;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz17;
+	line-height: $lh24;
+	height: 40px;
+	.select2-dropdown {
+		border: none;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		.select2-results {
+			.select2-results__option {
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 17px;
+				line-height: 24px;
+				color: #031B4B;
+				transition: all .5s;
+				&:hover {
+					transition: all .5s;
+					text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
+				}
+			}
+			.select2-results__option--selected {
+				font-weight: 700;
+			}
+		}
+	}
+
+}
+
 
 @include max(lg) {
 	.periodSelect {

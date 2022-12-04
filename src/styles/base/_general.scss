@@ -83,7 +83,7 @@ a.block__textOne__link {
 	border: none;
 	color: #fff;
 	text-decoration: none;
-	background: $blueLight;
+	background-color: lighten($blueLight, 4%);
 	padding: 8px 107px;
 	font-family: 'Manrope';
 	font-style: normal;
@@ -94,18 +94,19 @@ a.block__textOne__link {
 	text-align: center;
 	position: relative;
 	outline: none;
-	transition: all .5s ease;
+	transition: all .5s ;
 	cursor: pointer;
 	&:focus, &:hover {
 		text-decoration: none;
 		color: #fff; 
 	}
 	&:hover {
-		transition: all .5s ease;
-		background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
+		transition: all .5s ;
+		background-color: $blueLight
 	}
 	&:active {
-		background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
+		transition: all .5s ;
+		background-color: $blueLight
 	}
 }
 

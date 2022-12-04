@@ -15,20 +15,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
-
-// $(window).on('load', () => {
-// 	console.log("привет")
-// 	$('.periodSelect__date__value__month').select2({
-// 		theme: "custom-theme",
-// 		language: 'ru',
-// 		// width: '100%',
-// 		// dropdownAutoWidth: true,
-// 	});
-// 	$('.periodSelect__date__value__years').select2({
-// 		theme: "castom",
-// 		placeholder: 'Select an option'
-// 	});
-// });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
+  console.log("привет");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-example-responsive').select2({
+    theme: "custom-theme",
+    language: 'ru',
+    minimumResultsForSearch: Infinity,
+    // width: '100%',
+    dropdownAutoWidth: true
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.periodSelect__date__value__years').select2({
+    theme: "custom-theme",
+    language: 'ru',
+    minimumResultsForSearch: Infinity
+    // placeholder: 'Select an option'
+  });
+});
 
 /***/ }),
 

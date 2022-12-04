@@ -978,7 +978,7 @@ a.block__textOne__link::after {
   border: none;
   color: #fff;
   text-decoration: none;
-  background: #739FF3;
+  background-color: #86acf5;
   padding: 8px 107px;
   font-family: "Manrope";
   font-style: normal;
@@ -989,7 +989,7 @@ a.block__textOne__link::after {
   text-align: center;
   position: relative;
   outline: none;
-  transition: all 0.5s ease;
+  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -1000,12 +1000,13 @@ a.block__textOne__link::after {
 }
 
 .button:hover {
-  transition: all 0.5s ease;
-  background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
+  transition: all 0.5s;
+  background-color: #739FF3;
 }
 
 .button:active {
-  background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
+  transition: all 0.5s;
+  background-color: #739FF3;
 }
 
 .section__header {
@@ -1545,6 +1546,44 @@ button.declaration__item__button {
   color: #031B4B;
 }
 
+.block__textOne blockquote {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(7, 52, 120, 0.8);
+}
+
+.block__textOne img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.block__text__color {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #104CA6;
+  margin-bottom: 244px;
+}
+
+.block__text__color__line {
+  position: relative;
+  display: none;
+  height: 1px;
+  width: 50%;
+  border-top: 1px solid #104CA6;
+}
+
+.block__text__color__line:first-child {
+  margin-bottom: 12px;
+}
+
+.block__text__color__line:last-child {
+  margin-top: 12px;
+}
+
 .block__textTwo {
   position: relative;
   width: 100%;
@@ -1677,6 +1716,17 @@ button.declaration__item__button {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #031B4B;
+}
+
+.block__textTwo blockquote {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(7, 52, 120, 0.8);
+}
+
+.block__textTwo .block__text__color {
+  display: none;
 }
 
 .block__textTwo .textTwo__table {
@@ -1939,41 +1989,6 @@ button.declaration__item__button {
   box-sizing: border-box;
   width: 144px;
   margin-right: 32px;
-  border: none;
-  border-bottom: 1px solid #031B4B;
-  color: #031B4B;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.periodSelect__date__value__month option {
-  border: none;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #031B4B;
-}
-
-.periodSelect__date__value__month option:checked {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  color: #031B4B;
-}
-
-.periodSelect__date__value__month option:hover {
-  background: #fff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  color: #031B4B;
 }
 
 .periodSelect__date__value__years {
@@ -1991,35 +2006,45 @@ button.declaration__item__button {
   line-height: 1.5rem;
 }
 
-.periodSelect__date__value__years option {
+.periodSelect__button {
+  height: 40px;
+}
+
+.select2-container {
   border: none;
+  border-bottom: 1px solid #031B4B;
+  color: #031B4B;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  height: 40px;
+}
+
+.select2-container .select2-dropdown {
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select2-container .select2-dropdown .select2-results .select2-results__option {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #031B4B;
-}
-
-.periodSelect__date__value__years option:checked {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   color: #031B4B;
+  transition: all 0.5s;
 }
 
-.periodSelect__date__value__years option:hover {
-  background: #fff;
+.select2-container .select2-dropdown .select2-results .select2-results__option:hover {
+  transition: all 0.5s;
+  text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
+}
+
+.select2-container .select2-dropdown .select2-results .select2-results__option--selected {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  color: #031B4B;
-}
-
-.periodSelect__button {
-  height: 40px;
 }
 
 .pagination {
@@ -2619,6 +2644,10 @@ button.declaration__item__button {
     margin-right: 24px;
   }
 
+  .block__textOne .block__text__color {
+    display: none;
+  }
+
   .block__textTwo .textTwo__table {
     position: relative;
     width: calc(100vw - 320px);
@@ -2627,6 +2656,15 @@ button.declaration__item__button {
 
   .block__textTwo .textTwo__table table {
     width: 700px;
+  }
+
+  .block__textTwo .block__text__color {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .block__textTwo .block__text__color__line {
+    display: block;
   }
 
   .block__textThree__item {
