@@ -11,8 +11,8 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../../node_modules/select2/dist/js/select2.min.js */ "./node_modules/select2/dist/js/select2.min.js");
-/* harmony import */ var _node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_min_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../../node_modules/select2/dist/js/select2.full.min.js */ "./node_modules/select2/dist/js/select2.full.min.js");
+/* harmony import */ var _node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
@@ -21,10 +21,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
     theme: "custom-theme",
     language: 'ru',
     minimumResultsForSearch: Infinity,
-    // width: '100%',
     dropdownAutoWidth: true
   });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.periodSelect__date__value__years').select2({
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-example-responsive').select2({
     theme: "custom-theme",
     language: 'ru',
     minimumResultsForSearch: Infinity

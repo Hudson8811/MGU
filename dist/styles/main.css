@@ -2019,7 +2019,24 @@ button.declaration__item__button {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
-  height: 40px;
+  height: 32px;
+}
+
+.select2-container .select2-selection--single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  color: #031B4B;
 }
 
 .select2-container .select2-dropdown {
@@ -2032,8 +2049,8 @@ button.declaration__item__button {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
   color: #031B4B;
   transition: all 0.5s;
 }
@@ -2045,6 +2062,35 @@ button.declaration__item__button {
 
 .select2-container .select2-dropdown .select2-results .select2-results__option--selected {
   font-weight: 700;
+}
+
+.select2-container .select2-selection__arrow {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 6px;
+  background: url(../img/svg/select2-selection__arrow.svg) no-repeat center center;
+  background-size: contain;
+  transition: transform 0.3s;
+  transform: rotate(0deg);
+}
+
+.select2-container .select2-selection__arrow b {
+  display: none;
+}
+
+.select2-container--open {
+  transition: all 0.3s;
+}
+
+.select2-container--open .select2-selection__arrow {
+  transition: transform 0.3s;
+  transform: rotate(180deg);
+}
+
+.periodSelect__date__value__month + .select2-container {
+  margin-right: 32px;
+  width: 144px;
 }
 
 .pagination {
@@ -2915,6 +2961,10 @@ button.declaration__item__button {
     max-width: 224px;
     justify-content: center;
     align-items: center;
+  }
+
+  .periodSelect__date__value__month + .select2-container {
+    margin-right: 32px;
   }
 
   .column__right.header__one__right img {
