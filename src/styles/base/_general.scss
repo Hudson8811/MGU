@@ -56,9 +56,13 @@ a.block__textOne__link {
 	font-size: $fz14;
 	margin-left: -12px;
 	line-height: $lh20;
+	height: 24px;
 	color: #104CA6;
 	transition: all .5s;
-	padding: 4px 28px 4px 12px;
+	padding-left: 12px;
+	padding-right: 24px;
+	padding-top: 1px;
+	// padding: 4px 28px 4px 12px;
 	&:hover {
 		transition: all .5s;
 		background: #FFFFFF;
@@ -72,12 +76,17 @@ a.block__textOne__link {
 		transition: all .5s;
 		position: absolute;
 		right: 4px;
-		top: 6px;
+		top: 4px;
 		display: inline-block;
 		content: url(../img/svg/editor__link__2.svg);
 	}
 }
-
+.block-text__mob{
+	display: none;
+}
+.block-text__desktop {
+	display: inline-block;
+}
 .button {
 	display: inline-block;
 	border: none;
@@ -101,6 +110,7 @@ a.block__textOne__link {
 		color: #fff; 
 	}
 	&:hover {
+		text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
 		transition: all .5s ;
 		background-color: $blueLight
 	}
@@ -109,5 +119,121 @@ a.block__textOne__link {
 		background-color: $blueLight
 	}
 }
+.button.button__white {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0);
+	padding: 3px 32px 6px 32px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz17;
+	line-height: $lh24;
+	border-radius: 40px;
+	text-align: center;
+	border: 2px solid #FFFFFF;
+	&:focus, &:hover {
+		text-decoration: none;
+		color: #fff; 
+	}
+	&:hover {
+		border: 2px solid rgba(255, 255, 255, 0.1);
+		background: rgba(255, 255, 255, 0.3);
+	}
+	&:active {
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		background: rgba(255, 255, 255, 0.3);
+	}
+}
+.button.button__blueLight {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #031B4B;
+	background-color: #D8E0EC;
+	padding: 6px 32px;
+	width: 100%;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz32;
+	line-height: $lh40;
+	height: 80px;
+	border-radius: 40px;
+	cursor: pointer;
+	&:focus, &:hover {
+		text-decoration: none;
+		color: #031B4B;
+	}
+	&:hover {
+		background: #C2CFE2;
+	}
+	&:active {
+		background: #C2CFE2;
+	}
+}
+.layoutThree {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	&__left {
+		position: relative;
+		display: flex;
+		flex: 1 1 auto;
+		width: 100%;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-right: 32px;
 
+	}
+	&__right {
+		position: relative;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex: 1 0 268px;
+	}
+}
+.layoutTwo {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	&__left {
+		position: relative;
+		display: flex;
+		flex: 1 0 336px;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-right: 64px;
+	}
+	&__right {
+		position: relative;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex: 1 1 auto;
+		width: 100%;
+	}
+
+}
+
+
+
+@include max(sm){
+	.block-text__mob{
+		display: inline-block;
+	}
+	.block-text__desktop {
+		display: none;
+	}
+}
 //Сетка №2
