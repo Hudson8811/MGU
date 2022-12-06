@@ -81,6 +81,55 @@ a.block__textOne__link {
 		content: url(../img/svg/editor__link__2.svg);
 	}
 }
+a.block__textOne__link.academic__item__button {
+	position: relative;
+	display: inline-block;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz14;
+	margin-left: 0px;
+	line-height: $lh20;
+	height: 24px;
+	width: 20px;
+	color: #fff;
+	transition: all .3s;
+	padding-left: 0px;
+	padding-right: 20px;
+	padding-top: 1px;
+	// padding: 4px 28px 4px 12px;
+	p {
+		position: relative;
+		transition: all 0s;
+		opacity: 0;
+		visibility: hidden;
+		color: #104CA6;
+	}
+	&:hover {
+		transition: all .3s;
+		background: #F4F3F0;
+		width: 147px;
+		text-decoration: none;
+		padding-left: 12px;
+		padding-right: 24px;
+		text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+		p {
+			transition: all 3s;
+			display: block;
+			opacity: 1;
+			visibility: inherit;
+			
+		}
+	}
+	&::after {
+		transition: all .5s;
+		position: absolute;
+		right: 4px;
+		top: 4px;
+		display: inline-block;
+		content: url(../img/svg/editor__link__2.svg);
+	}
+}
 .block-text__mob{
 	display: none;
 }
