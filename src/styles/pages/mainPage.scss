@@ -124,23 +124,24 @@
 		margin-bottom: 32px;	
 	}
 }
+.block__textOne__link.block__textOne__link__ads {
+	color: #946F11;
+	&::after{
+		content: url(../img/svg/ads__arrow.svg);
+	}
+	&:hover {
+		background: #F4F3F0;
+		color: #946F11;
+		text-shadow: 0 0 0.15px #946f1100, 0 0 0.15px #946f1100;
+	}
+}
+
 .ads {
 	position: relative;
 	width: 100%;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	.block__textOne__link {
-		color: #946F11;
-		&::after{
-			content: url(../img/svg/ads__arrow.svg);
-		}
-		&:hover {
-			background: #F4F3F0;
-			color: #946F11;
-			text-shadow: 0 0 0.15px #946f1100, 0 0 0.15px #946f1100;
-		}
-	}
 	&__item{
 		position: relative;
 		width: 100%;
@@ -383,7 +384,9 @@
 		}
 	}
 }
-
+.layoutThree__left.layoutThree__left__mob {
+	display: none;
+}
 
 
 
@@ -428,6 +431,26 @@
 		padding-bottom: 72px;
 		min-height: 240px;
 		height: auto;
+		&:hover {
+			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+			.block__textOne__link.academic__item__button {
+				transition: all .3s;
+				background: #F4F3F0;
+				width: 147px;
+				text-decoration: none;
+				padding-left: 12px;
+				padding-right: 24px;
+				text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+				p {
+					transition: all 3s;
+					display: block;
+					opacity: 1;
+					visibility: inherit;
+					
+				}
+				
+			}
+		}
 		&__title {
 			font-family: 'Manrope';
 			font-style: normal;
@@ -451,4 +474,66 @@
 			bottom: 24px;
 		}
 	}
+}
+
+@include max(lg) {
+	.layoutThree__right {
+		display: none;
+	}
+	.layoutThree__left {
+		margin-right: 0;
+	}
+
+
+
+	.layoutThree__left.layoutThree__left__mob {
+		display: flex;
+		.advertisement-top {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+		.ads {
+			position: relative;
+			display: flex;
+			width: calc(100% + 32px);
+			align-items: stretch;
+			flex-flow: row wrap;
+			margin-left: -32px;
+			&__item{
+				position: relative;
+				flex: 0 0 33.333%;
+				max-width: calc(33.3333% - 32px);
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				margin-left: 32px;
+				margin-bottom: 32px;				
+			}
+		}
+		.banners {
+			position: relative;
+			display: flex;
+			width: calc(100% + 32px);
+			align-items: stretch;
+			flex-flow: row wrap;
+			margin-left: -32px;
+			.banner {
+				position: relative;
+				flex: 0 0 33.333%;
+				max-width: calc(33.3333% - 32px);
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				margin-left: 32px;
+				margin-bottom: 32px;
+			}			
+		}
+	}
+	.layoutThree {
+		flex-flow: column nowrap;
+	}
+
 }
