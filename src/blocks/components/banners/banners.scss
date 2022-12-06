@@ -1,0 +1,97 @@
+.banners {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.banner {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 32px;
+	min-height: 300px;
+	padding: 24px;
+	transition: all 0.3s;
+	&:hover {
+		.banner__title {
+			transition: all 0.3s;
+			text-decoration-line: underline;
+			text-decoration-thickness: 1px;
+		}
+	}
+	&__title {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 700;
+		font-size: $fz20;
+		line-height: $lh26;	
+		color: #fff;
+		margin-bottom: 32px;	
+	}
+	&__text{
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 400;
+		font-size: $fz14;
+		line-height: $lh20;
+		color: #FFFFFF;		
+	}
+	&__ochre{
+		background: #AF8F46;
+	}
+	&__blue {
+		background: #104CA6;
+	}
+	&__blueLight {
+		background: #D8E0EC;
+		.banner__title {
+			color: #031B4B;
+		}
+		.banner__text {
+			color: #031B4B;
+		}
+	}
+}
+.banner__ochre:hover{
+	transition: all 0.3s;
+	background: #946F11;
+
+}
+.banner__blue:hover {
+	transition: all 0.3s;
+	background: #073478;;
+}
+.banner__blueLight:hover {
+	transition: all 0.3s;
+	background: #C2CFE2;
+}
+@include max(lg) {
+	.layoutThree__left.layoutThree__left__mob {
+		display: flex;
+		.banners {
+			position: relative;
+			display: flex;
+			width: calc(100% + 24px);
+			align-items: stretch;
+			flex-flow: row wrap;
+			margin-left: -24px;
+			margin-bottom: 36px;
+			.banner {
+				position: relative;
+				flex: 0 0 33.333%;
+				max-width: calc(33.3333% - 24px);
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+				align-items: flex-start;
+				margin-left: 24px;
+				margin-bottom: 24px;
+			}			
+		}
+	}
+}

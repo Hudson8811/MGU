@@ -2621,12 +2621,111 @@ button.declaration__item__button {
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #031B4B;
+  margin-bottom: 24px;
 }
 
 .academic__item .block__textOne__link.academic__item__button {
   position: absolute;
   left: 24px;
   bottom: 24px;
+}
+
+.main__news {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+  margin-bottom: 28px;
+}
+
+.main__news__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #104CA6;
+}
+
+.main__news__top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.main__news__list {
+  position: relative;
+  display: flex;
+  width: calc(100% + 32px);
+  align-items: stretch;
+  flex-flow: row wrap;
+  margin-left: -32px;
+}
+
+.main__news__item {
+  position: relative;
+  flex: 0 0 33.333%;
+  max-width: calc(33.3333% - 32px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+.main__news__item:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+}
+
+.main__news__item:hover .main__news__item__title {
+  transition: all 0.5s;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.main__news__item__img {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-bottom: 8px;
+}
+
+.main__news__item__date {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #104CA6;
+  margin-bottom: 24px;
+}
+
+.main__news__item__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #104CA6;
+  margin-bottom: 16px;
+}
+
+.main__news__item__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  color: #031B4B;
 }
 
 .block__textOne {
@@ -3355,6 +3454,310 @@ button.declaration__item__button {
   opacity: 1;
 }
 
+.advertisement {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 40px 20px 32px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 60px;
+}
+
+.advertisement__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #946F11;
+  margin-bottom: 32px;
+}
+
+.block__textOne__link.block__textOne__link__ads {
+  color: #946F11;
+  display: none;
+}
+
+.block__textOne__link.block__textOne__link__ads::after {
+  content: url(../img/svg/ads__arrow.svg);
+}
+
+.block__textOne__link.block__textOne__link__ads:hover {
+  background: #F4F3F0;
+  color: #946F11;
+  text-shadow: 0 0 0.15px rgba(148, 111, 17, 0), 0 0 0.15px rgba(148, 111, 17, 0);
+}
+
+.ads {
+  position: relative;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.ads__item {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #AF8F46;
+  padding-top: 8px;
+  margin-bottom: 32px;
+}
+
+.ads__item:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+}
+
+.ads__item__date {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #946F11;
+  margin-bottom: 24px;
+}
+
+.ads__item__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #946F11;
+  margin-bottom: 16px;
+}
+
+.ads__item__label {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #031B4B;
+}
+
+.education {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 28px;
+}
+
+.education__item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 32px;
+  transition: all 0.3s;
+  min-height: 300px;
+}
+
+.education__item img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.education__item:hover {
+  transition: all 0.3s;
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+}
+
+.education__item:hover .education__item__desc__title {
+  transition: all 0.3s;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.education__item:hover .education__item__desc__text::before {
+  transition: all 0.3s;
+  content: url("../../img/svg/education__button__hover.svg");
+}
+
+.education__item__desc {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: calc(100% - 32px);
+  height: calc(100% - 64px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.education__item__desc__title {
+  position: relative;
+  display: block;
+  text-align: left;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3.25rem;
+  color: #FFFFFF;
+}
+
+.education__item__desc__text {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding-right: 76px;
+}
+
+.education__item__desc__text p {
+  position: relative;
+  display: block;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 636px;
+  margin-right: 24px;
+}
+
+.education__item__desc__text::before {
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  display: block;
+  height: 44px;
+  width: 44px;
+  content: url("../../img/svg/education__item__desc__button.svg");
+}
+
+.education__itemWhite {
+  position: relative;
+  width: 100%;
+  margin-bottom: 32px;
+  transition: all 0.3s;
+  min-height: 400px;
+  background: #fff;
+}
+
+.education__itemWhite__desc {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: calc(100% - 32px);
+  height: calc(100% - 64px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.education__itemWhite__desc__title {
+  position: relative;
+  width: 100%;
+  max-width: 456px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3.25rem;
+  color: #104CA6;
+}
+
+.education__itemWhite:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+}
+
+.education__itemWhite:hover .education__itemWhite__desc__title {
+  transition: all 0.3s;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.banners {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  min-height: 300px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.banner:hover .banner__title {
+  transition: all 0.3s;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.banner__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.banner__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #FFFFFF;
+}
+
+.banner__ochre {
+  background: #AF8F46;
+}
+
+.banner__blue {
+  background: #104CA6;
+}
+
+.banner__blueLight {
+  background: #D8E0EC;
+}
+
+.banner__blueLight .banner__title {
+  color: #031B4B;
+}
+
+.banner__blueLight .banner__text {
+  color: #031B4B;
+}
+
+.banner__ochre:hover {
+  transition: all 0.3s;
+  background: #946F11;
+}
+
+.banner__blue:hover {
+  transition: all 0.3s;
+  background: #073478;
+}
+
+.banner__blueLight:hover {
+  transition: all 0.3s;
+  background: #C2CFE2;
+}
+
 .section__editor {
   background: #F4F3F0;
 }
@@ -3557,406 +3960,6 @@ button.declaration__item__button {
   margin-bottom: 99px;
 }
 
-.main__news {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 50px;
-}
-
-.main__news__title {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  color: #104CA6;
-}
-
-.main__news__top {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 38px;
-}
-
-.main__news__list {
-  position: relative;
-  display: flex;
-  width: calc(100% + 32px);
-  align-items: stretch;
-  flex-flow: row wrap;
-  margin-left: -32px;
-}
-
-.main__news__item {
-  position: relative;
-  flex: 0 0 33.333%;
-  max-width: calc(33.3333% - 32px);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 32px;
-  margin-bottom: 32px;
-}
-
-.main__news__item:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
-}
-
-.main__news__item:hover .main__news__item__title {
-  transition: all 0.5s;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-}
-
-.main__news__item__img {
-  position: relative;
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  object-position: 50% 50%;
-  margin-bottom: 8px;
-}
-
-.main__news__item__date {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #104CA6;
-  margin-bottom: 24px;
-}
-
-.main__news__item__title {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 1.25rem;
-  line-height: 1.625rem;
-  color: #104CA6;
-  margin-bottom: 16px;
-}
-
-.main__news__item__text {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
-  color: #031B4B;
-}
-
-.advertisement {
-  position: relative;
-  width: 100%;
-  background: #fff;
-  padding: 40px 20px 32px 20px;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-bottom: 60px;
-}
-
-.advertisement__title {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  color: #946F11;
-  margin-bottom: 32px;
-}
-
-.block__textOne__link.block__textOne__link__ads {
-  color: #946F11;
-}
-
-.block__textOne__link.block__textOne__link__ads::after {
-  content: url(../img/svg/ads__arrow.svg);
-}
-
-.block__textOne__link.block__textOne__link__ads:hover {
-  background: #F4F3F0;
-  color: #946F11;
-  text-shadow: 0 0 0.15px rgba(148, 111, 17, 0), 0 0 0.15px rgba(148, 111, 17, 0);
-}
-
-.ads {
-  position: relative;
-  width: 100%;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.ads__item {
-  position: relative;
-  width: 100%;
-  border-top: 1px solid #AF8F46;
-  padding-top: 8px;
-  margin-bottom: 32px;
-}
-
-.ads__item:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
-}
-
-.ads__item__date {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #946F11;
-  margin-bottom: 24px;
-}
-
-.ads__item__title {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #946F11;
-  margin-bottom: 16px;
-}
-
-.ads__item__label {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #031B4B;
-}
-
-.banners {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.banner {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 32px;
-  min-height: 300px;
-  padding: 24px;
-  transition: all 0.3s;
-}
-
-.banner:hover .banner__title {
-  transition: all 0.3s;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-}
-
-.banner__title {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.625rem;
-  color: #fff;
-  margin-bottom: 32px;
-}
-
-.banner__text {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #FFFFFF;
-}
-
-.banner__ochre {
-  background: #AF8F46;
-}
-
-.banner__blue {
-  background: #104CA6;
-}
-
-.banner__blueLight {
-  background: #D8E0EC;
-}
-
-.banner__blueLight .banner__title {
-  color: #031B4B;
-}
-
-.banner__blueLight .banner__text {
-  color: #031B4B;
-}
-
-.banner__ochre:hover {
-  transition: all 0.3s;
-  background: #946F11;
-}
-
-.banner__blue:hover {
-  transition: all 0.3s;
-  background: #073478;
-}
-
-.banner__blueLight:hover {
-  transition: all 0.3s;
-  background: #C2CFE2;
-}
-
-.education {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-top: 28px;
-}
-
-.education__item {
-  position: relative;
-  width: 100%;
-  margin-bottom: 32px;
-  transition: all 0.3s;
-  min-height: 300px;
-}
-
-.education__item img {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
-
-.education__item:hover {
-  transition: all 0.3s;
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
-}
-
-.education__item:hover .education__item__desc__title {
-  transition: all 0.3s;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-}
-
-.education__item:hover .education__item__desc__text::before {
-  transition: all 0.3s;
-  content: url("../../img/svg/education__button__hover.svg");
-}
-
-.education__item__desc {
-  position: absolute;
-  top: 32px;
-  left: 32px;
-  width: calc(100% - 32px);
-  height: calc(100% - 64px);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.education__item__desc__title {
-  position: relative;
-  display: block;
-  text-align: left;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.625rem;
-  line-height: 3.25rem;
-  color: #FFFFFF;
-}
-
-.education__item__desc__text {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  padding-right: 76px;
-}
-
-.education__item__desc__text p {
-  position: relative;
-  display: block;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #FFFFFF;
-  width: 100%;
-  max-width: 636px;
-  margin-right: 24px;
-}
-
-.education__item__desc__text::before {
-  position: absolute;
-  right: 24px;
-  bottom: 0;
-  display: block;
-  height: 44px;
-  width: 44px;
-  content: url("../../img/svg/education__item__desc__button.svg");
-}
-
-.education__itemWhite {
-  position: relative;
-  width: 100%;
-  margin-bottom: 32px;
-  transition: all 0.3s;
-  min-height: 400px;
-  background: #fff;
-}
-
-.education__itemWhite__desc {
-  position: absolute;
-  top: 32px;
-  left: 32px;
-  width: calc(100% - 32px);
-  height: calc(100% - 64px);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.education__itemWhite__desc__title {
-  position: relative;
-  width: 100%;
-  max-width: 456px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.625rem;
-  line-height: 3.25rem;
-  color: #104CA6;
-}
-
-.education__itemWhite:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
-}
-
-.education__itemWhite:hover .education__itemWhite__desc__title {
-  transition: all 0.3s;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-}
-
 .layoutThree__left.layoutThree__left__mob {
   display: none;
 }
@@ -4000,6 +4003,22 @@ button.declaration__item__button {
 
   .section__header__two {
     padding-top: 40px;
+  }
+
+  .main__news {
+    padding-top: 40px;
+  }
+
+  .main__news__list {
+    width: calc(100% + 24px);
+    margin-left: -24px;
+  }
+
+  .main__news__item {
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 24px);
+    margin-left: 24px;
+    margin-bottom: 24px;
   }
 
   .section__block__textThree .container {
@@ -4046,6 +4065,67 @@ button.declaration__item__button {
     width: 224px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .layoutThree__left.layoutThree__left__mob {
+    display: flex;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .advertisement-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .advertisement-top .block__textOne__link.block__textOne__link__ads {
+    display: inline-block;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .ads {
+    position: relative;
+    display: flex;
+    width: calc(100% + 24px);
+    align-items: stretch;
+    flex-flow: row wrap;
+    margin-left: -24px;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .ads__item {
+    position: relative;
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 24px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+
+  .layoutThree__left.layoutThree__left__mob {
+    display: flex;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .banners {
+    position: relative;
+    display: flex;
+    width: calc(100% + 24px);
+    align-items: stretch;
+    flex-flow: row wrap;
+    margin-left: -24px;
+    margin-bottom: 36px;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .banners .banner {
+    position: relative;
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 24px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 24px;
+    margin-bottom: 24px;
   }
 
   .column__left {
@@ -4140,72 +4220,12 @@ button.declaration__item__button {
     margin-right: 0;
   }
 
-  .layoutThree__left.layoutThree__left__mob {
-    display: flex;
-  }
-
-  .layoutThree__left.layoutThree__left__mob .advertisement-top {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .layoutThree__left.layoutThree__left__mob .ads {
-    position: relative;
-    display: flex;
-    width: calc(100% + 24px);
-    align-items: stretch;
-    flex-flow: row wrap;
-    margin-left: -24px;
-  }
-
-  .layoutThree__left.layoutThree__left__mob .ads__item {
-    position: relative;
-    flex: 0 0 33.333%;
-    max-width: calc(33.3333% - 24px);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 24px;
-    margin-bottom: 24px;
-  }
-
-  .layoutThree__left.layoutThree__left__mob .banners {
-    position: relative;
-    display: flex;
-    width: calc(100% + 24px);
-    align-items: stretch;
-    flex-flow: row wrap;
-    margin-left: -24px;
-  }
-
-  .layoutThree__left.layoutThree__left__mob .banners .banner {
-    position: relative;
-    flex: 0 0 33.333%;
-    max-width: calc(33.3333% - 24px);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 24px;
-    margin-bottom: 24px;
+  .section__main {
+    padding-top: 36px;
   }
 
   .layoutThree {
     flex-flow: column nowrap;
-  }
-
-  .main__news__list {
-    width: calc(100% + 24px);
-    margin-left: -24px;
-  }
-
-  .main__news__item {
-    flex: 0 0 33.333%;
-    max-width: calc(33.3333% - 24px);
-    margin-left: 24px;
-    margin-bottom: 24px;
   }
 }
 
@@ -4337,6 +4357,23 @@ button.declaration__item__button {
     margin-bottom: 24px;
   }
 
+  .layoutThree__left.layoutThree__left__mob .ads {
+    width: calc(100% + 16px);
+    margin-left: -16px;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .ads__item {
+    position: relative;
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 16px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
   .column__left {
     flex: 1 0 224px;
   }
@@ -4359,21 +4396,16 @@ button.declaration__item__button {
     height: 300px;
   }
 
-  .layoutThree__left.layoutThree__left__mob .ads {
-    width: calc(100% + 16px);
-    margin-left: -16px;
+  .section__main {
+    padding-top: 40 px;
   }
 
-  .layoutThree__left.layoutThree__left__mob .ads__item {
-    position: relative;
-    flex: 0 0 33.333%;
-    max-width: calc(33.3333% - 16px);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 16px;
-    margin-bottom: 16px;
+  .main__news {
+    padding-top: 40px;
+  }
+
+  .main__news__top {
+    margin-bottom: 60px;
   }
 }
 

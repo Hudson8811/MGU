@@ -1,0 +1,129 @@
+.advertisement {
+	position: relative;
+	width: 100%;
+	background: #fff;
+	padding: 40px 20px 32px 20px;
+	display: flex;
+	flex-flow: column nowrap;
+	margin-bottom: 60px;
+	&__title {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 700;
+		font-size: $fz24;
+		line-height: $lh28;
+		color: #946F11;
+		margin-bottom: 32px;	
+	}
+}
+.block__textOne__link.block__textOne__link__ads {
+	color: #946F11;
+	display: none;
+	&::after{
+		content: url(../img/svg/ads__arrow.svg);
+	}
+	&:hover {
+		background: #F4F3F0;
+		color: #946F11;
+		text-shadow: 0 0 0.15px #946f1100, 0 0 0.15px #946f1100;
+	}
+}
+
+.ads {
+	position: relative;
+	width: 100%;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	&__item{
+		position: relative;
+		width: 100%;
+		border-top: 1px solid #AF8F46;
+		padding-top: 8px;
+		margin-bottom: 32px;
+		&:hover {
+			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+		}
+		&__date{
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 500;
+			font-size: $fz14;
+			line-height: $lh20;
+			color: #946F11;
+			margin-bottom: 24px;			
+		}
+		&__title {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz14;
+			line-height: $lh20;
+			color: #946F11;
+			margin-bottom: 16px;
+		}
+		&__label {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 400;
+			font-size: $fz14;
+			line-height: $lh20;
+			color: #031B4B;			
+		}
+	}
+}
+
+
+@include max(lg) {
+	.layoutThree__left.layoutThree__left__mob {
+		display: flex;
+		.advertisement-top {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			.block__textOne__link.block__textOne__link__ads {
+				display: inline-block;
+			}
+		}
+		.ads {
+			position: relative;
+			display: flex;
+			width: calc(100% + 24px);
+			align-items: stretch;
+			flex-flow: row wrap;
+			margin-left: -24px;
+			&__item{
+				position: relative;
+				flex: 0 0 33.333%;
+				max-width: calc(33.3333% - 24px);
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				margin-left: 24px;
+				margin-bottom: 24px;				
+			}
+		}	
+	}
+}
+
+@include max(md) {
+	.layoutThree__left.layoutThree__left__mob {
+		.ads {
+			width: calc(100% + 16px);
+			margin-left: -16px;
+			&__item{
+				position: relative;
+				flex: 0 0 33.333%;
+				max-width: calc(33.3333% - 16px);
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				margin-left: 16px;
+				margin-bottom: 16px;				
+			}
+		}
+	}
+
+}
