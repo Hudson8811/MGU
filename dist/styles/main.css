@@ -2536,6 +2536,99 @@ button.declaration__item__button {
   background: #AF8F46;
 }
 
+.academic {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 43px;
+  background: #F4F3F0;
+  padding-bottom: 80px;
+  border-top: 1px solid rgba(0, 85, 182, 0.5);
+}
+
+.academic__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #104CA6;
+  margin-bottom: 40px;
+}
+
+.academic__list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+
+.academic__list .swiper-slide {
+  height: 100%;
+}
+
+.academic__item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fff;
+  padding: 24px;
+  padding-bottom: 72px;
+  min-height: 240px;
+  height: 100%;
+}
+
+.academic__item:hover {
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+}
+
+.academic__item:hover .block__textOne__link.academic__item__button {
+  transition: all 0.3s;
+  background: #F4F3F0;
+  width: 147px;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 24px;
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+}
+
+.academic__item:hover .block__textOne__link.academic__item__button p {
+  transition: all 3s;
+  display: block;
+  opacity: 1;
+  visibility: inherit;
+}
+
+.academic__item__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #104CA6;
+  margin-bottom: 16px;
+}
+
+.academic__item__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #031B4B;
+}
+
+.academic__item .block__textOne__link.academic__item__button {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
+
 .block__textOne {
   position: relative;
   width: 100%;
@@ -3868,98 +3961,6 @@ button.declaration__item__button {
   display: none;
 }
 
-.academic {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding-top: 43px;
-  background: #F4F3F0;
-  padding-bottom: 80px;
-  border-top: 1px solid rgba(0, 85, 182, 0.5);
-}
-
-.academic__title {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  color: #104CA6;
-  margin-bottom: 40px;
-}
-
-.academic__list {
-  position: relative;
-  display: flex;
-  width: calc(100% + 32px);
-  align-items: stretch;
-  flex-flow: row wrap;
-  margin-left: -32px;
-}
-
-.academic__item {
-  position: relative;
-  flex: 0 0 25%;
-  max-width: calc(25% - 32px);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 32px;
-  margin-bottom: 32px;
-  background: #fff;
-  padding: 24px;
-  padding-bottom: 72px;
-  min-height: 240px;
-  height: auto;
-}
-
-.academic__item:hover {
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
-}
-
-.academic__item:hover .block__textOne__link.academic__item__button {
-  transition: all 0.3s;
-  background: #F4F3F0;
-  width: 147px;
-  text-decoration: none;
-  padding-left: 12px;
-  padding-right: 24px;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
-}
-
-.academic__item:hover .block__textOne__link.academic__item__button p {
-  transition: all 3s;
-  display: block;
-  opacity: 1;
-  visibility: inherit;
-}
-
-.academic__item__title {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.625rem;
-  color: #104CA6;
-  margin-bottom: 16px;
-}
-
-.academic__item__text {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: #031B4B;
-}
-
-.academic__item .block__textOne__link.academic__item__button {
-  position: absolute;
-  left: 24px;
-  bottom: 24px;
-}
-
 @media only screen and (max-width: 1200px) {
   .container {
     width: 1168px;
@@ -4152,47 +4153,59 @@ button.declaration__item__button {
   .layoutThree__left.layoutThree__left__mob .ads {
     position: relative;
     display: flex;
-    width: calc(100% + 32px);
+    width: calc(100% + 24px);
     align-items: stretch;
     flex-flow: row wrap;
-    margin-left: -32px;
+    margin-left: -24px;
   }
 
   .layoutThree__left.layoutThree__left__mob .ads__item {
     position: relative;
     flex: 0 0 33.333%;
-    max-width: calc(33.3333% - 32px);
+    max-width: calc(33.3333% - 24px);
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 32px;
-    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-bottom: 24px;
   }
 
   .layoutThree__left.layoutThree__left__mob .banners {
     position: relative;
     display: flex;
-    width: calc(100% + 32px);
+    width: calc(100% + 24px);
     align-items: stretch;
     flex-flow: row wrap;
-    margin-left: -32px;
+    margin-left: -24px;
   }
 
   .layoutThree__left.layoutThree__left__mob .banners .banner {
     position: relative;
     flex: 0 0 33.333%;
-    max-width: calc(33.3333% - 32px);
+    max-width: calc(33.3333% - 24px);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 32px;
-    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-bottom: 24px;
   }
 
   .layoutThree {
     flex-flow: column nowrap;
+  }
+
+  .main__news__list {
+    width: calc(100% + 24px);
+    margin-left: -24px;
+  }
+
+  .main__news__item {
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 24px);
+    margin-left: 24px;
+    margin-bottom: 24px;
   }
 }
 
@@ -4344,6 +4357,23 @@ button.declaration__item__button {
 
   .news .column__right.header__one__right img {
     height: 300px;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .ads {
+    width: calc(100% + 16px);
+    margin-left: -16px;
+  }
+
+  .layoutThree__left.layoutThree__left__mob .ads__item {
+    position: relative;
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 16px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 16px;
+    margin-bottom: 16px;
   }
 }
 

@@ -391,90 +391,7 @@
 
 
 
-.academic {
-	position: relative;
-	width: 100%;
-	height: auto;
-	padding-top: 43px;
-	background: $lightBg;
-	padding-bottom: 80px;
-	border-top: 1px solid rgba(0, 85, 182, 0.5);
-	&__title {
-		font-family: 'Manrope';
-		font-style: normal;
-		font-weight: 700;
-		font-size: $fz24;
-		line-height: $lh28;
-		color: #104CA6;
-		margin-bottom: 40px;		
-	}
-	&__list {
-		position: relative;
-		display: flex;
-		width: calc(100% + 32px);
-		align-items: stretch;
-		flex-flow: row wrap;
-		margin-left: -32px;
-	}
-	&__item {
-		position: relative;
-		flex: 0 0 25%;
-		max-width: calc(25% - 32px);
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: flex-start;
-		align-items: flex-start;
-		margin-left: 32px;
-		margin-bottom: 32px;
-		background: #fff;
-		padding: 24px;
-		padding-bottom: 72px;
-		min-height: 240px;
-		height: auto;
-		&:hover {
-			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
-			.block__textOne__link.academic__item__button {
-				transition: all .3s;
-				background: #F4F3F0;
-				width: 147px;
-				text-decoration: none;
-				padding-left: 12px;
-				padding-right: 24px;
-				text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
-				p {
-					transition: all 3s;
-					display: block;
-					opacity: 1;
-					visibility: inherit;
-					
-				}
-				
-			}
-		}
-		&__title {
-			font-family: 'Manrope';
-			font-style: normal;
-			font-weight: 700;
-			font-size: $fz20;
-			line-height: $lh26;
-			color: #104CA6;	
-			margin-bottom: 16px;		
-		}
-		&__text  {
-			font-family: 'Manrope';
-			font-style: normal;
-			font-weight: 400;
-			font-size: $fz14;
-			line-height: $lh20;
-			color: #031B4B;			
-		}
-		.block__textOne__link.academic__item__button {
-			position: absolute;
-			left: 24px;
-			bottom: 24px;
-		}
-	}
-}
+
 
 @include max(lg) {
 	.layoutThree__right {
@@ -496,44 +413,77 @@
 		.ads {
 			position: relative;
 			display: flex;
-			width: calc(100% + 32px);
+			width: calc(100% + 24px);
 			align-items: stretch;
 			flex-flow: row wrap;
-			margin-left: -32px;
+			margin-left: -24px;
 			&__item{
 				position: relative;
 				flex: 0 0 33.333%;
-				max-width: calc(33.3333% - 32px);
+				max-width: calc(33.3333% - 24px);
 				display: flex;
 				flex-flow: column nowrap;
 				justify-content: flex-start;
 				align-items: flex-start;
-				margin-left: 32px;
-				margin-bottom: 32px;				
+				margin-left: 24px;
+				margin-bottom: 24px;				
 			}
 		}
 		.banners {
 			position: relative;
 			display: flex;
-			width: calc(100% + 32px);
+			width: calc(100% + 24px);
 			align-items: stretch;
 			flex-flow: row wrap;
-			margin-left: -32px;
+			margin-left: -24px;
 			.banner {
 				position: relative;
 				flex: 0 0 33.333%;
-				max-width: calc(33.3333% - 32px);
+				max-width: calc(33.3333% - 24px);
 				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				align-items: flex-start;
-				margin-left: 32px;
-				margin-bottom: 32px;
+				margin-left: 24px;
+				margin-bottom: 24px;
 			}			
 		}
 	}
 	.layoutThree {
 		flex-flow: column nowrap;
+	}
+	.main  {
+		&__news {
+			&__list {
+				width: calc(100% + 24px);
+				margin-left: -24px;
+			}
+			&__item {
+				flex: 0 0 33.333%;
+				max-width: calc(33.3333% - 24px);
+				margin-left: 24px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+@include max(md) {
+	.layoutThree__left.layoutThree__left__mob {
+		.ads {
+			width: calc(100% + 16px);
+			margin-left: -16px;
+			&__item{
+				position: relative;
+				flex: 0 0 33.333%;
+				max-width: calc(33.3333% - 16px);
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				margin-left: 16px;
+				margin-bottom: 16px;				
+			}
+		}
 	}
 
 }

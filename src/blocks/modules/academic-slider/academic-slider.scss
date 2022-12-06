@@ -1,0 +1,84 @@
+.academic {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-top: 43px;
+	background: $lightBg;
+	padding-bottom: 80px;
+	border-top: 1px solid rgba(0, 85, 182, 0.5);
+	&__title {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 700;
+		font-size: $fz24;
+		line-height: $lh28;
+		color: #104CA6;
+		margin-bottom: 40px;		
+	}
+	&__list {
+		position: relative;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+		flex-flow: row wrap;
+		overflow: hidden;
+		.swiper-slide {
+			height: 100%;
+		}
+	}
+	&__item {
+		position: relative;
+		display: flex;
+		width: 100%;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background: #fff;
+		padding: 24px;
+		padding-bottom: 72px;
+		min-height: 240px;
+		height: 100%;
+		&:hover {
+			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+			.block__textOne__link.academic__item__button {
+				transition: all .3s;
+				background: #F4F3F0;
+				width: 147px;
+				text-decoration: none;
+				padding-left: 12px;
+				padding-right: 24px;
+				text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+				p {
+					transition: all 3s;
+					display: block;
+					opacity: 1;
+					visibility: inherit;
+					
+				}
+				
+			}
+		}
+		&__title {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz20;
+			line-height: $lh26;
+			color: #104CA6;	
+			margin-bottom: 16px;		
+		}
+		&__text  {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 400;
+			font-size: $fz14;
+			line-height: $lh20;
+			color: #031B4B;			
+		}
+		.block__textOne__link.academic__item__button {
+			position: absolute;
+			left: 24px;
+			bottom: 24px;
+		}
+	}
+}
