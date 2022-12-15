@@ -1,4 +1,3 @@
-import $ from "jquery"
 import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs } from 'swiper'
 Swiper.use([Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs]);
 
@@ -6,22 +5,15 @@ var seminarsSlider;
 $('.js-seminars').each(function(){
 	var slider=$(this)
 	var seminarsSlider = new Swiper(slider[0], {
-		// watchOverflow: true,
-		// watchSlidesVisibility: true,
-		// watchSlidesProgress: true,
-		// preventInteractionOnTransition: true,
-		slidesPerView: 1.5,
+		slidesPerView: 1.2,
 		spaceBetween: 16,
 		loop: false,
-		pagination: false,
+		pagination: true,
 		autoHeight: true, 
 		navigation: {
 				nextEl: slider.find('.swiper-button-next')[0],
 				prevEl: slider.find('.swiper-button-prev')[0]
 		},
-		// thumbs: {
-		// 		swiper: galleryThumbs
-		// },
 		pagination: {
 				el: slider.find('.swiper-pagination')[0],
 				type: 'bullets',
@@ -37,8 +29,12 @@ $('.js-seminars').each(function(){
 				slidesPerView: 2.5,
 				spaceBetween: 24,
 			}, 
+			768: {
+				slidesPerView: 1.5,
+				spaceBetween: 24,
+			}, 
 			576: {
-				slidesPerView: 2.5,
+				slidesPerView: 1.5,
 				spaceBetween: 24,
 			}, 
 		}

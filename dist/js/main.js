@@ -9,21 +9,18 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../../node_modules/select2/dist/js/select2.full.min.js */ "./node_modules/select2/dist/js/select2.full.min.js");
-/* harmony import */ var _node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../../../node_modules/select2/dist/js/select2.full.min.js */ "./node_modules/select2/dist/js/select2.full.min.js");
+/* harmony import */ var _node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_full_min_js__WEBPACK_IMPORTED_MODULE_0__);
 
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
+$(window).on('load', function () {
   console.log("привет");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-example-responsive').select2({
+  $('.js-example-responsive').select2({
     theme: "custom-theme",
     language: 'ru',
     minimumResultsForSearch: Infinity,
     dropdownAutoWidth: true
   });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-example-responsive').select2({
+  $('.js-example-responsive').select2({
     theme: "custom-theme",
     language: 'ru',
     minimumResultsForSearch: Infinity
@@ -41,21 +38,15 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-
-swiper__WEBPACK_IMPORTED_MODULE_1__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_1__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_1__.Controller, swiper__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_1__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_1__.Thumbs]);
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_0__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Controller, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
 var academicList;
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-academic__list').each(function () {
+$('.js-academic__list').each(function () {
   var _Swiper;
-  var slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
-  var academicList = new swiper__WEBPACK_IMPORTED_MODULE_1__.Swiper(slider[0], (_Swiper = {
+  var slider = $(this);
+  var academicList = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(slider[0], (_Swiper = {
     // watchOverflow: true,
     // watchSlidesVisibility: true,
     // watchSlidesProgress: true,
@@ -167,16 +158,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('load', function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
-
-swiper__WEBPACK_IMPORTED_MODULE_1__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_1__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_1__.Controller, swiper__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_1__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_1__.Thumbs]);
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_0__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Controller, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
 var mainSlider;
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-main__slider').each(function () {
-  var slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
-  var mainSlider = new swiper__WEBPACK_IMPORTED_MODULE_1__.Swiper(slider[0], {
+$('.js-main__slider').each(function () {
+  var slider = $(this);
+  var mainSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(slider[0], {
     // watchOverflow: true,
     // watchSlidesVisibility: true,
     // watchSlidesProgress: true,
@@ -214,29 +202,19 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-main__slider').each(function 
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-
-swiper__WEBPACK_IMPORTED_MODULE_1__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_1__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_1__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_1__.Controller, swiper__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_1__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_1__.Thumbs]);
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_0__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Controller, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
 var seminarsSlider;
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-seminars').each(function () {
+$('.js-seminars').each(function () {
   var _Swiper;
-  var slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
-  var seminarsSlider = new swiper__WEBPACK_IMPORTED_MODULE_1__.Swiper(slider[0], (_Swiper = {
-    // watchOverflow: true,
-    // watchSlidesVisibility: true,
-    // watchSlidesProgress: true,
-    // preventInteractionOnTransition: true,
-    slidesPerView: 1.5,
+  var slider = $(this);
+  var seminarsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(slider[0], (_Swiper = {
+    slidesPerView: 1.2,
     spaceBetween: 16,
     loop: false,
-    pagination: false,
+    pagination: true,
     autoHeight: true,
     navigation: {
       nextEl: slider.find('.swiper-button-next')[0],
@@ -256,8 +234,12 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-seminars').each(function () {
       slidesPerView: 2.5,
       spaceBetween: 24
     },
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 24
+    },
     576: {
-      slidesPerView: 2.5,
+      slidesPerView: 1.5,
       spaceBetween: 24
     }
   }), _Swiper));
