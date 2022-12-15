@@ -1,0 +1,64 @@
+.structureAdmin {
+	background: #F4F3F0;
+	.banners {
+    position: relative;
+    display: flex;
+    width: calc(100% + 32px);
+    align-items: stretch;
+    flex-flow: row wrap;
+    margin-left: -32px;
+    margin-bottom: 0px;
+		padding-bottom: 36px;
+		margin-top: 44px;
+		.banner {
+			position: relative;
+			flex: 0 0 33.333%;
+			max-width: calc(33.3333% - 32px);
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-left: 32px;
+			margin-bottom: 32px;
+			.banner__title {
+				font-style: normal;
+				font-weight: 800;
+				font-size: 24px;
+				line-height: 28px;
+			}		
+		}
+	}
+}
+@include max(md){
+	.structureAdmin {
+		.banners {
+			width: calc(100% + 24px);
+			align-items: stretch;
+			margin-left: -24px;
+			margin-bottom: 36px;
+			margin-top: 8px;
+			.banner {
+				flex: 0 0 50%;
+				max-width: calc(50% - 24px);
+				margin-left: 24px;
+				margin-bottom: 24px;		
+			}
+		}
+	}
+}
+@include max(md){
+	.structureAdmin {
+		.banners {
+			width: 100%;
+			align-items: stretch;
+			margin-left: 0px;
+			margin-top: 8px;
+			.banner {
+				flex: 0 0 100%;
+				max-width: 100%;
+				margin-left: 0px;
+				margin-bottom: 24px;		
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.structure {
+	.education {
+		margin-bottom: 0;
+	}
+	.section__block__textThree {
+		.container {
+			padding-top: 60px;
+			.block__textThree {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+@include max(lg){
+	.structure {
+		.section__block__textThree {
+			.container {
+				padding-top: 0;
+				.block__textThree {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}

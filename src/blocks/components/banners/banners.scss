@@ -71,27 +71,26 @@
 	background: #C2CFE2;
 }
 @include max(lg) {
-	.layoutThree__left.layoutThree__left__mob {
+
+	.banners {
+		position: relative;
 		display: flex;
-		.banners {
+		width: calc(100% + 24px);
+		align-items: stretch;
+		flex-flow: row wrap;
+		margin-left: -24px;
+		margin-bottom: 36px;
+		.banner {
 			position: relative;
+			flex: 0 0 33.333%;
+			max-width: calc(33.3333% - 24px);
 			display: flex;
-			width: calc(100% + 24px);
-			align-items: stretch;
-			flex-flow: row wrap;
-			margin-left: -24px;
-			margin-bottom: 36px;
-			.banner {
-				position: relative;
-				flex: 0 0 33.333%;
-				max-width: calc(33.3333% - 24px);
-				display: flex;
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				align-items: flex-start;
-				margin-left: 24px;
-				margin-bottom: 24px;
-			}			
-		}
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-left: 24px;
+			margin-bottom: 24px;
+		}			
 	}
+
 }

@@ -1,0 +1,24 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Science Page";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.section.science 
+		.container
+			include ../../blocks/components/banner-main-science/banner-main-science
+			include ../../blocks/components/education-science/education-science
+			include ../../blocks/components/banners-science/banners-science
+			include ../../blocks/components/banners-structure-sciece/banners-structure-sciece
+			include ../../blocks/components/education-science-two/education-science-two
+		
+			include ../../blocks/modules/seminars-slider/seminars-slider
+		include ../../blocks/modules/academic-slider-science/academic-slider-science
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
