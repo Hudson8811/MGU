@@ -1,0 +1,28 @@
+.seminars {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	margin-bottom: 80px;
+	overflow: hidden;
+	&__top {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 40px;
+		&__title {
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz24;
+			line-height: $lh28;
+			color: #104CA6;			
+		}		
+	}
+	&__sliders {
+		position: relative;
+		width: 100%;
+
+	}
+}

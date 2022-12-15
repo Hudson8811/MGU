@@ -31,6 +31,12 @@ html {
 	}
 }
 
+.title__32 {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 40px;
+}
 a {
 	position: relative;
 	display: inline-block;
@@ -50,7 +56,7 @@ a {
 	}
 }
 
-.block__textOne__link {
+a.block__textOne__link {
 	position: relative;
 	display: inline-block;
 	font-family: 'Manrope';
@@ -103,9 +109,40 @@ a {
 		}
 	}
 }
+.block__textOne__link__white {
+	position: relative;
+	display: inline-block;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz14;
+	margin-left: -12px;
+	line-height: $lh20;
+	height: 24px;
+	color: #fff;
+	transition: all .5s;
+	padding-left: 12px;
+	padding-right: 24px;
+	padding-top: 1px;
+	// padding: 4px 28px 4px 12px;
+	&:hover {
+		transition: all .5s;
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 30px;
+		color: #fff;
+		text-decoration: none;
+		text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
 
-
-
+	}
+	&::after {
+		transition: all .5s;
+		position: absolute;
+		right: 4px;
+		top: 4px;
+		display: inline-block;
+		content: url(../img/svg/editor__link__white.svg);
+	}
+}
 .block__textOne__link.academic__item__button {
 	position: relative;
 	display: inline-block;
@@ -328,10 +365,29 @@ a {
 
 }
 
+.section {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-top: 60px;
+	background: $lightBg;
+}
 
-
-@include max(sm) {
-	.block-text__mob {
+@include max(lg){
+	.section {
+		padding-top: 40px;
+	}
+}
+@include max(md){
+	.title__32 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 28px;
+	}
+}
+@include max(sm){
+	.block-text__mob{
 		display: inline-block;
 	}
 

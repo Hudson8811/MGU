@@ -16,7 +16,7 @@
 	&__item {
 		position: relative;
 		display: flex;
-		flex: 1 0 calc(50% - 32px);	
+		width:  calc(50% - 15px);	
 		margin-bottom: 32px;
 		height: 592px;
 		flex-flow: column nowrap;

@@ -1,0 +1,41 @@
+.about__banner {
+	position: relative;
+	width: 100%;
+	display: flex;
+	min-height: 376px;
+	&__text {
+		position: relative;
+		width: 100%;
+		max-width: 567px;
+		margin-top: 48px;
+	}
+	h1 {
+		position: relative;
+		font-style: normal;
+		font-weight: 700;
+		font-size: $fz42;
+		line-height: $lh52;
+		color: #FFFFFF;
+		width: 408px;
+		margin-top: 32px;
+		margin-left: 32px;
+		margin-right: 61px;		
+	}
+	p {
+		position: relative;
+		font-style: normal;
+		font-weight: 600;
+		font-size: $fz16;
+		line-height: $lh24;
+		color: #FFFFFF;
+		width: 100%;			
+	}
+	img {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 50% 50%;
+	}
+}
