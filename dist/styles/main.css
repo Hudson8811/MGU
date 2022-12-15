@@ -167,6 +167,122 @@ html {
   text-size-adjust: 100%;
 }
 
+input,
+button,
+textarea,
+select {
+  font-size: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+div,
+input,
+textarea,
+select,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  outline: none;
+  font-size: inherit;
+  background: transparent;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  color: inherit;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#jGrowl {
+  z-index: 999999;
+}
+
+*:focus {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -webkit-locale: auto;
+  white-space: normal;
+}
+
+body.compensate-for-scrollbar {
+  overflow: hidden;
+}
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+ul li,
+ol li {
+  padding: 0px 0;
+}
+
 .select2-container {
   box-sizing: border-box;
   display: inline-block;
@@ -1718,7 +1834,7 @@ a:hover {
   text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 }
 
-a.block__textOne__link {
+.block__textOne__link {
   position: relative;
   display: inline-block;
   font-family: "Manrope";
@@ -1731,11 +1847,11 @@ a.block__textOne__link {
   color: #104CA6;
   transition: all 0.5s;
   padding-left: 12px;
-  padding-right: 24px;
+  padding-right: 28px;
   padding-top: 1px;
 }
 
-a.block__textOne__link:hover {
+.block__textOne__link:hover {
   transition: all 0.5s;
   background: #FFFFFF;
   border-radius: 30px;
@@ -1744,13 +1860,30 @@ a.block__textOne__link:hover {
   text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
 }
 
-a.block__textOne__link::after {
+.block__textOne__link::after {
   transition: all 0.5s;
   position: absolute;
   right: 4px;
   top: 4px;
   display: inline-block;
   content: url(../img/svg/editor__link__2.svg);
+}
+
+.block__textOne__link--person-colors {
+  color: #AF8F46;
+}
+
+.block__textOne__link--person-colors:hover {
+  transition: all 0.5s;
+  background: #FFFFFF;
+  border-radius: 30px;
+  color: #AF8F46;
+  text-decoration: none;
+  text-shadow: 0 0 0px #AF8F46, 0 0 0px #AF8F46;
+}
+
+.block__textOne__link--person-colors::after {
+  content: url(../img/svg/editor__link__people.svg);
 }
 
 .block__textOne__link.academic__item__button {
@@ -3964,6 +4097,153 @@ button.declaration__item__button {
   display: none;
 }
 
+.section-search-persons {
+  background: #DDDDDD;
+  padding: 60px 0 58px;
+}
+
+.simple-h1 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  font-feature-settings: "ss01" on;
+  color: #031B4B;
+}
+
+.persons-search-wrap {
+  margin-top: 60px;
+}
+
+.persons-search {
+  display: block;
+  position: relative;
+}
+
+.persons-search__submit {
+  display: block;
+  padding: 8px 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+}
+
+.persons-search__submit svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.persons-search__input {
+  display: block;
+  background: #FFFFFF;
+  border-radius: 40px;
+  height: 40px;
+  width: 100%;
+  padding-left: 48px;
+  padding-right: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031B4B;
+}
+
+.persons-search__input::placeholder {
+  color: #C0C0C0;
+}
+
+.persons-search-results {
+  margin-top: 64px;
+}
+
+.persons-search-result {
+  display: flex;
+}
+
+.persons-search-result__name {
+  width: 368px;
+  flex-shrink: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #031B4B;
+}
+
+.persons-search-result__title {
+  width: calc(100% - 368px);
+  padding-left: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  font-feature-settings: "ss01" on;
+  color: #031B4B;
+}
+
+.persons-search-result:hover .persons-search-result__name,
+.persons-search-result:hover .persons-search-result__title {
+  color: #104CA6;
+}
+
+.persons-search-result + .persons-search-result {
+  margin-top: 32px;
+}
+
+.section__editor--person-page .container {
+  padding-top: 42px;
+  padding-bottom: 72px;
+}
+
+.person-page-head {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.person-page-mobile-h1 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: #104CA6;
+}
+
+.person-page-main {
+  padding-top: 15px;
+}
+
+.column__left--person-page,
+.column__right--person-page {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.block__textTwo--person-page h1 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 117%;
+  color: #104CA6;
+}
+
+.block__textOne--person-page img {
+  margin-bottom: 39px;
+}
+
+.person-page-contacts {
+  width: 100%;
+}
+
+.person-page-contacts td {
+  padding: 32px 0;
+  border: 1px solid rgba(0, 85, 182, 0.3);
+  border-left: 0;
+  border-right: 0;
+}
+
+@media only screen and (min-width: 701px) {
+  .person-page-mobile-h1 {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 1168px;
@@ -4228,6 +4508,15 @@ button.declaration__item__button {
   .layoutThree {
     flex-flow: column nowrap;
   }
+
+  .section-search-persons {
+    padding-top: 41px;
+  }
+
+  .column__left--person-page {
+    flex-basis: 278px;
+    margin-right: 40px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -4407,6 +4696,34 @@ button.declaration__item__button {
 
   .main__news__top {
     margin-bottom: 60px;
+  }
+
+  .persons-search-wrap {
+    margin-top: 48px;
+  }
+
+  .persons-search-results {
+    margin-top: 52px;
+  }
+
+  .persons-search-result {
+    justify-content: space-between;
+  }
+
+  .persons-search-result__name {
+    width: calc(50% - 10px);
+    flex-shrink: 1;
+  }
+
+  .persons-search-result__title {
+    width: calc(50% - 10px);
+    flex-shrink: 1;
+    padding-left: 0;
+  }
+
+  .column__left--person-page {
+    flex-basis: 234px;
+    margin-right: 42px;
   }
 }
 
@@ -4671,6 +4988,74 @@ button.declaration__item__button {
   .column__left {
     padding-bottom: 32px;
   }
+
+  .persons-search-results {
+    margin-top: 59px;
+  }
+
+  .persons-search-result {
+    padding-bottom: 19px;
+    border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+  }
+
+  .persons-search-result__name {
+    width: calc(50% - 5px);
+  }
+
+  .persons-search-result__title {
+    font-size: 14px;
+    line-height: 143%;
+    width: calc(50% - 5px);
+  }
+
+  .persons-search-result + .persons-search-result {
+    margin-top: 12px;
+  }
+
+  .section__editor--person-page .container {
+    padding-top: 79px;
+    padding-bottom: 27px;
+  }
+
+  .person-page-head {
+    display: none;
+  }
+
+  .column__left--person-page {
+    flex-basis: auto;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 17px;
+    padding-bottom: 0px;
+  }
+
+  .column__right--person-page {
+    padding-top: 26px;
+    padding-bottom: 0px;
+  }
+
+  .block__textTwo--person-page {
+    line-height: 22px !important;
+    margin-bottom: 0;
+  }
+
+  .block__textTwo--person-page h1,
+  .block__textTwo--person-page h1 + br,
+  .block__textTwo--person-page h1 + br + br,
+  .block__textTwo--person-page h1 + br + br + br {
+    display: none;
+  }
+
+  .block__textTwo--person-page h3,
+  .block__textTwo--person-page p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .block__textOne--person-page img {
+    margin-bottom: 29px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -4717,6 +5102,19 @@ button.declaration__item__button {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+
+  .persons-search-result {
+    display: block;
+  }
+
+  .persons-search-result__name {
+    width: 100%;
+  }
+
+  .persons-search-result__title {
+    width: 100%;
+    margin-top: 8px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -1,0 +1,67 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Main Page";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+
+
+	.section-search-persons
+		.container
+			h1.simple-h1 Преподаватели и&nbsp;сотрудники
+
+			.persons-search-wrap
+				form.persons-search(action="")
+					.persons-search__submit <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1164 17.0444L20.5 20.5M19.2291 11.5525C19.2291 15.9998 15.708 19.6051 11.3646 19.6051C7.02109 19.6051 3.5 15.9998 3.5 11.5525C3.5 7.10525 7.02109 3.5 11.3646 3.5C15.708 3.5 19.2291 7.10525 19.2291 11.5525Z" stroke="#031B4B" stroke-width="2"/></svg>
+
+					input.persons-search__input(type="text" placeholder="Начните набирать имя")
+
+
+			.persons-search-results
+				a.persons-search-result(href="")
+					.persons-search-result__name Бредихин Андрей Владимирович
+					.persons-search-result__title профессор, заведующий кафедрой геоморфологии и палеогеографии
+				a.persons-search-result(href="")
+					.persons-search-result__name Болысов Сергей Иванович
+					.persons-search-result__title профессор, доктор географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Дубинин Евгений Павлович
+					.persons-search-result__title профессор, доктор геолого-минералогических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Лукашов Андрей Александрович
+					.persons-search-result__title профессор, доктор географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Панин Андрей Валерьевич
+					.persons-search-result__title профессор, доктор географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Сафьянов Геннадий Александрович
+					.persons-search-result__title профессор, доктор географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Янина Тамара Алексеевна
+					.persons-search-result__title профессор, доктор географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Беляев Юрий Ростиславович
+					.persons-search-result__title доцент, кандидат географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Фузеина Юлия Николаевна
+					.persons-search-result__title доцент, кандидат географических наук, зам. зав. кафедрой по учебной работе
+				a.persons-search-result(href="")
+					.persons-search-result__name Еременко Екатерина Андреевна
+					.persons-search-result__title профессор, доктор геолого-минералогических наук, зам.зав.кафедрой по научной работе
+				a.persons-search-result(href="")
+					.persons-search-result__name Деркач Александра Александровна
+					.persons-search-result__title преподаватель, кандидат географических наук, ответственный за практики и работу с аспирантами
+				a.persons-search-result(href="")
+					.persons-search-result__name Жиндарев Леонид Алексеевич
+					.persons-search-result__title ведущий научный сотрудник, доктор географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Романенко Фёдор Александрович
+					.persons-search-result__title старший научный сотрудник, кандидат географических наук
+				a.persons-search-result(href="")
+					.persons-search-result__name Алексеева Вероника Андреевна
+					.persons-search-result__title старший научный сотрудник, кандидат географических наук
+
+	include ../../blocks/modules/footer/footer

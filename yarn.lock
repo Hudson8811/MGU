@@ -2332,14 +2332,16 @@
   "version" "1.0.1"
 
 "bem-tools-core@bem-tools/bem-tools-core":
-  "resolved" "git+ssh://git@github.com/bem-tools/bem-tools-core.git#9a5c91b198a7ce1f2a6b6e64c505aefead27fc8f"
+  "integrity" "sha512-MdmlsVWz1KbAvx1MvAZetwhQmNOEYcAmODi/UVrg2GXFgruNgPV8Z+6E17IlW8+uQetxnwot6ImGXom5nyRtFA=="
+  "resolved" "git+ssh://git@github.com/bem-tools/bem-tools-core.git"
   "version" "0.0.3"
   dependencies:
     "coa" "^1.0.1"
     "global-modules" "^0.2.0"
 
 "bem-tools-create@bem-tools/bem-tools-create":
-  "resolved" "git+ssh://git@github.com/bem-tools/bem-tools-create.git#bee9b839b6c89b956464be0cf8057d40f332f832"
+  "integrity" "sha512-Q00xJAtgCGFtpmgbvOTLZ8mFZW2UzNwT17CAy2BnYrcROfqacX0zUfIjK/pCS0QQjHplFFlGMu0ZATimaZa0lw=="
+  "resolved" "git+ssh://git@github.com/bem-tools/bem-tools-create.git"
   "version" "2.3.0"
   dependencies:
     "@bem/cell" "^0.2.5"
@@ -3906,6 +3908,13 @@
   "resolved" "https://registry.npmjs.org/dom-walk/-/dom-walk-0.1.2.tgz"
   "version" "0.1.2"
 
+"dom7@^4.0.4":
+  "integrity" "sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw=="
+  "resolved" "https://registry.npmjs.org/dom7/-/dom7-4.0.4.tgz"
+  "version" "4.0.4"
+  dependencies:
+    "ssr-window" "^4.0.0"
+
 "domelementtype@^2.0.1":
   "integrity" "sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw=="
   "resolved" "https://registry.npmjs.org/domelementtype/-/domelementtype-2.3.0.tgz"
@@ -4589,6 +4598,11 @@
   "version" "2.0.2"
   dependencies:
     "homedir-polyfill" "^1.0.1"
+
+"expose-loader@^4.0.0":
+  "integrity" "sha512-kUEvHyf6MPR2ubZCL9aziP9Br5wxMvq1cghTpYhM6MW52NPq+7hXixw2EqQuI1SvGb1fDjc2ehJOg6645wR6ww=="
+  "resolved" "https://registry.npmjs.org/expose-loader/-/expose-loader-4.0.0.tgz"
+  "version" "4.0.0"
 
 "ext-list@^2.0.0":
   "integrity" "sha512-u+SQgsubraE6zItfVA0tBuCBhfU9ogSRnsvygI7wht9TS510oLkBRXBsqopeUG/GBOIQyKZO9wjTqIu/sf5zFA=="
@@ -7058,6 +7072,11 @@
   dependencies:
     "bin-build" "^3.0.0"
     "bin-wrapper" "^4.1.0"
+
+"jquery@^3.6.1":
+  "integrity" "sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.1.tgz"
+  "version" "3.6.1"
 
 "js-sdsl@^4.1.4":
   "integrity" "sha512-dyBIzQBDkCqCu+0upx25Y2jGdbTGxE9fshMsCdK0ViOongpV+n5tXRcZY9v7CaVQ79AGS9KA1KHtojxiM7aXSQ=="
@@ -9992,6 +10011,11 @@
   dependencies:
     "commander" "^2.8.1"
 
+"select2@^4.1.0-rc.0":
+  "integrity" "sha512-Hr9TdhyHCZUtwznEH2CBf7967mEM0idtJ5nMtjvk3Up5tPukOLXbHUNmh10oRfeNIhj+3GD3niu+g6sVK+gK0A=="
+  "resolved" "https://registry.npmjs.org/select2/-/select2-4.1.0-rc.0.tgz"
+  "version" "4.1.0-rc.0"
+
 "semver-greatest-satisfied-range@^1.1.0":
   "integrity" "sha512-Ny/iyOzSSa8M5ML46IAx3iXc6tfOsYU2R4AXi2UpHk60Zrgyq6eqPj/xiOfS0rRl/iiQ/rdJkVjw/5cdUyCntQ=="
   "resolved" "https://registry.npmjs.org/semver-greatest-satisfied-range/-/semver-greatest-satisfied-range-1.1.0.tgz"
@@ -10469,6 +10493,11 @@
     "jsbn" "~0.1.0"
     "safer-buffer" "^2.0.2"
     "tweetnacl" "~0.14.0"
+
+"ssr-window@^4.0.0", "ssr-window@^4.0.2":
+  "integrity" "sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ=="
+  "resolved" "https://registry.npmjs.org/ssr-window/-/ssr-window-4.0.2.tgz"
+  "version" "4.0.2"
 
 "stable@^0.1.8":
   "integrity" "sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w=="
@@ -10980,6 +11009,14 @@
     "stable" "^0.1.8"
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
+
+"swiper@^8.4.5":
+  "integrity" "sha512-zveyEFBBv4q1sVkbJHnuH4xCtarKieavJ4SxP0QEHvdpPLJRuD7j/Xg38IVVLbp7Db6qrPsLUePvxohYx39Agw=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.4.5.tgz"
+  "version" "8.4.5"
+  dependencies:
+    "dom7" "^4.0.4"
+    "ssr-window" "^4.0.2"
 
 "symbol-observable@1.0.1":
   "integrity" "sha512-Kb3PrPYz4HanVF1LVGuAdW6LoVgIwjUYJGzFe7NDrBLCN4lsV/5J0MFurV+ygS4bRVwrCEt2c7MQ1R2a72oJDw=="
@@ -11897,7 +11934,7 @@
     "through" "^2.3.8"
     "vinyl" "^2.2.1"
 
-"webpack@^5.1.0", "webpack@^5.21.2", "webpack@^5.70.0", "webpack@>=2":
+"webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.21.2", "webpack@^5.70.0", "webpack@>=2":
   "integrity" "sha512-piaIaoVJlqMsPtX/+3KTTO6jfvrSYgauFVdt8cr9LTHKmcq/AMd4mhzsiP7ZF/PGRNPGA8336jldh9l2Kt2ogQ=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.75.0.tgz"
   "version" "5.75.0"

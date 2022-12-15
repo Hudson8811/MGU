@@ -1,0 +1,168 @@
+.section-search-persons {
+	background: #DDDDDD;
+	padding: 60px 0 58px;
+
+	@include max(lg) {
+		padding-top: 41px;
+	}
+
+
+
+}
+
+.simple-h1 {
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 125%;
+	font-feature-settings: 'ss01'on;
+	color: #031B4B;
+}
+
+.persons-search-wrap {
+	margin-top: 60px;
+
+	@include max(md) {
+		margin-top: 48px;
+	}
+}
+
+.persons-search {
+	display: block;
+	position: relative;
+
+	&__submit {
+		display: block;
+		padding: 8px 12px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 48px;
+
+		svg {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	&__input {
+		display: block;
+		background: #FFFFFF;
+		border-radius: 40px;
+		height: 40px;
+		width: 100%;
+		padding-left: 48px;
+		padding-right: 12px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #031B4B;
+
+		&::placeholder {
+
+			color: #C0C0C0;
+		}
+	}
+}
+
+.persons-search-results {
+	margin-top: 64px;
+
+	@include max(md) {
+		margin-top: 52px;
+	}
+
+	@include max(sm) {
+		margin-top: 59px;
+	}
+}
+
+.persons-search-result {
+	display: flex;
+
+	@include max(sm) {
+		padding-bottom: 19px;
+		border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+	}
+
+	@include max(md) {
+		justify-content: space-between;
+	}
+
+	@include max(xs) {
+		display: block;
+	}
+
+	&__name {
+		width: 368px;
+		flex-shrink: 0;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		color: #031B4B;
+
+		@include max(md) {
+			width: calc(50% - 10px);
+
+			flex-shrink: 1;
+		}
+
+		@include max(sm) {
+			width: calc(50% - 5px);
+		}
+
+		@include max(xs) {
+			width: 100%;
+		}
+
+	}
+
+	&__title {
+		width: calc(100% - 368px);
+		padding-left: 32px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		font-feature-settings: 'ss01'on;
+		color: #031B4B;
+
+		@include max(md) {
+			width: calc(50% - 10px);
+			flex-shrink: 1;
+			padding-left: 0;
+		}
+
+		@include max(sm) {
+			font-size: 14px;
+			line-height: 143%;
+
+			width: calc(50% - 5px);
+		}
+
+		@include max(xs) {
+			width: 100%;
+			margin-top: 8px;
+		}
+	}
+
+	&:hover {
+
+		.persons-search-result {
+
+			&__name,
+			&__title {
+				color: #104CA6;
+			}
+		}
+
+	}
+
+	&+.persons-search-result {
+		margin-top: 32px;
+
+		@include max(sm) {
+			margin-top: 12px;
+		}
+	}
+}
