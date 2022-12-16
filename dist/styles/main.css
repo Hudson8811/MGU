@@ -4980,6 +4980,10 @@ button.declaration__item__button {
   background: #F4F3F0;
 }
 
+.structureDepart .structureNews {
+  padding-top: 44px;
+}
+
 .structureDepart .structureNews__item {
   min-height: 280px;
 }
