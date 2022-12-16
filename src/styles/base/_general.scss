@@ -242,6 +242,83 @@ a.block__textOne__link {
 		background-color: $blueLight
 	}
 }
+.button__blue {
+	display: inline-block;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	background-color: #104CA6;
+	padding: 8px 32px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz17;
+	line-height: $lh24;
+	border-radius: 40px;
+	text-align: center;
+	position: relative;
+	outline: none;
+	transition: all .5s;
+	cursor: pointer;
+	width: 100%;
+	max-width: 286px;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&:hover {
+		text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+		transition: all .5s;
+		background-color: #073478;
+	}
+
+	&:active {
+		transition: all .5s;
+		background-color: #073478;
+	}
+}
+.button__border--blue {
+	display: inline-block;
+	border: 2px solid #104CA6;
+	color: #104CA6;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 8px 32px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz17;
+	line-height: $lh24;
+	border-radius: 40px;
+	text-align: center;
+	position: relative;
+	outline: none;
+	transition: all .5s;
+	cursor: pointer;
+	width: 100%;
+	max-width: 286px;
+	&:focus,
+	&:hover {
+		text-decoration: none;
+		color: #104CA6;
+	}
+
+	&:hover {
+		text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+		transition: all .5s;
+		background-color: rgba(0, 85, 182, 0.3);
+		border: 2px solid rgba(0, 85, 182, 0.1);
+	}
+
+	&:active {
+		transition: all .5s;
+		background-color: rgba(0, 85, 182, 0.3);
+		border: 2px solid rgba(0, 85, 182, 0.1);
+	}
+}
 
 .button.button__white {
 	display: flex;
@@ -364,14 +441,14 @@ a.block__textOne__link {
 	}
 
 }
-
-.section {
-	position: relative;
-	width: 100%;
-	height: auto;
-	padding-top: 60px;
-	background: $lightBg;
-}
+//проверить позже
+// .section {
+// 	position: relative;
+// 	width: 100%;
+// 	height: auto;
+// 	padding-top: 60px;
+// 	background: $lightBg;
+// }
 
 @include max(lg){
 	.section {

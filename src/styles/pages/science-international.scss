@@ -1,0 +1,24 @@
+.international {
+	min-height: 100vh;
+	background: #F4F3F0;
+	.header__one {
+		.column__left {
+			flex: 1 0 100%;
+			padding-bottom: 60px;
+		}
+	}
+
+	.column__right.header__one__right {
+		display: none;
+	}
+}
+@include max(sm) {
+	.international {
+		.header__one {
+			.column__left {
+				flex: 1 0 100%;
+				padding-bottom: 32px;
+			}
+		}
+	}	
+}

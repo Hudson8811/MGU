@@ -2026,6 +2026,86 @@ a.block__textOne__link--person-colors::after {
   background-color: #739FF3;
 }
 
+.button__blue {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: #104CA6;
+  padding: 8px 32px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 286px;
+}
+
+.button__blue:focus,
+.button__blue:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button__blue:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  transition: all 0.5s;
+  background-color: #073478;
+}
+
+.button__blue:active {
+  transition: all 0.5s;
+  background-color: #073478;
+}
+
+.button__border--blue {
+  display: inline-block;
+  border: 2px solid #104CA6;
+  color: #104CA6;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 8px 32px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 286px;
+}
+
+.button__border--blue:focus,
+.button__border--blue:hover {
+  text-decoration: none;
+  color: #104CA6;
+}
+
+.button__border--blue:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  transition: all 0.5s;
+  background-color: rgba(0, 85, 182, 0.3);
+  border: 2px solid rgba(0, 85, 182, 0.1);
+}
+
+.button__border--blue:active {
+  transition: all 0.5s;
+  background-color: rgba(0, 85, 182, 0.3);
+  border: 2px solid rgba(0, 85, 182, 0.1);
+}
+
 .button.button__white {
   display: flex;
   justify-content: center;
@@ -2144,14 +2224,6 @@ a.block__textOne__link--person-colors::after {
   align-items: flex-start;
   flex: 1 1 auto;
   width: 100%;
-}
-
-.section {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding-top: 60px;
-  background: #F4F3F0;
 }
 
 .section__header {
@@ -3319,7 +3391,7 @@ button.declaration__item__button {
 
 .section__block__textThree .container {
   flex-flow: column nowrap;
-  padding-top: 76px;
+  padding-top: 44px;
 }
 
 .block__textThree {
@@ -4654,7 +4726,9 @@ button.declaration__item__button {
 }
 
 .about {
+  padding-top: 60px;
   background: #F4F3F0;
+  padding-bottom: 20px;
 }
 
 .about .academic {
@@ -5111,7 +5185,7 @@ button.declaration__item__button {
   flex-flow: row wrap;
   margin-left: -32px;
   padding-bottom: 0px;
-  margin-top: 16px;
+  margin-top: 44px;
   margin-bottom: 48px;
 }
 
@@ -5166,6 +5240,51 @@ button.declaration__item__button {
   transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+}
+
+.disserCouncil .column__right.header__one__right {
+  display: none;
+}
+
+.international {
+  min-height: 100vh;
+  background: #F4F3F0;
+}
+
+.international .header__one .column__left {
+  flex: 1 0 100%;
+  padding-bottom: 60px;
+}
+
+.international .column__right.header__one__right {
+  display: none;
+}
+
+.conferences {
+  min-height: 100vh;
+  background: #F4F3F0;
+}
+
+.conferences .header__one .column__left {
+  flex: 1 0 100%;
+  padding-bottom: 60px;
+}
+
+.conferences .block__textTwo table tr {
+  border-top: 1px solid rgba(0, 85, 182, 0);
+}
+
+.conferences .block__textTwo table tr th {
+  padding-top: 0;
+}
+
+.conferences .column__right.header__one__right {
+  display: none;
+}
+
+.seminar {
+  min-height: 100vh;
+  background: #F4F3F0;
 }
 
 @media only screen and (min-width: 701px) {
@@ -6000,6 +6119,8 @@ button.declaration__item__button {
 
   .column__left {
     padding-top: 32px;
+    flex: 1 0 100%;
+    min-width: 100%;
   }
 
   .column__right {
@@ -6094,6 +6215,16 @@ button.declaration__item__button {
   .departmensnts .column__left {
     flex: 1 0 100%;
     min-width: 100%;
+  }
+
+  .international .header__one .column__left {
+    flex: 1 0 100%;
+    padding-bottom: 32px;
+  }
+
+  .conferences .header__one .column__left {
+    flex: 1 0 100%;
+    padding-bottom: 32px;
   }
 }
 

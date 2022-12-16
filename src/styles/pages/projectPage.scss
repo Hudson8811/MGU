@@ -164,6 +164,8 @@
 	}
 	.column__left {
 		padding-top: 32px;
+		flex: 1 0 100%;
+		min-width: 100%;
 	}
 	.column__right{
 		padding-top: 32px;

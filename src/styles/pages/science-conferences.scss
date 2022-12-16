@@ -1,0 +1,29 @@
+.conferences {
+	min-height: 100vh;
+	background: #F4F3F0;
+	.header__one {
+		.column__left {
+			flex: 1 0 100%;
+			padding-bottom: 60px;
+		}
+	}
+	.block__textTwo table tr {
+		border-top: 1px solid rgba(0, 85, 182, 0);
+	}
+	.block__textTwo table tr th {
+		padding-top: 0;
+	}
+	.column__right.header__one__right {
+		display: none;
+	}
+}
+@include max(sm) {
+	.conferences {
+		.header__one {
+			.column__left {
+				flex: 1 0 100%;
+				padding-bottom: 32px;
+			}
+		}
+	}	
+}
