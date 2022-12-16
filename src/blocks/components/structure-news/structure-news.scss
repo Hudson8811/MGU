@@ -5,7 +5,9 @@
 	flex-flow: row wrap;
 	align-items: stretch;
 	width: 100%;
+	padding-top: 68px;
 	padding-bottom: 80px;
+	transition: all .5s;
 	&__item  {
 		position: relative;
 		display: flex;
@@ -19,7 +21,20 @@
 		text-decoration: none;
 		transition: all .5s;
 		overflow: hidden;
+		text-shadow: none;
 		padding: 32px;
+		&:hover {
+			transition: all .5s;
+			text-shadow: none;
+			.structureNews__item__tilte {
+				text-decoration-line: underline;
+				text-decoration-thickness: 1px;
+			}
+			.structureNews__item__text {
+				text-shadow: none;
+			}
+	
+		}
 		&:nth-child(2n+1) {
 			margin-right: 15px;
 		}

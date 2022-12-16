@@ -3946,7 +3946,7 @@ button.declaration__item__button {
 
 .education__item:hover .education__item__desc__text::before {
   transition: all 0.3s;
-  content: url("../../img/svg/education__button__hover.svg");
+  content: url("img/svg/education__button__hover.svg");
 }
 
 .education__item__desc {
@@ -4276,7 +4276,9 @@ button.declaration__item__button {
   flex-flow: row wrap;
   align-items: stretch;
   width: 100%;
+  padding-top: 68px;
   padding-bottom: 80px;
+  transition: all 0.5s;
 }
 
 .structureNews__item {
@@ -4292,7 +4294,22 @@ button.declaration__item__button {
   text-decoration: none;
   transition: all 0.5s;
   overflow: hidden;
+  text-shadow: none;
   padding: 32px;
+}
+
+.structureNews__item:hover {
+  transition: all 0.5s;
+  text-shadow: none;
+}
+
+.structureNews__item:hover .structureNews__item__tilte {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.structureNews__item:hover .structureNews__item__text {
+  text-shadow: none;
 }
 
 .structureNews__item:nth-child(2n+1) {
@@ -4938,6 +4955,12 @@ button.declaration__item__button {
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
+}
+
+.structure {
+  padding-top: 60px;
+  background: #F4F3F0;
+  min-height: 100vh;
 }
 
 .structure .education {
