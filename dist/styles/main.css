@@ -4769,6 +4769,7 @@ button.declaration__item__button {
   position: relative;
   width: 100%;
   height: 100%;
+  background: #F4F3F0;
 }
 
 .about__contacts__list__column {
@@ -4794,6 +4795,14 @@ button.declaration__item__button {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.about__contacts__list p.about__contacts__list--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .about__professor {

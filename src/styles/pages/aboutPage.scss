@@ -34,6 +34,7 @@
 				position: relative;
 				width: 100%;
 				height: 100%;
+				background: #F4F3F0;
 			}
 			&__column {
 				position: relative;
@@ -55,7 +56,14 @@
 					font-size: $fz16;
 					line-height: $lh24;
 				}
-			}		
+			}	
+			p.about__contacts__list--title {
+				font-style: normal;
+				font-weight: 700;
+				font-size: $fz16;
+				line-height: $lh24;
+				margin-bottom: 32px;
+			}	
 		}
 	}
 
