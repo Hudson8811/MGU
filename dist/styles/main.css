@@ -4166,7 +4166,7 @@ button.declaration__item__button {
 
 .education__item:hover .education__item__desc__text::before {
   transition: all 0.3s;
-  content: url("../../img/svg/education__button__hover.svg");
+  content: url("img/svg/education__button__hover.svg");
 }
 
 .education__item__desc {
@@ -4223,7 +4223,7 @@ button.declaration__item__button {
   display: block;
   height: 44px;
   width: 44px;
-  content: url("../../img/svg/education__item__desc__button.svg");
+  content: url("img/svg/education__item__desc__button.svg");
 }
 
 .education__itemWhite {
@@ -4973,6 +4973,11 @@ button.declaration__item__button {
 
 .structure .section__block__textThree .container .block__textThree {
   padding-bottom: 0;
+}
+
+.structureDepart {
+  min-height: 100vh;
+  background: #F4F3F0;
 }
 
 .structureDepart .structureNews__item {
