@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block variables
-	- const title = "Main Page";
+	- const title = "Persons Page";
 
 block content
 	include ../../blocks/modules/header/header
@@ -14,7 +14,7 @@ block content
 			h1.simple-h1 Преподаватели и&nbsp;сотрудники
 
 			.persons-search-wrap
-				form.persons-search(action="")
+				form.persons-search(action="#")
 					.persons-search__submit <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1164 17.0444L20.5 20.5M19.2291 11.5525C19.2291 15.9998 15.708 19.6051 11.3646 19.6051C7.02109 19.6051 3.5 15.9998 3.5 11.5525C3.5 7.10525 7.02109 3.5 11.3646 3.5C15.708 3.5 19.2291 7.10525 19.2291 11.5525Z" stroke="#031B4B" stroke-width="2"/></svg>
 
 					input.persons-search__input(type="text" placeholder="Начните набирать имя")
