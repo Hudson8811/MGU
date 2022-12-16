@@ -4154,14 +4154,14 @@ button.declaration__item__button {
   align-items: flex-start;
   background: #fff;
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.1s;
   overflow: hidden;
   text-shadow: none;
   padding: 32px;
 }
 
 .structureNews__item:hover {
-  transition: all 0.5s;
+  transition: all 0.1s;
   text-shadow: none;
 }
 
@@ -4852,6 +4852,15 @@ button.declaration__item__button {
 
 .structureDepart .structureNews__item .structureNews__item__tilte {
   width: 100%;
+}
+
+.structureLabs {
+  min-height: 100vh;
+  background: #F4F3F0;
+}
+
+.structureLabs .structureNews {
+  padding-top: 44px;
 }
 
 .structureLabs .structureNews__item {

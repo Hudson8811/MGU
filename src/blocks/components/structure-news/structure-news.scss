@@ -19,12 +19,12 @@
 		align-items: flex-start;
 		background: #fff;
 		text-decoration: none;
-		transition: all .5s;
+		transition: all .1s;
 		overflow: hidden;
 		text-shadow: none;
 		padding: 32px;
 		&:hover {
-			transition: all .5s;
+			transition: all .1s;
 			text-shadow: none;
 			.structureNews__item__tilte {
 				text-decoration-line: underline;
