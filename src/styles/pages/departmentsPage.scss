@@ -42,15 +42,6 @@
 			flex: 1 0 100%;
 			min-width: 100%;
 		}
-
-	}
-}
-@include max(xs) {
-	.departmensnts {
-		.column__left {
-			flex: 1 0 100%;
-			min-width: 100%;
-		}
 		h1 {
 			position: absolute;
 			bottom: 16px;
@@ -61,5 +52,15 @@
 			line-height: $lh40;
 			color: #FFFFFF;			
 		}
+
+	}
+}
+@include max(xs) {
+	.departmensnts {
+		.column__left {
+			flex: 1 0 100%;
+			min-width: 100%;
+		}
+
 	}
 }

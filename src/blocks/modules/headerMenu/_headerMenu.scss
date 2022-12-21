@@ -32,12 +32,13 @@
 		&:hover {
 			background: #fff;
 			transition: all .5s;
-			text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
+			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+
 		}
 		&.active__toopMenu {
 			 background: #fff;
 			 color: #104CA6;
-			 text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
+			 text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
 		}
 
 	}
@@ -48,8 +49,8 @@
 	color: #fff;
 	min-width: 151px;
 	&:hover {
-		color: #104CA6;
-		background: #fff;
+		color: #fff;
+		background: #AF8F46;
 		transition: all .5s;
 	}
 	&.active__toopMenu {

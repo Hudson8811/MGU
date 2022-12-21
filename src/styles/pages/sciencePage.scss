@@ -58,7 +58,11 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			margin-left: 32px;
-			margin-bottom: 32px;			
+			margin-bottom: 32px;
+			.education__item__desc__title	{
+				font-size: $fz32;
+				line-height: $lh40;
+			}	 	
 		}
 	}
 	.banners {

@@ -5,4 +5,30 @@
 	padding-top: 60px;
 	background: $lightBg;
 	padding-bottom: 115px;
+	@include max(lg) {
+		padding-top: 40px;
+		.layoutTwo__left {
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+
+	@include max(lg) {
+		.layoutTwo__left {
+			flex-flow:  row nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+	@media (max-width:801px) {
+		.layoutTwo__left {
+			flex-flow:  column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+	.newsMain__title__mob  {
+		margin-bottom: 32px;
+	}
+	
 }

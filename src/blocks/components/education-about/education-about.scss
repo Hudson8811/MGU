@@ -1,0 +1,12 @@
+.about {
+	.education {
+		&__item {
+			&__desc {
+				&__title {
+					font-size: $fz32;
+					line-height: $lh40;
+				}
+			}
+		}
+	}
+}

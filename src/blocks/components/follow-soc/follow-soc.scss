@@ -44,7 +44,7 @@
 		}
 	}
 }
-@include max(md) {
+@media (max-width: 801px) {
 	.followSoc {
 		flex-flow: row nowrap;
 		flex: 1 0 auto;
@@ -58,6 +58,16 @@
 		}
 		&__items {
 			width: auto;
+		}
+	}
+}
+@include max(xxs) {
+	.followSoc {
+		flex-flow: column nowrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+		&__items {
+			margin-top: 16px;
 		}
 	}
 }

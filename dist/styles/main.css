@@ -2130,7 +2130,7 @@ a.block__textOne__link--person-colors::after {
 }
 
 .button.button__white:hover {
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -2164,7 +2164,7 @@ a.block__textOne__link--person-colors::after {
 }
 
 .button.button__blueLight:hover {
-  background: #C2CFE2;
+  background: #b6c5db;
 }
 
 .button.button__blueLight:active {
@@ -2421,13 +2421,13 @@ a.block__textOne__link--person-colors::after {
 .topMenu__item:hover {
   background: #fff;
   transition: all 0.5s;
-  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
 }
 
 .topMenu__item.active__toopMenu {
   background: #fff;
   color: #104CA6;
-  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
 }
 
 .topMenu__item.topMenu__item__department {
@@ -2437,8 +2437,8 @@ a.block__textOne__link--person-colors::after {
 }
 
 .topMenu__item.topMenu__item__department:hover {
-  color: #104CA6;
-  background: #fff;
+  color: #fff;
+  background: #AF8F46;
   transition: all 0.5s;
 }
 
@@ -2478,8 +2478,8 @@ a.block__textOne__link--person-colors::after {
 
 .breadcrumbs__item:hover {
   transition: all 0.3s;
-  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
   color: #104CA6;
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
 }
 
 .breadcrumbs__item:hover:last-child {
@@ -2726,6 +2726,7 @@ button.declaration__item__button {
   background: #F4F3F0;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .main__slider {
@@ -2842,23 +2843,6 @@ button.declaration__item__button {
   text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
 }
 
-.academic__item:hover .block__textOne__link.academic__item__button {
-  transition: all 0.3s;
-  background: #F4F3F0;
-  width: 147px;
-  text-decoration: none;
-  padding-left: 12px;
-  padding-right: 24px;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
-}
-
-.academic__item:hover .block__textOne__link.academic__item__button p {
-  transition: all 3s;
-  display: block;
-  opacity: 1;
-  visibility: inherit;
-}
-
 .academic__item__title {
   font-family: "Manrope";
   font-style: normal;
@@ -2883,6 +2867,27 @@ button.declaration__item__button {
   position: absolute;
   left: 24px;
   bottom: 24px;
+}
+
+.academic__item .block__textOne__link.academic__item__button:hover {
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+}
+
+.academic__item .block__textOne__link.academic__item__button:hover .block__textOne__link.academic__item__button {
+  transition: all 0.3s;
+  background: #F4F3F0;
+  width: 147px;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 24px;
+  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+}
+
+.academic__item .block__textOne__link.academic__item__button:hover .block__textOne__link.academic__item__button p {
+  transition: all 3s;
+  display: block;
+  opacity: 1;
+  visibility: inherit;
 }
 
 .main__news {
@@ -2933,9 +2938,12 @@ button.declaration__item__button {
   align-items: flex-start;
   margin-left: 32px;
   margin-bottom: 32px;
+  transition: all 0.5s;
+  overflow: hidden;
 }
 
 .main__news__item:hover {
+  transition: all 0.5s;
   text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
 }
 
@@ -2945,13 +2953,26 @@ button.declaration__item__button {
   text-decoration-thickness: 1px;
 }
 
+.main__news__item:hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
 .main__news__item__img {
+  overflow: hidden;
   position: relative;
   width: 100%;
   height: 220px;
+  margin-bottom: 8px;
+}
+
+.main__news__item__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  margin-bottom: 8px;
+  transition: all 0.5s;
 }
 
 .main__news__item__date {
@@ -3141,6 +3162,7 @@ button.declaration__item__button {
   font-size: 14px;
   line-height: 20px;
   color: rgba(7, 52, 120, 0.8);
+  margin-bottom: 60px;
 }
 
 .block__textOne img {
@@ -3632,6 +3654,11 @@ button.declaration__item__button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.select2-container .select2-dropdown .select2-results {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
 .select2-container .select2-dropdown .select2-results .select2-results__option {
   font-family: "Manrope";
   font-style: normal;
@@ -3639,6 +3666,7 @@ button.declaration__item__button {
   font-size: 1.0625rem;
   line-height: 1.5rem;
   color: #031B4B;
+  padding-left: 16px;
   transition: all 0.5s;
 }
 
@@ -3791,8 +3819,8 @@ button.declaration__item__button {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #739FF3;
   margin-right: 8px;
 }
@@ -4257,6 +4285,11 @@ button.declaration__item__button {
   object-position: 50% 50%;
 }
 
+.about .education__item__desc__title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
 .section__editor {
   background: #F4F3F0;
 }
@@ -4387,11 +4420,12 @@ button.declaration__item__button {
 
 .newsMain__title__mob {
   display: none;
+  margin-bottom: 32px;
 }
 
 .newsMain__title__desc {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .section__declaration {
@@ -4401,6 +4435,10 @@ button.declaration__item__button {
   padding-top: 60px;
   background: #F4F3F0;
   padding-bottom: 115px;
+}
+
+.section__declaration .newsMain__title__mob {
+  margin-bottom: 32px;
 }
 
 .news {
@@ -4641,7 +4679,6 @@ button.declaration__item__button {
   justify-content: space-between;
   align-items: flex-start;
   margin-left: 32px;
-  margin-bottom: 32px;
 }
 
 .about__contacts__list__map {
@@ -4712,8 +4749,14 @@ button.declaration__item__button {
 
 .about__professor__item:hover .about__professor__item__title {
   transition: all 0.5s;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
+}
+
+.about__professor__item:hover .about__professor__item__title p {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom 7px;
+  background-size: 100% 1px;
+  background-image: linear-gradient(to top, #fff, #fff);
 }
 
 .about__professor__item img {
@@ -4726,12 +4769,17 @@ button.declaration__item__button {
 
 .about__professor__item__title {
   position: absolute;
+  display: block;
   left: 32px;
   top: 32px;
+}
+
+.about__professor__item__title p {
+  display: inline;
   text-align: left;
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   color: #FFFFFF;
 }
@@ -4810,13 +4858,19 @@ button.declaration__item__button {
   align-items: flex-start;
   margin-left: 32px;
   margin-bottom: 32px;
+  padding: 32px;
 }
 
 .about .banners .banner .banner__title {
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.about .banners .banner .banner__text {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .structure {
@@ -5044,6 +5098,11 @@ button.declaration__item__button {
   margin-bottom: 32px;
 }
 
+.science .education.education__science .education__item .education__item__desc__title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
 .science .banners {
   position: relative;
   display: flex;
@@ -5080,7 +5139,11 @@ button.declaration__item__button {
   width: 100%;
   background: #F4F3F0;
   min-height: 100vh;
-  padding-bottom: 68px;
+  padding-bottom: 80px;
+}
+
+.disserCouncils .button__border--blue {
+  font-size: 14px;
 }
 
 .disserCouncils .section__header__two .column__right .block__textOne__link {
@@ -5105,7 +5168,7 @@ button.declaration__item__button {
   margin-left: -32px;
   padding-bottom: 0px;
   margin-top: 44px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .councils__item {
@@ -5204,6 +5267,35 @@ button.declaration__item__button {
 .seminar {
   min-height: 100vh;
   background: #F4F3F0;
+}
+
+.seminars {
+  min-height: 100vh;
+  background: #F4F3F0;
+}
+
+.seminars__list {
+  position: relative;
+  display: flex;
+  width: calc(100% + 32px);
+  align-items: stretch;
+  flex-flow: row wrap;
+  margin-left: -32px;
+  padding-bottom: 0px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.seminars__item {
+  position: relative;
+  flex: 0 0 33.3333%;
+  max-width: calc(33.3333% - 32px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 32px;
+  margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 701px) {
@@ -5306,7 +5398,7 @@ button.declaration__item__button {
   }
 
   .periodSelect__date {
-    margin-right: 40px;
+    margin-right: 32px;
     width: 272px;
   }
 
@@ -5315,9 +5407,16 @@ button.declaration__item__button {
   }
 
   .periodSelect__button {
-    width: 224px;
+    max-width: 272px;
+    width: 100%;
+    min-width: none;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .periodSelect__date__value__month + .select2-container {
+    margin-right: 32px;
+    width: 144px;
   }
 
   .layoutThree__left.layoutThree__left__mob {
@@ -5409,17 +5508,32 @@ button.declaration__item__button {
     flex: 1 1 auto;
   }
 
+  .section__newsMain {
+    padding-top: 40px;
+  }
+
+  .section__newsMain .layoutTwo__left {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .section__newsMain .layoutTwo__left {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .layoutTwo {
     flex-flow: column nowrap;
   }
 
   .layoutTwo__left {
-    margin-bottom: 44px;
+    margin-bottom: 60px;
     flex-flow: row nowrap;
     justify-content: flex-end;
     margin-right: 0;
     flex: 1 0 auto;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .newsMain__title__mob {
@@ -5437,6 +5551,21 @@ button.declaration__item__button {
 
   .followSoc {
     flex: 1 0 199px;
+  }
+
+  .section__declaration {
+    padding-top: 40px;
+  }
+
+  .section__declaration .layoutTwo__left {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .section__declaration .layoutTwo__left {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .news {
@@ -5492,6 +5621,18 @@ button.declaration__item__button {
 
   .structure .section__block__textThree .container .block__textThree {
     padding-bottom: 0;
+  }
+
+  .disserCouncils {
+    padding-bottom: 60px;
+  }
+
+  .councils {
+    margin-top: 8px;
+  }
+
+  .councils__item {
+    padding: 32px;
   }
 }
 
@@ -5605,29 +5746,6 @@ button.declaration__item__button {
     padding-right: 20px;
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .followSoc {
-    flex-flow: row nowrap;
-    flex: 1 0 auto;
-    padding-bottom: 0;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .followSoc__title {
-    width: auto;
-    margin-right: 16px;
-    margin-bottom: 0;
-  }
-
-  .followSoc__items {
-    width: auto;
-  }
-
-  .periodSelect {
-    margin-right: 0;
-    margin-bottom: 24px;
   }
 
   .layoutThree__left.layoutThree__left__mob .ads {
@@ -5766,6 +5884,63 @@ button.declaration__item__button {
     margin-left: 0px;
     margin-bottom: 24px;
   }
+
+  .councils {
+    width: calc(100% + 16px);
+    align-items: stretch;
+    flex-flow: row wrap;
+    margin-left: -16px;
+  }
+
+  .councils__item {
+    flex: 0 0 50%;
+    max-width: calc(50% - 16px);
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 801px) {
+  .followSoc {
+    flex-flow: row nowrap;
+    flex: 1 0 auto;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .followSoc__title {
+    width: auto;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+  .followSoc__items {
+    width: auto;
+  }
+
+  .periodSelect {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .periodSelect__date {
+    flex: 1 0 220px;
+    margin-right: 32px;
+    max-width: 220px;
+  }
+
+  .section__newsMain .layoutTwo__left {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .section__declaration .layoutTwo__left {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -5860,10 +6035,6 @@ button.declaration__item__button {
 
   .declaration__item {
     padding: 24px;
-  }
-
-  button.declaration__item__button {
-    left: 24px;
   }
 
   .block__textTwo .textTwo__table {
@@ -5973,16 +6144,10 @@ button.declaration__item__button {
     line-height: 1.25rem;
   }
 
-  .periodSelect__date {
-    flex: 1 0 220px;
-    margin-right: 32px;
-    max-width: 220px;
-  }
-
   .periodSelect__button {
     display: flex;
     flex: 1 1 auto;
-    max-width: 224px;
+    max-width: 272px;
     justify-content: center;
     align-items: center;
   }
@@ -6136,6 +6301,32 @@ button.declaration__item__button {
     min-width: 100%;
   }
 
+  .departmensnts h1 {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+  }
+
+  .councils {
+    width: calc(100% + 0px);
+    margin-left: 0;
+  }
+
+  .councils__item {
+    flex: 0 0 100%;
+    max-width: calc(100% - 0px);
+    margin-left: 0px;
+    margin-bottom: 16px;
+    padding: 24px;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
   .international .header__one .column__left {
     flex: 1 0 100%;
     padding-bottom: 32px;
@@ -6186,6 +6377,11 @@ button.declaration__item__button {
     width: 100%;
   }
 
+  .declaration__item__soc__title {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .column__left.header__one__left h1 {
     font-style: normal;
     font-weight: 700;
@@ -6203,7 +6399,7 @@ button.declaration__item__button {
 
   .persons-search-result__title {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 4px;
   }
 
   .departmensnts .column__left {
@@ -6211,15 +6407,20 @@ button.declaration__item__button {
     min-width: 100%;
   }
 
-  .departmensnts h1 {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    color: #FFFFFF;
+  .disserCouncils .button__border--blue {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .followSoc {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .followSoc__items {
+    margin-top: 16px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -40,23 +40,6 @@
 		height: 100%;
 		&:hover {
 			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
-			.block__textOne__link.academic__item__button {
-				transition: all .3s;
-				background: #F4F3F0;
-				width: 147px;
-				text-decoration: none;
-				padding-left: 12px;
-				padding-right: 24px;
-				text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
-				p {
-					transition: all 3s;
-					display: block;
-					opacity: 1;
-					visibility: inherit;
-					
-				}
-				
-			}
 		}
 		&__title {
 			font-family: 'Manrope';
@@ -80,6 +63,27 @@
 			position: absolute;
 			left: 24px;
 			bottom: 24px;
+			&:hover {
+				text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+				.block__textOne__link.academic__item__button {
+					transition: all .3s;
+					background: #F4F3F0;
+					width: 147px;
+					text-decoration: none;
+					padding-left: 12px;
+					padding-right: 24px;
+					text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+					p {
+						transition: all 3s;
+						display: block;
+						opacity: 1;
+						visibility: inherit;
+						
+					}
+					
+				}
+			}
 		}
+
 	}
 }

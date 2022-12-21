@@ -88,6 +88,8 @@
 		background: #FFFFFF;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 		.select2-results {
+			padding-bottom: 16px;
+			padding-top: 16px;
 			.select2-results__option {
 				font-family: 'Manrope';
 				font-style: normal;
@@ -95,6 +97,7 @@
 				font-size: $fz17T;
 				line-height: $lh24;
 				color: #031B4B;
+				padding-left: 16px;
 				transition: all .5s;
 				&:hover {
 					transition: all .5s;
@@ -145,7 +148,7 @@
 		margin-bottom: 0;
 	}
 	.periodSelect__date {
-		margin-right: 40px;
+		margin-right: 32px;
 		width: 272px;
 		&__value {
 			margin-bottom: 0;
@@ -154,28 +157,35 @@
 		}
 	}
 	.periodSelect__button {
-		width: 224px;
+		max-width: 272px;
+		width: 100%;
+		min-width: none;
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.periodSelect__date__value__month + .select2-container {
+		margin-right: 32px;
+		width: 144px;
+	}
 }
-@include max(md) {
+@media (max-width:801px) {
 	.periodSelect  {
 		margin-right: 0;
 		margin-bottom: 24px;
 	}
-
-}
-@include max(sm) {
+	
 	.periodSelect__date {
 		flex: 1 0 220px;
 		margin-right: 32px;
 		max-width: 220px;
 	}
+}
+@include max(sm) {
+
 	.periodSelect__button {
 		display: flex;
 		flex: 1 1 auto;
-		max-width: 224px;
+		max-width: 272px;
 		justify-content: center;
 		align-items: center;
 	}

@@ -26,8 +26,8 @@
 		transition: all .3s;
 		&:hover {
 			transition: all .3s;
-			text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 			color: #104CA6;
+			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
 			&:last-child {
 				text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
 			}

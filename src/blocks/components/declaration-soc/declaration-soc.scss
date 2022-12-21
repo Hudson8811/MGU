@@ -10,10 +10,14 @@
 		font-family: 'Manrope';
 		font-style: normal;
 		font-weight: 600;
-		font-size: 17px;
-		line-height: 24px;
+		font-size: $fz17;
+		line-height: $lh24;
 		color: #739FF3;
 		margin-right: 8px;
+		@include max(xs) {
+			font-size: $fz14;
+			line-height: $lh20;
+		}
 	}
 	&__items {
 		position: relative;
