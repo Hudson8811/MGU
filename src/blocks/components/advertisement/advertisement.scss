@@ -35,6 +35,7 @@
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
+
 	&__item{
 		position: relative;
 		width: 100%;
@@ -123,6 +124,42 @@
 				margin-left: 16px;
 				margin-bottom: 16px;				
 			}
+		}
+	}
+
+}
+@include max(sm) {
+	.layoutThree__left.layoutThree__left__mob {
+		.advertisement {
+			padding-bottom: 0;
+		}
+		.ads {
+			width: calc(100% + 0px);
+			margin-left: 0px;
+			flex-flow: column nowrap;
+			&__item{
+				position: relative;
+				flex: 0 0 100%;
+				max-width: calc(100% - 0px);
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				margin-left: 0px;
+				margin-bottom: 32px;				
+			}
+		}
+	}
+	.block__textOne__link__ads {
+		margin-top: 5px;
+	}
+
+}
+@include max(xs) {
+	.block__textOne__link__ads {
+		margin-top: 5px;
+		span {
+			display: none;
 		}
 	}
 

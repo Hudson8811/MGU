@@ -40,6 +40,12 @@
 			flex-flow: column nowrap;
 			justify-content: space-between;
 			align-items: flex-start;
+			@include max(sm) {
+				top: 24px;
+				left: 24px;
+				width: calc(100% - 24px);
+				height: calc(100% - 48px);
+			}	
 			&__title {
 				position: relative;
 				display: block;
@@ -49,7 +55,17 @@
 				font-weight: 700;
 				font-size: $fz42;
 				line-height: $lh52;
-				color: #FFFFFF;				
+				color: #FFFFFF;	
+				@include max(sm) {
+					font-size: $fz32;
+					line-height: $lh40;
+				}	
+				@include max(xs) {
+					font-size: $fz24;
+					line-height: $lh28;
+				}	
+				
+				
 			}
 			&__text {
 				position: relative;
@@ -58,6 +74,9 @@
 				align-items: flex-end;
 				width: 100%;
 				padding-right: 76px;
+				@include max(xs) {
+					padding-right: 24px;
+				}	
 				p {
 					position: relative;
 					display: block;
@@ -78,7 +97,10 @@
 					display: block;
 					height: 44px;
 					width: 44px;
-					content: url("../img/svg/education__item__desc__button.svg")
+					content: url("../img/svg/education__item__desc__button.svg"); 
+					@include max(xs) {
+						display: none;
+					}	
 				}
 			}
 		}
@@ -92,6 +114,9 @@
 	transition: all .3s;
 	min-height: 400px;
 	background: #fff;
+	@include max(sm) {
+		min-height: 344px;
+	}	
 	&__desc {
 		position: absolute;
 		top: 32px;
@@ -102,6 +127,12 @@
 		flex-flow: column nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
+		@include max(sm) {
+			top: 24px;
+			left: 24px;
+			width: calc(100% - 24px);
+			height: calc(100% - 48px);
+		}	
 		&__title {
 			position: relative;
 			width: 100%;
@@ -111,7 +142,15 @@
 			font-weight: 700;
 			font-size: $fz42;
 			line-height: $lh52;
-			color: #104CA6;		
+			color: #104CA6;
+			@include max(sm) {
+				font-size: $fz32;
+				line-height: $lh40;
+			}	
+			@include max(xs) {
+				font-size: $fz24;
+				line-height: $lh28;
+			}		
 		}
 	}
 	&:hover {

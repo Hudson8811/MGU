@@ -94,3 +94,50 @@
 	}
 
 }
+@include max(md) {
+	.banners {
+		width: calc(100% + 16px);
+		margin-left: -16px;
+		margin-bottom: 36px;
+		.banner {
+			flex: 0 0 33.333%;
+			max-width: calc(33.3333% - 16px);
+			margin-left: 16px;
+			margin-bottom: 16px;
+			padding: 20px;
+		}			
+	}
+
+}
+@include max(sm) {
+	.banners {
+		width: calc(100% + 16px);
+		margin-left: -16px;
+		margin-bottom: 36px;
+		.banner {
+			flex: 0 0 50%;
+			max-width: calc(50% - 16px);
+			margin-left: 16px;
+			margin-bottom: 16px;
+		}			
+	}
+
+}
+@include max(xs) {
+	.banners {
+		width: calc(100% + 0px);
+		margin-left: 0px;
+		margin-bottom: 36px;
+		.banner {
+			flex: 0 0 100%;
+			max-width: calc(100% - 0px);
+			margin-left: 0px;
+			margin-bottom: 20px;
+			min-height: auto;
+			&__title {
+				margin-bottom: 60px;
+			}
+		}			
+	}
+
+}

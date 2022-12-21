@@ -11,6 +11,39 @@
 	width: 100%;
 	height: auto;
 	margin-bottom: 99px;
+	@include max(lg) {
+		.main__news {
+			padding-top: 60px;
+			margin-bottom: 36px;
+	
+		}
+	}
+	@include max(sm) {
+		margin-bottom: 60px;
+		.main__news {
+			padding-top: 60px;
+			margin-bottom: 24px;
+	
+		}
+		.advertisement {
+			margin-bottom: 48px;
+		}
+		.education {
+			margin-bottom: 14px;
+		}
+		.button.button__blueLight {
+			font-size: $fz24;
+			line-height: $lh28;
+		}
+	}
+	@include max(xs) {
+		.button.button__blueLight {
+			font-size: $fz20;
+			line-height: $lh26;
+			padding-left: 15px;
+			padding-right: 15px;
+		}	
+	}
 }
 
 

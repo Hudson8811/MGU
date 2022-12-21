@@ -4,12 +4,34 @@
 	display: flex;
 	overflow: hidden;
 	.main__slide {
-		img {
-			position: relative;
-			min-height: 428px;
+		position: relative;
+		min-height: 428px;
+		width: 100%;	
+		@include max(sm) {
+			min-height: 468px;
+		}
+		&__picture {
 			width: 100%;
-			height: auto;
-
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include max(sm) {
+				&--desc{
+					display: none;
+				}
+				&--mob {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+				}
+			}
+			&--mob {
+				display: none;
+			}
 		}
 		&__desc {
 			position: absolute;
@@ -21,6 +43,11 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 			flex-flow: column nowrap;
+			@include max(sm) {
+				top: 24px;
+				left: 24px;
+				padding-right: 84px;
+			}
 			&__title{
 				font-family: 'Manrope';
 				font-style: normal;
@@ -28,7 +55,11 @@
 				font-size: $fz32;
 				line-height: $lh40;
 				color: #FFFFFF;	
-				margin-bottom: 24px;			
+				margin-bottom: 24px;
+				@include max(xxs) {
+					font-size: $fz24;
+					line-height: $lh28;
+				}		
 			}
 			&__text {
 				font-family: 'Manrope';
@@ -46,6 +77,9 @@
 		bottom: 32px;
 		left: 56px;
 		text-align: left;
+		@include max(sm) {
+			left: 24px;
+		}
 		.swiper-pagination-bullet {
 			width: 12px;
 			height: 12px;
