@@ -8,6 +8,9 @@
 	padding-top: 68px;
 	padding-bottom: 80px;
 	transition: all .5s;
+	@include max(lg) {
+		padding-top: 28px;
+	}
 	&__item  {
 		position: relative;
 		display: flex;
@@ -23,6 +26,9 @@
 		overflow: hidden;
 		text-shadow: none;
 		padding: 32px;
+		@include max(md) {
+			padding: 24px;
+		}
 		&:hover {
 			transition: all .1s;
 			text-shadow: none;
@@ -65,7 +71,11 @@
 			font-weight: 600;
 			font-size: $fz16;
 			line-height: $lh24;
-			color: #FFFFFF;		
+			color: #FFFFFF;
+			@include max(sm) {
+				font-size: $fz14;
+				line-height: $lh20 ;
+			}		
 		}
 	}
 }

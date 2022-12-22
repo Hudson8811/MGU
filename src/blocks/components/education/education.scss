@@ -10,6 +10,9 @@
 		margin-bottom: 32px;
 		transition: all .3s;
 		min-height: 300px;
+		@include max(sm) {
+			margin-bottom: 24px;
+		}
 		img {
 			position: relative;
 			width: 100%;

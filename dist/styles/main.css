@@ -4551,10 +4551,6 @@ button.declaration__item__button {
   padding-bottom: 115px;
 }
 
-.section__main .breadcrumbs {
-  display: none;
-}
-
 .main {
   position: relative;
   width: 100%;
@@ -4944,6 +4940,23 @@ button.declaration__item__button {
   min-height: 100vh;
 }
 
+.structure__project-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.structure__project-top--title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #104CA6;
+}
+
 .structure .education {
   margin-bottom: 0;
 }
@@ -4954,6 +4967,10 @@ button.declaration__item__button {
 
 .structure .section__block__textThree .container .block__textThree {
   padding-bottom: 0;
+}
+
+.structure .structureNews {
+  padding-bottom: 140px;
 }
 
 .structureDepart {
@@ -5545,6 +5562,10 @@ button.declaration__item__button {
     margin-bottom: 24px;
   }
 
+  .structureNews {
+    padding-top: 28px;
+  }
+
   .column__left {
     padding-right: 10px;
   }
@@ -5689,12 +5710,12 @@ button.declaration__item__button {
     margin-right: 40px;
   }
 
-  .structure .section__block__textThree .container {
-    padding-top: 0;
+  .structure__project-top {
+    margin-bottom: 32px;
   }
 
-  .structure .section__block__textThree .container .block__textThree {
-    padding-bottom: 0;
+  .structure .section__block__textThree .container {
+    padding-top: 28px;
   }
 
   .disserCouncils {
@@ -5820,6 +5841,18 @@ button.declaration__item__button {
     width: 700px;
   }
 
+  .block__textThree__item h2 {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .block__textThree__item p {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 344px;
+  }
+
   .block__textThree__item {
     flex: 1 1 calc(50% - 16px);
     margin-bottom: 16px;
@@ -5874,6 +5907,10 @@ button.declaration__item__button {
     margin-left: 16px;
     margin-bottom: 16px;
     padding: 20px;
+  }
+
+  .structureNews__item {
+    padding: 24px;
   }
 
   .column__left {
@@ -5969,6 +6006,23 @@ button.declaration__item__button {
     max-width: 100%;
     margin-left: 0px;
     margin-bottom: 24px;
+  }
+
+  .structure {
+    padding-top: 48px;
+  }
+
+  .structure .section__block__textThree .container {
+    padding-top: 24px;
+  }
+
+  .structure .section__block__textThree .container .block__textThree__item {
+    margin-bottom: 24px;
+  }
+
+  .structure .structureNews {
+    padding-top: 24px;
+    padding-bottom: 127px;
   }
 
   .structureAdmin .banners {
@@ -6357,6 +6411,10 @@ button.declaration__item__button {
     margin-top: 5px;
   }
 
+  .education__item {
+    margin-bottom: 24px;
+  }
+
   .education__item__desc {
     top: 24px;
     left: 24px;
@@ -6396,6 +6454,11 @@ button.declaration__item__button {
     max-width: calc(50% - 16px);
     margin-left: 16px;
     margin-bottom: 16px;
+  }
+
+  .structureNews__item__text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .structureNews {
@@ -6546,6 +6609,23 @@ button.declaration__item__button {
 
   .block__textOne--person-page img {
     margin-bottom: 29px;
+  }
+
+  .structure {
+    padding-top: 40px;
+  }
+
+  .structure__project-top {
+    margin-bottom: 24px;
+  }
+
+  .structure__project-top--title {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .structure .structureNews {
+    padding-bottom: 121px;
   }
 
   .map {

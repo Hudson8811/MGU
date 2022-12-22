@@ -77,6 +77,11 @@
 			line-height: $lh40;
 			color: #104CA6;
 			transition: all .5s;
+			@include max(md) {
+				padding-top: 24px;
+				padding-left: 24px;
+				padding-right: 24px;
+			}
 		}
 		p{
 			position: relative;
@@ -91,6 +96,11 @@
 			font-size: $fz16;
 			line-height: $lh24;
 			color: #104CA6;
+			@include max(md) {
+				padding-left: 24px;
+				padding-right: 24px;
+				margin-bottom: 344px;
+			}
 		}
 
 	}

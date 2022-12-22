@@ -2,28 +2,68 @@
 	padding-top: 60px;
 	background: #F4F3F0;
 	min-height: 100vh;
+	@include max(md) {
+		padding-top: 48px;
+	}
+	@include max(sm) {
+		padding-top: 40px;
+	}
+	&__project-top {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		@include max(lg) {
+			margin-bottom: 32px;
+		}
+		@include max(sm) {
+			margin-bottom: 24px;
+		}
+		&--title {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz24;
+			line-height: $lh28;
+			color: #104CA6;
+			@include max(sm) {
+				font-size: $fz20;
+				line-height: $lh26;
+			}			 
+		}
+	}
 	.education {
 		margin-bottom: 0;
 	}
 	.section__block__textThree {
 		.container {
 			padding-top: 60px;
+			@include max(lg) {
+				padding-top: 28px;
+			}
+			@include max(md) {
+				padding-top: 24px;
+			}
 			.block__textThree {
 				padding-bottom: 0;
-			}
-		}
-	}
-}
-
-@include max(lg){
-	.structure {
-		.section__block__textThree {
-			.container {
-				padding-top: 0;
-				.block__textThree {
-					padding-bottom: 0;
+				&__item {
+					@include max(md) {
+						margin-bottom: 24px;
+					}
 				}
 			}
 		}
 	}
+	.structureNews {
+		padding-bottom: 140px;
+		@include max(md) {
+			padding-top: 24px;
+			padding-bottom: 127px;
+		}
+		@include max(sm) {
+			padding-bottom: 121px;
+		}
+	}
 }
+
