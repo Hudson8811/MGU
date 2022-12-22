@@ -74,8 +74,6 @@
 	.breadcrumbs {
 		padding-left: 0px;
 	}
-}
-@include max(sm) {
 	.section__breadcrumbs {
 		display: none;
 	}

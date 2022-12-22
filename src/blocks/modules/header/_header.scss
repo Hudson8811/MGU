@@ -140,6 +140,23 @@
 	}
 
 }
+.section__header-date {
+	position: relative;
+	width: 100%;
+	padding: 12px 0;
+	background: #fff;
+	display: none;
+	.header__other__date {
+		color: #104CA6;
+		font-weight: 700;
+	}
+	.header__other__week  {
+		color: #104CA6;
+	}
+	@include max(md) {
+		display: block;
+	}
+}
 .header__other__mob {
 	display: none;
 }

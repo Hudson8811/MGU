@@ -2,10 +2,46 @@
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding-top: 43px;
+	padding-top: 40px;
 	background: $lightBg;
-	padding-bottom: 80px;
 	border-top: 1px solid rgba(0, 85, 182, 0.5);
+	&__slider-nav {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		justify-content: space-between;
+		background: rgb(255, 255, 255);
+		border-radius: 40px;
+		width: 68px;
+		min-height: 40px;
+		display: none;
+		@include max(lg) {
+			display: block;
+		}
+		@include max(sm) {
+			display: none;
+		}
+		.swiper-button-prev {
+			left: 4px;
+			top: 16px;
+			&::after {
+				color: #104CA6;
+				content: url(../../../img/svg/seminars__prev.svg);
+			}
+
+		}
+		.swiper-button-next {
+			right: 4px;
+			top: 13px;
+			&::after {
+				color: #104CA6;
+				content: url(../../../img/svg/seminars__next.svg);
+
+			}
+		}
+
+	}
 	&__title {
 		font-family: 'Manrope';
 		font-style: normal;
@@ -13,7 +49,11 @@
 		font-size: $fz24;
 		line-height: $lh28;
 		color: #104CA6;
-		margin-bottom: 40px;		
+		margin-bottom: 40px;
+		@include max(sm) {
+			font-size: $fz20;
+			line-height: $lh26;
+		}		
 	}
 	&__list {
 		position: relative;
@@ -24,6 +64,10 @@
 		overflow: hidden;
 		.swiper-slide {
 			height: 100%;
+		}
+		padding-bottom: 80px;
+		@include max(sm) {
+			padding-bottom: 40px;
 		}
 	}
 	&__item {

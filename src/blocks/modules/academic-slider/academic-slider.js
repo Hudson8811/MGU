@@ -36,9 +36,13 @@ $('.js-academic__list').each(function(){
 				slidesPerView: 3.5,
 				spaceBetween: 24,
 			}, 
-			576: {
+			700: {
 				slidesPerView: 2.5,
-				spaceBetween: 24,
+				spaceBetween: 16,
+			}, 
+			480: {
+				slidesPerView: 2,
+				spaceBetween: 16,
 			}, 
 		}
 	});

@@ -3,6 +3,14 @@
 	width: 100%;
 	display: flex;
 	overflow: hidden;
+	@include max(md) {
+		width: calc(100% + 64px);
+		margin-left: -32px;
+	}
+	@include max(sm) {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+	}
 	.main__slide {
 		position: relative;
 		min-height: 428px;

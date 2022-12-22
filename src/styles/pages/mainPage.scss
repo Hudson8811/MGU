@@ -5,6 +5,12 @@
 	padding-top: 60px;
 	background: $lightBg;
 	padding-bottom: 115px;
+	@include max(md) {
+		padding-top: 0;
+	}
+	.breadcrumbs {
+		display: none;
+	}
 }
 .main  {
 	position: relative;

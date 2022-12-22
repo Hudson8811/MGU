@@ -2378,6 +2378,23 @@ a.block__textOne__link--person-colors::after {
   opacity: 0.5;
 }
 
+.section__header-date {
+  position: relative;
+  width: 100%;
+  padding: 12px 0;
+  background: #fff;
+  display: none;
+}
+
+.section__header-date .header__other__date {
+  color: #104CA6;
+  font-weight: 700;
+}
+
+.section__header-date .header__other__week {
+  color: #104CA6;
+}
+
 .header__other__mob {
   display: none;
 }
@@ -2807,10 +2824,42 @@ button.declaration__item__button {
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 43px;
+  padding-top: 40px;
   background: #F4F3F0;
-  padding-bottom: 80px;
   border-top: 1px solid rgba(0, 85, 182, 0.5);
+}
+
+.academic__slider-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  border-radius: 40px;
+  width: 68px;
+  min-height: 40px;
+  display: none;
+}
+
+.academic__slider-nav .swiper-button-prev {
+  left: 4px;
+  top: 16px;
+}
+
+.academic__slider-nav .swiper-button-prev::after {
+  color: #104CA6;
+  content: url(../../../img/svg/seminars__prev.svg);
+}
+
+.academic__slider-nav .swiper-button-next {
+  right: 4px;
+  top: 13px;
+}
+
+.academic__slider-nav .swiper-button-next::after {
+  color: #104CA6;
+  content: url(../../../img/svg/seminars__next.svg);
 }
 
 .academic__title {
@@ -2830,6 +2879,7 @@ button.declaration__item__button {
   align-items: stretch;
   flex-flow: row wrap;
   overflow: hidden;
+  padding-bottom: 80px;
 }
 
 .academic__list .swiper-slide {
@@ -4501,6 +4551,10 @@ button.declaration__item__button {
   padding-bottom: 115px;
 }
 
+.section__main .breadcrumbs {
+  display: none;
+}
+
 .main {
   position: relative;
   width: 100%;
@@ -5360,6 +5414,10 @@ button.declaration__item__button {
     padding-top: 40px;
   }
 
+  .academic__slider-nav {
+    display: block;
+  }
+
   .main__news {
     padding-top: 40px;
     margin-bottom: 36px;
@@ -5670,6 +5728,10 @@ button.declaration__item__button {
     line-height: 28px;
   }
 
+  .section__header-date {
+    display: block;
+  }
+
   .header__logo__name span {
     display: none;
   }
@@ -5719,6 +5781,15 @@ button.declaration__item__button {
 
   .breadcrumbs {
     padding-left: 0px;
+  }
+
+  .section__breadcrumbs {
+    display: none;
+  }
+
+  .main__slider {
+    width: calc(100% + 64px);
+    margin-left: -32px;
   }
 
   .main__news__item__title {
@@ -5825,6 +5896,10 @@ button.declaration__item__button {
 
   .news .column__right.header__one__right img {
     height: 300px;
+  }
+
+  .section__main {
+    padding-top: 0;
   }
 
   .section__main {
@@ -6025,10 +6100,6 @@ button.declaration__item__button {
     padding-right: 20px;
   }
 
-  .section__breadcrumbs {
-    display: none;
-  }
-
   .column__left.header__two__left {
     flex: 1 0 auto;
     margin-bottom: 0px;
@@ -6077,6 +6148,11 @@ button.declaration__item__button {
     padding: 24px;
   }
 
+  .main__slider {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
   .main__slider .main__slide {
     min-height: 468px;
   }
@@ -6102,6 +6178,19 @@ button.declaration__item__button {
 
   .main__slider .swiper-pagination.main__swiper-pagination {
     left: 24px;
+  }
+
+  .academic__slider-nav {
+    display: none;
+  }
+
+  .academic__title {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .academic__list {
+    padding-bottom: 40px;
   }
 
   .main__news__list {
@@ -6271,7 +6360,7 @@ button.declaration__item__button {
   .education__item__desc {
     top: 24px;
     left: 24px;
-    width: calc(100% - 24px);
+    width: calc(100% - 48px);
     height: calc(100% - 48px);
   }
 
@@ -6287,7 +6376,7 @@ button.declaration__item__button {
   .education__itemWhite__desc {
     top: 24px;
     left: 24px;
-    width: calc(100% - 24px);
+    width: calc(100% - 48px);
     height: calc(100% - 48px);
   }
 
@@ -6571,7 +6660,8 @@ button.declaration__item__button {
   }
 
   .education__item__desc__text {
-    padding-right: 24px;
+    padding-right: 0px;
+    margin-right: 0;
   }
 
   .education__item__desc__text::before {
@@ -6586,7 +6676,7 @@ button.declaration__item__button {
   .banners {
     width: calc(100% + 0px);
     margin-left: 0px;
-    margin-bottom: 36px;
+    margin-bottom: 28px;
   }
 
   .banners .banner {
