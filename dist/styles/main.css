@@ -2759,12 +2759,12 @@ button.declaration__item__button {
   width: 100%;
 }
 
-.main__slider .main__slide__picture {
-  width: 100%;
-  height: 100%;
+.main__slider .main__slide__picture img {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .main__slider .main__slide__picture--mob {
