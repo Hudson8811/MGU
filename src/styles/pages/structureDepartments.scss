@@ -3,6 +3,9 @@
 	background: #F4F3F0;
 	.structureNews {
 		padding-top: 44px;
+		@include max(lg) {
+			padding-top: 8px;
+		}
 	}
 	.structureNews__item {
 		min-height: 280px;

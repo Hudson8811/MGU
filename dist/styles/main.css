@@ -4227,7 +4227,7 @@ button.declaration__item__button {
   flex-flow: row wrap;
   align-items: stretch;
   width: 100%;
-  padding-top: 68px;
+  padding-top: 44px;
   padding-bottom: 80px;
   transition: all 0.5s;
 }
@@ -4235,7 +4235,7 @@ button.declaration__item__button {
 .structureNews__item {
   position: relative;
   display: flex;
-  width: calc(50% - 15px);
+  width: calc(50% - 16px);
   margin-bottom: 32px;
   min-height: 300px;
   flex-flow: column nowrap;
@@ -4264,11 +4264,11 @@ button.declaration__item__button {
 }
 
 .structureNews__item:nth-child(2n+1) {
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .structureNews__item:nth-child(2n) {
-  margin-left: 15px;
+  margin-left: 16px;
 }
 
 .structureNews__item img {
@@ -4995,10 +4995,6 @@ button.declaration__item__button {
   background: #F4F3F0;
 }
 
-.structureLabs .structureNews {
-  padding-top: 44px;
-}
-
 .structureLabs .structureNews__item {
   min-height: 280px;
 }
@@ -5563,7 +5559,20 @@ button.declaration__item__button {
   }
 
   .structureNews {
-    padding-top: 28px;
+    padding-top: 8px;
+  }
+
+  .structureNews__item {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .structureNews__item:nth-child(2n+1) {
+    margin-right: 10px;
+  }
+
+  .structureNews__item:nth-child(2n) {
+    margin-left: 10px;
   }
 
   .column__left {
@@ -5716,6 +5725,10 @@ button.declaration__item__button {
 
   .structure .section__block__textThree .container {
     padding-top: 28px;
+  }
+
+  .structureDepart .structureNews {
+    padding-top: 8px;
   }
 
   .disserCouncils {
@@ -5910,7 +5923,17 @@ button.declaration__item__button {
   }
 
   .structureNews__item {
-    padding: 24px;
+    padding: 20px;
+    width: calc(50% - 8px);
+    margin-bottom: 16px;
+  }
+
+  .structureNews__item:nth-child(2n+1) {
+    margin-right: 8px;
+  }
+
+  .structureNews__item:nth-child(2n) {
+    margin-left: 8px;
   }
 
   .column__left {
@@ -6463,6 +6486,21 @@ button.declaration__item__button {
 
   .structureNews {
     flex-flow: column nowrap;
+  }
+
+  .structureNews__item {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .structureNews__item:nth-child(2n+1) {
+    margin-right: 0px;
+  }
+
+  .structureNews__item:nth-child(2n) {
+    margin-left: 0px;
   }
 
   .structureNews__item {
