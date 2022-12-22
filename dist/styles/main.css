@@ -5014,8 +5014,7 @@ button.declaration__item__button {
   align-items: stretch;
   flex-flow: row wrap;
   margin-left: -32px;
-  margin-bottom: 0px;
-  padding-bottom: 36px;
+  padding-bottom: 146px;
   margin-top: 44px;
 }
 
@@ -5731,6 +5730,19 @@ button.declaration__item__button {
     padding-top: 8px;
   }
 
+  .structureAdmin .banners {
+    width: calc(100% + 20px);
+    margin-left: -20px;
+    margin-top: 8px;
+  }
+
+  .structureAdmin .banners .banner {
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
   .disserCouncils {
     padding-bottom: 60px;
   }
@@ -6049,32 +6061,21 @@ button.declaration__item__button {
   }
 
   .structureAdmin .banners {
-    width: calc(100% + 24px);
-    align-items: stretch;
-    margin-left: -24px;
-    margin-bottom: 36px;
-    margin-top: 8px;
+    width: calc(100% + 16px);
+    margin-left: -16px;
+    padding-bottom: 84px;
+  }
+
+  .structureAdmin .banners {
+    width: calc(100% + 0px);
+    margin-left: 0px;
   }
 
   .structureAdmin .banners .banner {
     flex: 0 0 50%;
-    max-width: calc(50% - 24px);
-    margin-left: 24px;
-    margin-bottom: 24px;
-  }
-
-  .structureAdmin .banners {
-    width: 100%;
-    align-items: stretch;
-    margin-left: 0px;
-    margin-top: 8px;
-  }
-
-  .structureAdmin .banners .banner {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-left: 0px;
-    margin-bottom: 24px;
+    max-width: calc(50% - 16px);
+    margin-left: 16px;
+    margin-bottom: 16px;
   }
 
   .councils {
@@ -6664,6 +6665,19 @@ button.declaration__item__button {
 
   .structure .structureNews {
     padding-bottom: 121px;
+  }
+
+  .structureAdmin .banners .banner {
+    flex: 0 0 100%;
+    max-width: calc(100% - 0px);
+    margin-left: 0px;
+    margin-bottom: 20px;
+    min-height: 300px;
+  }
+
+  .structureAdmin .banners .banner .banner__text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .map {
