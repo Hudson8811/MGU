@@ -68,7 +68,7 @@
 		transition: all 0.3s;
 		&__title {
 			font-style: normal;
-			font-weight: 700;
+			font-weight: 800;
 			font-size: $fz42;
 			line-height: $lh52;
 			color: #031B4B;
@@ -94,8 +94,8 @@
 			background: #C2CFE2;
 			.councils__item__title {
 				transition: all 0.3s;
-				text-decoration-line: underline;
-				text-decoration-thickness: 1px;
+				text-decoration-line: none;
+
 
 			}
 		}

@@ -48,11 +48,15 @@
 			}
 		}
 		&:hover {
-			transition: all .1s;
+			transition: all .3s;
 			text-shadow: none;
 			.structureNews__item__tilte {
+				transition: all .3s;
 				text-decoration-line: underline;
 				text-decoration-thickness: 1px;
+				text-underline-offset: 2px;
+				text-decoration-skip: none;
+				text-decoration-skip-ink: none;	
 			}
 			.structureNews__item__text {
 				text-shadow: none;

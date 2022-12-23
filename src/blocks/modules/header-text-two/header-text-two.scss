@@ -24,6 +24,9 @@
 		font-size: $fz32;
 		line-height: $lh40;
 		color: #031B4B;
+		@include max(lg){
+			max-width: 100%;
+		}
 	}
 
 }

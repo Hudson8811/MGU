@@ -8,6 +8,11 @@
 	@include max(sm) {
 		padding-top: 40px;
 	}
+	.block__textOne__link {
+		@include max(sm) {
+			margin-top: 5px;
+		}
+	}
 	&__project-top {
 		position: relative;
 		width: 100%;

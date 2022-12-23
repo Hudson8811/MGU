@@ -1807,6 +1807,15 @@ html {
   color: #031B4B;
 }
 
+.title:hover {
+  transition: all 0.3s;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+}
+
 .container {
   box-sizing: border-box;
   width: 1168px;
@@ -2672,6 +2681,8 @@ a.block__textOne__link--person-colors::after {
   transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .newsMain__item:hover .newsMain__item__desc__title:hover {
@@ -3012,6 +3023,9 @@ button.declaration__item__button {
   transition: all 0.5s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .main__news__item:hover img {
@@ -3527,9 +3541,12 @@ button.declaration__item__button {
 }
 
 .block__textThree__item:hover h2 {
-  transition: all 0.5s;
+  transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .block__textThree__item:hover img {
@@ -4031,6 +4048,9 @@ button.declaration__item__button {
   transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .education__item:hover .education__item__desc__text::before {
@@ -4056,7 +4076,7 @@ button.declaration__item__button {
   text-align: left;
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.625rem;
   line-height: 3.25rem;
   color: #FFFFFF;
@@ -4122,7 +4142,7 @@ button.declaration__item__button {
   max-width: 456px;
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.625rem;
   line-height: 3.25rem;
   color: #104CA6;
@@ -4133,9 +4153,11 @@ button.declaration__item__button {
 }
 
 .education__itemWhite:hover .education__itemWhite__desc__title {
-  transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .banners {
@@ -4164,6 +4186,9 @@ button.declaration__item__button {
   transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .banner__title {
@@ -4250,13 +4275,17 @@ button.declaration__item__button {
 }
 
 .structureNews__item:hover {
-  transition: all 0.1s;
+  transition: all 0.3s;
   text-shadow: none;
 }
 
 .structureNews__item:hover .structureNews__item__tilte {
+  transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .structureNews__item:hover .structureNews__item__text {
@@ -5266,7 +5295,7 @@ button.declaration__item__button {
 
 .councils__item__title {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.625rem;
   line-height: 3.25rem;
   color: #031B4B;
@@ -5297,8 +5326,7 @@ button.declaration__item__button {
 
 .councils__item:hover .councils__item__title {
   transition: all 0.3s;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-line: none;
 }
 
 .disserCouncil .column__right.header__one__right {
@@ -5405,6 +5433,10 @@ button.declaration__item__button {
     font-size: 0.875rem;
     line-height: 1.25rem;
     padding: 8px 16px;
+  }
+
+  .header__two__left h1 {
+    max-width: 100%;
   }
 
   .header__two {
@@ -6654,6 +6686,10 @@ button.declaration__item__button {
     padding-top: 40px;
   }
 
+  .structure .block__textOne__link {
+    margin-top: 5px;
+  }
+
   .structure__project-top {
     margin-bottom: 24px;
   }
@@ -6735,6 +6771,10 @@ button.declaration__item__button {
 }
 
 @media only screen and (max-width: 450px) {
+  a.block__textOne__link span {
+    display: none;
+  }
+
   .block__textOne h2 {
     font-style: normal;
     font-weight: 700;

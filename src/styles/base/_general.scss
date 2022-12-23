@@ -6,7 +6,14 @@ html {
 	line-height: 24px;
 	color: #031B4B;
 }
-
+.title:hover {
+	transition: all .3s;
+	text-decoration-line: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+	text-decoration-skip: none;
+	text-decoration-skip-ink: none;	
+}
 .container {
 	box-sizing: border-box;
 	width: 1168px;
@@ -90,7 +97,11 @@ a.block__textOne__link {
 		display: inline-block;
 		content: url(../img/svg/editor__link__2.svg);
 	}
-
+	span {
+		@include max(xs) {
+			display: none;
+		}
+	}
 	&--person-colors {
 		color: #AF8F46;
 

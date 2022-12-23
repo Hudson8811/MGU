@@ -22,9 +22,12 @@
 			transition: all .3s;
 			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
 			.education__item__desc__title {
-				transition: all 0.3s;
+				transition: all .3s;
 				text-decoration-line: underline;
 				text-decoration-thickness: 1px;
+				text-underline-offset: 2px;
+				text-decoration-skip: none;
+				text-decoration-skip-ink: none;	
 			}
 			.education__item__desc__text {
 				&::before{
@@ -55,7 +58,7 @@
 				text-align: left;
 				font-family: 'Manrope';
 				font-style: normal;
-				font-weight: 700;
+				font-weight: 800;
 				font-size: $fz42;
 				line-height: $lh52;
 				color: #FFFFFF;	
@@ -143,7 +146,7 @@
 			max-width: 456px;
 			font-family: 'Manrope';
 			font-style: normal;
-			font-weight: 700;
+			font-weight: 800;
 			font-size: $fz42;
 			line-height: $lh52;
 			color: #104CA6;
@@ -160,9 +163,11 @@
 	&:hover {
 		text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
 		.education__itemWhite__desc__title {
-			transition: all 0.3s;
 			text-decoration-line: underline;
 			text-decoration-thickness: 1px;
+			text-underline-offset: 2px;
+			text-decoration-skip: none;
+			text-decoration-skip-ink: none;	
 		}
 	}
 }
