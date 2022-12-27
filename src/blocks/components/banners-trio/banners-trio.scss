@@ -1,0 +1,83 @@
+.banners.banners-trio  {
+	position: relative;
+	display: flex;
+	width: calc(100% + 32px);
+	align-items: stretch;
+	flex-flow: row wrap;
+	margin-left: -32px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 80px;
+	@include max(lg) {
+		margin-bottom: 60px;
+		width: calc(100% + 24px);
+		margin-left: -24px;
+	}
+	@include max(md) {
+		width: calc(100% + 0px);
+		margin-left:  0px;
+		flex-flow: column nowrap;
+	}
+	@include max(sm) {
+		margin-bottom: 48px;
+	}
+	.banner {
+		position: relative;
+		flex: 0 0 33.333%;
+		max-width: calc(33.3333% - 32px);
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 32px;
+		margin-left: 32px;
+		margin-bottom: 0px;
+		@include max(lg) {
+			max-width: calc(33.3333% - 24px);
+			margin-left: 24px;
+			padding: 24px;
+		}
+		@include max(md) {
+			max-width: calc(100% - 0px);
+			margin-left: 0px;
+			margin-bottom: 32px;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			min-height: 132px;
+			&__title  {
+				max-width: 248px;
+				margin-right: 24px;
+			}
+			&__text {
+				padding-top: 5px;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		@include max(sm) {
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			min-height: 300px;
+			margin-bottom: 24px;
+			&__title  {
+				max-width: 248px;
+				margin-right: 0px;
+			}
+			&__text {
+				padding-top: 0px;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__title {
+			font-style: normal;
+			font-weight: 800;
+			font-size: $fz24;
+			line-height: $lh28;
+		}		
+	}
+}

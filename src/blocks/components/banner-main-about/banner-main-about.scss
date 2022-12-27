@@ -3,33 +3,71 @@
 	width: 100%;
 	display: flex;
 	min-height: 376px;
+	margin-bottom: 80px;
+	@include max(lg) {
+		margin-bottom: 60px;
+	}
+	@include max(md) {
+		flex-flow: column nowrap;
+		padding-bottom: 48px;
+		width: calc(100% + 64px);
+		margin-left: -32px;
+		margin-bottom: 48px;
+	}
+	@include max(sm) {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-bottom: 40px;
+	}
 	&__text {
 		position: relative;
-		width: 100%;
 		max-width: 567px;
 		margin-top: 48px;
+		margin-right: 32px;
+		@include max(md) {
+			margin-left: 32px;
+		}
+		@include max(sm) {
+			margin-left: 24px;
+			margin-right: 24px;	
+		}	
+		p {
+			position: relative;
+			font-style: normal;
+			font-weight: 600;
+			font-size: $fz16;
+			line-height: $lh24;
+			color: #FFFFFF;
+			width: 100%;			
+		}
 	}
 	h1 {
 		position: relative;
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 800;
 		font-size: $fz42;
 		line-height: $lh52;
 		color: #FFFFFF;
 		width: 408px;
 		margin-top: 32px;
 		margin-left: 32px;
-		margin-right: 61px;		
+		margin-right: 61px;	
+		@include max(md) {
+			margin-left: 32px;
+			margin-right: 32px;	
+			width: 80%;
+		}	
+		@include max(sm) {
+			font-size: $fz32;
+			line-height: $lh42;
+		}	
+		@include max(sm) {
+			margin-top: 24px;
+			margin-left: 24px;
+			margin-right: 24px;	
+		}	
 	}
-	p {
-		position: relative;
-		font-style: normal;
-		font-weight: 600;
-		font-size: $fz16;
-		line-height: $lh24;
-		color: #FFFFFF;
-		width: 100%;			
-	}
+
 	img {
 		position: absolute;
 		display: block;

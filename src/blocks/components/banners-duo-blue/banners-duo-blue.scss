@@ -1,0 +1,66 @@
+.banners.banners__duoBlue {
+	position: relative;
+	display: flex;
+	width: calc(100% + 32px);
+	align-items: stretch;
+	flex-flow: row wrap;
+	margin-left: -32px;
+	padding-bottom: 0px;
+	margin-top: 16px;
+	margin-bottom: 48px;
+	margin-bottom: 80px;
+	@include max(lg) {
+		width: calc(100% + 24px);
+		margin-left: -24px;
+		margin-bottom: 60px;
+	}
+	@include max(sm) {
+		width: calc(100% + 0px);
+		margin-left: 0px;
+		flex-flow: column nowrap;
+		margin-bottom: 48px;
+	}
+	.banner__blueLight.banner {
+		position: relative;
+		flex: 0 0 50%;
+		max-width: calc( 50% - 32px);
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		min-height: 380px;
+		padding: 32px;
+		margin-left: 32px;
+		margin-bottom: 0px;
+		@include max(lg) {
+			max-width: calc( 50% - 24px);
+			margin-left: 24px;
+			padding: 24px;
+		}
+		@include max(sm) {
+			flex: 0 0 100%;
+			max-width: calc( 100% - 0px);
+			margin-left: 0px;
+			margin-bottom: 24px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.banner__title {
+			font-style: normal;
+			font-weight: 800;
+			font-size: $fz32;
+			line-height: $lh40;
+			@include max(md) {
+				font-size: $fz24;
+				line-height: $lh28;
+			}				
+	
+		}
+		.banner__text {
+			font-weight: 500;
+			font-size: $fz16;
+			line-height: $lh24;						
+		}
+	}
+} 

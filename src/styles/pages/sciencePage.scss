@@ -2,95 +2,9 @@
 	padding-top: 60px;
 	background: #F4F3F0;
 	min-height: 100vh;
-	.about__banner {
-		margin-bottom: 80px;
+	@include max(md) {
+		padding-top: 0;
 	}
-	.banners.banners__science {
-		position: relative;
-    display: flex;
-    width: calc(100% + 32px);
-    align-items: stretch;
-    flex-flow: row wrap;
-    margin-left: -32px;
-		padding-bottom: 0px;
-		margin-top: 16px;
-		margin-bottom: 48px;
-		.banner.banner__blueLight {
-			position: relative;
-			flex: 0 0 50%;
-			max-width: calc( 50% - 32px);
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-between;
-			align-items: flex-start;
-			min-height: 380px;
-			margin-left: 32px;
-			margin-bottom: 32px;
-			.banner__title {
-				font-style: normal;
-				font-weight: 800;
-				font-size: $fz32;
-				line-height: $lh40;				
-			}
-			.banner__text {
-				font-weight: 500;
-				font-size: $fz16;
-				line-height: $lh24;				
-			}
-		}
-	} 
-	.education.education__science {
-		position: relative;
-    display: flex;
-    width: calc(100% + 32px);
-    align-items: stretch;
-    flex-flow: row wrap;
-    margin-left: -32px;
-		padding-bottom: 0px;
-		margin-top: 16px;
-		margin-bottom: 48px;
-		.education__item {
-			position: relative;
-			flex: 0 0 50%;
-			max-width: calc( 50% - 32px);
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-between;
-			align-items: flex-start;
-			margin-left: 32px;
-			margin-bottom: 32px;
-			.education__item__desc__title	{
-				font-size: $fz32;
-				line-height: $lh40;
-			}	 	
-		}
-	}
-	.banners {
-    position: relative;
-    display: flex;
-    width: calc(100% + 32px);
-    align-items: stretch;
-    flex-flow: row wrap;
-    margin-left: -32px;
-    margin-bottom: 0px;
-		padding-bottom: 36px;
-		margin-top: 80px;
-		.banner {
-			position: relative;
-			flex: 0 0 33.333%;
-			max-width: calc(33.3333% - 32px);
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-between;
-			align-items: flex-start;
-			margin-left: 32px;
-			margin-bottom: 32px;
-			.banner__title {
-				font-style: normal;
-				font-weight: 800;
-				font-size: 24px;
-				line-height: 28px;
-			}		
-		}
-	}	
+
+		
 }
