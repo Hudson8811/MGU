@@ -3,8 +3,14 @@
 	width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 	overflow: hidden;
+	@include max(lg) {
+		margin-bottom: 80px;
+	}
+	@include max(sm) {
+		margin-bottom: 60px;
+	}
 	&__top {
 		position: relative;
 		width: 100%;
@@ -12,20 +18,44 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		margin-bottom: 40px;
+		@include max(sm) {
+			margin-bottom: 30px;		
+		}
 		&__title {
 			font-style: normal;
 			font-weight: 700;
 			font-size: $fz24;
 			line-height: $lh28;
 			color: #104CA6;			
-		}		
+		}
+		.block__textOne__link	{
+			margin-top: 5px;
+		}
 	}
-	&__wrap {
+	&__swiper {
 		position: relative;
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
-		padding-bottom: 80px;
+		padding-bottom: 72px;
+		@include max(sm) {
+			padding-bottom: 64px;			
+		}
+		.swiper-slide {
+			max-width: 368px;
+			@include max(md) {
+				max-width: 296px;
+				min-width: 296px;
+			}
+			@include max(sm) {
+				max-width: 344px;
+				min-width: 344px;
+			}
+			@include max(xs) {
+				max-width: 296px;
+				min-width: 296px;
+			}
+		}
 		&__navigation {
 			position: absolute;
 			bottom: 0;
@@ -75,6 +105,7 @@
 		padding-right: 32px;
 		background: #739FF3;
 		transition: background .3s;
+		margin-bottom: 0;
 		&:hover {
 			transition: background .3s;
 			background: darken( #739FF3, 7%);

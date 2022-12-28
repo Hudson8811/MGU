@@ -4,6 +4,19 @@
 	display: flex;
 	flex-flow: column nowrap;
 	margin-bottom: 28px;
+	&.education__solo {
+		margin-bottom: 80px;
+		@include max(lg) {
+			margin-bottom: 60px;
+		}
+		@include max(sm) {
+			margin-bottom: 48px;
+		}
+		.education__item {
+			margin-bottom: 0;
+		}
+
+	}
 	&__item {
 		position: relative;
 		width: 100%;

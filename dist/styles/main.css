@@ -2408,6 +2408,19 @@ a.block__textOne__link--person-colors::after {
   display: none;
 }
 
+.footer {
+  position: relative;
+  width: 100%;
+  background: #031B4B;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  min-height: 276px;
+  color: #fff;
+}
+
 .section__topMenu {
   width: 100%;
   position: relative;
@@ -2838,6 +2851,8 @@ button.declaration__item__button {
   padding-top: 40px;
   background: #F4F3F0;
   border-top: 1px solid rgba(0, 85, 182, 0.5);
+  padding-bottom: 32px;
+  overflow: hidden;
 }
 
 .academic__slider-nav {
@@ -2890,11 +2905,16 @@ button.declaration__item__button {
   align-items: stretch;
   flex-flow: row wrap;
   overflow: hidden;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
 }
 
 .academic__list .swiper-slide {
   height: 100%;
+}
+
+.academic .swiper-slide {
+  max-width: 268px;
+  min-width: 268px;
 }
 
 .academic__item {
@@ -3084,7 +3104,7 @@ button.declaration__item__button {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -3105,15 +3125,23 @@ button.declaration__item__button {
   color: #104CA6;
 }
 
-.seminars__sliders .seminars__wrap {
+.seminars__sliders .seminars__top .block__textOne__link {
+  margin-top: 5px;
+}
+
+.seminars__sliders .seminars__swiper {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
 }
 
-.seminars__sliders .seminars__wrap__navigation {
+.seminars__sliders .seminars__swiper .swiper-slide {
+  max-width: 368px;
+}
+
+.seminars__sliders .seminars__swiper__navigation {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3125,22 +3153,22 @@ button.declaration__item__button {
   min-height: 40px;
 }
 
-.seminars__sliders .seminars__wrap__navigation .swiper-button-prev {
+.seminars__sliders .seminars__swiper__navigation .swiper-button-prev {
   left: 4px;
   top: 16px;
 }
 
-.seminars__sliders .seminars__wrap__navigation .swiper-button-prev::after {
+.seminars__sliders .seminars__swiper__navigation .swiper-button-prev::after {
   color: #104CA6;
   content: url(../../../img/svg/seminars__prev.svg);
 }
 
-.seminars__sliders .seminars__wrap__navigation .swiper-button-next {
+.seminars__sliders .seminars__swiper__navigation .swiper-button-next {
   right: 4px;
   top: 13px;
 }
 
-.seminars__sliders .seminars__wrap__navigation .swiper-button-next::after {
+.seminars__sliders .seminars__swiper__navigation .swiper-button-next::after {
   color: #104CA6;
   content: url(../../../img/svg/seminars__next.svg);
 }
@@ -3162,6 +3190,7 @@ button.declaration__item__button {
   padding-right: 32px;
   background: #739FF3;
   transition: background 0.3s;
+  margin-bottom: 0;
 }
 
 .seminars__sliders .seminars__item:hover {
@@ -4030,6 +4059,14 @@ button.declaration__item__button {
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 28px;
+}
+
+.education.education__solo {
+  margin-bottom: 80px;
+}
+
+.education.education__solo .education__item {
+  margin-bottom: 0;
 }
 
 .education__item {
@@ -5526,8 +5563,17 @@ button.declaration__item__button {
     padding-top: 40px;
   }
 
+  .academic {
+    padding-bottom: 80px;
+  }
+
   .academic__slider-nav {
     display: block;
+  }
+
+  .academic .swiper-slide {
+    max-width: 274px;
+    min-width: 274px;
   }
 
   .main__news {
@@ -5545,6 +5591,10 @@ button.declaration__item__button {
     max-width: calc(33.3333% - 24px);
     margin-left: 24px;
     margin-bottom: 24px;
+  }
+
+  .seminars__sliders .seminars {
+    margin-bottom: 80px;
   }
 
   .section__block__textThree .container {
@@ -5633,6 +5683,10 @@ button.declaration__item__button {
     align-items: flex-start;
     margin-left: 24px;
     margin-bottom: 24px;
+  }
+
+  .education.education__solo {
+    margin-bottom: 60px;
   }
 
   .banners {
@@ -5977,6 +6031,11 @@ button.declaration__item__button {
     margin-left: -32px;
   }
 
+  .academic .swiper-slide {
+    max-width: 280px;
+    min-width: 280px;
+  }
+
   .main__news__item__title {
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -5985,6 +6044,11 @@ button.declaration__item__button {
   .main__news__item__text {
     font-size: 0.875rem;
     line-height: 1.375rem;
+  }
+
+  .seminars__sliders .seminars__swiper .swiper-slide {
+    max-width: 296px;
+    min-width: 296px;
   }
 
   .column__left.block__textOne {
@@ -6470,17 +6534,13 @@ button.declaration__item__button {
     left: 24px;
   }
 
-  .academic__slider-nav {
-    display: none;
-  }
-
   .academic__title {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
 
   .academic__list {
-    padding-bottom: 40px;
+    padding-bottom: 64px;
   }
 
   .main__news__list {
@@ -6500,6 +6560,23 @@ button.declaration__item__button {
   .main__news__item__title {
     font-size: 1.25rem;
     line-height: 1.625rem;
+  }
+
+  .seminars__sliders .seminars {
+    margin-bottom: 60px;
+  }
+
+  .seminars__sliders .seminars__top {
+    margin-bottom: 30px;
+  }
+
+  .seminars__sliders .seminars__swiper {
+    padding-bottom: 64px;
+  }
+
+  .seminars__sliders .seminars__swiper .swiper-slide {
+    max-width: 344px;
+    min-width: 344px;
   }
 
   .block__textTwo .textTwo__table {
@@ -6645,6 +6722,10 @@ button.declaration__item__button {
 
   .block__textOne__link__ads {
     margin-top: 5px;
+  }
+
+  .education.education__solo {
+    margin-bottom: 48px;
   }
 
   .education__item {
@@ -7024,6 +7105,15 @@ button.declaration__item__button {
 @media only screen and (max-width: 450px) {
   a.block__textOne__link span {
     display: none;
+  }
+
+  .academic {
+    padding-bottom: 60px;
+  }
+
+  .seminars__sliders .seminars__swiper .swiper-slide {
+    max-width: 296px;
+    min-width: 296px;
   }
 
   .block__textOne h2 {

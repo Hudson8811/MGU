@@ -5,6 +5,14 @@
 	padding-top: 40px;
 	background: $lightBg;
 	border-top: 1px solid rgba(0, 85, 182, 0.5);
+	padding-bottom: 32px;
+	overflow: hidden;
+	@include max(lg) {
+		padding-bottom: 80px;
+	}
+	@include max(xs) {
+		padding-bottom: 60px;
+	}
 	&__slider-nav {
 		position: absolute;
 		bottom: 0;
@@ -18,9 +26,6 @@
 		display: none;
 		@include max(lg) {
 			display: block;
-		}
-		@include max(sm) {
-			display: none;
 		}
 		.swiper-button-prev {
 			left: 4px;
@@ -65,9 +70,21 @@
 		.swiper-slide {
 			height: 100%;
 		}
-		padding-bottom: 80px;
+		padding-bottom: 72px;
 		@include max(sm) {
-			padding-bottom: 40px;
+			padding-bottom: 64px;			
+		}
+	}
+	.swiper-slide {
+		max-width: 268px;
+		min-width: 268px;
+		@include max(lg) {
+			max-width: 274px;
+			min-width: 274px;
+		}
+		@include max(md) {
+			max-width: 280px;
+			min-width: 280px;
 		}
 	}
 	&__item {
@@ -94,6 +111,7 @@
 			color: #104CA6;	
 			margin-bottom: 16px;		
 		}
+
 		&__text  {
 			font-family: 'Manrope';
 			font-style: normal;

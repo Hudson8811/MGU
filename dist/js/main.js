@@ -47,11 +47,7 @@ $('.js-academic__list').each(function () {
   var _Swiper;
   var slider = $(this);
   var academicList = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(slider[0], (_Swiper = {
-    // watchOverflow: true,
-    // watchSlidesVisibility: true,
-    // watchSlidesProgress: true,
-    // preventInteractionOnTransition: true,
-    slidesPerView: 1.5,
+    slidesPerView: "auto",
     spaceBetween: 16,
     loop: false,
     pagination: false,
@@ -71,15 +67,15 @@ $('.js-academic__list').each(function () {
       spaceBetween: 32
     },
     992: {
-      slidesPerView: 3.5,
+      // slidesPerView: 4,
       spaceBetween: 24
     },
     700: {
-      slidesPerView: 2.5,
+      // slidesPerView: 2.5,
       spaceBetween: 16
     },
     480: {
-      slidesPerView: 2,
+      // slidesPerView: 2,
       spaceBetween: 16
     }
   }), _Swiper));
@@ -215,7 +211,7 @@ $('.js-seminars').each(function () {
   var _Swiper;
   var slider = $(this);
   var seminarsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(slider[0], (_Swiper = {
-    slidesPerView: 1.2,
+    slidesPerView: "auto",
     spaceBetween: 16,
     loop: false,
     pagination: true,
@@ -232,20 +228,20 @@ $('.js-seminars').each(function () {
     // when window width is >= 480px
     1200: {
       slidesPerView: 3,
-      spaceBetween: 32
+      spaceBetween: 24
     },
     992: {
-      slidesPerView: 2.5,
-      spaceBetween: 24
+      slidesPerView: 3,
+      spaceBetween: 16
     },
     768: {
-      slidesPerView: 1.5,
-      spaceBetween: 24
-    },
-    576: {
-      slidesPerView: 1.5,
-      spaceBetween: 24
+      // slidesPerView: 1.5,
+      spaceBetween: 16
     }
+    // 576: {
+    // 	// slidesPerView: 1.5,
+    // 	spaceBetween: 24,
+    // }, 
   }), _Swiper));
 });
 

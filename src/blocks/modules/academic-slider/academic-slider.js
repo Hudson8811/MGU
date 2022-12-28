@@ -5,11 +5,7 @@ var academicList;
 $('.js-academic__list').each(function(){
 	var slider=$(this)
 	var academicList = new Swiper(slider[0], {
-		// watchOverflow: true,
-		// watchSlidesVisibility: true,
-		// watchSlidesProgress: true,
-		// preventInteractionOnTransition: true,
-		slidesPerView: 1.5,
+		slidesPerView: "auto",
 		spaceBetween: 16,
 		loop: false,
 		pagination: false,
@@ -32,16 +28,17 @@ $('.js-academic__list').each(function(){
 				slidesPerView: 4,
 				spaceBetween: 32
 			},
+
 			992: {
-				slidesPerView: 3.5,
+				// slidesPerView: 4,
 				spaceBetween: 24,
 			}, 
 			700: {
-				slidesPerView: 2.5,
+				// slidesPerView: 2.5,
 				spaceBetween: 16,
 			}, 
 			480: {
-				slidesPerView: 2,
+				// slidesPerView: 2,
 				spaceBetween: 16,
 			}, 
 		}

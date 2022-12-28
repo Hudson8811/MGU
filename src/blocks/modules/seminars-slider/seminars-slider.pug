@@ -2,8 +2,9 @@
 	.seminars
 		.seminars__top
 			.seminars__top__title Cеминары
-			a(href="").block__textOne__link все семинары 
-		.seminars__wrap.swiper-container.js-seminars 
+			a(href="").block__textOne__link 
+				!="все <span>семинары</span>" 
+		.seminars__swiper.swiper-container.js-seminars 
 			.swiper-wrapper
 				.swiper-slide
 					a(href="").seminars__item 
@@ -26,6 +27,6 @@
 						.seminars__item__title Научный семинар НИЛ новейших отложений и палиогеографии плейстоцена
 						.seminars__item__text 
 						img(src="img/projectPage/seminars__item__2.png", alt="")
-			.seminars__sliders__navigation
+			.seminars__swiper__navigation
 				.swiper-button-prev
 				.swiper-button-next

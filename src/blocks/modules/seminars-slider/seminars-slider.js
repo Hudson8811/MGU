@@ -5,7 +5,7 @@ var seminarsSlider;
 $('.js-seminars').each(function(){
 	var slider=$(this)
 	var seminarsSlider = new Swiper(slider[0], {
-		slidesPerView: 1.2,
+		slidesPerView: "auto",
 		spaceBetween: 16,
 		loop: false,
 		pagination: true,
@@ -23,20 +23,20 @@ $('.js-seminars').each(function(){
 			// when window width is >= 480px
 			1200: {
 				slidesPerView: 3,
-				spaceBetween: 32
+				spaceBetween: 24
 			},
 			992: {
-				slidesPerView: 2.5,
-				spaceBetween: 24,
+				slidesPerView: 3,
+				spaceBetween: 16,
 			}, 
 			768: {
-				slidesPerView: 1.5,
-				spaceBetween: 24,
+				// slidesPerView: 1.5,
+				spaceBetween: 16,
 			}, 
-			576: {
-				slidesPerView: 1.5,
-				spaceBetween: 24,
-			}, 
+			// 576: {
+			// 	// slidesPerView: 1.5,
+			// 	spaceBetween: 24,
+			// }, 
 		}
 	});
 })
