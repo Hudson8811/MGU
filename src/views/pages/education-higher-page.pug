@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Education Higher ";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	.educationHigher 
+		.container
+			include ../../blocks/components/banner-main-education-higher/banner-main-education-higher
+			include ../../blocks/components/banners-trio-education-higher/banners-trio-education-higher
+			include ../../blocks/components/banners-duo-blue-education-higher/banners-duo-blue-education-higher
+	include ../../blocks/modules/footer/footer
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

@@ -345,7 +345,7 @@ a.block__textOne__link {
 	border-radius: 40px;
 	text-align: center;
 	border: 2px solid #FFFFFF;
-
+	width: 100%;
 	&:focus,
 	&:hover {
 		text-decoration: none;
@@ -451,14 +451,7 @@ a.block__textOne__link {
 	}
 
 }
-//проверить позже
-// .section {
-// 	position: relative;
-// 	width: 100%;
-// 	height: auto;
-// 	padding-top: 60px;
-// 	background: $lightBg;
-// }
+
 
 @include max(lg){
 	.section {

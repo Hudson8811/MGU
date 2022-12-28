@@ -2130,6 +2130,7 @@ a.block__textOne__link--person-colors::after {
   border-radius: 40px;
   text-align: center;
   border: 2px solid #FFFFFF;
+  width: 100%;
 }
 
 .button.button__white:focus,
@@ -5514,6 +5515,12 @@ button.declaration__item__button {
   background: #F4F3F0;
 }
 
+.educationHigher {
+  padding-top: 60px;
+  background: #F4F3F0;
+  min-height: 100vh;
+}
+
 @media only screen and (min-width: 701px) {
   .person-page-mobile-h1 {
     display: none;
@@ -6391,6 +6398,10 @@ button.declaration__item__button {
     border-bottom: none;
     max-width: none;
     margin-right: 0;
+  }
+
+  .educationHigher {
+    padding-top: 0px;
   }
 }
 

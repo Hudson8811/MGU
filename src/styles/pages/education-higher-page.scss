@@ -1,0 +1,8 @@
+.educationHigher {
+	padding-top: 60px;
+	background: #F4F3F0;
+	min-height: 100vh;
+	@include max(md) {
+		padding-top: 0px;
+	}
+}
