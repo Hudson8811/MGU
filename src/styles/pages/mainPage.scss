@@ -4,7 +4,6 @@
 	height: auto;
 	padding-top: 60px;
 	background: $lightBg;
-	padding-bottom: 115px;
 	@include max(md) {
 		padding-top: 0;
 	}
@@ -37,6 +36,9 @@
 		.button.button__blueLight {
 			font-size: $fz24;
 			line-height: $lh28;
+		}
+		.banners {
+			margin-bottom: 32px;
 		}
 	}
 	@include max(xs) {

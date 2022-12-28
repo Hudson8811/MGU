@@ -2425,6 +2425,7 @@ a.block__textOne__link--person-colors::after {
   width: 100%;
   position: relative;
   background: #F4F3F0;
+  border-bottom: 2px solid #fff;
 }
 
 .topMenu {
@@ -3011,6 +3012,10 @@ button.declaration__item__button {
   margin-bottom: 38px !important;
 }
 
+.main__news__top .block__textOne__link {
+  margin-top: 5px;
+}
+
 .main__news__list {
   position: relative;
   display: flex;
@@ -3057,6 +3062,7 @@ button.declaration__item__button {
   overflow: hidden;
   position: relative;
   width: 100%;
+  max-width: 440px;
   height: 220px;
   margin-bottom: 8px;
 }
@@ -4617,7 +4623,6 @@ button.declaration__item__button {
   height: auto;
   padding-top: 60px;
   background: #F4F3F0;
-  padding-bottom: 115px;
 }
 
 .main {
@@ -6903,6 +6908,10 @@ button.declaration__item__button {
   .main .button.button__blueLight {
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+
+  .main .banners {
+    margin-bottom: 32px;
   }
 
   .persons-search-results {

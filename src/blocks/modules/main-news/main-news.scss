@@ -22,6 +22,9 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 38px !important;
+		.block__textOne__link {
+			margin-top: 5px;
+		}
 	}
 	&__list {
 		position: relative;
@@ -75,6 +78,7 @@
 			overflow: hidden;
 			position: relative;
 			width: 100%;
+			max-width: 440px;
 			height: 220px;
 			margin-bottom: 8px;
 			img {
