@@ -42,10 +42,8 @@
 	}
 	.about__banner {
 		display: flex;
-		justify-content: space-between;
-		h1 {
-			margin-right: 0;
-		}
+		justify-content: flex-start;
+
 	}
 	.button.button__white  {
 		margin-bottom: 16px;
@@ -53,5 +51,8 @@
 		display: inline-block;
 		margin-left: 1px;
 		margin-right: 1px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }

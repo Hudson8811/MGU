@@ -4,6 +4,7 @@
 	display: flex;
 	min-height: 376px;
 	margin-bottom: 80px;
+	padding-bottom: 48px;
 	@include max(lg) {
 		margin-bottom: 60px;
 	}

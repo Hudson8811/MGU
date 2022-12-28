@@ -2149,6 +2149,26 @@ a.block__textOne__link--person-colors::after {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.button.button__white--fill {
+  background-color: #FFFFFF;
+  color: #104CA6;
+  width: auto;
+  padding: 3px 32px 6px 32px;
+  border: 2px solid #fff;
+}
+
+.button.button__white--fill:hover {
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+.button.button__white--fill:active {
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
 .button.button__blueLight {
   display: flex;
   justify-content: center;
@@ -4391,6 +4411,7 @@ button.declaration__item__button {
   display: flex;
   min-height: 376px;
   margin-bottom: 80px;
+  padding-bottom: 48px;
 }
 
 .about__banner__text {
@@ -5573,11 +5594,7 @@ button.declaration__item__button {
 
 .educationHigher .about__banner {
   display: flex;
-  justify-content: space-between;
-}
-
-.educationHigher .about__banner h1 {
-  margin-right: 0;
+  justify-content: flex-start;
 }
 
 .educationHigher .button.button__white {
@@ -5586,6 +5603,50 @@ button.declaration__item__button {
   display: inline-block;
   margin-left: 1px;
   margin-right: 1px;
+}
+
+.educationHigher .button.button__white:last-child {
+  margin-bottom: 0;
+}
+
+.educationAdditional {
+  padding-top: 60px;
+  background: #F4F3F0;
+  min-height: 100vh;
+  padding-bottom: 1px;
+}
+
+.educationAdditional .about__banner {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.educationAdditional .about__banner h1 {
+  min-width: 408px;
+}
+
+.educationAdditional .about__banner__text {
+  display: block;
+}
+
+.educationAdditional .about__banner-additional-top .block__textOne__link__white {
+  margin-bottom: 88px;
+}
+
+.educationAdditional .about__banner .button__white--fill {
+  margin-right: 32px;
+}
+
+.educationAdditional .button.button__white {
+  margin-bottom: 16px;
+  width: auto;
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.educationAdditional .button.button__white:last-child {
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 701px) {
@@ -6491,6 +6552,10 @@ button.declaration__item__button {
 
   .educationHigher--white .banners.banners-trio {
     margin-bottom: 0;
+  }
+
+  .educationAdditional {
+    padding-top: 0px;
   }
 }
 

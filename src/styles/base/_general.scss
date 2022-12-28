@@ -152,6 +152,7 @@ a.block__textOne__link {
 		display: inline-block;
 		content: url(../img/svg/editor__link__white.svg);
 	}
+
 }
 .block__textOne__link.academic__item__button {
 	position: relative;
@@ -360,6 +361,24 @@ a.block__textOne__link {
 	&:active {
 		border: 2px solid rgba(255, 255, 255, 0.3);
 		background: rgba(255, 255, 255, 0.3);
+	}
+	&--fill {
+		background-color: #FFFFFF;
+		color: #104CA6;
+		width: auto;
+		padding: 3px 32px 6px 32px;
+		border: 2px solid #fff;
+		&:hover {
+			border: 2px solid #fff;
+			background: rgba(255, 255, 255, 0);
+			color: #fff;
+		}
+	
+		&:active {
+			border: 2px solid #fff;
+			background: rgba(255, 255, 255, 0);
+			color: #fff;
+		}
 	}
 }
 
