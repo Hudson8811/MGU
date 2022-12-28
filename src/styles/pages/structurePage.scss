@@ -8,9 +8,18 @@
 	@include max(sm) {
 		padding-top: 40px;
 	}
+	.structureNews__item {
+		margin-bottom: 0;
+		@include max(sm) {
+			margin-bottom: 24px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 	.block__textOne__link {
 		@include max(sm) {
-			margin-top: 5px;
+			margin-top: 3px;
 		}
 	}
 	&__project-top {
@@ -43,7 +52,7 @@
 	}
 	.section__block__textThree {
 		.container {
-			padding-top: 60px;
+			padding-top: 68px;
 			@include max(lg) {
 				padding-top: 28px;
 			}
@@ -60,15 +69,6 @@
 			}
 		}
 	}
-	.structureNews {
-		padding-bottom: 140px;
-		@include max(md) {
-			padding-top: 24px;
-			padding-bottom: 127px;
-		}
-		@include max(sm) {
-			padding-bottom: 121px;
-		}
-	}
+
 }
 
