@@ -3112,6 +3112,7 @@ button.declaration__item__button {
   flex-flow: column nowrap;
   margin-bottom: 100px;
   overflow: hidden;
+  min-height: 100%;
 }
 
 .seminars__sliders .seminars__top {

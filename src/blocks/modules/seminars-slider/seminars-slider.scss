@@ -5,6 +5,7 @@
 	flex-flow: column nowrap;
 	margin-bottom: 100px;
 	overflow: hidden;
+	min-height: 100%;
 	@include max(lg) {
 		margin-bottom: 80px;
 	}
