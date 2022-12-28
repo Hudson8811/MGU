@@ -4489,6 +4489,15 @@ button.declaration__item__button {
   padding: 32px;
   margin-left: 32px;
   margin-bottom: 0px;
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
+}
+
+.banners.banners-trio .banner:hover__title {
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
+}
+
+.banners.banners-trio .banner:hover__text {
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
 }
 
 .banners.banners-trio .banner__title {
@@ -4523,6 +4532,11 @@ button.declaration__item__button {
   padding: 32px;
   margin-left: 32px;
   margin-bottom: 0px;
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
+}
+
+.banners.banners__duoBlue .banner__blueLight.banner:hover {
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
 }
 
 .banners.banners__duoBlue .banner__blueLight.banner .banner__title {
@@ -4536,6 +4550,26 @@ button.declaration__item__button {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.banners.banners-trio.banners-trio-bgImg .banner picture,
+.banners.banners-trio.banners-trio-bgImg .banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.banners.banners-trio.banners-trio-bgImg .banner__title {
+  z-index: 2;
+}
+
+.banners.banners-trio.banners-trio-bgImg .banner__text {
+  z-index: 2;
 }
 
 .section__newsMain {
@@ -5519,6 +5553,39 @@ button.declaration__item__button {
   padding-top: 60px;
   background: #F4F3F0;
   min-height: 100vh;
+  padding-bottom: 1px;
+}
+
+.educationHigher--white {
+  width: 100%;
+  background: #fff;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.educationHigher--white .banners.banners-trio {
+  margin-bottom: 0;
+}
+
+.educationHigher .about__banner__text {
+  display: block;
+}
+
+.educationHigher .about__banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.educationHigher .about__banner h1 {
+  margin-right: 0;
+}
+
+.educationHigher .button.button__white {
+  margin-bottom: 16px;
+  width: auto;
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 @media only screen and (min-width: 701px) {
@@ -5974,6 +6041,15 @@ button.declaration__item__button {
   .column__right {
     flex: 1 1 auto;
   }
+
+  .educationHigher--white {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .educationHigher--white .banners.banners-trio {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -6242,6 +6318,7 @@ button.declaration__item__button {
   .banners.banners-trio .banner__title {
     max-width: 248px;
     margin-right: 24px;
+    min-width: 30%;
   }
 
   .banners.banners-trio .banner__text {
@@ -6255,6 +6332,10 @@ button.declaration__item__button {
   .banners.banners__duoBlue .banner__blueLight.banner .banner__title {
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+
+  .banners.banners-trio.banners-trio-bgImg .banner {
+    min-height: 240px;
   }
 
   .layoutTwo__left {
@@ -6402,6 +6483,14 @@ button.declaration__item__button {
 
   .educationHigher {
     padding-top: 0px;
+  }
+
+  .educationHigher--white {
+    padding-top: 48px;
+  }
+
+  .educationHigher--white .banners.banners-trio {
+    margin-bottom: 0;
   }
 }
 
@@ -6907,6 +6996,10 @@ button.declaration__item__button {
     margin-bottom: 0;
   }
 
+  .banners.banners-trio.banners-trio-bgImg .banner {
+    min-height: 300px;
+  }
+
   .main {
     margin-bottom: 60px;
   }
@@ -7131,6 +7224,14 @@ button.declaration__item__button {
   .column__right,
   .column__left {
     padding-bottom: 32px;
+  }
+
+  .educationHigher--white {
+    padding-bottom: 80px;
+  }
+
+  .educationHigher--white .banners.banners-trio {
+    margin-bottom: 0;
   }
 }
 

@@ -2,7 +2,56 @@
 	padding-top: 60px;
 	background: #F4F3F0;
 	min-height: 100vh;
+	padding-bottom: 1px;
 	@include max(md) {
 		padding-top: 0px;
+	}
+
+	&--white {
+		width: 100%;
+		background: #fff;
+		padding-top: 60px;
+		padding-bottom: 100px;
+		@include max(lg) {
+			padding-top: 60px;
+			padding-bottom: 80px; 
+		}
+		@include max(md) {
+			padding-top: 48px;
+
+		}
+		@include max(sm) {
+			padding-bottom: 80px; 
+		}
+		.banners.banners-trio {
+			margin-bottom: 0;
+			@include max(lg) {
+				margin-bottom: 0;
+			}
+			@include max(md) {
+				margin-bottom: 0;
+	
+			}
+			@include max(sm) {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.about__banner__text {
+		display: block;
+	}
+	.about__banner {
+		display: flex;
+		justify-content: space-between;
+		h1 {
+			margin-right: 0;
+		}
+	}
+	.button.button__white  {
+		margin-bottom: 16px;
+		width: auto;
+		display: inline-block;
+		margin-left: 1px;
+		margin-right: 1px;
 	}
 }

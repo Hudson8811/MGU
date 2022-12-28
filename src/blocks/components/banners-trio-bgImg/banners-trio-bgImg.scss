@@ -1,0 +1,27 @@
+.banners.banners-trio.banners-trio-bgImg  {
+	.banner {
+		@include max(md) {
+			min-height: 240px;
+		}
+		@include max(sm) {
+			min-height: 300px;
+		}
+		picture, img  {
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			object-position: 50% 50%;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+		}
+		&__title {
+			z-index: 2;
+		}
+		&__text {
+			z-index: 2;
+		}
+	}
+
+}
