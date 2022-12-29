@@ -381,7 +381,22 @@ a.block__textOne__link {
 		}
 	}
 }
-
+.section__title-small {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #104CA6;
+	text-align: left;	
+	margin-bottom: 46px;
+	@include max(lg) {
+		margin-bottom: 38px;
+	}
+	@include max(sm) {
+		margin-bottom: 30px;
+	}
+}
 .button.button__blueLight {
 	display: flex;
 	justify-content: center;
@@ -398,7 +413,16 @@ a.block__textOne__link {
 	height: 80px;
 	border-radius: 40px;
 	cursor: pointer;
-
+	@include max(md) {
+		span {
+			display: none;
+		}
+	}
+	@include max(sm) {
+		font-size: $fz24;
+		line-height: $lh28;
+		padding: 6px 28px;
+	}
 	&:focus,
 	&:hover {
 		text-decoration: none;

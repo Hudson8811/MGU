@@ -57,10 +57,13 @@
 			margin-left: 32px;
 			margin-right: 32px;	
 			width: 80%;
+			min-width: 80%;
 		}	
 		@include max(sm) {
 			font-size: $fz32;
 			line-height: $lh42;
+			width: 80%;
+			min-width: 80%;
 		}	
 		@include max(sm) {
 			margin-top: 24px;

@@ -2169,6 +2169,17 @@ a.block__textOne__link--person-colors::after {
   color: #fff;
 }
 
+.section__title-small {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #104CA6;
+  text-align: left;
+  margin-bottom: 46px;
+}
+
 .button.button__blueLight {
   display: flex;
   justify-content: center;
@@ -4256,6 +4267,11 @@ button.declaration__item__button {
   min-height: 300px;
   padding: 24px;
   transition: all 0.3s;
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
+}
+
+.banner:hover {
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
 }
 
 .banner:hover .banner__title {
@@ -4485,6 +4501,8 @@ button.declaration__item__button {
 .education.education__couple .education__item__desc__title {
   font-size: 2rem;
   line-height: 2.5rem;
+  max-width: 80%;
+  margin-bottom: 32px;
 }
 
 .banners.banners-trio {
@@ -4526,6 +4544,13 @@ button.declaration__item__button {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.75rem;
+}
+
+.banners.banners-trio .banner__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .banners.banners__duoBlue {
@@ -5613,7 +5638,7 @@ button.declaration__item__button {
   padding-top: 60px;
   background: #F4F3F0;
   min-height: 100vh;
-  padding-bottom: 1px;
+  padding-bottom: 100px;
 }
 
 .educationAdditional .about__banner {
@@ -5629,8 +5654,12 @@ button.declaration__item__button {
   display: block;
 }
 
+.educationAdditional .about__banner-additional-two {
+  margin-bottom: 32px;
+}
+
 .educationAdditional .about__banner-additional-top .block__textOne__link__white {
-  margin-bottom: 88px;
+  margin-bottom: 78px;
 }
 
 .educationAdditional .about__banner .button__white--fill {
@@ -5649,6 +5678,14 @@ button.declaration__item__button {
   margin-bottom: 0;
 }
 
+.educationAdditional .education__item:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.educationAdditional .education__item:nth-child(2) {
+  margin-bottom: 32px;
+}
+
 @media only screen and (min-width: 701px) {
   .person-page-mobile-h1 {
     display: none;
@@ -5659,6 +5696,10 @@ button.declaration__item__button {
   .container {
     width: 1168px;
     max-width: calc(100% - 64px);
+  }
+
+  .section__title-small {
+    margin-bottom: 38px;
   }
 
   .section {
@@ -5896,6 +5937,7 @@ button.declaration__item__button {
   .education.education__couple .education__item {
     max-width: calc(50% - 24px);
     margin-left: 24px;
+    min-height: 352px;
   }
 
   .banners.banners-trio {
@@ -6111,6 +6153,22 @@ button.declaration__item__button {
   .educationHigher--white .banners.banners-trio {
     margin-bottom: 0;
   }
+
+  .educationAdditional .about__banner-additional-two {
+    margin-bottom: 24px;
+  }
+
+  .educationAdditional .education__item {
+    min-height: 352px;
+  }
+
+  .educationAdditional .education__item:nth-child(1) {
+    margin-bottom: 24px;
+  }
+
+  .educationAdditional .education__item:nth-child(2) {
+    margin-bottom: 24px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -6119,9 +6177,23 @@ button.declaration__item__button {
   }
 }
 
+@media (max-width: 1095px) {
+  .educationAdditional .about__banner-additional-top .block__textOne__link__white {
+    margin-bottom: 48px;
+  }
+
+  .educationAdditional .about__banner .button__white--fill {
+    margin-bottom: 16px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .container {
     max-width: calc(100% - 64px);
+  }
+
+  .button.button__blueLight span {
+    display: none;
   }
 
   .title__32 {
@@ -6341,6 +6413,7 @@ button.declaration__item__button {
     margin-left: 32px;
     margin-right: 32px;
     width: 80%;
+    min-width: 80%;
   }
 
   .education.education__couple {
@@ -6354,6 +6427,7 @@ button.declaration__item__button {
     max-width: calc(100% - 0px);
     margin-left: 0px;
     margin-bottom: 32px;
+    min-height: 300px;
   }
 
   .education.education__couple .education__item:last-child {
@@ -6373,13 +6447,13 @@ button.declaration__item__button {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 132px;
+    min-height: 160px;
   }
 
   .banners.banners-trio .banner__title {
     max-width: 248px;
     margin-right: 24px;
-    min-width: 30%;
+    min-width: 248px;
   }
 
   .banners.banners-trio .banner__text {
@@ -6555,7 +6629,16 @@ button.declaration__item__button {
   }
 
   .educationAdditional {
-    padding-top: 0px;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  .educationAdditional .about__banner-additional-two {
+    margin-bottom: 32px;
+  }
+
+  .educationAdditional .about__banner-additional-top {
+    padding-bottom: 32px;
   }
 }
 
@@ -6605,6 +6688,16 @@ button.declaration__item__button {
 @media only screen and (max-width: 700px) {
   .container {
     max-width: calc(100% - 40px);
+  }
+
+  .section__title-small {
+    margin-bottom: 30px;
+  }
+
+  .button.button__blueLight {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    padding: 6px 28px;
   }
 
   .block-text__mob {
@@ -7001,6 +7094,8 @@ button.declaration__item__button {
   .about__banner h1 {
     font-size: 2rem;
     line-height: 2.625rem;
+    width: 80%;
+    min-width: 80%;
   }
 
   .about__banner h1 {
@@ -7009,9 +7104,8 @@ button.declaration__item__button {
     margin-right: 24px;
   }
 
-  .education.education__couple .education__item__desc__title {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+  .education.education__couple .education__item {
+    min-height: 352px;
   }
 
   .education.education__couple .education__item__desc {
@@ -7033,6 +7127,7 @@ button.declaration__item__button {
   .banners.banners-trio .banner__title {
     max-width: 248px;
     margin-right: 0px;
+    min-width: 80%;
   }
 
   .banners.banners-trio .banner__text {
@@ -7298,6 +7393,25 @@ button.declaration__item__button {
   .educationHigher--white .banners.banners-trio {
     margin-bottom: 0;
   }
+
+  .educationAdditional {
+    padding-bottom: 60px;
+  }
+
+  .educationAdditional .about__banner h1 {
+    width: 80%;
+    min-width: 80%;
+  }
+
+  .educationAdditional .about__banner-additional-two {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 546px) {
+  .educationAdditional .about__banner-additional-top {
+    padding-bottom: 48px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -7405,6 +7519,15 @@ button.declaration__item__button {
 
   .banners .banner__title {
     margin-bottom: 60px;
+  }
+
+  .education.education__couple .education__item {
+    min-height: 328px;
+  }
+
+  .education.education__couple .education__item__desc__title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .main .button.button__blueLight {

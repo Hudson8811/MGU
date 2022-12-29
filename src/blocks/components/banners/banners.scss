@@ -17,7 +17,9 @@
 	min-height: 300px;
 	padding: 24px;
 	transition: all 0.3s;
+	text-shadow: 0 0 0px transparent, 0 0 0px transparent;
 	&:hover {
+		text-shadow: 0 0 0px transparent, 0 0 0px transparent;		
 		.banner__title {
 			transition: all .3s;
 			text-decoration-line: underline;

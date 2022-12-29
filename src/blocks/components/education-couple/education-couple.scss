@@ -30,6 +30,7 @@
 		@include max(lg) {
 			max-width: calc(50% - 24px);
 			margin-left: 24px;
+			min-height: 352px;
 		}
 		@include max(md) {
 			height: auto;
@@ -37,15 +38,24 @@
 			max-width: calc(100% - 0px);
 			margin-left: 0px;
 			margin-bottom: 32px;
+			min-height: 300px;
 			&:last-child {
 				margin-bottom: 0;
 			}
+		} 
+		@include max(sm) {
+			min-height: 352px;
+		} 
+		@include max(xs) {
+			min-height: 328px;
 		} 
 		&__desc {
 			&__title {
 				font-size: $fz32;
 				line-height: $lh40;
-				@include max(sm) {
+				max-width: 80%;
+				margin-bottom: 32px;
+				@include max(xs) {
 					font-size: $fz24;
 					line-height: $lh28;
 				}
