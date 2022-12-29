@@ -247,6 +247,112 @@ $('.js-seminars').each(function () {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/students-timetable-slider-blue/students-timetable-slider-blue.js":
+/*!*********************************************************************************************!*\
+  !*** ./src/blocks/modules/students-timetable-slider-blue/students-timetable-slider-blue.js ***!
+  \*********************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_0__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Controller, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
+var seminarsSlider;
+$('.js-students-timetable-blue').each(function () {
+  var _Swiper;
+  var slider = $(this);
+  var seminarsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(slider[0], (_Swiper = {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    loop: false,
+    pagination: true,
+    autoHeight: true,
+    navigation: {
+      nextEl: slider.find('.swiper-button-next')[0],
+      prevEl: slider.find('.swiper-button-prev')[0]
+    }
+  }, _defineProperty(_Swiper, "pagination", {
+    el: slider.find('.swiper-pagination')[0],
+    type: 'bullets',
+    clickable: true
+  }), _defineProperty(_Swiper, "breakpoints", {
+    // when window width is >= 480px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 16
+    },
+    768: {
+      // slidesPerView: 1.5,
+      spaceBetween: 16
+    }
+    // 576: {
+    // 	// slidesPerView: 1.5,
+    // 	spaceBetween: 24,
+    // }, 
+  }), _Swiper));
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/students-timetable-slider-ochre/students-timetable-slider-ochre.js":
+/*!***********************************************************************************************!*\
+  !*** ./src/blocks/modules/students-timetable-slider-ochre/students-timetable-slider-ochre.js ***!
+  \***********************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Parallax, swiper__WEBPACK_IMPORTED_MODULE_0__.Mousewheel, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Controller, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.FreeMode, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
+var seminarsSlider;
+$('.js-students-timetable-ochre').each(function () {
+  var _Swiper;
+  var slider = $(this);
+  var seminarsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(slider[0], (_Swiper = {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    loop: false,
+    pagination: true,
+    autoHeight: true,
+    navigation: {
+      nextEl: slider.find('.swiper-button-next')[0],
+      prevEl: slider.find('.swiper-button-prev')[0]
+    }
+  }, _defineProperty(_Swiper, "pagination", {
+    el: slider.find('.swiper-pagination')[0],
+    type: 'bullets',
+    clickable: true
+  }), _defineProperty(_Swiper, "breakpoints", {
+    // when window width is >= 480px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 16
+    },
+    768: {
+      // slidesPerView: 1.5,
+      spaceBetween: 16
+    }
+    // 576: {
+    // 	// slidesPerView: 1.5,
+    // 	spaceBetween: 24,
+    // }, 
+  }), _Swiper));
+});
+
+/***/ }),
+
 /***/ "./src/js/import/components.js":
 /*!*************************************!*\
   !*** ./src/js/import/components.js ***!
@@ -287,6 +393,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_main_slider_main_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/main-slider/main-slider */ "./src/blocks/modules/main-slider/main-slider.js");
 /* harmony import */ var _modules_academic_slider_academic_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/academic-slider/academic-slider */ "./src/blocks/modules/academic-slider/academic-slider.js");
 /* harmony import */ var _modules_seminars_slider_seminars_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/seminars-slider/seminars-slider */ "./src/blocks/modules/seminars-slider/seminars-slider.js");
+/* harmony import */ var _modules_students_timetable_slider_ochre_students_timetable_slider_ochre__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/students-timetable-slider-ochre/students-timetable-slider-ochre */ "./src/blocks/modules/students-timetable-slider-ochre/students-timetable-slider-ochre.js");
+/* harmony import */ var _modules_students_timetable_slider_blue_students_timetable_slider_blue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/students-timetable-slider-blue/students-timetable-slider-blue */ "./src/blocks/modules/students-timetable-slider-blue/students-timetable-slider-blue.js");
+
+
 
 
 

@@ -1,0 +1,23 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Students Timetable";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	.educationAdditional 
+		.container
+			include ../../blocks/components/banner-main-students-timetable/banner-main-students-timetable
+			include ../../blocks/components/education-couple-students-timetable/education-couple-students-timetable		
+			.section__title-small Научно-исследовательская работа студентов
+			include ../../blocks/modules/students-timetable-slider-blue/students-timetable-slider-blue
+			.section__title-small Культура и спорт 	 
+			include ../../blocks/modules/students-timetable-slider-ochre/students-timetable-slider-ochre
+			include ../../blocks/components/education-students-timetable/education-students-timetable
+			.button.button__blueLight 
+				!="Рубрика «вопрос-ответ»" 
+	include ../../blocks/modules/footer/footer
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
