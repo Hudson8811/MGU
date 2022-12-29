@@ -10,4 +10,60 @@
 	@include max(sm) {
 		padding-bottom: 60px;
 	}
+	.button.button__blueLight {
+		@include max(xs) {
+			font-size: $fz20;
+			line-height: $lh20;
+		}
+	}
+	&__swiper {
+		.seminars__item {
+			background: #AF8F46;
+		}
+	}
+	.about__banner {
+		&-studentsTimetable {
+			.block__textOne__link__white {
+				margin-bottom: 78px;
+				@media (max-width: 1095px) {
+					margin-bottom: 48px;
+				}
+			}
+			display: flex;
+			justify-content: flex-start;
+			h1 {
+				min-width: 408px;
+				@include max(sm) {
+					width: 80%;
+					min-width: 80%;
+				}	
+			}
+			&__text {
+				display: block;
+			}
+			@include max(md) {
+				padding-bottom: 32px;
+			}
+			@media (max-width: 546px) {
+				padding-bottom: 48px;
+			}
+		}
+		.button.button__white.button__white--left {
+			margin-right: 32px;
+			@media (max-width: 1095px) {
+				margin-bottom: 16px;
+			}
+		}
+		.button.button__white  {
+			margin-bottom: 16px;
+			width: auto;
+			display: inline-block;
+			margin-left: 1px;
+			margin-right: 1px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+	
+		}
+	}
 }

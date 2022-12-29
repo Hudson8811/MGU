@@ -4166,7 +4166,7 @@ button.declaration__item__button {
   font-size: 2.625rem;
   line-height: 3.25rem;
   color: #FFFFFF;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .education__item__desc__text {
@@ -4616,6 +4616,47 @@ button.declaration__item__button {
 
 .banners.banners-trio.banners-trio-bgImg .banner__text {
   z-index: 2;
+}
+
+.statements {
+  position: relative;
+  display: flex;
+  width: calc(100% + 32px);
+  align-items: stretch;
+  flex-flow: row wrap;
+  margin-left: -32px;
+  padding-bottom: 0px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  margin-bottom: 80px;
+}
+
+.statements .statement {
+  position: relative;
+  flex: 0 0 50%;
+  max-width: calc(50% - 32px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 240px;
+  padding: 24px;
+  background: #fff;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
+}
+
+.statements .statement:hover {
+  text-shadow: 0 0 0px transparent, 0 0 0px transparent;
+}
+
+.statements .statement:nth-child(5) {
+  margin-bottom: 0;
+}
+
+.statements .statement:last-child {
+  margin-bottom: 0;
 }
 
 .section__newsMain {
@@ -5686,6 +5727,50 @@ button.declaration__item__button {
   margin-bottom: 32px;
 }
 
+.studentsTimetable {
+  padding-top: 60px;
+  background: #F4F3F0;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.studentsTimetable__swiper .seminars__item {
+  background: #AF8F46;
+}
+
+.studentsTimetable .about__banner-studentsTimetable {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.studentsTimetable .about__banner-studentsTimetable .block__textOne__link__white {
+  margin-bottom: 78px;
+}
+
+.studentsTimetable .about__banner-studentsTimetable h1 {
+  min-width: 408px;
+}
+
+.studentsTimetable .about__banner-studentsTimetable__text {
+  display: block;
+}
+
+.studentsTimetable .about__banner .button.button__white.button__white--left {
+  margin-right: 32px;
+}
+
+.studentsTimetable .about__banner .button.button__white {
+  margin-bottom: 16px;
+  width: auto;
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.studentsTimetable .about__banner .button.button__white:last-child {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 701px) {
   .person-page-mobile-h1 {
     display: none;
@@ -5964,6 +6049,18 @@ button.declaration__item__button {
     padding: 24px;
   }
 
+  .statements {
+    width: calc(100% + 24px);
+    margin-left: -24px;
+    margin-bottom: 60px;
+  }
+
+  .statements .statement {
+    max-width: calc(50% - 24px);
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+
   .section__newsMain {
     padding-top: 40px;
   }
@@ -6183,6 +6280,14 @@ button.declaration__item__button {
   }
 
   .educationAdditional .about__banner .button__white--fill {
+    margin-bottom: 16px;
+  }
+
+  .studentsTimetable .about__banner-studentsTimetable .block__textOne__link__white {
+    margin-bottom: 48px;
+  }
+
+  .studentsTimetable .about__banner .button.button__white.button__white--left {
     margin-bottom: 16px;
   }
 }
@@ -6473,6 +6578,12 @@ button.declaration__item__button {
     min-height: 240px;
   }
 
+  .statements .statement {
+    max-width: calc(50% - 16px);
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
   .layoutTwo__left {
     margin-bottom: 60px;
   }
@@ -6638,6 +6749,15 @@ button.declaration__item__button {
   }
 
   .educationAdditional .about__banner-additional-top {
+    padding-bottom: 32px;
+  }
+
+  .studentsTimetable {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  .studentsTimetable .about__banner-studentsTimetable {
     padding-bottom: 32px;
   }
 }
@@ -7160,6 +7280,28 @@ button.declaration__item__button {
     min-height: 300px;
   }
 
+  .statements {
+    width: calc(100% + 0px);
+    margin-left: 0px;
+    flex-flow: column nowrap;
+    margin-bottom: 48px;
+  }
+
+  .statements .statement {
+    flex: 0 0 100%;
+    max-width: calc(100% - 0px);
+    margin-left: 0px;
+    margin-bottom: 24px;
+  }
+
+  .statements .statement:nth-child(5) {
+    margin-bottom: 24px;
+  }
+
+  .statements .statement:last-child {
+    margin-bottom: 0;
+  }
+
   .main {
     margin-bottom: 60px;
   }
@@ -7406,10 +7548,23 @@ button.declaration__item__button {
   .educationAdditional .about__banner-additional-two {
     margin-bottom: 24px;
   }
+
+  .studentsTimetable {
+    padding-bottom: 60px;
+  }
+
+  .studentsTimetable .about__banner-studentsTimetable h1 {
+    width: 80%;
+    min-width: 80%;
+  }
 }
 
 @media (max-width: 546px) {
   .educationAdditional .about__banner-additional-top {
+    padding-bottom: 48px;
+  }
+
+  .studentsTimetable .about__banner-studentsTimetable {
     padding-bottom: 48px;
   }
 }
@@ -7564,6 +7719,11 @@ button.declaration__item__button {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+
+  .studentsTimetable .button.button__blueLight {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
   }
 }
 

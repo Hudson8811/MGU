@@ -23,11 +23,11 @@ $('.js-students-timetable-blue').each(function(){
 			// when window width is >= 480px
 			1200: {
 				slidesPerView: 3,
-				spaceBetween: 24
+				spaceBetween: 32
 			},
 			992: {
 				slidesPerView: 3,
-				spaceBetween: 16,
+				spaceBetween: 24,
 			}, 
 			768: {
 				// slidesPerView: 1.5,
