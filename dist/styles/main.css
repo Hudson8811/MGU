@@ -3199,7 +3199,7 @@ button.declaration__item__button {
 
 .seminars__sliders .seminars__swiper__navigation .swiper-button-prev::after {
   color: #104CA6;
-  content: url(../../../img/svg/seminars__prev.svg);
+  content: url(../img/svg/seminars__prev.svg);
 }
 
 .seminars__sliders .seminars__swiper__navigation .swiper-button-next {
@@ -3209,7 +3209,7 @@ button.declaration__item__button {
 
 .seminars__sliders .seminars__swiper__navigation .swiper-button-next::after {
   color: #104CA6;
-  content: url(../../../img/svg/seminars__next.svg);
+  content: url(../img/svg/seminars__next.svg);
 }
 
 .seminars__sliders .seminars__item {
