@@ -5,12 +5,20 @@
 	min-height: 376px;
 	margin-bottom: 80px;
 	padding-bottom: 48px;
+	&--buttons {
+		padding-bottom: 32px;
+	}
 	@include max(lg) {
 		margin-bottom: 60px;
 	}
+	.block__textOne__link__white {
+		margin-bottom: 0px;
+		@media (max-width: 1095px) {
+			margin-bottom: 48px;
+		}
+	}
 	@include max(md) {
 		flex-flow: column nowrap;
-		padding-bottom: 48px;
 		width: calc(100% + 64px);
 		margin-left: -32px;
 		margin-bottom: 48px;
@@ -20,18 +28,67 @@
 		margin-left: -20px;
 		margin-bottom: 40px;
 	}
-	&__text {
+	&__left {
 		position: relative;
 		max-width: 567px;
 		margin-top: 48px;
 		margin-right: 32px;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		min-height: 100%;
+		flex-grow: 1;
 		@include max(md) {
 			margin-left: 32px;
 		}
 		@include max(sm) {
 			margin-left: 24px;
 			margin-right: 24px;	
-		}	
+		}
+
+	}
+	&__button {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		flex-flow: row wrap;
+		.button {
+			width: auto;
+			white-space: nowrap;
+			margin-bottom: 16px;
+			&:first-child {
+				margin-right: 32px;
+			}
+		}
+		
+	}
+	&__button-column {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-flow: column nowrap;
+		.button {
+			width: auto;
+			white-space: wrap;
+			margin-bottom: 16px;
+			&:first-child {
+				margin-right: 32px;
+			}
+		}
+
+	}
+	&__text {
+		position: relative;
+		// max-width: 567px;
+		// margin-top: 48px;
+		// margin-right: 32px;
+		// @include max(md) {
+		// 	margin-left: 32px;
+		// }
+		// @include max(sm) {
+		// 	margin-left: 24px;
+		// 	margin-right: 24px;	
+		// }	
 		p {
 			position: relative;
 			font-style: normal;
@@ -42,7 +99,7 @@
 			width: 100%;			
 		}
 	}
-	h1 {
+	h1,h2 {
 		position: relative;
 		font-style: normal;
 		font-weight: 800;

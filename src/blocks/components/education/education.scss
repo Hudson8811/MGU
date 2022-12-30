@@ -23,7 +23,8 @@
 		margin-bottom: 32px;
 		transition: all .3s;
 		min-height: 300px;
-		height: 300px;
+		display: flex;
+		flex-direction: column;
 		@include max(sm) {
 			margin-bottom: 24px;
 		}
@@ -65,6 +66,7 @@
 			flex-flow: column nowrap;
 			justify-content: space-between;
 			align-items: flex-start;
+			flex-grow: 1;
 			@include max(sm) {
 				padding: 24px;
 			}

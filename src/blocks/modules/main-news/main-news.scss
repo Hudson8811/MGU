@@ -33,7 +33,15 @@
 		align-items: stretch;
 		flex-flow: row wrap;
 		margin-left: -32px;
+		@include max(md) {
+			width: calc(100% + 24px);
+			margin-left: -24px;
+		}
 		@include max(sm) {
+			width: calc(100% + 16px);
+			margin-left: -16px;
+		}
+		@media (max-width: 480px) {
 			flex-flow: column nowrap;
 			width: 100%;
 			margin-left: 0;
@@ -51,12 +59,27 @@
 		margin-bottom: 32px;
 		transition: all 0.5s;
 		overflow: hidden;
+		@include max(md) {
+			max-width: calc(33.3333% - 24px);
+			margin-left: 24px;
+		}
 		@include max(sm) {
-			flex: 0 0 1000%;
+			flex: 0 0 50%;
+			max-width: calc(50% - 16px);
+			margin-left: 16px;
+			&:last-child{
+				display: none;
+			}
+		}
+		@media (max-width: 480px) {
+			flex: 0 0 100%;
 			max-width: 100%;
 			margin-left: 0;
 			border-bottom: 1px solid rgba(0, 85, 182, 0.5);
 			padding-bottom: 32px;
+			&:last-child{
+				display: flex;
+			}
 		}
 		&:hover {
 			transition: all 0.5s;

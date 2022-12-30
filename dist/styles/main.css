@@ -2130,7 +2130,7 @@ a.block__textOne__link--person-colors::after {
   border-radius: 40px;
   text-align: center;
   border: 2px solid #FFFFFF;
-  width: 100%;
+  width: auto;
 }
 
 .button.button__white:focus,
@@ -4114,7 +4114,8 @@ button.declaration__item__button {
   margin-bottom: 32px;
   transition: all 0.3s;
   min-height: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .education__item img {
@@ -4154,6 +4155,7 @@ button.declaration__item__button {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  flex-grow: 1;
 }
 
 .education__item__desc__title {
@@ -4430,11 +4432,62 @@ button.declaration__item__button {
   padding-bottom: 48px;
 }
 
-.about__banner__text {
+.about__banner--buttons {
+  padding-bottom: 32px;
+}
+
+.about__banner .block__textOne__link__white {
+  margin-bottom: 0px;
+}
+
+.about__banner__left {
   position: relative;
   max-width: 567px;
   margin-top: 48px;
   margin-right: 32px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+.about__banner__button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-flow: row wrap;
+}
+
+.about__banner__button .button {
+  width: auto;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.about__banner__button .button:first-child {
+  margin-right: 32px;
+}
+
+.about__banner__button-column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+
+.about__banner__button-column .button {
+  width: auto;
+  white-space: wrap;
+  margin-bottom: 16px;
+}
+
+.about__banner__button-column .button:first-child {
+  margin-right: 32px;
+}
+
+.about__banner__text {
+  position: relative;
 }
 
 .about__banner__text p {
@@ -4447,7 +4500,8 @@ button.declaration__item__button {
   width: 100%;
 }
 
-.about__banner h1 {
+.about__banner h1,
+.about__banner h2 {
   position: relative;
   font-style: normal;
   font-weight: 800;
@@ -4633,22 +4687,30 @@ button.declaration__item__button {
 
 .statements .statement {
   position: relative;
-  flex: 0 0 50%;
-  max-width: calc(50% - 32px);
+  flex: 0 0 33.333%;
+  max-width: calc(33.333% - 32px);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
   min-height: 240px;
   padding: 24px;
+  padding-right: 108px;
   background: #fff;
   margin-left: 32px;
   margin-bottom: 32px;
+  transition: all 0.3s;
   text-shadow: 0 0 0px transparent, 0 0 0px transparent;
 }
 
 .statements .statement:hover {
+  transition: all 0.3s;
+  background: #D8E0EC;
   text-shadow: 0 0 0px transparent, 0 0 0px transparent;
+}
+
+.statements .statement:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .statements .statement:nth-child(5) {
@@ -4657,6 +4719,42 @@ button.declaration__item__button {
 
 .statements .statement:last-child {
   margin-bottom: 0;
+}
+
+.statements .statement__desc {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.statements .statement__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #104CA6;
+}
+
+.statements .statement__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #104CA6;
+}
+
+.statements .statement__icon {
+  position: absolute;
+  top: 33px;
+  right: 33px;
+  width: 50px;
+  height: 66px;
 }
 
 .section__newsMain {
@@ -5682,43 +5780,6 @@ button.declaration__item__button {
   padding-bottom: 100px;
 }
 
-.educationAdditional .about__banner {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.educationAdditional .about__banner h1 {
-  min-width: 408px;
-}
-
-.educationAdditional .about__banner__text {
-  display: block;
-}
-
-.educationAdditional .about__banner-additional-two {
-  margin-bottom: 32px;
-}
-
-.educationAdditional .about__banner-additional-top .block__textOne__link__white {
-  margin-bottom: 78px;
-}
-
-.educationAdditional .about__banner .button__white--fill {
-  margin-right: 32px;
-}
-
-.educationAdditional .button.button__white {
-  margin-bottom: 16px;
-  width: auto;
-  display: inline-block;
-  margin-left: 1px;
-  margin-right: 1px;
-}
-
-.educationAdditional .button.button__white:last-child {
-  margin-bottom: 0;
-}
-
 .educationAdditional .education__item:nth-child(1) {
   margin-bottom: 32px;
 }
@@ -5738,37 +5799,19 @@ button.declaration__item__button {
   background: #AF8F46;
 }
 
-.studentsTimetable .about__banner-studentsTimetable {
-  display: flex;
-  justify-content: flex-start;
+.studentsTimetable__swiper .seminars__item:hover {
+  background: #946F11;
 }
 
-.studentsTimetable .about__banner-studentsTimetable .block__textOne__link__white {
-  margin-bottom: 78px;
+.enrolled {
+  padding-top: 60px;
+  background: #F4F3F0;
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
-.studentsTimetable .about__banner-studentsTimetable h1 {
-  min-width: 408px;
-}
-
-.studentsTimetable .about__banner-studentsTimetable__text {
-  display: block;
-}
-
-.studentsTimetable .about__banner .button.button__white.button__white--left {
-  margin-right: 32px;
-}
-
-.studentsTimetable .about__banner .button.button__white {
-  margin-bottom: 16px;
-  width: auto;
-  display: inline-block;
-  margin-left: 1px;
-  margin-right: 1px;
-}
-
-.studentsTimetable .about__banner .button.button__white:last-child {
-  margin-bottom: 0;
+.enrolled .about__banner__left {
+  max-width: 600px;
 }
 
 @media only screen and (min-width: 701px) {
@@ -6056,8 +6099,13 @@ button.declaration__item__button {
   }
 
   .statements .statement {
+    flex: 0 0 50%;
     max-width: calc(50% - 24px);
     margin-left: 24px;
+    margin-bottom: 24px;
+  }
+
+  .statements .statement:nth-child(4) {
     margin-bottom: 24px;
   }
 
@@ -6251,10 +6299,6 @@ button.declaration__item__button {
     margin-bottom: 0;
   }
 
-  .educationAdditional .about__banner-additional-two {
-    margin-bottom: 24px;
-  }
-
   .educationAdditional .education__item {
     min-height: 352px;
   }
@@ -6275,20 +6319,8 @@ button.declaration__item__button {
 }
 
 @media (max-width: 1095px) {
-  .educationAdditional .about__banner-additional-top .block__textOne__link__white {
+  .about__banner .block__textOne__link__white {
     margin-bottom: 48px;
-  }
-
-  .educationAdditional .about__banner .button__white--fill {
-    margin-bottom: 16px;
-  }
-
-  .studentsTimetable .about__banner-studentsTimetable .block__textOne__link__white {
-    margin-bottom: 48px;
-  }
-
-  .studentsTimetable .about__banner .button.button__white.button__white--left {
-    margin-bottom: 16px;
   }
 }
 
@@ -6375,6 +6407,16 @@ button.declaration__item__button {
   .academic .swiper-slide {
     max-width: 280px;
     min-width: 280px;
+  }
+
+  .main__news__list {
+    width: calc(100% + 24px);
+    margin-left: -24px;
+  }
+
+  .main__news__item {
+    max-width: calc(33.3333% - 24px);
+    margin-left: 24px;
   }
 
   .main__news__item__title {
@@ -6504,17 +6546,17 @@ button.declaration__item__button {
 
   .about__banner {
     flex-flow: column nowrap;
-    padding-bottom: 48px;
     width: calc(100% + 64px);
     margin-left: -32px;
     margin-bottom: 48px;
   }
 
-  .about__banner__text {
+  .about__banner__left {
     margin-left: 32px;
   }
 
-  .about__banner h1 {
+  .about__banner h1,
+  .about__banner h2 {
     margin-left: 32px;
     margin-right: 32px;
     width: 80%;
@@ -6581,6 +6623,10 @@ button.declaration__item__button {
   .statements .statement {
     max-width: calc(50% - 16px);
     margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  .statements .statement:nth-child(4) {
     margin-bottom: 16px;
   }
 
@@ -6744,21 +6790,14 @@ button.declaration__item__button {
     padding-bottom: 80px;
   }
 
-  .educationAdditional .about__banner-additional-two {
-    margin-bottom: 32px;
-  }
-
-  .educationAdditional .about__banner-additional-top {
-    padding-bottom: 32px;
-  }
-
   .studentsTimetable {
     padding-top: 0;
     padding-bottom: 80px;
   }
 
-  .studentsTimetable .about__banner-studentsTimetable {
-    padding-bottom: 32px;
+  .enrolled {
+    padding-top: 0;
+    padding-bottom: 80px;
   }
 }
 
@@ -6947,17 +6986,18 @@ button.declaration__item__button {
   }
 
   .main__news__list {
-    flex-flow: column nowrap;
-    width: 100%;
-    margin-left: 0;
+    width: calc(100% + 16px);
+    margin-left: -16px;
   }
 
   .main__news__item {
-    flex: 0 0 1000%;
-    max-width: 100%;
-    margin-left: 0;
-    border-bottom: 1px solid rgba(0, 85, 182, 0.5);
-    padding-bottom: 32px;
+    flex: 0 0 50%;
+    max-width: calc(50% - 16px);
+    margin-left: 16px;
+  }
+
+  .main__news__item:last-child {
+    display: none;
   }
 
   .main__news__item__title {
@@ -7206,19 +7246,21 @@ button.declaration__item__button {
     margin-bottom: 40px;
   }
 
-  .about__banner__text {
+  .about__banner__left {
     margin-left: 24px;
     margin-right: 24px;
   }
 
-  .about__banner h1 {
+  .about__banner h1,
+  .about__banner h2 {
     font-size: 2rem;
     line-height: 2.625rem;
     width: 80%;
     min-width: 80%;
   }
 
-  .about__banner h1 {
+  .about__banner h1,
+  .about__banner h2 {
     margin-top: 24px;
     margin-left: 24px;
     margin-right: 24px;
@@ -7295,6 +7337,10 @@ button.declaration__item__button {
   }
 
   .statements .statement:nth-child(5) {
+    margin-bottom: 24px;
+  }
+
+  .statements .statement:nth-child(4) {
     margin-bottom: 24px;
   }
 
@@ -7540,32 +7586,32 @@ button.declaration__item__button {
     padding-bottom: 60px;
   }
 
-  .educationAdditional .about__banner h1 {
-    width: 80%;
-    min-width: 80%;
-  }
-
-  .educationAdditional .about__banner-additional-two {
-    margin-bottom: 24px;
-  }
-
   .studentsTimetable {
     padding-bottom: 60px;
   }
 
-  .studentsTimetable .about__banner-studentsTimetable h1 {
-    width: 80%;
-    min-width: 80%;
+  .enrolled {
+    padding-bottom: 60px;
   }
 }
 
-@media (max-width: 546px) {
-  .educationAdditional .about__banner-additional-top {
-    padding-bottom: 48px;
+@media (max-width: 480px) {
+  .main__news__list {
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-left: 0;
   }
 
-  .studentsTimetable .about__banner-studentsTimetable {
-    padding-bottom: 48px;
+  .main__news__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    border-bottom: 1px solid rgba(0, 85, 182, 0.5);
+    padding-bottom: 32px;
+  }
+
+  .main__news__item:last-child {
+    display: flex;
   }
 }
 

@@ -22,20 +22,27 @@
 	}
 	.statement {
 		position: relative;
-		flex: 0 0 50%;
-		max-width: calc( 50% - 32px);
+		flex: 0 0 33.333%;
+		max-width: calc( 33.333% - 32px);
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
 		min-height: 240px;
 		padding: 24px;
+		padding-right: 108px;
 		background: #fff;
 		margin-left: 32px;
 		margin-bottom: 32px;
+		transition: all .3s;
 		text-shadow: 0 0 0px transparent, 0 0 0px transparent;
 		&:hover {
+			transition: all .3s;
+			background: #D8E0EC;
 			text-shadow: 0 0 0px transparent, 0 0 0px transparent;		
+		}
+		&:nth-child(4) {
+			margin-bottom: 0;
 		}
 		&:nth-child(5) {
 			margin-bottom: 0;
@@ -44,14 +51,21 @@
 			margin-bottom: 0;
 		}
 		@include max(lg) {
+			flex: 0 0 50%;
 			max-width: calc( 50% - 24px);
 			margin-left: 24px;
 			margin-bottom: 24px;
+			&:nth-child(4) {
+				margin-bottom: 24px;
+			}
 		}
 		@include max(md) {
 			max-width: calc( 50% - 16px);
 			margin-left: 16px;
 			margin-bottom: 16px;
+			&:nth-child(4) {
+				margin-bottom: 16px;
+			}
 		}
 		@include max(sm) {
 			flex: 0 0 100%;
@@ -61,9 +75,44 @@
 			&:nth-child(5) {
 				margin-bottom: 24px;
 			}
+			&:nth-child(4) {
+				margin-bottom: 24px;
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+		&__desc {
+			position: relative;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			min-height: 100%;
+			width: 100%;
+			flex-grow: 1;
+		}
+		&__title {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz20;
+			line-height: $lh26;
+			color: #104CA6;			
+		}
+		&__text {
+			font-style: normal;
+			font-weight: 500;
+			font-size: $fz16;
+			line-height: $lh24;
+			color: #104CA6;			
+		}
+		&__icon {
+			position: absolute;
+			top: 33px;
+			right: 33px;
+			width: 50px;
+			height: 66px;
 		}
 	}
 }
