@@ -1,4 +1,8 @@
 .seminar {
 	min-height: 100vh;
 	background: #F4F3F0;
+	padding-bottom: 52px;
+	@include max(sm) {
+		padding-bottom: 20px;
+	}
 }

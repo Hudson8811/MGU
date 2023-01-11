@@ -1,6 +1,10 @@
 .departmensnts {
 	.section__editor {
 		padding-top: 60px;
+		padding-bottom: 52px;
+		@include max(sm) {
+			padding-bottom: 20px;
+		}
 		.container {
 			padding-top: 0;
 		}

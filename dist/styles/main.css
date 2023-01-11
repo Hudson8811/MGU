@@ -4949,7 +4949,7 @@ button.declaration__item__button {
   margin-top: 32px;
 }
 
-.section__editor--person-page .container {
+.section__editor.section__editor--person-page .container {
   padding-top: 42px;
   padding-bottom: 72px;
 }
@@ -4967,13 +4967,13 @@ button.declaration__item__button {
 }
 
 .person-page-main {
-  padding-top: 15px;
+  padding-top: 18px;
 }
 
 .column__left--person-page,
 .column__right--person-page {
-  padding-top: 0;
-  border-top: 0;
+  padding-top: 0 !important;
+  border-top: none !important;
 }
 
 .block__textTwo--person-page h1 {
@@ -5365,6 +5365,7 @@ button.declaration__item__button {
 
 .departmensnts .section__editor {
   padding-top: 60px;
+  padding-bottom: 52px;
 }
 
 .departmensnts .section__editor .container {
@@ -5536,6 +5537,7 @@ button.declaration__item__button {
 .seminar {
   min-height: 100vh;
   background: #F4F3F0;
+  padding-bottom: 52px;
 }
 
 .seminars {
@@ -5732,6 +5734,7 @@ button.declaration__item__button {
 .seminar {
   min-height: 100vh;
   background: #F4F3F0;
+  padding-bottom: 52px;
 }
 
 .educationHigher {
@@ -6681,6 +6684,11 @@ button.declaration__item__button {
     padding-left: 0;
   }
 
+  .section__editor.section__editor--person-page .container {
+    padding-top: 18px;
+    padding-bottom: 27px;
+  }
+
   .column__left--person-page {
     flex-basis: 234px;
     margin-right: 42px;
@@ -7397,8 +7405,8 @@ button.declaration__item__button {
     margin-top: 12px;
   }
 
-  .section__editor--person-page .container {
-    padding-top: 79px;
+  .section__editor.section__editor--person-page .container {
+    padding-top: 40px;
     padding-bottom: 27px;
   }
 
@@ -7485,6 +7493,10 @@ button.declaration__item__button {
   }
 
   .departmensnts .section__editor {
+    padding-bottom: 20px;
+  }
+
+  .departmensnts .section__editor {
     padding-top: 40px;
   }
 
@@ -7533,6 +7545,10 @@ button.declaration__item__button {
     padding-bottom: 32px;
   }
 
+  .seminar {
+    padding-bottom: 20px;
+  }
+
   .column__right.header__one__right img {
     height: 240px;
   }
@@ -7572,6 +7588,10 @@ button.declaration__item__button {
   .column__right,
   .column__left {
     padding-bottom: 32px;
+  }
+
+  .seminar {
+    padding-bottom: 20px;
   }
 
   .educationHigher--white {

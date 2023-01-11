@@ -1,10 +1,15 @@
-.section__editor--person-page {
+.section__editor.section__editor--person-page {
 	.container {
 		padding-top: 42px;
 		padding-bottom: 72px;
 
+		@include max(md) {
+			padding-top: 18px;
+			padding-bottom: 27px;
+
+		}
 		@include max(sm) {
-			padding-top: 79px;
+			padding-top: 40px;
 			padding-bottom: 27px;
 
 		}
@@ -34,14 +39,14 @@
 }
 
 .person-page-main {
-	padding-top: 15px;
+	padding-top: 18px;
 
 }
 
 .column__left--person-page,
 .column__right--person-page {
-	padding-top: 0;
-	border-top: 0;
+	padding-top: 0 !important;
+	border-top: none !important;
 }
 
 
