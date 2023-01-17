@@ -1,5 +1,4 @@
-import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs } from 'swiper'
-Swiper.use([Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs]);
+
 
 var academicList;
 $('.js-academic__list').each(function(){
@@ -9,7 +8,7 @@ $('.js-academic__list').each(function(){
 		spaceBetween: 16,
 		loop: false,
 		pagination: false,
-		autoHeight: true, 
+		autoHeight: true,
 		navigation: {
 				nextEl: slider.find('.swiper-button-next')[0],
 				prevEl: slider.find('.swiper-button-prev')[0]
@@ -32,15 +31,15 @@ $('.js-academic__list').each(function(){
 			992: {
 				// slidesPerView: 4,
 				spaceBetween: 24,
-			}, 
+			},
 			700: {
 				// slidesPerView: 2.5,
 				spaceBetween: 16,
-			}, 
+			},
 			480: {
 				// slidesPerView: 2,
 				spaceBetween: 16,
-			}, 
+			},
 		}
 	});
 })

@@ -1,4 +1,3 @@
-import "./../../../../node_modules/select2/dist/js/select2.full.min.js";
 
 $(window).on('load', () => {
 	console.log("привет")

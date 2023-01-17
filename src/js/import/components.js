@@ -1,1 +1,1 @@
-import "./../../blocks/components/period-select/period-select";
+@@include("../../blocks/components/period-select/period-select.js")

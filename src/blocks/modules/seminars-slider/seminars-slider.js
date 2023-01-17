@@ -1,5 +1,3 @@
-import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs } from 'swiper'
-Swiper.use([Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs]);
 
 var seminarsSlider;
 $('.js-seminars').each(function(){
@@ -9,7 +7,7 @@ $('.js-seminars').each(function(){
 		spaceBetween: 16,
 		loop: false,
 		pagination: true,
-		autoHeight: true, 
+		autoHeight: true,
 		navigation: {
 				nextEl: slider.find('.swiper-button-next')[0],
 				prevEl: slider.find('.swiper-button-prev')[0]
@@ -28,15 +26,15 @@ $('.js-seminars').each(function(){
 			992: {
 				slidesPerView: 3,
 				spaceBetween: 24,
-			}, 
+			},
 			768: {
 				// slidesPerView: 1.5,
 				spaceBetween: 16,
-			}, 
+			},
 			// 576: {
 			// 	// slidesPerView: 1.5,
 			// 	spaceBetween: 24,
-			// }, 
+			// },
 		}
 	});
 })

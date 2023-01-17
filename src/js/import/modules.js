@@ -1,8 +1,8 @@
-import "%modules%/header/header";
-import "%modules%/footer/footer";
-import "%modules%/declaration/declaration";
-import "%modules%/main-slider/main-slider";
-import "%modules%/academic-slider/academic-slider";
-import "%modules%/seminars-slider/seminars-slider";
-import "%modules%/students-timetable-slider-ochre/students-timetable-slider-ochre";
-import "%modules%/students-timetable-slider-blue/students-timetable-slider-blue";
+@@include("../../blocks/modules/header/header.js")
+@@include("../../blocks/modules/footer/footer.js")
+@@include("../../blocks/modules/declaration/declaration.js")
+@@include("../../blocks/modules/main-slider/main-slider.js")
+@@include("../../blocks/modules/academic-slider/academic-slider.js")
+@@include("../../blocks/modules/seminars-slider/seminars-slider.js")
+@@include("../../blocks/modules/students-timetable-slider-ochre/students-timetable-slider-ochre.js")
+@@include("../../blocks/modules/students-timetable-slider-blue/students-timetable-slider-blue.js")

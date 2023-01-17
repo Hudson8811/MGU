@@ -1,4 +1,4 @@
-import $ from "jquery"
+
 $(window).on('load', () => {
 	console.log("привет")
 	$('.declaration__button__one').click(function() {
@@ -7,7 +7,7 @@ $(window).on('load', () => {
 		}
 		else {
 				$(this).text('читать объявление полностью');
-		}	
+		}
 		$(this).parent().find(".block__textTwo__hidden").toggle();
 		$(this).parent().find(".declaration__button__two").toggle()
 		var btnTwo = $(this).parent().find(".declaration__button__two")
@@ -25,7 +25,7 @@ $(window).on('load', () => {
 		}
 		else {
 				$(this).text('читать объявление полностью');
-		}	
+		}
 		$(this).parent().find(".block__textTwo__hidden").toggle();
 		$(this).parent().find(".declaration__button__one").toggle()
 		var btnOne = $(this).parent().find(".declaration__button__one")
