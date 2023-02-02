@@ -78,7 +78,15 @@ a.block__textOne__link {
 	//padding-right: 24px;
 	padding-right: 28px;
 	padding-top: 1px;
+	&--opacity {
+		opacity: 0.5;
+		&::after { 
+			transform: rotate(90deg);
+			top: 1px !important;
+			right: 7px !important;
+		}
 
+	}
 	// padding: 4px 28px 4px 12px;
 	&:hover {
 		transition: all .5s;
@@ -111,7 +119,7 @@ a.block__textOne__link {
 			border-radius: 30px;
 			color: #AF8F46;
 			text-decoration: none;
-			text-shadow: 0 0 0px #AF8F46, 0 0 0px #AF8F46;
+			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
 		}
 
 		&::after {

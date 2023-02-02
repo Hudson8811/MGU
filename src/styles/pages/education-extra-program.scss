@@ -1,0 +1,31 @@
+.section__editor--extraProgram {
+	.header__one--label {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+		padding: 6px 16px;
+		color: $white;
+		@include max(lg) {
+			margin-bottom: 16px;
+		}
+		@include max(sm) {
+			width: 100%;
+			justify-content: flex-start;
+		}
+		&-green {
+			background: $greenLight;
+		}
+		&-blue{
+			background: $blueLight;
+		}
+		&-violet {
+			background: $violet;
+		}
+		
+	}
+	.column__left.header__one__left {
+		justify-content: space-between;
+	}
+}

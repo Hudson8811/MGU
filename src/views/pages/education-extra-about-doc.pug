@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Education Extra About Documents";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.conferences
+		.section__editor
+			.container
+				.header__one
+					.column__left.header__one__left
+						h1  Список документов, необходимых для поступления на программы дополнительного образования
+					.column__right.header__one__right
+				.block__text__wrap
+					.column__left
+						include ../../blocks/components/block-text-one-education-extra-about-doc/block-text-one-education-extra-about-doc
+					.column__right
+						include ../../blocks/components/block-text-two-education-extra-about-doc/block-text-two-education-extra-about-doc
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

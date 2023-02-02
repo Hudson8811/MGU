@@ -1867,6 +1867,16 @@ a.block__textOne__link {
   padding-top: 1px;
 }
 
+a.block__textOne__link--opacity {
+  opacity: 0.5;
+}
+
+a.block__textOne__link--opacity::after {
+  transform: rotate(90deg);
+  top: 1px !important;
+  right: 7px !important;
+}
+
 a.block__textOne__link:hover {
   transition: all 0.5s;
   background: #FFFFFF;
@@ -1895,7 +1905,7 @@ a.block__textOne__link--person-colors:hover {
   border-radius: 30px;
   color: #AF8F46;
   text-decoration: none;
-  text-shadow: 0 0 0px #AF8F46, 0 0 0px #AF8F46;
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
 }
 
 a.block__textOne__link--person-colors::after {
@@ -3272,6 +3282,52 @@ button.declaration__item__button {
   object-position: 50% 50%;
 }
 
+.section__header__two {
+  padding-top: 60px;
+  background: #F4F3F0;
+}
+
+.header__two {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.header__two__left {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-bottom: none;
+}
+
+.header__two__left h1 {
+  position: relative;
+  display: inline-block;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  width: 100%;
+  max-width: 240px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #031B4B;
+}
+
+.column__left.header__two__left {
+  border-top: none;
+  padding-top: 0;
+}
+
+.column__right.header__two__right {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+  padding-bottom: 40px;
+  border-top: none;
+  padding-top: 0;
+}
+
 .block__textOne {
   position: relative;
   width: 100%;
@@ -3313,6 +3369,14 @@ button.declaration__item__button {
   line-height: 20px;
   color: rgba(7, 52, 120, 0.8);
   margin-bottom: 60px;
+}
+
+.block__textOne a b {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 .block__textOne img {
@@ -4757,6 +4821,168 @@ button.declaration__item__button {
   height: 66px;
 }
 
+.periodSelect.periodSelect__graduatePrograms {
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  margin-bottom: 0;
+  height: 120px;
+  margin-top: 60px;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__date {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  width: 70%;
+  margin-right: 0;
+  border-right: 1px solid rgba(0, 85, 182, 0.3);
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__date__value {
+  margin-bottom: 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  width: 50% !important;
+  max-width: 50% !important;
+  min-width: 316px;
+  margin-right: 40px;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__date__value__month {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__date__value__years {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__date__title {
+  margin-bottom: 8px;
+  width: 100% !important;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 32px;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons .periodSelect__button {
+  min-width: 160px;
+  position: relative;
+  max-width: 260px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input {
+  position: relative;
+  width: 111px;
+  min-width: 111px;
+  display: flex;
+  margin-right: 37px;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label {
+  position: relative;
+  display: flex;
+  width: 111px;
+  min-width: 111px;
+  flex-flow: column-reverse nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #031B4B;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label input {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 12px;
+  border: 1px solod #031B4B;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews {
+  padding-bottom: 0;
+  padding-top: 60px;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews--button {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item {
+  justify-content: flex-start;
+  padding-bottom: 70px;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item__tilte {
+  margin-bottom: 52px;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  z-index: 5;
+  margin-bottom: 32px;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-text {
+  position: relative;
+  width: 100%;
+  max-width: 140px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label {
+  position: relative;
+  width: auto;
+  padding: 6px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #fff;
+  background: #A1C63A;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label--blue {
+  background: #739FF3;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label--violet {
+  background: #A374DF;
+}
+
 .section__newsMain {
   position: relative;
   width: 100%;
@@ -5540,7 +5766,7 @@ button.declaration__item__button {
   padding-bottom: 52px;
 }
 
-.seminars {
+.science__seminars {
   min-height: 100vh;
   background: #F4F3F0;
   position: relative;
@@ -5550,7 +5776,7 @@ button.declaration__item__button {
   margin-bottom: 80px;
 }
 
-.seminars__list {
+.science__seminars__list {
   position: relative;
   display: flex;
   width: calc(100% + 32px);
@@ -5562,7 +5788,7 @@ button.declaration__item__button {
   margin-bottom: 48px;
 }
 
-.seminars__item {
+.science__seminars__item {
   position: relative;
   flex: 0 0 33.3333%;
   max-width: calc(33.3333% - 32px);
@@ -5581,12 +5807,12 @@ button.declaration__item__button {
   transition: background 0.3s;
 }
 
-.seminars__item:hover {
+.science__seminars__item:hover {
   transition: background 0.3s;
   background: #5288f0;
 }
 
-.seminars__item:hover .seminars__item__title {
+.science__seminars__item:hover .seminars__item__title {
   transition: all 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
@@ -5595,7 +5821,7 @@ button.declaration__item__button {
   text-decoration-skip-ink: none;
 }
 
-.seminars__item__title {
+.science__seminars__item__title {
   font-style: normal;
   font-weight: 800;
   font-size: 1.5rem;
@@ -5603,7 +5829,7 @@ button.declaration__item__button {
   color: #FFFFFF;
 }
 
-.seminars__item__text {
+.science__seminars__item__text {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -5611,7 +5837,7 @@ button.declaration__item__button {
   color: #FFFFFF;
 }
 
-.seminars__item img {
+.science__seminars__item img {
   position: absolute;
   width: 100%;
   height: 192px;
@@ -5817,6 +6043,69 @@ button.declaration__item__button {
   max-width: 600px;
 }
 
+.graduatePrograms {
+  padding-top: 60px;
+  background: #F4F3F0;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.graduatePrograms .structureNews__item {
+  min-height: 280px;
+}
+
+.graduatePrograms .structureNews__item .structureNews__item__tilte {
+  width: 100%;
+}
+
+.graduatePrograms__header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graduatePrograms__header--title {
+  position: relative;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #031B4B;
+}
+
+.graduatePrograms__header .block__textOne__link {
+  text-shadow: none;
+}
+
+.section__editor--extraProgram .header__one--label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 6px 16px;
+  color: #fff;
+}
+
+.section__editor--extraProgram .header__one--label-green {
+  background: #A1C63A;
+}
+
+.section__editor--extraProgram .header__one--label-blue {
+  background: #739FF3;
+}
+
+.section__editor--extraProgram .header__one--label-violet {
+  background: #A374DF;
+}
+
+.section__editor--extraProgram .column__left.header__one__left {
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 701px) {
   .person-page-mobile-h1 {
     display: none;
@@ -5908,6 +6197,29 @@ button.declaration__item__button {
 
   .seminars__sliders .seminars {
     margin-bottom: 80px;
+  }
+
+  .header__two__left h1 {
+    max-width: 100%;
+  }
+
+  .header__two {
+    flex-flow: column;
+  }
+
+  .column__left.header__two__left {
+    flex: 1 0 auto;
+    margin-bottom: 32px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .column__left.header__two__left h1 {
+    width: 100%;
+  }
+
+  .section__header__two {
+    padding-top: 40px;
   }
 
   .section__block__textThree .container {
@@ -6112,6 +6424,52 @@ button.declaration__item__button {
     margin-bottom: 24px;
   }
 
+  .periodSelect.periodSelect__graduatePrograms {
+    flex-flow: column nowrap;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__date {
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__date__value:last-child {
+    margin-right: 0;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons {
+    width: 100%;
+    flex-flow: row nowrap;
+    margin-top: 32px;
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding-left: 0;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input {
+    width: 140px;
+    min-width: 140px;
+    align-items: center;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label {
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    width: auto;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label input {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+
+  .section__structureNews.structure__educationPrograms .structureNews {
+    padding-top: 48px;
+  }
+
   .section__newsMain {
     padding-top: 40px;
   }
@@ -6261,6 +6619,18 @@ button.declaration__item__button {
     padding: 32px;
   }
 
+  .science__seminars__list {
+    width: calc(100% + 24px);
+    margin-left: -24px;
+  }
+
+  .science__seminars__item {
+    flex: 0 0 33.333%;
+    max-width: calc(33.3333% - 24px);
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+
   .column__left {
     padding-right: 10px;
   }
@@ -6312,6 +6682,25 @@ button.declaration__item__button {
 
   .educationAdditional .education__item:nth-child(2) {
     margin-bottom: 24px;
+  }
+
+  .graduatePrograms {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .graduatePrograms__header {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .graduatePrograms__header--title {
+    margin-bottom: 26px;
+  }
+
+  .section__editor--extraProgram .header__one--label {
+    margin-bottom: 16px;
   }
 }
 
@@ -6439,6 +6828,10 @@ button.declaration__item__button {
 
   .column__left.block__textOne {
     margin-right: 24px;
+  }
+
+  .block__textOne .button__blue {
+    max-width: 100%;
   }
 
   .block__textOne .block__text__color {
@@ -6633,6 +7026,36 @@ button.declaration__item__button {
     margin-bottom: 16px;
   }
 
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__date__value {
+    margin-right: 24px;
+  }
+
+  .section__structureNews.structure__educationPrograms .structureNews--button {
+    bottom: 24px;
+    right: 24px;
+  }
+
+  .section__structureNews.structure__educationPrograms .structureNews .structureNews__item {
+    padding-bottom: 62px;
+  }
+
+  .section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-text {
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
   .layoutTwo__left {
     margin-bottom: 60px;
   }
@@ -6741,11 +7164,6 @@ button.declaration__item__button {
     padding-bottom: 84px;
   }
 
-  .structureAdmin .banners {
-    width: calc(100% + 0px);
-    margin-left: 0px;
-  }
-
   .structureAdmin .banners .banner {
     flex: 0 0 50%;
     max-width: calc(50% - 16px);
@@ -6765,6 +7183,19 @@ button.declaration__item__button {
   }
 
   .councils__item {
+    flex: 0 0 50%;
+    max-width: calc(50% - 16px);
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  .science__seminars__list {
+    width: calc(100% + 16px);
+    margin-left: -16px;
+    padding-bottom: 84px;
+  }
+
+  .science__seminars__item {
     flex: 0 0 50%;
     max-width: calc(50% - 16px);
     margin-left: 16px;
@@ -6807,6 +7238,10 @@ button.declaration__item__button {
     padding-top: 0;
     padding-bottom: 80px;
   }
+
+  .graduatePrograms {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 801px) {
@@ -6837,6 +7272,23 @@ button.declaration__item__button {
     flex: 1 0 220px;
     margin-right: 32px;
     max-width: 220px;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__date {
+    flex: none;
+    max-width: 100%;
+    flex-flow: column nowrap;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__date__value {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__date__value:first-child {
+    margin-bottom: 32px;
   }
 
   .section__newsMain .layoutTwo__left {
@@ -7028,6 +7480,11 @@ button.declaration__item__button {
   .seminars__sliders .seminars__swiper .swiper-slide {
     max-width: 344px;
     min-width: 344px;
+  }
+
+  .column__left.header__two__left {
+    flex: 1 0 auto;
+    margin-bottom: 0px;
   }
 
   .block__textTwo .textTwo__table {
@@ -7475,6 +7932,11 @@ button.declaration__item__button {
     line-height: 1.625rem;
   }
 
+  .structureAdmin .banners {
+    width: calc(100% + 0px);
+    margin-left: 0px;
+  }
+
   .structureAdmin .banners .banner {
     flex: 0 0 100%;
     max-width: calc(100% - 0px);
@@ -7549,6 +8011,19 @@ button.declaration__item__button {
     padding-bottom: 20px;
   }
 
+  .science__seminars__list {
+    width: calc(100% + 0px);
+    margin-left: 0px;
+  }
+
+  .science__seminars__item {
+    flex: 0 0 100%;
+    max-width: calc(100% - 0px);
+    margin-left: 0px;
+    margin-bottom: 16px;
+    min-height: 480px;
+  }
+
   .column__right.header__one__right img {
     height: 240px;
   }
@@ -7612,6 +8087,15 @@ button.declaration__item__button {
 
   .enrolled {
     padding-bottom: 60px;
+  }
+
+  .graduatePrograms {
+    padding-bottom: 60px;
+  }
+
+  .section__editor--extraProgram .header__one--label {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 
@@ -7749,6 +8233,18 @@ button.declaration__item__button {
   .education.education__couple .education__item__desc__title {
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons {
+    flex-flow: column nowrap;
+    margin-top: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons .periodSelect__button {
+    margin-top: 32px;
+    max-width: 100%;
   }
 
   .main .button.button__blueLight {

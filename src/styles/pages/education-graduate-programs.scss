@@ -1,0 +1,50 @@
+.graduatePrograms {
+	padding-top: 60px;
+	background: #F4F3F0;
+	min-height: 100vh;
+	padding-bottom: 100px;
+	@include max(lg) {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	@include max(md) {
+		padding-bottom: 80px;
+	}
+	@include max(sm) {
+		padding-bottom: 60px;
+	}
+	.structureNews__item {
+		min-height: 280px;
+		.structureNews__item__tilte {
+			width: 100%;
+		}
+	}
+
+	&__header {
+		position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		@include max(lg) {
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		&--title {
+			position: relative;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 800;
+			font-size: $fz32;
+			line-height: $lh40;
+			color: $blueDarck;
+			@include max(lg) {
+				margin-bottom: 26px;
+			}
+		}
+		.block__textOne__link {
+			text-shadow: none;
+		}
+	}
+}

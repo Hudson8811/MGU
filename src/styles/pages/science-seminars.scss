@@ -1,4 +1,4 @@
-.seminars  {
+.science__seminars {
 	min-height: 100vh;
 	background: #F4F3F0;
 	position: relative;
@@ -15,7 +15,20 @@
     margin-left: -32px;
 		padding-bottom: 0px;
 		margin-top: 16px;
-		margin-bottom: 48px;		
+		margin-bottom: 48px;
+		@include max(lg) {
+			width: calc(100% + 24px);
+			margin-left: -24px;
+		}
+		@include max(md) {
+			width: calc(100% + 16px);
+			margin-left: -16px;
+			padding-bottom: 84px;
+		}
+		@include max(sm) {
+			width: calc(100% + 0px);
+			margin-left: 0px;
+		}
 	}
 	&__item {
 		position: relative;
@@ -34,6 +47,25 @@
 		min-height: 480px;
 		margin-left: 32px;
 		transition: background .3s;
+		@include max(lg) {
+			flex: 0 0 33.333%;
+			max-width: calc(33.3333% - 24px);
+			margin-left: 24px;
+			margin-bottom: 24px;
+		}
+		@include max(md) {
+			flex: 0 0 50%;
+			max-width: calc(50% - 16px);
+			margin-left: 16px;
+			margin-bottom: 16px;
+		}
+		@include max(sm) {
+			flex: 0 0 100%;
+			max-width: calc(100% - 0px);
+			margin-left: 0px;
+			margin-bottom: 16px;
+			min-height: 480px;
+		}
 		&:hover {
 			transition: background .3s;
 			background: darken( #739FF3, 7%);
