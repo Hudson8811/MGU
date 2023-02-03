@@ -6,7 +6,7 @@
 	font-weight: 400;
 	font-size: $fz17;
 	line-height: $lh24;
-	color: #031B4B;
+	color: $blueDarck;
 	margin-bottom: 32px;
 	p {
 		position: relative;
@@ -16,7 +16,7 @@
 		font-weight: 400;
 		font-size: $fz17;
 		line-height: $lh24;
-		color: #031B4B;
+		color: $blueDarck;
 	}
 	img {
 		position: relative;
@@ -32,7 +32,7 @@
 		font-weight: 700;
 		font-size: $fz20;
 		line-height: $lh26;
-		color: #031B4B;
+		color: $blueDarck;
 
 	}
 	h3 {
@@ -43,7 +43,7 @@
 		font-weight: 700;
 		font-size: $fz17;
 		line-height: $lh24;
-		color: #031B4B;	
+		color: $blueDarck;	
 	}
 	p,h2,h3,h4,h5 {
 		a {
@@ -82,7 +82,7 @@
 			font-weight: 400;
 			font-size: $fz17;
 			line-height: $lh24;
-			color: #031B4B;
+			color: $blueDarck;
 			list-style-type: none;
 			&::before {
 				content: '';
@@ -92,7 +92,7 @@
 				-webkit-border-radius: 50%;
 				-moz-border-radius: 50%;
 				border-radius: 50%;
-				background-color: #031B4B;
+				background-color: $blueDarck;
 				left: -15px;
 				top: 10px;
 				position: absolute;
@@ -114,7 +114,7 @@
 			font-weight: 400;
 			font-size: $fz17;
 			line-height: $lh24;
-			color: #031B4B;
+			color: $blueDarck;
 		}
 	}
 	blockquote {
@@ -168,7 +168,7 @@
 				font-weight: 400;
 				font-size: $fz14;
 				line-height: $lh20;
-				color: #031B4B;
+				color: $blueDarck;
 				text-align: left;
 				padding: 20px 8px;
 				b{
@@ -178,7 +178,7 @@
 					font-weight: 700;
 					font-size: $fz17;
 					line-height: $lh24;
-					color: #031B4B;
+					color: $blueDarck;
 				}
 				
 			}

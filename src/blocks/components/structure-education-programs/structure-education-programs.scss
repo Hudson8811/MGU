@@ -72,8 +72,14 @@
 					&--blue {
 						background: $blueLight;
 					}
+					&--blueTwo {
+						background: #66BFCB;
+					}
+					&--orenge{
+						background: #E99C41;
+					}
 					&--violet {
-						background: #A374DF;
+						background: $violet;
 					}
 				}
 			}

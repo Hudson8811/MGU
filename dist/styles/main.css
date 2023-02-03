@@ -1850,6 +1850,38 @@ a:hover {
   text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
 }
 
+.block__textOne--span {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #031B4B;
+  width: 100%;
+  transition: all 0.5s;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+}
+
+.block__textOne--span span {
+  position: relative;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+}
+
+.block__textOne--span:hover {
+  color: #104CA6;
+  transition: all 0.5s;
+  text-shadow: 0 0 0.15px rgba(255, 255, 255, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+}
+
 a.block__textOne__link {
   position: relative;
   display: inline-block;
@@ -2082,6 +2114,48 @@ a.block__textOne__link--person-colors::after {
 .button__blue:active {
   transition: all 0.5s;
   background-color: #073478;
+}
+
+.button__border--blueDarck {
+  display: inline-block;
+  border: 1px solid rgba(0, 85, 182, 0.3);
+  color: #031B4B;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 6px 20px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: auto;
+}
+
+.button__border--blueDarck:focus,
+.button__border--blueDarck:hover {
+  text-decoration: none;
+  color: #104CA6;
+}
+
+.button__border--blueDarck:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  transition: all 0.5s;
+  background-color: #031B4B;
+  border: 1px solid #031B4B;
+  color: #fff;
+}
+
+.button__border--blueDarck:active {
+  transition: all 0.5s;
+  background-color: #031B4B;
+  border: 1px solid #031B4B;
+  color: #fff;
 }
 
 .button__border--blue {
@@ -4979,8 +5053,148 @@ button.declaration__item__button {
   background: #739FF3;
 }
 
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label--blueTwo {
+  background: #66BFCB;
+}
+
+.section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label--orenge {
+  background: #E99C41;
+}
+
 .section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label--violet {
   background: #A374DF;
+}
+
+.lectureCards {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.lectureCards .lectureCar {
+  position: relative;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fff;
+  margin-bottom: 24px;
+}
+
+.lectureCards .lectureCar--button {
+  margin-top: 48px;
+}
+
+.lectureCards .lectureCar--left {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 32px;
+}
+
+.lectureCards .lectureCar--left-top {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.lectureCards .lectureCar--date {
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+}
+
+.lectureCards .lectureCar--time {
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+}
+
+.lectureCards .lectureCar--boardcast {
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #739FF3;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.lectureCards .lectureCar--caption {
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #031B4B;
+  margin-top: 16px;
+}
+
+.lectureCards .lectureCar--img {
+  position: relative;
+  width: 100%;
+  min-height: 384px;
+  min-width: 336px;
+}
+
+.lectureCards .lectureCar--img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.lectureCards .lectureCar--right {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.lectureCards .lectureCar--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #104CA6;
+  margin-bottom: 24px;
+}
+
+.lectureCards .lectureCar--text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+}
+
+.lectureCards .lectureCar--text a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .section__newsMain {
@@ -6102,8 +6316,69 @@ button.declaration__item__button {
   background: #A374DF;
 }
 
+.section__editor--extraProgram .header__one--label-blueTwo {
+  background: #66BFCB;
+}
+
+.section__editor--extraProgram .header__one--label-orenge {
+  background: #E99C41;
+}
+
 .section__editor--extraProgram .column__left.header__one__left {
   justify-content: space-between;
+}
+
+.educationExtraYoung {
+  padding-top: 60px;
+  background: #F4F3F0;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.educationExtraYoung .column__left.header__two__left {
+  padding-right: 0px;
+}
+
+.educationExtraYoung .column__left.header__two__left h1 {
+  min-width: 100%;
+}
+
+.seasons {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.seasons--title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: #031B4B;
+}
+
+.seasons .season {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.seasons .season--item {
+  margin-right: 20px;
+}
+
+.seasons .season--item-active {
+  background-color: #031B4B;
+  border: 1px solid #031B4B;
+  color: #fff;
+}
+
+.disciplinesProgram .block__text__wrap .column__left {
+  padding-right: 40px;
 }
 
 @media only screen and (min-width: 701px) {
@@ -6470,6 +6745,11 @@ button.declaration__item__button {
     padding-top: 48px;
   }
 
+  .lectureCards .lectureCar--img {
+    min-width: 256px;
+    min-height: 293px;
+  }
+
   .section__newsMain {
     padding-top: 40px;
   }
@@ -6701,6 +6981,19 @@ button.declaration__item__button {
 
   .section__editor--extraProgram .header__one--label {
     margin-bottom: 16px;
+  }
+
+  .educationExtraYoung {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .educationExtraYoung .column__right.header__two__right {
+    margin-bottom: 0;
+  }
+
+  .seasons {
+    display: none;
   }
 }
 
@@ -7056,6 +7349,15 @@ button.declaration__item__button {
     justify-content: flex-start;
   }
 
+  .lectureCards .lectureCar {
+    padding: 24px;
+  }
+
+  .lectureCards .lectureCar--img {
+    min-width: 200px;
+    min-height: 228px;
+  }
+
   .layoutTwo__left {
     margin-bottom: 60px;
   }
@@ -7240,6 +7542,10 @@ button.declaration__item__button {
   }
 
   .graduatePrograms {
+    padding-bottom: 80px;
+  }
+
+  .educationExtraYoung {
     padding-bottom: 80px;
   }
 }
@@ -7813,6 +8119,50 @@ button.declaration__item__button {
     margin-bottom: 0;
   }
 
+  .lectureCards .lectureCar {
+    flex-flow: column nowrap;
+  }
+
+  .lectureCards .lectureCar--left-top {
+    margin-left: 16px;
+  }
+
+  .lectureCards .lectureCar--left {
+    margin-bottom: 32px;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .lectureCards .lectureCar--caption {
+    position: absolute;
+    left: 204px;
+    max-width: 188px;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .lectureCards .lectureCar--img {
+    min-width: 188px;
+    width: 188px;
+    min-height: 228px;
+  }
+
+  .lectureCards .lectureCar--title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .lectureCards .lectureCar--text a {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lectureCards .lectureCar--text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .main {
     margin-bottom: 60px;
   }
@@ -8097,6 +8447,10 @@ button.declaration__item__button {
     width: 100%;
     justify-content: flex-start;
   }
+
+  .educationExtraYoung {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -8245,6 +8599,35 @@ button.declaration__item__button {
   .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons .periodSelect__button {
     margin-top: 32px;
     max-width: 100%;
+  }
+
+  .lectureCards .lectureCar--left-top {
+    margin-left: 0px;
+  }
+
+  .lectureCards .lectureCar--left {
+    margin-bottom: 32px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .lectureCards .lectureCar--boardcast {
+    margin-bottom: 24px;
+  }
+
+  .lectureCards .lectureCar--caption {
+    position: relative;
+    left: auto;
+    max-width: 100%;
+    width: 100%;
+    bottom: auto;
+    margin-top: 24px;
+  }
+
+  .lectureCards .lectureCar--img {
+    min-width: 100%;
+    min-height: 330px;
   }
 
   .main .button.button__blueLight {

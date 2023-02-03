@@ -1,0 +1,27 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Education Extra Young";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.educationExtraYoung
+		include ../../blocks/modules/header-text-two-education-extra-young/header-text-two-education-extra-young
+		.container
+			.seasons 
+				.seasons--title Выбрать сезон
+				.season
+					.season--item.season--item-active.button__border--blueDarck 2020-2021
+					.season--item.button__border--blueDarck 2019-2020
+					.season--item.button__border--blueDarck 2018-2019
+					.season--item.button__border--blueDarck 2017-2018
+					.season--item.button__border--blueDarck 2016-2017
+		include ../../blocks/components/lecture-card/lecture-card
+				
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

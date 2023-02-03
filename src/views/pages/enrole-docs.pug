@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Enrole Documents";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.conferences.disciplinesProgram
+		.section__editor
+			.container
+				.header__one
+					.column__left.header__one__left
+						h1  Школьные олимпиады
+					.column__right.header__one__right
+				.block__text__wrap
+					.column__left
+						include ../../blocks/components/block-text-one-enrole-docs/block-text-one-enrole-docs
+					.column__right
+						include ../../blocks/components/block-text-two-enrole-docs/block-text-two-enrole-docs
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
