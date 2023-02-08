@@ -3,6 +3,9 @@
 	position: relative;
 	background: #F4F3F0;
 	border-bottom: 2px solid #fff;
+	.container {
+		position: relative;
+	}
 }
 .topMenu {
 	display: flex;
@@ -59,7 +62,118 @@
 		 color: #104CA6;
 	}
 }
+.department__menu {
+	position: absolute;
+	right: 1px;
+	display: none;
+	padding: 24px;
+	z-index: 200;
+	background: $ocher;
+	&.department__menu--active {
+		display: flex;
+	}
+	&--list {
+		position: relative;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	&--item{
+		font-style: normal;
+		font-weight: 500;
+		font-size: $fz16;
+		line-height: $lh24;
+		color: #FFFFFF;
+		margin-bottom: 8px;
+	}
+}
 
+.topMenu__overlay {
+	position: absolute;
+	left: 0;
+	bottom: -100vh;
+	width: 100vw;
+	min-height: 0vh;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0;
+	z-index: 200;
+	transition: opacity 0s;
+	background: $white;
+	&.topMenu__overlay--active {
+		display: flex;
+		opacity: 1;
+		visibility: inherit;
+		transition: opacity 1s;
+		padding: 20px;
+		padding-top: 68px;
+		padding-left: 136px;
+		min-height: 100vh;
+	}
+	&--close {
+		position: absolute;
+		left: 20px;
+		top: 16px;
+	}
+	&--list {
+		position: relative;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-right: 40px;
+		min-width: 400px;
+
+	}
+	&--item{
+		position: relative;
+		display: inline-block;
+		font-style: normal;
+		font-weight: 500;
+		font-size: $fz16;
+		line-height: $lh24;
+		color: $blueDarck;
+		margin-bottom: 20px;
+	}
+}
+.topMenu__overlay--list {
+	.menu-tab {
+		&.notActive {
+			color: rgba(7, 52, 120, 0.3);
+		}
+		&.active {
+			text-shadow: 0 0 0.15px $blueDarck, 0 0 0.15px $blueDarck;
+		}
+	}
+}
+
+.topMenu__overlay--list.menu-pane {
+	position: absolute;
+	left: 400px;
+	top: 0px;
+	min-height: 0vh;
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0;
+	z-index: 200;
+	width: 0;
+	height: 0;
+	transition: opacity 0s;
+	&.active {
+		width: 100%;
+		height: auto;
+		opacity: 1;
+		visibility: inherit;
+		transition: opacity 1s;
+		padding: 20px;
+		padding-top: 68px;
+		padding-left: 136px;
+		min-height: 100vh;
+	}
+}
 @include max(lg) {
 	.topMenu__item {
 		font-weight: 700;

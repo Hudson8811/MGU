@@ -1,11 +1,80 @@
 .section__topMenu 
 	.container 
 		.topMenu
-			a(class="topMenu__item active__toopMenu" href="#") о факультете      
-			a(class="topMenu__item" href="#") структура 
-			a(class="topMenu__item" href="#") наука 
-			a(class="topMenu__item" href="#") образование 
-			a(class="topMenu__item" href="#") студентам 
-			a(class="topMenu__item" href="#") абитуриентам 
-			a(class="topMenu__item" href="#") сотрудникам 
+			a(class="topMenu__item topMenu__item--owl active__toopMenu" href="#") о факультете      
+			a(class="topMenu__item topMenu__item--owl" href="#") структура 
+			a(class="topMenu__item topMenu__item--owl" href="#") наука 
+			a(class="topMenu__item topMenu__item--owl" href="#") образование 
+			a(class="topMenu__item topMenu__item--owl" href="#") студентам 
+			a(class="topMenu__item topMenu__item--owl" href="#") абитуриентам 
+			a(class="topMenu__item topMenu__item--owl" href="#") сотрудникам 
 			a(class="topMenu__item topMenu__item__department" href="#") кафедры 
+		.department__menu
+			.department__menu--list
+				a(class="department__menu--item" href="") Биогеографии
+				a(class="department__menu--item" href="") Геоморфологии и палеогеографии
+				a(class="department__menu--item" href="") Географии мирового хозяйства
+				a(class="department__menu--item" href="") Геохимии ландшафтов и географии почв
+				a(class="department__menu--item" href="") Гидрологии суши
+				a(class="department__menu--item" href="") Картографии и геоинформатики
+				a(class="department__menu--item" href="") Криолитологии и гляциологии
+				a(class="department__menu--item" href="") Метеорологии и климатологии
+				a(class="department__menu--item" href="") Океанологии
+				a(class="department__menu--item" href="") Рационального природопользования
+				a(class="department__menu--item" href="") Социально-экономической географии зарубежных стран
+				a(class="department__menu--item" href="") Физической географии иландшафтоведения
+				a(class="department__menu--item" href="") Физической географии мира и геоэкологии
+				a(class="department__menu--item" href="") Экономической и социальной географии России
+				a(class="department__menu--item" href="") Рекреационной географии и туризма
+	.topMenu__overlay 
+		.topMenu__overlay--close
+			<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M4 24L14 14.1149L4 4" stroke="#031B4B"/>
+			<path d="M24 4L14 13.8851L24 24" stroke="#031B4B"/>
+			</svg>
+		.topMenu__overlay--list 
+			a(class="topMenu__overlay--item menu-tab" data-tab="1" href="") Кафедры
+			a(class="topMenu__overlay--item menu-tab" data-tab="2" href="") Научно-исследовательские лаборатории
+			a(class="topMenu__overlay--item menu-tab" data-tab="3" href="") Административные подразделения
+			a(class="topMenu__overlay--item menu-tab" data-tab="4" href="") Реализуемые проекты
+			a(class="topMenu__overlay--item menu-tab" data-tab="5" href="") Учебно-научные базы
+			a(class="topMenu__overlay--item menu-tab" data-tab="6" href="") ФУМО
+		.topMenu__overlay--list.menu-pane(data-tab-content="1")
+			a(class="topMenu__overlay--item" href="") Биогеографии
+			a(class="topMenu__overlay--item" href="") Геоморфологии и палеогеографии
+			a(class="topMenu__overlay--item" href="") Географии мирового хозяйства
+			a(class="topMenu__overlay--item" href="") Геохимии ландшафтов и географии почв
+			a(class="topMenu__overlay--item" href="") Гидрологии суши
+			a(class="topMenu__overlay--item" href="") Картографии и геоинформатики
+			a(class="topMenu__overlay--item" href="") Криолитологии и гляциологии
+			a(class="topMenu__overlay--item" href="") Метеорологии и климатологии
+			a(class="topMenu__overlay--item" href="") Океанологии
+			a(class="topMenu__overlay--item" href="") Рационального природопользования
+			a(class="topMenu__overlay--item" href="") Социально-экономической географии зарубежных стран
+			a(class="topMenu__overlay--item" href="") Физической географии иландшафтоведения
+			a(class="topMenu__overlay--item" href="") Физической географии мира и геоэкологии
+			a(class="topMenu__overlay--item" href="") Экономической и социальной географии России
+			a(class="topMenu__overlay--item" href="") Рекреационной географии и туризма
+		.topMenu__overlay--list.menu-pane(data-tab-content="2")
+			a(class="topMenu__overlay--item" href="") 2
+			a(class="topMenu__overlay--item" href="") Рационального природопользования
+			a(class="topMenu__overlay--item" href="") Социально-экономической географии зарубежных стран
+			a(class="topMenu__overlay--item" href="") Физической географии иландшафтоведения
+			a(class="topMenu__overlay--item" href="") Физической географии мира и геоэкологии
+			a(class="topMenu__overlay--item" href="") Экономической и социальной географии России
+			a(class="topMenu__overlay--item" href="") Рекреационной географии и туризма
+		.topMenu__overlay--list.menu-pane(data-tab-content="3")
+			a(class="topMenu__overlay--item" href="") 3
+			a(class="topMenu__overlay--item" href="") Рационального природопользования
+			a(class="topMenu__overlay--item" href="") Социально-экономической географии зарубежных стран
+			a(class="topMenu__overlay--item" href="") Физической географии иландшафтоведения
+			a(class="topMenu__overlay--item" href="") Физической географии мира и геоэкологии
+			a(class="topMenu__overlay--item" href="") Экономической и социальной географии России
+			a(class="topMenu__overlay--item" href="") Рекреационной географии и туризма
+		.topMenu__overlay--list.menu-pane(data-tab-content="4")
+			a(class="topMenu__overlay--item" href="") 4
+		.topMenu__overlay--list.menu-pane(data-tab-content="5")
+			a(class="topMenu__overlay--item" href="") 5
+		.topMenu__overlay--list.menu-pane(data-tab-content="6")
+			a(class="topMenu__overlay--item" href="") 6
+	

@@ -1,0 +1,161 @@
+.accordions {
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: column nowrap;
+}
+.accordion {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 32px;
+	display: block;
+	&__intro {
+		position: relative;
+		cursor: pointer;
+
+	} 
+
+	&__content {
+		max-height: 0;
+		overflow: hidden;
+		will-change: max-height;
+		transition: all 0.25s ease-out;
+		opacity: 0;
+	} 
+
+	&__active {
+		.accordion__intro {
+			color: #004ABA;
+			background: $white;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 20px;
+			line-height: 26px;
+			@include max(sm) {
+				font-size: 18px;
+				line-height: 24px;
+			}
+			@include max(xs) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			.accordion__intro__img {
+				animation-name: rotationOpen;
+				animation-duration: .2s;
+				animation-iteration-count: 1;
+				animation-timing-function: linear;
+				animation-fill-mode: forwards;
+			}
+
+		}
+		.accordion__content{
+			background: $white;
+			opacity: 1;
+			width: 100%;
+			p {
+				color: #004ABA;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				margin: 20px;
+				margin-left: 114px;
+				@include max(sm) {
+					margin-left: 85px;
+					font-size: 14px;
+					line-height: 22px;
+				}
+			}
+
+		}
+
+
+	}
+
+
+
+}
+
+.accordion__intro	{
+	padding: 20px;
+	padding-left: 38px;
+	color: $blueDarck;
+	background: $white;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-flow: row-reverse nowrap;
+	border-radius: 0;
+	@include max(sm) {
+		padding-left: 26px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	@include max(xs) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.accordion__intro__img {
+		position: relative;
+		width: 32px;
+		height: 32px;
+		margin-right: 45px;
+		animation-name: rotationClose;
+		animation-duration: .2s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		@include max(sm) {
+			margin-right: 26px;
+		}
+		&:hover {
+			background: $white;
+			color: $blueDarck;
+			transition: background .3s ease;
+			.accordion__intro__img {
+				background: #fff;
+			}
+	
+		}
+	}
+
+
+
+}	
+
+.accordion__content {
+	color: $blueDarck;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+@keyframes rotationOpen  {
+	0% {
+		transform-origin: 50% 50%;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform-origin: 50% 50%;
+		transform: rotate(30deg);
+	}
+
+}
+@keyframes rotationClose {
+	0% {
+		transform-origin: 50% 50%;
+		transform: rotate(30deg);
+	}
+	100% {
+		transform-origin: 50% 50%;
+		transform: rotate(0deg);
+	}
+
+}

@@ -1,0 +1,98 @@
+.conferences.studentsQuestion {
+	padding-bottom: 100px;
+	@include max(lg) {
+		padding-bottom: 80px;
+	}
+	@include max(sm) {
+		padding-bottom: 60px;
+	}
+	.accordion {
+		@include max(md) {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.block__text__wrap {
+		.column__left {
+			@include max(md) {
+				padding-bottom: 0;
+			}
+			.block__textOne {
+				@include max(md) {
+					display: flex;
+					flex-flow: row nowrap;
+					align-items: flex-end;
+				}
+				@include max(sm) {
+					display: flex;
+					flex-flow: column nowrap;
+					align-items: flex-start;
+				}
+			}
+
+			.studentsQuestion--button {
+				@include max(md) {
+					display: flex;
+					justify-content: flex-end;
+					align-items: flex-start;
+					flex-flow: column nowrap;
+					margin-left: 40px;
+				}
+				@include max(sm) {
+					margin-left: 0;
+				}
+			}
+			.button__blue {
+				margin-top: 40px;
+				@include max(sm) {
+					margin-top: 24px;
+					max-width: 268px;
+				}
+
+			}
+			.studentsQuestion--input {
+				background: $white;
+				min-height: 400px;
+				width: 100%;
+				padding: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 40px;
+				@include max(md) {
+					min-height: 200px;
+					margin-bottom: 0px;
+				}
+				@include max(sm) {
+					margin-bottom: 24px;
+				}
+				&::placeholder {
+					position: absolute;
+					top: 170px;
+					display: inline-block;
+					width: 90%;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+					color: rgba(7, 52, 120, 0.3);
+					@include max(md) {
+						top: 76px;
+					}
+			
+				}
+			}
+			@include max(md) {
+				margin-right: 0;
+				padding-right: 0;
+				width: 100%;
+			}
+		}
+		@include max(md) {
+			flex-flow: column-reverse nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+}
