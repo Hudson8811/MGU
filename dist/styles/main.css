@@ -2116,6 +2116,45 @@ a.block__textOne__link--person-colors::after {
   background-color: #073478;
 }
 
+.button__ochre {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: #AF8F46;
+  padding: 8px 32px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 286px;
+}
+
+.button__ochre:focus,
+.button__ochre:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button__ochre:hover {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  transition: all 0.5s;
+  background-color: #946F11;
+}
+
+.button__ochre:active {
+  transition: all 0.5s;
+  background-color: #946F11;
+}
+
 .button__border--blueDarck {
   display: inline-block;
   border: 1px solid rgba(0, 85, 182, 0.3);
@@ -2723,6 +2762,8 @@ a.block__textOne__link--person-colors::after {
   padding-top: 68px;
   padding-left: 136px;
   min-height: 100vh;
+  height: 100vh;
+  overflow: auto;
 }
 
 .breadcrumbs {
@@ -3476,6 +3517,270 @@ button.declaration__item__button {
   left: 0;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+.accordions.menu-sidebar .accordion {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.accordions.menu-sidebar .accordion__intro {
+  position: relative;
+  cursor: pointer;
+  color: #031B4B;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  padding-right: 0;
+  padding-left: 0;
+  background: transparent;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.accordions.menu-sidebar .accordion__intro p {
+  padding-left: 20px;
+}
+
+.accordions.menu-sidebar .accordion__intro__img {
+  width: auto;
+  margin-right: 0;
+  animation-name: rotationCloseMenuSidebar;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.accordions.menu-sidebar .accordion__intro__img:hover {
+  background: transparent;
+}
+
+.accordions.menu-sidebar .accordion__intro a {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  color: #031B4B;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  padding-right: 0;
+  background: transparent;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.accordions.menu-sidebar .accordion__intro a:hover {
+  text-shadow: none;
+  background: #fff;
+}
+
+.accordions.menu-sidebar .accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.25s ease-out;
+  opacity: 0;
+  position: relative;
+  border-left: 1px solid #031B4B;
+  padding-left: 16px;
+  font-weight: 600;
+  background: transparent;
+  max-width: 98%;
+  cursor: pointer;
+  color: #031B4B;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+.accordions.menu-sidebar .accordion__content a {
+  padding: 8px;
+  color: #031B4B;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.accordions.menu-sidebar .accordion__content a:hover {
+  text-shadow: none;
+  background: #fff;
+}
+
+.accordions.menu-sidebar .accordion__active .accordion__intro {
+  color: #031B4B;
+  text-shadow: 0 0 0.1px #031B4B, 0 0 0.1px #031B4B;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.accordions.menu-sidebar .accordion__active .accordion__intro .accordion__intro__img {
+  animation-name: rotationOpenMenuSidebar;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.accordions.menu-sidebar .accordion__active .accordion__content {
+  background: transparent;
+  opacity: 1;
+  width: 100%;
+  margin-left: 24px;
+}
+
+@keyframes rotationOpenMenuSidebar {
+  0% {
+    transform-origin: 5% 35%;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform-origin: 5% 35%;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotationCloseMenuSidebar {
+  0% {
+    transform-origin: 5% 35%;
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform-origin: 5% 35%;
+    transform: rotate(0deg);
+  }
+}
+
+.menuDepartMob--menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  min-height: 0vh;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 78px;
+  padding-left: 35px;
+  padding-right: 31px;
+  padding-bottom: 20px;
+  z-index: 200;
+  background: #fff;
+  transition: opacity 0s;
+}
+
+.menuDepartMob--menu.menuDepartMob--menu--active {
+  display: flex;
+  opacity: 1;
+  visibility: inherit;
+  transition: opacity 1s;
+  min-height: 100vh;
+}
+
+.menuDepartMob--title {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #AF8F46;
+}
+
+.menuDepartMob--lang {
+  position: absolute;
+  left: 33px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.menuDepartMob__overlay {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  margin-top: 20px;
+}
+
+.menuDepartMob__overlay--close {
+  position: absolute;
+  right: 35px;
+  top: 24px;
+}
+
+.menuDepartMob__overlay--list {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 0px;
+  min-width: 400px;
+}
+
+.menuDepartMob__overlay--item {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+  margin-bottom: 20px;
+}
+
+.menuDepartMob__overlay--list .menuDepartMob-tab.notActive {
+  color: rgba(7, 52, 120, 0.3);
+}
+
+.menuDepartMob__overlay--list .menuDepartMob-tab.active {
+  text-shadow: 0 0 0.15px #031B4B, 0 0 0.15px #031B4B;
+}
+
+.menuDepartMob__overlay--list.menuDepartMob-pane {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  min-height: 0vh;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+  z-index: 200;
+  width: 0;
+  height: 0;
+  transition: opacity 0s;
+  background: #fff;
+}
+
+.menuDepartMob__overlay--list.menuDepartMob-pane.active {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  visibility: inherit;
+  transition: opacity 1s;
+  padding: 0;
+  min-height: 100vh;
+  height: 100vh;
+  overflow: auto;
 }
 
 .section__header__two {
@@ -6667,6 +6972,65 @@ button.declaration__item__button {
   color: rgba(7, 52, 120, 0.3);
 }
 
+.structureDepartment__news .newsMain__title.newsMain__title__desc {
+  color: #031B4B;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.structureDepartment__news .header__one {
+  margin-bottom: 40px;
+  padding-bottom: 76px;
+  border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+}
+
+.structureDepartment__news .header__one .column__right.header__one__right {
+  padding-bottom: 0;
+}
+
+.structureDepartment__news .header__one .column__right.header__one__right img {
+  min-height: 360px;
+}
+
+.structureDepartment__news .header__one .header__one__right--title {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+
+.structureDepartment__news .newsMain {
+  margin-top: 60px;
+}
+
+.newsMain__top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.newsMain__top--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #031B4B;
+}
+
+.newsMain__top .block__textOne__link {
+  margin-top: 5px;
+}
+
 @media only screen and (min-width: 701px) {
   .person-page-mobile-h1 {
     display: none;
@@ -7409,6 +7773,10 @@ button.declaration__item__button {
     min-width: 296px;
   }
 
+  .accordions.menu-sidebar {
+    display: none;
+  }
+
   .column__left.block__textOne {
     margin-right: 24px;
   }
@@ -8123,6 +8491,11 @@ button.declaration__item__button {
   .seminars__sliders .seminars__swiper .swiper-slide {
     max-width: 344px;
     min-width: 344px;
+  }
+
+  .accordions.menu-sidebar .accordion__active .accordion__intro {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .column__left.header__two__left {
@@ -8852,6 +9225,10 @@ button.declaration__item__button {
   .conferences.studentsQuestion .block__text__wrap .column__left .studentsQuestion--input {
     margin-bottom: 24px;
   }
+
+  .newsMain__top {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -8899,6 +9276,11 @@ button.declaration__item__button {
   .seminars__sliders .seminars__swiper .swiper-slide {
     max-width: 296px;
     min-width: 296px;
+  }
+
+  .accordions.menu-sidebar .accordion__active .accordion__intro {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .block__textOne h2 {

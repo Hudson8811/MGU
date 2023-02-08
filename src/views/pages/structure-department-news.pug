@@ -1,0 +1,30 @@
+extends ../layouts/default
+
+block variables
+	- const title = "News Structure Department";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.section__newsMain.structureDepartment__news
+		.container
+			.layoutTwo
+				.layoutTwo__left
+					include ../../blocks/modules/menu-sidebar/menu-sidebar
+					include ../../blocks/modules/menu-departments-mob/menu-departments-mob
+				.layoutTwo__right
+					.header__one
+						.column__right.header__one__right
+							img(src="img/projectPage/structureDepartment__news__1.png", alt="")
+							.header__one__right--title
+								!="Кафедра <br>геоморфологии <br>и палеогеографии" 					
+					p Кафедра геоморфологии и палеогеографии была основана в 1944 г профессором Московского университета И.С.Щукиным по инициативе К.К. Маркова. В настоящее время, это крупнейший коллектив геоморфологов на постсоветском пространстве. В настоящее время на кафедре работает 44 сотрудника, в том числе 9 профессоров, 6 доцентов, 5 ведущих научных сотрудников, 13 старших научных сотрудников.
+					include ../../blocks/modules/structure-department-news/structure-department-news
+					include ../../blocks/components/pagination/pagination
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

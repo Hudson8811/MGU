@@ -172,6 +172,8 @@
 		padding-top: 68px;
 		padding-left: 136px;
 		min-height: 100vh;
+		height: 100vh;
+		overflow: auto;
 	}
 }
 @include max(lg) {

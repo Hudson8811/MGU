@@ -1,0 +1,158 @@
+.accordions.menu-sidebar {
+	@include max(md) {
+		display: none;
+	}
+	.accordion {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 0px;
+		display: block;
+		&__intro {
+			position: relative;
+			cursor: pointer;
+			color: $blueDarck;
+			font-style: normal;
+			font-size: $fz16;
+			line-height: $lh24;
+			font-weight: 600;
+			padding: 8px 20px;
+			padding-right: 0;
+			padding-left: 0;
+			background: transparent;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			p {
+				padding-left: 20px;
+			}
+			&__img {
+				width: auto;
+				margin-right: 0;
+				animation-name: rotationCloseMenuSidebar;
+				animation-duration: .2s;
+				animation-iteration-count: 1;
+				animation-timing-function: linear;
+				animation-fill-mode: forwards;
+				&:hover {
+					background: transparent;
+				}
+			}
+			a {
+				padding-left: 20px;
+				position: relative;
+				cursor: pointer;
+				color: $blueDarck;
+				font-style: normal;
+				font-size: $fz16;
+				line-height: $lh24;
+				font-weight: 600;
+				padding: 8px 20px;
+				padding-right: 0;
+				background: transparent;
+				flex-flow: row nowrap;
+				width: 100%;
+				&:hover {
+					text-shadow: none;
+					background: $white;
+				}
+			}
+		} 
+	
+		&__content {
+			max-height: 0;
+			overflow: hidden;
+			will-change: max-height;
+			transition: all 0.25s ease-out;
+			opacity: 0;
+			position: relative;
+			border-left: 1px solid $blueDarck;
+			padding-left: 16px;
+			font-weight: 600;
+			background: transparent;
+			max-width: 98%;
+			cursor: pointer;
+			color: $blueDarck;
+			font-style: normal;
+			font-size: $fz14;
+			line-height: $lh20;
+			display: flex;;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-flow: column;
+			a {
+				padding: 8px;
+				color: $blueDarck;
+				font-style: normal;
+				font-size: $fz14;
+				line-height: $lh20;
+				font-weight: 600;
+				padding-right: 50px;
+				width: 100%;
+				&:hover {
+					text-shadow: none;
+					background: $white;
+				}
+			}
+		} 
+	
+		&__active {
+			.accordion__intro {
+				color: $blueDarck;
+				text-shadow: 0 0 0.1px $blueDarck, 0 0 0.1px $blueDarck;
+				font-style: normal;
+				font-size: $fz16;
+				line-height: $lh24;
+				@include max(sm) {
+					font-size: 18px;
+					line-height: 24px;
+				}
+				@include max(xs) {
+					font-size: 16px;
+					line-height: 24px;
+				}
+				.accordion__intro__img {
+					animation-name: rotationOpenMenuSidebar;
+					animation-duration: .2s;
+					animation-iteration-count: 1;
+					animation-timing-function: linear;
+					animation-fill-mode: forwards;
+				}
+	
+			}
+			.accordion__content{
+				background: transparent;
+				opacity: 1;
+				width: 100%;
+				margin-left: 24px;
+	
+			}
+	
+	
+		}
+	
+	
+	}
+	@keyframes rotationOpenMenuSidebar  {
+		0% {
+			transform-origin: 5% 35%;
+			transform: rotate(0deg);
+		}
+	
+		100% {
+			transform-origin: 5% 35%;
+			transform: rotate(90deg);
+		}
+	
+	}
+	@keyframes rotationCloseMenuSidebar {
+		0% {
+			transform-origin: 5% 35%;
+			transform: rotate(90deg);
+		}
+		100% {
+			transform-origin: 5% 35%;
+			transform: rotate(0deg);
+		}
+	
+	}
+}

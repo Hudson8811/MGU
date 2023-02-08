@@ -55,7 +55,7 @@ a {
 	font-size: $fz14;
 	line-height: $lh20;
 	color: #104CA6;
-	transition: all .5s;
+	transition: all .5s; 
 	&:hover {
 		transition: all .5s;
 		text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
@@ -326,6 +326,44 @@ a.block__textOne__link {
 	&:active {
 		transition: all .5s;
 		background-color: #073478;
+	}
+}
+.button__ochre {
+	display: inline-block;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	background-color: $ocher;
+	padding: 8px 32px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz17;
+	line-height: $lh24;
+	border-radius: 40px;
+	text-align: center;
+	position: relative;
+	outline: none;
+	transition: all .5s;
+	cursor: pointer;
+	width: 100%;
+	max-width: 286px;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&:hover {
+		text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+		transition: all .5s;
+		background-color:  #946F11;
+	}
+
+	&:active {
+		transition: all .5s;
+		background-color:  #946F11;
 	}
 }
 .button__border--blueDarck {

@@ -7,3 +7,4 @@
 @@include("../../blocks/modules/students-timetable-slider-ochre/students-timetable-slider-ochre.js")
 @@include("../../blocks/modules/students-timetable-slider-blue/students-timetable-slider-blue.js")
 @@include("../../blocks/modules/headerMenu/headerMenu.js")
+@@include("../../blocks/modules/menu-departments-mob/menu-departments-mob.js")
