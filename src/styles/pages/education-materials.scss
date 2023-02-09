@@ -1,0 +1,19 @@
+.layoutFour {
+	.column__left {
+		padding-right: 0;
+		padding-top: 0;
+		border-top: none;
+	}
+	.column__right {
+		padding-top: 0;
+		border-top: none;
+	}
+	.container {
+		padding-top: 60px;
+
+	}
+	.header__one .column__left {
+		margin-bottom: 40px;
+		border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+	}
+}

@@ -7,6 +7,8 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-flow: column nowrap;
+		width: 100%;
+		max-width: 400px;
 		min-height: 0vh;
 		display: block;
 		visibility: hidden;
@@ -14,7 +16,7 @@
 		padding-top: 78px;
 		padding-left: 35px;
 		padding-right: 31px;
-		padding-bottom: 20px;
+		padding-bottom: 60px;
 		z-index: 200;
 		background: $white;
 		transition: opacity 0s;
@@ -40,6 +42,28 @@
 		top: 22px;
 		cursor: pointer;
 	}
+	&--footer {
+		position: absolute;
+		width: 90%;
+		display: flex;
+		bottom: 20px;
+		left: 0;
+		margin-left: 23px;
+		margin-right: 23px;
+		border-top: 1px solid rgba(7, 52, 120, 0.3);
+		font-style: normal;
+		font-weight: 500;
+		font-size: $fz12;
+		line-height: $lh16;
+		color: $blueDarck;
+		padding-top: 20px;
+	}
+	&--button {
+		display: none;
+		@include max(md) {
+			display: inline-block;
+		}
+	}
 }
 
 .menuDepartMob__overlay {
@@ -59,18 +83,35 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		margin-right: 0px;
-		min-width: 400px;
+		width: 100%;
+		height: calc(100vh - 200px);
+		overflow-y: auto;
+		p {
+			&::before {
+				content: url(../img/svg/menu-sideb-arrrow.svg);
+				position: absolute;
+				right: 5px;
+				top: auto;
+				width: 16px;
+				height: 16px;
+				display: block;
+			}
 
+		}
 	}
 	&--item{
 		position: relative;
 		display: inline-block;
 		font-style: normal;
-		font-weight: 500;
+		font-weight: 700;
 		font-size: $fz16;
 		line-height: $lh24;
+		width: 100%;
+		cursor: pointer;
 		color: $blueDarck;
-		margin-bottom: 20px;
+		margin-bottom: 0px;
+		padding: 10px;
+
 	}
 }
 .menuDepartMob__overlay--list {
@@ -98,6 +139,32 @@
 	height: 0;
 	transition: opacity 0s;
 	background: $white;
+	.menuDepartMob__overlay--item__back {
+		border-top: 1px solid  rgba(7, 52, 120, 0.3);
+		border-bottom: 1px solid  rgba(7, 52, 120, 0.3) !important;
+		font-weight: 700 !important;
+		font-size: $fz16 !important;
+		line-height: $lh24 !important;
+		padding-left: 40px;
+		&::before {
+			content: url(../img/svg/menu-sideb-arrrow.svg);
+			position: absolute;
+			left: 9px;
+			top: 39%;
+			width: 16px;
+			height: 16px;
+			display: block;
+			transform: rotate(180deg);
+		}
+	}
+	.menuDepartMob__overlay--item {
+		font-style: normal;
+		font-weight: 400;
+		font-size: $fz14;
+		line-height: $lh20;
+		color: $blueDarck;
+		border-bottom: 1px solid  rgba(0, 85, 182, 0.1);
+	}
 	&.active {
 		width: 100%;
 		height: auto;
@@ -108,5 +175,23 @@
 		min-height: 100vh;
 		height: 100vh;
 		overflow: auto;
+	}
+}body.Bodymotionless {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.tabsControls {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	padding-bottom: 24px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+	.tabControl {
+		margin-right: 20px;
+		margin-bottom: 16px;
 	}
 }

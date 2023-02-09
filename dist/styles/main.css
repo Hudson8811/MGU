@@ -2761,9 +2761,8 @@ a.block__textOne__link--person-colors::after {
   padding: 20px;
   padding-top: 68px;
   padding-left: 136px;
-  min-height: 100vh;
-  height: 100vh;
-  overflow: auto;
+  min-height: 650px;
+  height: auto;
 }
 
 .breadcrumbs {
@@ -3676,6 +3675,8 @@ button.declaration__item__button {
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column nowrap;
+  width: 100%;
+  max-width: 400px;
   min-height: 0vh;
   display: block;
   visibility: hidden;
@@ -3683,7 +3684,7 @@ button.declaration__item__button {
   padding-top: 78px;
   padding-left: 35px;
   padding-right: 31px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   z-index: 200;
   background: #fff;
   transition: opacity 0s;
@@ -3713,6 +3714,27 @@ button.declaration__item__button {
   cursor: pointer;
 }
 
+.menuDepartMob--footer {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  bottom: 20px;
+  left: 0;
+  margin-left: 23px;
+  margin-right: 23px;
+  border-top: 1px solid rgba(7, 52, 120, 0.3);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #031B4B;
+  padding-top: 20px;
+}
+
+.menuDepartMob--button {
+  display: none;
+}
+
 .menuDepartMob__overlay {
   position: relative;
   width: 100%;
@@ -3733,18 +3755,33 @@ button.declaration__item__button {
   justify-content: flex-start;
   align-items: flex-start;
   margin-right: 0px;
-  min-width: 400px;
+  width: 100%;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.menuDepartMob__overlay--list p::before {
+  content: url(../img/svg/menu-sideb-arrrow.svg);
+  position: absolute;
+  right: 5px;
+  top: auto;
+  width: 16px;
+  height: 16px;
+  display: block;
 }
 
 .menuDepartMob__overlay--item {
   position: relative;
   display: inline-block;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
+  width: 100%;
+  cursor: pointer;
   color: #031B4B;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
 }
 
 .menuDepartMob__overlay--list .menuDepartMob-tab.notActive {
@@ -3771,6 +3808,35 @@ button.declaration__item__button {
   background: #fff;
 }
 
+.menuDepartMob__overlay--list.menuDepartMob-pane .menuDepartMob__overlay--item__back {
+  border-top: 1px solid rgba(7, 52, 120, 0.3);
+  border-bottom: 1px solid rgba(7, 52, 120, 0.3) !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  padding-left: 40px;
+}
+
+.menuDepartMob__overlay--list.menuDepartMob-pane .menuDepartMob__overlay--item__back::before {
+  content: url(../img/svg/menu-sideb-arrrow.svg);
+  position: absolute;
+  left: 9px;
+  top: 39%;
+  width: 16px;
+  height: 16px;
+  display: block;
+  transform: rotate(180deg);
+}
+
+.menuDepartMob__overlay--list.menuDepartMob-pane .menuDepartMob__overlay--item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #031B4B;
+  border-bottom: 1px solid rgba(0, 85, 182, 0.1);
+}
+
 .menuDepartMob__overlay--list.menuDepartMob-pane.active {
   width: 100%;
   height: auto;
@@ -3781,6 +3847,27 @@ button.declaration__item__button {
   min-height: 100vh;
   height: 100vh;
   overflow: auto;
+}
+
+body.Bodymotionless {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tabsControls {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+}
+
+.tabsControls .tabControl {
+  margin-right: 20px;
+  margin-bottom: 16px;
 }
 
 .section__header__two {
@@ -6972,6 +7059,26 @@ button.declaration__item__button {
   color: rgba(7, 52, 120, 0.3);
 }
 
+.layoutFour .column__left {
+  padding-right: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.layoutFour .column__right {
+  padding-top: 0;
+  border-top: none;
+}
+
+.layoutFour .container {
+  padding-top: 60px;
+}
+
+.layoutFour .header__one .column__left {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+}
+
 .structureDepartment__news .newsMain__title.newsMain__title__desc {
   color: #031B4B;
   font-style: normal;
@@ -7777,6 +7884,10 @@ button.declaration__item__button {
     display: none;
   }
 
+  .menuDepartMob--button {
+    display: inline-block;
+  }
+
   .column__left.block__textOne {
     margin-right: 24px;
   }
@@ -8252,6 +8363,22 @@ button.declaration__item__button {
     flex-flow: column-reverse nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .structureDepartment__news .layoutTwo .layoutTwo__left {
+    margin-bottom: 40px;
+  }
+
+  .structureDepartment__news .header__one {
+    padding-bottom: 40px;
+  }
+
+  .structureDepartment__news .header__one .header__one__right--title {
+    font-size: 2.625rem;
+  }
+
+  .structureDepartment__news .newsMain {
+    margin-top: 40px;
   }
 }
 
@@ -9226,6 +9353,13 @@ button.declaration__item__button {
     margin-bottom: 24px;
   }
 
+  .structureDepartment__news .header__one .header__one__right--title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    left: 24px;
+    bottom: 24px;
+  }
+
   .newsMain__top {
     margin-bottom: 30px;
   }
@@ -9475,6 +9609,11 @@ button.declaration__item__button {
   .studentsTimetable .button.button__blueLight {
     font-size: 1.25rem;
     line-height: 1.25rem;
+  }
+
+  .structureDepartment__news .header__one .header__one__right--title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 }
 
