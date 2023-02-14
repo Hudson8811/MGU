@@ -3670,24 +3670,44 @@ button.declaration__item__button {
 .menuDepartMob--menu {
   position: fixed;
   top: 0;
-  left: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: column nowrap;
+  right: 0;
   width: 100%;
   max-width: 400px;
   min-height: 0vh;
   display: block;
   visibility: hidden;
   opacity: 0;
+  z-index: 200;
+  transition: opacity 0s;
+}
+
+.menuDepartMob--menu--wrap {
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
   padding-top: 78px;
   padding-left: 35px;
   padding-right: 31px;
   padding-bottom: 60px;
-  z-index: 200;
-  background: #fff;
-  transition: opacity 0s;
+}
+
+.menuDepartMob--menu-bg {
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(61, 76, 100, 0.5);
+  z-index: 0;
 }
 
 .menuDepartMob--menu.menuDepartMob--menu--active {
@@ -3868,6 +3888,22 @@ body.Bodymotionless {
 .tabsControls .tabControl {
   margin-right: 20px;
   margin-bottom: 16px;
+}
+
+.tabsControls .tabControl.active {
+  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  transition: all 0.5s;
+  background-color: #031B4B;
+  border: 1px solid #031B4B;
+  color: #fff;
+}
+
+.tabControl--mat-content {
+  display: none;
+}
+
+.tabControl--mat-content.active {
+  display: block;
 }
 
 .section__header__two {

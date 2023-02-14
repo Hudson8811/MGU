@@ -1,25 +1,45 @@
 .menuDepartMob {
 	&--menu {
+		&--wrap {
+			z-index: 10;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-flow: column nowrap;
+			background: $white;
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%;
+			max-width: 400px;
+			height: 100vh;
+			padding-top: 78px;
+			padding-left: 35px;
+			padding-right: 31px;
+			padding-bottom: 60px;
+		}
 		position: fixed;
 		top: 0;
-		left: 0;
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-		flex-flow: column nowrap;
+		right: 0;
 		width: 100%;
 		max-width: 400px;
 		min-height: 0vh;
 		display: block;
 		visibility: hidden;
 		opacity: 0;
-		padding-top: 78px;
-		padding-left: 35px;
-		padding-right: 31px;
-		padding-bottom: 60px;
+
 		z-index: 200;
-		background: $white;
+	
 		transition: opacity 0s;
+		&-bg {
+			width: 100vw;
+			height: 100vw;
+			position: fixed;
+			top: 0;
+			right: 0;
+			background: rgba(61, 76, 100, 0.5);
+			z-index: 0;
+		}
 		&.menuDepartMob--menu--active {
 			display: flex;
 			opacity: 1;

@@ -1,0 +1,19 @@
+
+.tabsControls {
+	.tabControl {
+		&.active {
+			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+			transition: all .5s;
+			background-color: $blueDarck;
+			border: 1px solid $blueDarck;
+			color: $white;
+		}
+	}
+
+}
+.tabControl--mat-content {
+	display: none;
+	&.active {
+		display: block;
+	}
+}

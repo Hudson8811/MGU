@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block variables
-	- const title = "Education Materials";
+	- const title = "Education Students";
 
 block content
 	include ../../blocks/modules/header/header
@@ -17,9 +17,17 @@ block content
 					.column__right
 						.header__one
 							.column__left.header__one__left
-								h1  Учебные материалы
+								h1  Студенты и аспиранты
 							.column__right.header__one__right
-						include ../../blocks/modules/tabs-controls/tabs-controls
+						.tabsControls
+							.tabControl.button__border--blueDarck студенты 2 курс
+							.tabControl.button__border--blueDarck студенты 3 курс
+							.tabControl.button__border--blueDarck студенты 4 курс
+							.tabControl.button__border--blueDarck 1 курс магистратуры 
+							.tabControl.button__border--blueDarck 2 курс магистратуры 
+							.tabControl.button__border--blueDarck аспиранты 1 г.о. 
+							.tabControl.button__border--blueDarck аспиранты 2 г.о. 
+							.tabControl.button__border--blueDarck аспиранты 3 г.о. 
 						include ../../blocks/components/block-text-two-education-materials/block-text-two-education-materials
 	include ../../blocks/modules/footer/footer
 

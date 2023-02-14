@@ -1,5 +1,6 @@
 
 let menuDeparttabNavsClose = document.querySelector(".menuDepartMob__overlay--close");
+let menuDepartBG = document.querySelector(".menuDepartMob--menu-bg");
 let menuDepartMob = document.querySelector(".menuDepartMob--menu");
 let menuDepartButton = document.querySelector(".menuDepartMob--button");
 let menuDeparttabNavs = document.querySelectorAll(".menuDepartMob-tab");
@@ -43,6 +44,11 @@ if(menuDepartButton !== null) {
 	}
 	
 	menuDeparttabNavsClose.addEventListener("click", function () {
+		menuDepartMob.classList.remove("menuDepartMob--menu--active");
+		menuDepartNotclick()
+		bodyYesScroll()
+	});
+	menuDepartBG.addEventListener("click", function () {
 		menuDepartMob.classList.remove("menuDepartMob--menu--active");
 		menuDepartNotclick()
 		bodyYesScroll()
