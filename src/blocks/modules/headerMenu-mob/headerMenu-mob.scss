@@ -1,0 +1,329 @@
+.headerMenuMob {
+	&--menu {
+		&--wrap {
+			z-index: 10;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-flow: column nowrap;
+			background: $white;
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%;
+			max-width: 288px;
+			height: 100vh;
+			padding-top: 78px;
+			padding-left: 23px;
+			padding-right: 23px;
+			padding-bottom: 60px;
+			overflow: hidden;
+		}
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		max-width: 288px;
+		min-height: 0vh;
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 200;
+		transition: opacity 0s;
+		&-bg {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			right: 0;
+			background: rgba(61, 76, 100, 0.5);
+			z-index: 0;
+		}
+		&.headerMenuMob--menu--active {
+			display: flex;
+			opacity: 1;
+			visibility: inherit;
+			transition: opacity 1s;
+			min-height: 100vh;
+		}
+	}
+	&--title {
+		position: relative;
+		font-style: normal;
+		font-weight: 700;
+		font-size: $fz16;
+		line-height: $lh24;
+		color: $ocher;
+	}
+	&--lang {
+		position: absolute;
+		left: 33px;
+		top: 22px;
+		cursor: pointer;
+	}
+	&--footer {
+		position: absolute;
+		width: 90%;
+		display: flex;
+		bottom: 20px;
+		z-index: 200;
+		left: 0;
+		margin-left: 23px;
+		margin-right: 23px;
+		border-top: 1px solid rgba(7, 52, 120, 0.3);
+		font-style: normal;
+		font-weight: 500;
+		font-size: $fz12;
+		line-height: $lh16;
+		color: $blueDarck;
+		padding-top: 20px;
+	}
+	&--button {
+		display: none;
+		border-radius: 0;
+		@include max(md) {
+			display: inline-block;
+		}
+	}
+	&--soc {
+		position: absolute;
+    width: 90%;
+    bottom: 72px;
+    left: 35px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		z-index: 200;
+		&__item {
+			display: block;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+	}
+}
+
+.headerMenuMob__overlay {
+	position: relative;
+	width: 100%;
+	background: transparent;
+	margin-top: 20px;
+	&--close {
+		position: absolute;
+		right: 35px;
+		top: 24px;
+	}
+	&--list {
+		position: relative;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-right: 0px;
+		width: 100%;
+		height: calc(100vh - 250px);
+		overflow-y: auto;
+		p {
+			&::before {
+				content: url(../img/svg/menu-sideb-arrrow.svg);
+				position: absolute;
+				right: 5px;
+				top: 15px;
+				width: 16px;
+				height: 16px;
+				display: block;
+			}
+
+		}
+	}
+	&--item{
+		position: relative;
+		display: inline-block;
+		font-style: normal;
+		font-weight: 700;
+		font-size: $fz16;
+		line-height: $lh24;
+		width: 100%;
+		cursor: pointer;
+		color: $blueDarck;
+		margin-bottom: 0px;
+		padding: 10px;
+
+	}
+}
+.headerMenuMob__overlay--list {
+	.headerMenuMob-tab {
+		&.notActive {
+			color: rgba(7, 52, 120, 0.3);
+		}
+		&.active {
+			width: 100%;
+			text-shadow: 0 0 0.15px $blueDarck, 0 0 0.15px $blueDarck;
+		}
+	}
+}
+.headerMenuMob__overlay--list__start {
+	position: absolute;
+	top: 0;
+	left: 0;
+	&.notActive {
+		position: absolute;
+		top: 0;
+		left: -288px;
+		transition: all 0.5s;
+		// opacity: 0;
+		pointer-events: none;
+	}
+	&.active {
+		transition: all 0.5s;
+		position: absolute;
+		// opacity: 1;
+		top: 0;
+		left: 0;
+		pointer-events: auto;
+	}
+	
+}
+.headerMenuMob__overlay--list.headerMenuMob__overlay--list.quickAccessEducation {
+	z-index: 300;
+}
+.headerMenuMob__overlay--list.headerMenuMob-pane {
+	position: absolute;
+	right: -288px;
+	top: 0px;
+	min-height: 0vh;
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0;
+	z-index: 200;
+	width: 0;
+	height: 0;
+	transition: all 0.5s;
+	background: $white;
+	.headerMenuMob__overlay--item__back {
+		border-top: 1px solid  rgba(7, 52, 120, 0.3);
+		border-bottom: 1px solid  rgba(7, 52, 120, 0.3) !important;
+		font-weight: 700 !important;
+		font-size: $fz16 !important;
+		line-height: $lh20 !important;
+		padding-left: 40px;
+		&::before {
+			content: url(../img/svg/menu-sideb-arrrow.svg);
+			position: absolute;
+			left: 9px;
+			top: 12px;
+			width: 16px;
+			height: 16px;
+			display: block;
+			transform: rotate(180deg);
+		}
+	}
+
+	.headerMenuMob__overlay--item {
+		font-style: normal;
+		font-weight: 400;
+		font-size: $fz14;
+		line-height: $lh20;
+		color: $blueDarck;
+		border-bottom: 1px solid  rgba(0, 85, 182, 0.1);
+	}
+	&.notActive {
+		position: absolute;
+		top: 0;
+		left: -288px;
+		transition: all 0.5s;
+		// opacity: 0;
+		pointer-events: none;
+	}
+	&.active {
+		width: 100%;
+		height: auto;
+		right: 0px;
+		opacity: 1;
+		visibility: inherit;
+		transition: all 0.5s;
+		padding: 0;
+		height: calc(100vh - 250px);
+		overflow: auto;
+	}
+}
+.headerMenuMob__overlay--list.headerMenuMob-paneTwo {
+	position: absolute;
+	right: -288px;
+	top: 0px;
+	min-height: 0vh;
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0;
+	z-index: 200;
+	width: 0;
+	height: 0;
+	transition: all 0.5s;
+	background: $white;
+	.headerMenuMob__overlay--item__backTwo{
+		border-top: 1px solid  rgba(7, 52, 120, 0.3);
+		border-bottom: 1px solid  rgba(7, 52, 120, 0.3) !important;
+		font-weight: 700 !important;
+		font-size: $fz16 !important;
+		line-height: $lh20 !important;
+		padding-left: 40px;
+		&::before {
+			content: url(../img/svg/menu-sideb-arrrow.svg);
+			position: absolute;
+			left: 9px;
+			top: 12px;
+			width: 16px;
+			height: 16px;
+			display: block;
+			transform: rotate(180deg);
+		}
+	}
+	.headerMenuMob__overlay--item {
+		font-style: normal;
+		font-weight: 400;
+		font-size: $fz14;
+		line-height: $lh20;
+		color: $blueDarck;
+		border-bottom: 1px solid  rgba(0, 85, 182, 0.1);
+
+	}
+	&.notActive {
+		position: absolute;
+		top: 0;
+		left: -288px;
+		transition: all 0.5s;
+		// opacity: 0;
+		pointer-events: none;
+	}
+	&.active {
+		width: 100%;
+		height: auto;
+		right: 0px;
+		opacity: 1;
+		visibility: inherit;
+		transition: all 0.5s;
+		padding: 0;
+		height: calc(100vh - 250px);
+		overflow: auto;
+	}
+}
+body.Bodymotionless {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.tabsControls {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	padding-bottom: 24px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+	.tabControl {
+		margin-right: 20px;
+		margin-bottom: 16px;
+	}
+}

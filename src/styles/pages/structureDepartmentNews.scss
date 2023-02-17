@@ -1,0 +1,117 @@
+.structureDepartment__news {
+	.newsMain__title.newsMain__title__desc  {
+		color: $blueDarck;
+		font-style: normal;
+		font-size: $fz16;
+		line-height: $lh24;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	.layoutTwo {
+		@include max(lg) {
+			flex-flow: row nowrap;
+		}	
+		&__left {
+			position: relative;
+			display: flex;
+			flex: 1 0 336px;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-right: 64px;
+			@include max(md) {
+				display: none;
+			}	
+		}
+		&__right {
+			position: relative;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex: 1 1 auto;
+			width: 100%;
+			p.header__one__right--subtitle-desc {
+				@include max(md) {
+					display: none;
+				}					
+			}
+		}
+	}
+
+	.header__one {
+		margin-bottom: 40px;
+		padding-bottom: 76px;
+		border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+		@include max(md) {
+			padding-bottom: 40px;
+			margin-bottom: 0;
+		}	
+		.column__right.header__one__right {
+			padding-bottom: 0;
+			img {
+				min-height: 360px;
+				@include max(md) {
+					display: none;
+				}	
+			}	
+			p.header__one__right--subtitle-mob {
+				display: none;
+				font-size: $fz14;
+				line-height: $lh22;
+				color: $blueDarck;
+				@include max(md) {
+					display: block;
+				}	
+			}
+		}
+		.header__one__right--title {
+			position: absolute;
+			left: 32px;
+			bottom: 32px;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 52px;
+			line-height: 58px;
+			color: #FFFFFF;
+			@include max(md) {
+				left: auto;
+				bottom: auto;
+				font-size: $fz32;
+				line-height: $lh40;
+				position: relative;
+				color: $blueDarck;
+				margin-bottom: 32px;
+			}		
+		}
+	}
+	.newsMain {
+		margin-top: 60px;
+		@include max(md) {
+			margin-top: 40px;
+		}	
+	}
+}
+.newsMain {
+	&__top {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 48px;
+		@include max(sm) {
+			margin-bottom: 30px;		
+		}
+		&--title {
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz24;
+			line-height: $lh28;
+			color: $blueDarck;		
+		}
+		.block__textOne__link	{
+			margin-top: 5px;
+		}
+	}
+}

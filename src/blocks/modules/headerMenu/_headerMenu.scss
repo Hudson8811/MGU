@@ -13,6 +13,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+
 	&__item {
 		position: relative;
 		display: inline-block;
@@ -33,6 +34,11 @@
 		cursor: pointer;
 		transition: all .5s;
 		white-space: nowrap;
+		&--owl {
+			&.active {
+				background: #fff;
+			}
+		}
 		&:hover {
 			background: #fff;
 			transition: all .5s;
@@ -86,13 +92,20 @@
 		line-height: $lh24;
 		color: #FFFFFF;
 		margin-bottom: 8px;
+		transition: all .1s;
+		&:hover {
+			// font-weight: 700;
+			text-shadow: none;
+			text-shadow: 0 0 0.45px #fff, 0 0 0.45px #fff;
+			transition: all .1s;
+		}
 	}
 }
 
 .topMenu__overlay {
 	position: absolute;
 	left: 0;
-	bottom: -100vh;
+	bottom: -648px;
 	width: 100vw;
 	min-height: 0vh;
 	display: block;
@@ -110,7 +123,7 @@
 		padding: 20px;
 		padding-top: 68px;
 		padding-left: 136px;
-		min-height: 100vh;
+		min-height: 648px;
 	}
 	&--close {
 		position: absolute;
@@ -136,6 +149,9 @@
 		line-height: $lh24;
 		color: $blueDarck;
 		margin-bottom: 20px;
+		width: 100%;
+		max-width: 400px;
+		
 	}
 }
 .topMenu__overlay--list {
@@ -151,7 +167,7 @@
 
 .topMenu__overlay--list.menu-pane {
 	position: absolute;
-	left: 400px;
+	left: 536px;
 	top: 0px;
 	min-height: 0vh;
 	display: flex;
@@ -170,7 +186,6 @@
 		transition: opacity 1s;
 		padding: 20px;
 		padding-top: 68px;
-		padding-left: 136px;
 		min-height: 650px;
 		height: auto;
 		// overflow: auto;

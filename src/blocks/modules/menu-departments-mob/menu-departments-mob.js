@@ -6,6 +6,7 @@ let menuDepartButton = document.querySelector(".menuDepartMob--button");
 let menuDeparttabNavs = document.querySelectorAll(".menuDepartMob-tab");
 let menuDeparttabPanes = document.querySelectorAll(".menuDepartMob-pane");
 let menuDepartBack = document.querySelectorAll(".menuDepartMob__overlay--item__back");
+let menuDepartOverlayListStart = document.querySelector(".menuDepartMob__overlay--list__start");
 
 if(menuDepartButton !== null) {
 	if(menuDeparttabNavs !==null & menuDeparttabPanes !==null) {
@@ -22,11 +23,24 @@ if(menuDepartButton !== null) {
 					var contentAttr = menuDeparttabPanes[j].getAttribute("data-tab-content");
 	
 					if (activeTabAttr === contentAttr) {
-						menuDeparttabNavs[j].classList.add("active");
-						menuDeparttabPanes[j].classList.add("active"); 
-					} else {
 						menuDeparttabNavs[j].classList.remove("active");
+						menuDeparttabNavs[j].classList.add("notActive");
+						menuDeparttabPanes[j].classList.add("active");
+						menuDepartOverlayListStart.classList.remove("active");
+						menuDepartOverlayListStart.classList.add("notActive");
+						// headerMenuMobtabNavs[j].classList.remove("Active");
+						// headerMenuMobtabNavs[j].classList.add("notActive");
+						// // headerMenuMobtabPanes[j].classList.remove("notActive"); 
+						// headerMenuMobtabPanes[j].classList.add("active"); 
+					} else {
+						menuDeparttabNavs[j].classList.remove("notActive");
+						menuDeparttabNavs[j].classList.add("active");
 						menuDeparttabPanes[j].classList.remove("active");
+						menuDeparttabPanes[j].classList.add("notActive");
+						// headerMenuMobtabNavs[j].classList.remove("notActive");
+						// headerMenuMobtabNavs[j].classList.add("Active");
+						// headerMenuMobtabPanes[j].classList.add("notActive");
+						// headerMenuMobtabPanes[j].classList.remove("active");
 					}
 				};
 			});
@@ -56,6 +70,8 @@ if(menuDepartButton !== null) {
 	
 	menuDepartBack.forEach((item) => {
 		item.addEventListener("click", function () {
+			menuDepartOverlayListStart.classList.remove("notActive");
+			menuDepartOverlayListStart.classList.add("active");
 			menuDepartNotclick()
 		});
 	})

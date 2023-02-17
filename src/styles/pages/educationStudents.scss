@@ -1,0 +1,121 @@
+.educationStudents {
+	.block__text__wrap {
+		.column__left {
+			@include max(md) {
+				display: none;
+			}
+		}
+		.header__one {
+			.column__left.header__one__left {
+				@include max(md) {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+.educationStudents__photoAlbums {
+	position: relative;
+	display: none;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	flex-flow: column nowrap;
+	opacity: 0;
+	transition: all .5s;
+	&.active {
+		display: flex;
+		opacity: 1;
+		transition: all .5s;
+	}
+	.educationStudents__photoAlbum {
+		position: relative;
+		display: flex;
+		width: calc(100% + 24px);
+		align-items: stretch;
+		flex-flow: row wrap;
+		margin-left: -24px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		margin-bottom: 80px;
+
+		&--title  {
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz20;
+			line-height: $lh26;
+			color: $blueDarck;
+			margin-bottom: 40px;					
+		}
+		@include max(lg) {
+			margin-bottom: 60px;
+			width: calc(100% + 24px);
+			margin-left: -24px;
+		}
+		@include max(sm) {
+			width: calc(100% + 24px);
+			margin-left:  -24px;
+		}
+		&__item {
+			position: relative;
+			flex: 0 0 33.333%;
+			max-width: calc(33.3333% - 24px);
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding: 0px;
+			margin-left: 24px;
+			margin-bottom: 40px;
+
+			&--photo {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: block;
+				margin-bottom: 16px;
+				img {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center center;
+					@include max(sm) {
+						min-height: 300px;
+					}
+					@include max(xs) {
+						min-height: 213px;
+					}
+				}
+
+			}
+			&--name {
+				font-style: normal;
+				font-weight: 700;
+				font-size: $fz16;
+				line-height: $lh24;
+				color: $blueDarck;				
+			}
+			&:hover {
+				&__title  {
+					text-shadow: 0 0 0px transparent, 0 0 0px transparent;		
+				}
+				&__text {
+					text-shadow: 0 0 0px transparent, 0 0 0px transparent;		
+				}
+			}
+			@include max(lg) {
+				max-width: calc(33.3333% - 24px);
+				margin-left: 24px;
+			}
+			@include max(sm) {
+				flex: 0 0 50%;
+				max-width: calc(50% - 24px);
+				margin-left: 24px;
+				margin-bottom: 40px;
+			}
+	
+		}			
+		
+	}
+}

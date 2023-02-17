@@ -1,0 +1,253 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Education Students";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.conferences.layoutFour.educationStudents
+		.section__editor
+			.container
+				.block__text__wrap
+					.column__left
+						include ../../blocks/modules/menu-sidebar/menu-sidebar
+					.column__right
+						.header__one
+							include ../../blocks/modules/menu-departments-mob/menu-departments-mob
+							.column__left.header__one__left
+								h1  Студенты и аспиранты
+							.column__right.header__one__right
+						include ../../blocks/modules/tabs-controls-students/tabs-controls-students
+						.educationStudents__photoAlbums.active(data-tab-content="1")
+							.educationStudents__photoAlbum--title Студенты 3 курса
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+						.educationStudents__photoAlbums(data-tab-content="2")
+							.educationStudents__photoAlbum--title Студенты 3 курса
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+								
+						.educationStudents__photoAlbums(data-tab-content="3")
+							.educationStudents__photoAlbum--title Студенты 4 курса
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+						.educationStudents__photoAlbums(data-tab-content="4")
+							.educationStudents__photoAlbum--title 1 курс магистратуры
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+						.educationStudents__photoAlbums(data-tab-content="5")
+							.educationStudents__photoAlbum--title 2 курс магистратуры 
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+						.educationStudents__photoAlbums(data-tab-content="6")
+							.educationStudents__photoAlbum--title аспиранты 1 г.о.
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+						.educationStudents__photoAlbums(data-tab-content="7")
+							.educationStudents__photoAlbum--title аспиранты 2 г.о.
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+						.educationStudents__photoAlbums(data-tab-content="8")
+							.educationStudents__photoAlbum--title аспиранты 3 г.о.
+							.educationStudents__photoAlbum
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__6.png", alt="")
+									.educationStudents__photoAlbum__item--name Авдонина <br> Алина Михайловна								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__1.png", alt="")
+									.educationStudents__photoAlbum__item--name Иванов<br> Евгений Владиславович								
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__2.png", alt="")
+									.educationStudents__photoAlbum__item--name Крыленко<br> Дарья Вячеславовна							
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__3.png", alt="")
+									.educationStudents__photoAlbum__item--name Кедич<br> Андрей Игоревич							 
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__4.png", alt="")
+									.educationStudents__photoAlbum__item--name Веревкина<br> Полина Константиновна
+								.educationStudents__photoAlbum__item
+									.educationStudents__photoAlbum__item--photo
+										img(src="img/educationStudants/educationStudants__5.png", alt="")
+									.educationStudents__photoAlbum__item--name Яковлева<br> Елизавета Сергеевна
+								
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

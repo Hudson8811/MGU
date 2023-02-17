@@ -8,4 +8,6 @@
 @@include("../../blocks/modules/students-timetable-slider-blue/students-timetable-slider-blue.js")
 @@include("../../blocks/modules/headerMenu/headerMenu.js")
 @@include("../../blocks/modules/menu-departments-mob/menu-departments-mob.js")
+@@include("../../blocks/modules/headerMenu-mob/headerMenu-mob.js")
 @@include("../../blocks/modules/tabs-controls/tabs-controls.js")
+@@include("../../blocks/modules/tabs-controls-students/tabs-controls-students.js")
