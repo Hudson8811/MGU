@@ -42,14 +42,14 @@
 	// 	maxDuration : 0.7,
 	// 	viewportFactor : 0.2
 	// } );
-	$('.grid').masonry({
-		// options
-		// columnWidth: '.grid-sizer',
-		itemSelector: '.grid-item',
-		horizontalOrder: true,
-		gutter: 10,
-		fitWidth: true,
-	});
+	// $('.grid').masonry({
+	// 	// options
+	// 	// columnWidth: '.grid-sizer',
+	// 	itemSelector: '.grid-item',
+	// 	horizontalOrder: true,
+	// 	gutter: 10,
+	// 	fitWidth: true,
+	// });
 	// $('.grid').masonry({
 	// 	itemSelector: '.grid-item',
 	// 	columnWidth: 160
