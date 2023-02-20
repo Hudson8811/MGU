@@ -123,7 +123,7 @@
 		padding: 20px;
 		padding-top: 68px;
 		padding-left: 136px;
-		min-height: 648px;
+		min-height: 716px;
 	}
 	&--close {
 		position: absolute;
@@ -148,7 +148,7 @@
 		font-size: $fz16;
 		line-height: $lh24;
 		color: $blueDarck;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		width: 100%;
 		max-width: 400px;
 		
@@ -179,7 +179,7 @@
 	height: 0;
 	transition: opacity 0s;
 	&.active {
-		width: 100%;
+		width: auto;
 		height: auto;
 		opacity: 1;
 		visibility: inherit;
