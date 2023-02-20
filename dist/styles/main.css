@@ -2076,6 +2076,10 @@ a.block__textOne__link--person-colors::after {
   transition: opacity 0s;
 }
 
+.topMenu__overlay--list.menu-pane .topMenu__overlay--item {
+  max-width: none;
+}
+
 .topMenu__overlay--list.menu-pane.active {
   width: auto;
   height: auto;
