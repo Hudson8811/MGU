@@ -109,10 +109,10 @@ a.block__textOne__link {
 	padding-top: 1px;
 	&--opacity {
 		opacity: 0.5;
-		&::after { 
-			transform: rotate(90deg);
-			top: 1px !important;
-			right: 7px !important;
+		&::after {
+			content: url(../img/svg/download.svg) !important;
+			transform: rotate(0deg);
+			top: 6px;
 		}
 
 	}

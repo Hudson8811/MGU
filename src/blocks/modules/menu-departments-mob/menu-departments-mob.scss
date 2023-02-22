@@ -98,9 +98,10 @@
 
 .menuDepartMob__overlay {
 	position: relative;
-	width: 100%;
+	width: 1168px;
 	background: transparent;
 	margin-top: 20px;
+	max-width: calc(100% - 0px);
 	&--close {
 		position: absolute;
 		right: 35px;

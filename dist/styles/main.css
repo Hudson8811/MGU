@@ -1904,9 +1904,9 @@ a.block__textOne__link--opacity {
 }
 
 a.block__textOne__link--opacity::after {
-  transform: rotate(90deg);
-  top: 1px !important;
-  right: 7px !important;
+  content: url(../img/svg/download.svg) !important;
+  transform: rotate(0deg);
+  top: 6px;
 }
 
 a.block__textOne__link:hover {
@@ -3786,9 +3786,10 @@ button.declaration__item__button {
 
 .menuDepartMob__overlay {
   position: relative;
-  width: 100%;
+  width: 1168px;
   background: transparent;
   margin-top: 20px;
+  max-width: calc(100% - 0px);
 }
 
 .menuDepartMob__overlay--close {
