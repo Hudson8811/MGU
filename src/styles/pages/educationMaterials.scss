@@ -1,4 +1,18 @@
 .layoutFour {
+	.block__text__wrap {
+		.column__left {
+			@include max(md) {
+				display: none;
+			}
+		}
+		.header__one {
+			.column__left.header__one__left {
+				@include max(md) {
+					display: flex;
+				}
+			}
+		}
+	}
 	.column__left {
 		padding-right: 0;
 		padding-top: 0;
