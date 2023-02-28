@@ -10027,6 +10027,14 @@ body.Bodymotionless {
     align-items: flex-start;
   }
 
+  .layoutFour .block__text__wrap .column__left {
+    display: none;
+  }
+
+  .layoutFour .block__text__wrap .header__one .column__left.header__one__left {
+    display: flex;
+  }
+
   .structureDepartment__news .layoutTwo__left {
     display: none;
   }

@@ -5,6 +5,7 @@
 //@@include("../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js")
 @@include("./libs/jquery.fancybox.min.js")
 @@include("./libs/swiper-bundle.min.js")
+@@include("./libs/jquery.hoverIntent.min.js")
 @@include("./import/modules.js")
 @@include("./import/components.js")
 @@include("./import/main-script.js")
