@@ -997,6 +997,11 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
+"@fancyapps/ui@^5.0.3":
+  "integrity" "sha512-l0xKw7hBR2lD7BXYH6q5QAnFK97X+CUSzigVhvenhkvvB9ei9Cq6hAOLfj2MsGU9VK8443o4UvkeAGkt3XqtNA=="
+  "resolved" "https://registry.npmjs.org/@fancyapps/ui/-/ui-5.0.3.tgz"
+  "version" "5.0.3"
+
 "@gulp-sourcemaps/identity-map@^2.0.1":
   "integrity" "sha512-Tb+nSISZku+eQ4X1lAkevcQa+jknn/OVUgZ3XCxEKIsLsqYuPoJwJOPQeaOk75X3WPftb29GWY1eqE7GLsXb1Q=="
   "resolved" "https://registry.npmjs.org/@gulp-sourcemaps/identity-map/-/identity-map-2.0.1.tgz"
@@ -3820,6 +3825,11 @@
   "resolved" "https://registry.npmjs.org/depd/-/depd-2.0.0.tgz"
   "version" "2.0.0"
 
+"desandro-matches-selector@^2.0.0":
+  "integrity" "sha512-+1q0nXhdzg1IpIJdMKalUwvvskeKnYyEe3shPRwedNcWtnhEKT3ZxvFjzywHDeGcKViIxTCAoOYQWP1qD7VNyg=="
+  "resolved" "https://registry.npmjs.org/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz"
+  "version" "2.0.2"
+
 "destroy@~1.0.4":
   "integrity" "sha512-3NdhDuEXnfun/z7x9GOElY49LoqVHoGScmOKwmxhsS8N5Y+Z8KyPPDnaSzqWgYt/ji4mqwfTS34Htrk0zPIXVg=="
   "resolved" "https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz"
@@ -4406,6 +4416,11 @@
   "integrity" "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg=="
   "resolved" "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
   "version" "1.8.1"
+
+"ev-emitter@^1.0.0":
+  "integrity" "sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q=="
+  "resolved" "https://registry.npmjs.org/ev-emitter/-/ev-emitter-1.1.1.tgz"
+  "version" "1.1.1"
 
 "event-emitter@^0.3.5":
   "integrity" "sha512-D9rRn9y7kLPnJ+hMq7S/nhvoKwwvVJahBi2BPmx3bvbsEdK3W9ii8cBSGjP+72/LnM4n6fo3+dkCX5FeTQruXA=="
@@ -5024,6 +5039,13 @@
   dependencies:
     "readable-stream" "^2.0.2"
 
+"fizzy-ui-utils@^2.0.0":
+  "integrity" "sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg=="
+  "resolved" "https://registry.npmjs.org/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz"
+  "version" "2.0.7"
+  dependencies:
+    "desandro-matches-selector" "^2.0.0"
+
 "flagged-respawn@^1.0.0":
   "integrity" "sha512-lNaHNVymajmk0OJMBn8fVUAU1BtDeKIqKoVhk4xAALB57aALg6b4W0MfJ/cUE0g9YBXy5XhSlPIpYIJ7HaY/3Q=="
   "resolved" "https://registry.npmjs.org/flagged-respawn/-/flagged-respawn-1.0.1.tgz"
@@ -5240,6 +5262,11 @@
   "version" "2.1.0"
   dependencies:
     "npm-conf" "^1.1.0"
+
+"get-size@^2.0.2":
+  "integrity" "sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q=="
+  "resolved" "https://registry.npmjs.org/get-size/-/get-size-2.0.3.tgz"
+  "version" "2.0.3"
 
 "get-stdin@^4.0.1":
   "integrity" "sha512-F5aQMywwJ2n85s4hJPTT9RPxGmubonuB10MNYo17/xph174n2MIR33HRguhzVag10O/npM7SPk73LMZNP+FaWw=="
@@ -7761,6 +7788,14 @@
   dependencies:
     "object-visit" "^1.0.0"
 
+"masonry-layout@^4.2.2":
+  "integrity" "sha512-iGtAlrpHNyxaR19CvKC3npnEcAwszXoyJiI8ARV2ePi7fmYhIud25MHK8Zx4P0LCC4d3TNO9+rFa1KoK1OEOaA=="
+  "resolved" "https://registry.npmjs.org/masonry-layout/-/masonry-layout-4.2.2.tgz"
+  "version" "4.2.2"
+  dependencies:
+    "get-size" "^2.0.2"
+    "outlayer" "^2.1.0"
+
 "matchdep@^2.0.0":
   "integrity" "sha512-LFgVbaHIHMqCRuCZyfCtUOq9/Lnzhi7Z0KFUE2fhD54+JN2jLh3hC02RLkqauJ3U4soU6H1J3tfj/Byk7GoEjA=="
   "resolved" "https://registry.npmjs.org/matchdep/-/matchdep-2.0.0.tgz"
@@ -8545,6 +8580,15 @@
   "integrity" "sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g=="
   "resolved" "https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz"
   "version" "1.0.2"
+
+"outlayer@^2.1.0":
+  "integrity" "sha512-+GplXsCQ3VrbGujAeHEzP9SXsBmJxzn/YdDSQZL0xqBmAWBmortu2Y9Gwdp9J0bgDQ8/YNIPMoBM13nTwZfAhw=="
+  "resolved" "https://registry.npmjs.org/outlayer/-/outlayer-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "ev-emitter" "^1.0.0"
+    "fizzy-ui-utils" "^2.0.0"
+    "get-size" "^2.0.2"
 
 "ow@^0.17.0":
   "integrity" "sha512-i3keDzDQP5lWIe4oODyDFey1qVrq2hXKTuTH2VpqwpYtzPiKZt2ziRI4NBQmgW40AnV5Euz17OyWweCb+bNEQA=="

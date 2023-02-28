@@ -76,7 +76,9 @@
         "yargs": "^17.3.1"
     },
     "dependencies": {
+        "@fancyapps/ui": "^5.0.3",
         "jquery": "^3.6.1",
+        "masonry-layout": "^4.2.2",
         "select2": "^4.1.0-rc.0",
         "swiper": "^8.4.5",
         "webpack": "^5.70.0",

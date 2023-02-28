@@ -1,5 +1,4 @@
 
-	// import '../../js/libs/GridLoadingEffects-master/AnimOnScroll.js'
 	///tabs
 	var tabNavsEG = document.querySelectorAll(".tabControl--educationGallery");
 	var tabPanesEG = document.querySelectorAll(".tabContent--educationGallery");
@@ -27,31 +26,34 @@
 			});
 		}
 	}
+	$('.grid').masonry({
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer',
+		gutter: 24,
+		// gutter: '.gutter-sizer',
+		percentPosition: true
+	});
+	Fancybox.bind(document.getElementById("galleryMasters"), "[data-fancybox]", {
+		compact: false,
+		idle: false,
+	
+		animated: false,
+		showClass: false,
+		hideClass: false,
+	
+		dragToClose: false,	
+		Thumbs: {
+			type: "modern",
+		},
+		autoSize: true,
+		Toolbar: {
+			display: {
+				left: ["infobar"],
+				middle: [
+				],
+				right: ["close"],
+			},
+		},
+	});
 
-	// var educationGalleryAlbum;
-	// $('#grid').each(function(){
-	// 	var slider=$(this) 
-	// 	var educationGalleryAlbum = new AnimOnScroll(slider[0], {
-	// 		minDuration : 0.4,
-	// 		maxDuration : 0.7,
-	// 		viewportFactor : 0.2
-	// 	});
-	// });
-	// new AnimOnScroll( document.getElementById( 'grid' ), {
-	// 	minDuration : 0.4,
-	// 	maxDuration : 0.7,
-	// 	viewportFactor : 0.2
-	// } );
-	// $('.grid').masonry({
-	// 	// options
-	// 	// columnWidth: '.grid-sizer',
-	// 	itemSelector: '.grid-item',
-	// 	horizontalOrder: true,
-	// 	gutter: 10,
-	// 	fitWidth: true,
-	// });
-	// $('.grid').masonry({
-	// 	itemSelector: '.grid-item',
-	// 	columnWidth: 160
-	// });
 	///tabs

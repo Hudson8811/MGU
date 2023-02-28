@@ -24,6 +24,22 @@
 		will-change: max-height;
 		transition: all 0.25s ease-out;
 		opacity: 0;
+		color: #004ABA;
+		background: $white;
+		p {
+			color: #004ABA;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			margin: 20px;
+			margin-left: 114px;
+			@include max(sm) {
+				margin-left: 85px;
+				font-size: 14px;
+				line-height: 22px;
+			}
+		}
 	} 
 
 	&__active {
