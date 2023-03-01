@@ -2802,10 +2802,16 @@ $(document).click(function (e) {
 			menu.removeClass("department__menu--active");
     };
 });
+	var delaymenuBtn;
 	menuBtn.mouseenter(function () {
-		menu.addClass("department__menu--active");
-		topMenuNotHover()
-		NotHover();
+		delaymenuBtn = setTimeout(function () {
+			menu.addClass("department__menu--active");
+			topMenuNotHover()
+			NotHover();
+		}, 200);
+	});
+	menuBtn.mouseleave(function () {
+		window.clearTimeout(delaymenuBtn);
 	});
 	menu.mouseleave(function () {
 		menu.removeClass("department__menu--active");
@@ -2891,27 +2897,33 @@ function topMenuNotHover() {
 }
 function topMenutabHover() {
 	for (var i = 0; i < topMenutabNavs.length; i++) {
-
+		var delayTopMenutabNavs;
 		topMenutabNavs[i].addEventListener("mouseover", function(e){
-			e.preventDefault();
-			var activeTabAttr = e.target.getAttribute("data-tab");
+			e.preventDefault();	
+			var activeTabAttr = e.target.getAttribute("data-tab");			
+				delayTopMenutabNavs= setTimeout(function () {
+					for (var j = 0; j < topMenutabNavs.length; j++) {
+						var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
+		
+						if (activeTabAttr === contentAttr) {
+							topMenutabNavs[j].classList.add("active");
+							topMenutabPanes[j].classList.add("topMenu__overlay--active"); 
+							// topMenutabNavs[j].classList.remove("notActive");
+							// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
+						} else {
+							// topMenutabNavs[j].classList.add("notActive");
+							// topMenutabPanes[j].classList.add("notActive"); 
+							topMenutabNavs[j].classList.remove("active");
+							topMenutabPanes[j].classList.remove("topMenu__overlay--active");
+							
+						}
+					};
+			}, 200);
 
-			for (var j = 0; j < topMenutabNavs.length; j++) {
-				var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
-
-				if (activeTabAttr === contentAttr) {
-					topMenutabNavs[j].classList.add("active");
-					topMenutabPanes[j].classList.add("topMenu__overlay--active"); 
-					// topMenutabNavs[j].classList.remove("notActive");
-					// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
-				} else {
-					// topMenutabNavs[j].classList.add("notActive");
-					// topMenutabPanes[j].classList.add("notActive"); 
-					topMenutabNavs[j].classList.remove("active");
-					topMenutabPanes[j].classList.remove("topMenu__overlay--active");
-					
-				}
-			};
+		});
+		topMenutabNavs[i].addEventListener("mouseout", function(e){
+			e.preventDefault();	
+			window.clearTimeout(delayTopMenutabNavs);
 		});
 	}
 }
@@ -3306,12 +3318,12 @@ if(headerMenuMobButton !== null) {
 				// Arrows
 				arrowLeft:
 				'<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
-				'<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.28 15.7l-1.34 1.37L5 12l4.94-5.07 1.34 1.38-2.68 2.72H19v1.94H8.6z"/></svg></div>' +
+				'<div><svg width="11" height="18" viewBox="0 0 11 18" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L2 8.90805L10 17" stroke="#004ABA" stroke-width="1.5"/></svg></div>' +
 				"</button>",
 
 				arrowRight:
 				'<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
-				'<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.4 12.97l-2.68 2.72 1.34 1.38L19 12l-4.94-5.07-1.34 1.38 2.68 2.72H5v1.94z"/></svg></div>' +
+				'<div><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.5 17L9.5 9.09195L1.5 1" stroke="#104CA6" stroke-width="1.5"/></svg></div>' +
 				"</button>",
 
 			},
@@ -3328,29 +3340,7 @@ if(headerMenuMobButton !== null) {
 
 
 
-/*
-	Fancybox.bind(document.getElementById("galleryMasters"), "[data-fancybox]", {
-		compact: false,
-		idle: false,
 
-		animated: false,
-		showClass: false,
-		hideClass: false,
-
-		dragToClose: false,
-		Thumbs: {
-			type: "modern",
-		},
-		autoSize: true,
-		Toolbar: {
-			display: {
-				left: ["infobar"],
-				middle: [
-				],
-				right: ["close"],
-			},
-		},
-	});*/
 
 	///tabs
 

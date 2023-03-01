@@ -7,10 +7,16 @@ $(document).click(function (e) {
 			menu.removeClass("department__menu--active");
     };
 });
+	var delaymenuBtn;
 	menuBtn.mouseenter(function () {
-		menu.addClass("department__menu--active");
-		topMenuNotHover()
-		NotHover();
+		delaymenuBtn = setTimeout(function () {
+			menu.addClass("department__menu--active");
+			topMenuNotHover()
+			NotHover();
+		}, 200);
+	});
+	menuBtn.mouseleave(function () {
+		window.clearTimeout(delaymenuBtn);
 	});
 	menu.mouseleave(function () {
 		menu.removeClass("department__menu--active");
@@ -96,27 +102,33 @@ function topMenuNotHover() {
 }
 function topMenutabHover() {
 	for (var i = 0; i < topMenutabNavs.length; i++) {
-
+		var delayTopMenutabNavs;
 		topMenutabNavs[i].addEventListener("mouseover", function(e){
-			e.preventDefault();
-			var activeTabAttr = e.target.getAttribute("data-tab");
+			e.preventDefault();	
+			var activeTabAttr = e.target.getAttribute("data-tab");			
+				delayTopMenutabNavs= setTimeout(function () {
+					for (var j = 0; j < topMenutabNavs.length; j++) {
+						var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
+		
+						if (activeTabAttr === contentAttr) {
+							topMenutabNavs[j].classList.add("active");
+							topMenutabPanes[j].classList.add("topMenu__overlay--active"); 
+							// topMenutabNavs[j].classList.remove("notActive");
+							// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
+						} else {
+							// topMenutabNavs[j].classList.add("notActive");
+							// topMenutabPanes[j].classList.add("notActive"); 
+							topMenutabNavs[j].classList.remove("active");
+							topMenutabPanes[j].classList.remove("topMenu__overlay--active");
+							
+						}
+					};
+			}, 200);
 
-			for (var j = 0; j < topMenutabNavs.length; j++) {
-				var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
-
-				if (activeTabAttr === contentAttr) {
-					topMenutabNavs[j].classList.add("active");
-					topMenutabPanes[j].classList.add("topMenu__overlay--active"); 
-					// topMenutabNavs[j].classList.remove("notActive");
-					// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
-				} else {
-					// topMenutabNavs[j].classList.add("notActive");
-					// topMenutabPanes[j].classList.add("notActive"); 
-					topMenutabNavs[j].classList.remove("active");
-					topMenutabPanes[j].classList.remove("topMenu__overlay--active");
-					
-				}
-			};
+		});
+		topMenutabNavs[i].addEventListener("mouseout", function(e){
+			e.preventDefault();	
+			window.clearTimeout(delayTopMenutabNavs);
 		});
 	}
 }

@@ -8671,15 +8671,23 @@ body.Bodymotionless {
 */
 
 .fancybox-customized-gallery .fancybox-bg {
-  background: rgb(61, 76, 100);
+  background: rgba(61, 76, 100, 0.5);
 }
 
 .fancybox-customized-gallery.fancybox-is-open .fancybox-bg {
   opacity: 0.5;
 }
 
+.fancybox-customized-gallery .fancybox-custom-topbar__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #031B4B;
+}
+
 .fancybox-customized-gallery .fancybox-inner2 {
-  background: rgb(255, 255, 255);
+  background: #F4F3F0;
   height: 800px;
   width: 1020px;
   max-width: 100vw;
@@ -8700,8 +8708,8 @@ body.Bodymotionless {
 .fancybox-customized-gallery .fancybox-custom-topbar {
   padding: 20px 60px 16px 32px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
   color: #031B4B;
 }
 
@@ -8710,8 +8718,8 @@ body.Bodymotionless {
   margin: 0;
   mix-blend-mode: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-feature-settings: "ss01" on;
   color: #031B4B;
   padding: 0 60px 0 32px;
@@ -8726,8 +8734,8 @@ body.Bodymotionless {
   background: none;
   mix-blend-mode: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-feature-settings: "ss01" on;
   color: #031B4B;
   min-height: 90px;
@@ -8755,6 +8763,53 @@ body.Bodymotionless {
 .fancybox-customized-gallery .fancybox-navigation .fancybox-button {
   opacity: 1;
   visibility: visible;
+  background: #FFFFFF;
+  padding: 5px;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  color: #031b4b;
+}
+
+.fancybox-customized-gallery .fancybox-navigation .fancybox-button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fancybox-customized-gallery .fancybox-navigation .fancybox-button svg {
+  width: auto;
+  height: auto;
+}
+
+.fancybox-customized-gallery .fancybox-navigation .fancybox-button svg path {
+  fill: transparent;
+  stroke-width: 1.5;
+}
+
+.fancybox-customized-gallery .fancybox-navigation .fancybox-button--arrow_right {
+  right: 16px;
+}
+
+.fancybox-customized-gallery .fancybox-navigation .fancybox-button--arrow_left {
+  left: 16px;
+}
+
+.fancybox-customized-gallery .fancybox-button[disabled] {
+  opacity: 0.6;
+}
+
+.fancybox-customized-gallery .fancybox-button[disabled]:hover {
+  opacity: 0.6;
+}
+
+.fancybox-customized-gallery .fancybox-caption__body {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031B4B;
 }
 
 .fancybox-customized-gallery .fancybox-custom-topbar__close {
