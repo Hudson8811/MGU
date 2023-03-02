@@ -14,6 +14,7 @@
 		}
 	}
 }
+
 .educationStudents__photoAlbums {
 	position: relative;
 	display: none;
@@ -71,21 +72,29 @@
 			&--photo {
 				position: relative;
 				width: 100%;
-				height: 100%;
+				height: auto;
 				display: block;
 				margin-bottom: 16px;
+				&::before {
+					content: '';
+					display: block;
+					padding-top: 141.667%; /* 340/240*100=141.667 */					
+				}
 				img {
-					position: relative;
+					position: absolute;
+					left: 0;
+					top: 0;
+					// position: relative;
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
 					object-position: center center;
-					@include max(sm) {
-						min-height: 300px;
-					}
-					@include max(xs) {
-						min-height: 213px;
-					}
+					// @include max(sm) {
+					// 	min-height: 300px;
+					// }
+					// @include max(xs) {
+					// 	min-height: 213px;
+					// }
 				}
 
 			}

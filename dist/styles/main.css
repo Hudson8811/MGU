@@ -8465,13 +8465,22 @@ body.Bodymotionless {
 .educationStudents__photoAlbums .educationStudents__photoAlbum__item--photo {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   margin-bottom: 16px;
 }
 
+.educationStudents__photoAlbums .educationStudents__photoAlbum__item--photo::before {
+  content: "";
+  display: block;
+  padding-top: 141.667%;
+  /* 340/240*100=141.667 */
+}
+
 .educationStudents__photoAlbums .educationStudents__photoAlbum__item--photo img {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -11128,10 +11137,6 @@ body.Bodymotionless {
     margin-left: -24px;
   }
 
-  .educationStudents__photoAlbums .educationStudents__photoAlbum__item--photo img {
-    min-height: 300px;
-  }
-
   .educationStudents__photoAlbums .educationStudents__photoAlbum__item {
     flex: 0 0 50%;
     max-width: calc(50% - 24px);
@@ -11401,10 +11406,6 @@ body.Bodymotionless {
   .studentsTimetable .button.button__blueLight {
     font-size: 1.25rem;
     line-height: 1.25rem;
-  }
-
-  .educationStudents__photoAlbums .educationStudents__photoAlbum__item--photo img {
-    min-height: 213px;
   }
 }
 

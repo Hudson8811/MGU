@@ -2834,6 +2834,7 @@ $(document).click(function (e) {
 topMenuOverlayClose.on("click", function () {
 	topMenuoverlay.removeClass("topMenu__overlay--active");
 	NotHover();
+	topMenuNotHover()
 });
 
 
