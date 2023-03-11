@@ -10,7 +10,7 @@
 	.layoutTwo {
 		@include max(lg) {
 			flex-flow: row nowrap;
-		}	
+		}
 		&__left {
 			position: relative;
 			display: flex;
@@ -21,7 +21,7 @@
 			margin-right: 64px;
 			@include max(md) {
 				display: none;
-			}	
+			}
 		}
 		&__right {
 			position: relative;
@@ -31,10 +31,10 @@
 			align-items: flex-start;
 			flex: 1 1 auto;
 			width: 100%;
-			p.header__one__right--subtitle-desc {
+			.header__one__right--subtitle-desc {
 				@include max(md) {
 					display: none;
-				}					
+				}
 			}
 		}
 	}
@@ -46,23 +46,24 @@
 		@include max(md) {
 			padding-bottom: 40px;
 			margin-bottom: 0;
-		}	
+		}
 		.column__right.header__one__right {
 			padding-bottom: 0;
 			img {
 				min-height: 360px;
 				@include max(md) {
 					display: none;
-				}	
-			}	
-			p.header__one__right--subtitle-mob {
+				}
+			}
+			.header__one__right--subtitle-mob {
 				display: none;
 				font-size: $fz14;
 				line-height: $lh22;
 				color: $blueDarck;
+
 				@include max(md) {
 					display: block;
-				}	
+				}
 			}
 		}
 		.header__one__right--title {
@@ -82,14 +83,14 @@
 				position: relative;
 				color: $blueDarck;
 				margin-bottom: 32px;
-			}		
+			}
 		}
 	}
 	.newsMain {
 		margin-top: 60px;
 		@include max(md) {
 			margin-top: 40px;
-		}	
+		}
 	}
 }
 .newsMain {
@@ -101,14 +102,14 @@
 		width: 100%;
 		margin-bottom: 48px;
 		@include max(sm) {
-			margin-bottom: 30px;		
+			margin-bottom: 30px;
 		}
 		&--title {
 			font-style: normal;
 			font-weight: 700;
 			font-size: $fz24;
 			line-height: $lh28;
-			color: $blueDarck;		
+			color: $blueDarck;
 		}
 		.block__textOne__link	{
 			margin-top: 5px;
