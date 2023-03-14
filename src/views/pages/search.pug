@@ -1,0 +1,127 @@
+extends ../layouts/default
+
+block variables
+	- const title = "About Page";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	.search-page 
+		.container
+			.search-page__layout
+				.search-page__layout--left
+					.search-checkbox
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="" checked="")
+								b
+								span новости и объявления
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span о факультете
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span структура
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span наука
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span образование
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span дополнительное образование
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span преподаватели и сотрудники
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span студентам
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span абитуриентам
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span сотрудникам
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span кафедры
+						.search-checkbox--block 
+							label 
+								input(type="checkbox" autocomplete="off" name="")
+								b
+								span лаборатории
+						.button.search-checkbox--button применить
+				.search-page__layout--right
+					.search
+						input(type="search", name="" placeholder="Искать на сайте")
+						.search--button--del
+							img(src="img/svg/search--delete.svg", alt="")
+						.search--line
+						.search--button--play
+							img(src="img/svg/search-play.svg", alt="")
+					.search-results
+						.search-results__item
+							.search-results__item--title 
+								!="Кликабельный заголовок с <span>выделенным</span> словом из поискового запроса"
+							.search-results__item--text
+								!="Текст статьи или нвости, тоже с <span>выделенным</span> словом или несколькими <span>выделенным</span> словами. Кафедра активно участвует в учебном процессе на географическом и биологическом факультетах МГУ, а также на факультете почвоведения."
+							.search-results__item--route 
+								.search-results__item--route--item Главная /  
+								.search-results__item--route--item Наука /  
+								.search-results__item--route--item Диссертации 
+						.search-results__item
+							.search-results__item--title 
+								!="Кликабельный заголовок с <span>выделенным</span> словом из поискового запроса"
+							.search-results__item--text
+								!="Текст статьи или нвости, тоже с <span>выделенным</span> словом или несколькими <span>выделенным</span> словами. Кафедра активно участвует в учебном процессе на географическом и биологическом факультетах МГУ, а также на факультете почвоведения."
+							.search-results__item--route 
+								.search-results__item--route--item Главная /  
+								.search-results__item--route--item Наука /  
+								.search-results__item--route--item Диссертации 
+						.search-results__item
+							.search-results__item--title 
+								!="Кликабельный заголовок с <span>выделенным</span> словом из поискового запроса"
+							.search-results__item--text
+								!="Текст статьи или нвости, тоже с <span>выделенным</span> словом или несколькими <span>выделенным</span> словами. Кафедра активно участвует в учебном процессе на географическом и биологическом факультетах МГУ, а также на факультете почвоведения."
+							.search-results__item--route 
+								.search-results__item--route--item Главная /  
+								.search-results__item--route--item Наука /  
+								.search-results__item--route--item Диссертации 
+						.search-results__item
+							.search-results__item--title 
+								!="Кликабельный заголовок с <span>выделенным</span> словом из поискового запроса"
+							.search-results__item--text
+								!="Текст статьи или нвости, тоже с <span>выделенным</span> словом или несколькими <span>выделенным</span> словами. Кафедра активно участвует в учебном процессе на географическом и биологическом факультетах МГУ, а также на факультете почвоведения."
+							.search-results__item--route 
+								.search-results__item--route--item Главная /  
+								.search-results__item--route--item Наука /  
+								.search-results__item--route--item Диссертации 
+
+					include ../../blocks/components/pagination/pagination
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

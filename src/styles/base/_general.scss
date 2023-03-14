@@ -289,6 +289,50 @@ a.block__textOne__link {
 		transition: all .5s;
 		background-color: $blueLight
 	}
+	&__footer {
+		width: 226px;
+		max-width: 226px;
+		padding: 0;
+		padding-left: 24px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background: transparent;
+		font-family: 'Manrope';
+		font-style: normal;
+		border: 1px solid #FFFFFF;
+		border-radius: 40px;
+		height: 52px;
+		font-weight: 700;
+		font-size: $fz14;
+		line-height: $lh20;
+		color: #FFFFFF;
+		&:hover {
+			background: transparent;
+			.button__footer--icon {
+				background: #fff;
+				transition: all .5s;
+				img {
+					position: relative;	
+					content: url(../img/svg/FootershapeBlue.svg);
+				}
+			}
+		}
+		&--icon {
+			position: absolute;
+			right: -1px;
+			top: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 51px;
+			width: 58px;
+			border: 1px solid #FFFFFF;
+			border-radius: 40px;
+			transition: all .5s;
+
+		}
+	}
 }
 .button__blue {
 	display: inline-block;

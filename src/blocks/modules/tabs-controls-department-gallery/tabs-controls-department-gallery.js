@@ -1,4 +1,13 @@
 
+	$('.grid').masonry({
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer',
+		gutter: 24,
+		// gutter: '.gutter-sizer',
+		transitionDuration: 0,
+		percentPosition: true
+	});
+
 	///tabs
 	var tabNavsEG = document.querySelectorAll(".tabControl--educationGallery");
 	var tabPanesEG = document.querySelectorAll(".tabContent--educationGallery");
@@ -18,6 +27,7 @@
 					if (activeTabAttr === contentAttr) {
 						tabNavsEG[j].classList.add("active");
 						tabPanesEG[j].classList.add("active");
+						$(tabPanesEG[j]).find(".grid").masonry();
 					} else {
 						tabNavsEG[j].classList.remove("active");
 						tabPanesEG[j].classList.remove("active");
@@ -26,13 +36,7 @@
 			});
 		}
 	}
-	$('.grid').masonry({
-		itemSelector: '.grid-item',
-		columnWidth: '.grid-sizer',
-		gutter: 24,
-		// gutter: '.gutter-sizer',
-		percentPosition: true
-	});
+
 
 
 	$('.js-fancy-custom-gallery[data-fancybox]').fancybox({

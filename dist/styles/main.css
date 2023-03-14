@@ -2872,6 +2872,54 @@ a.block__textOne__link--person-colors::after {
   background-color: #739FF3;
 }
 
+.button__footer {
+  width: 226px;
+  max-width: 226px;
+  padding: 0;
+  padding-left: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+  font-family: "Manrope";
+  font-style: normal;
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  height: 52px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #FFFFFF;
+}
+
+.button__footer:hover {
+  background: transparent;
+}
+
+.button__footer:hover .button__footer--icon {
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.button__footer:hover .button__footer--icon img {
+  position: relative;
+  content: url(../img/svg/FootershapeBlue.svg);
+}
+
+.button__footer--icon {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 51px;
+  width: 58px;
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  transition: all 0.5s;
+}
+
 .button__blue {
   display: inline-block;
   border: none;
@@ -3358,19 +3406,6 @@ a.block__textOne__link--person-colors::after {
   display: none;
 }
 
-.footer {
-  position: relative;
-  width: 100%;
-  background: #031B4B;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 52px;
-  padding-bottom: 52px;
-  min-height: 276px;
-  color: #fff;
-}
-
 .section__topMenu {
   width: 100%;
   position: relative;
@@ -3447,7 +3482,7 @@ a.block__textOne__link--person-colors::after {
 
 .department__menu {
   position: absolute;
-  right: 1px;
+  right: 2px;
   display: none;
   padding: 24px;
   z-index: 200;
@@ -3485,8 +3520,12 @@ a.block__textOne__link--person-colors::after {
 .topMenu__overlay {
   position: absolute;
   left: 0;
+  right: 0;
   bottom: -716px;
   width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 0vh;
   display: block;
   visibility: hidden;
@@ -5148,6 +5187,179 @@ body.Bodymotionless {
 .tabsControls .tabControl {
   margin-right: 20px;
   margin-bottom: 16px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #031B4B;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  min-height: 276px;
+  color: #fff;
+}
+
+.footer .button__footer--mob {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer__lists {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+
+.footer__lists--row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer__lists--column {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer__lists--string {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 48px;
+}
+
+.footer__lists--item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.footer__lists--item--logo {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.footer__lists--item--logo img {
+  width: 30px;
+}
+
+.footer__lists--item--logo p {
+  margin-left: 30px;
+  width: 140px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__lists--item--link {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #FFFFFF;
+}
+
+.footer__lists--item--link:hover {
+  opacity: 0.5;
+}
+
+.footer__lists--item--link a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.footer__lists--item--link a:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.footer__lists--item--adress {
+  width: 100%;
+  max-width: 185px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.footer__lists--item--mail {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.footer__lists--item--mail a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.footer__lists--item--mail a:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.footer__lists--item--tel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.footer__lists--item--tel a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.footer__lists--item--tel a:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.footer__lists--item--soc {
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+.footer__lists--item--soc .header__other__soc__icon img {
+  margin-right: 24px;
 }
 
 .block__textOne {
@@ -7370,17 +7582,27 @@ body.Bodymotionless {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #F4F3F0;
+}
+
+.about__contacts__list__map img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .about__contacts__list__column {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
   min-width: 268px;
 }
 
 .about__contacts__list__column:last-child {
   margin-bottom: 0;
+}
+
+.about__contacts__list__column:nth-child(3) {
+  width: 100%;
 }
 
 .about__contacts__list__column h3 {
@@ -7396,6 +7618,7 @@ body.Bodymotionless {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
+  color: #031B4B;
 }
 
 .about__contacts__list p.about__contacts__list--title {
@@ -7403,7 +7626,7 @@ body.Bodymotionless {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .about__professor {
@@ -7414,7 +7637,6 @@ body.Bodymotionless {
   flex-flow: row wrap;
   margin-left: -32px;
   padding-bottom: 0px;
-  margin-top: 80px;
 }
 
 .about__professor__item {
@@ -7464,7 +7686,7 @@ body.Bodymotionless {
   text-align: left;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 2.5rem;
   color: #FFFFFF;
 }
@@ -7529,7 +7751,7 @@ body.Bodymotionless {
   flex-flow: row wrap;
   margin-left: -32px;
   margin-bottom: 0px;
-  padding-bottom: 36px;
+  padding-bottom: 0px;
   margin-top: 80px;
 }
 
@@ -8845,9 +9067,225 @@ body.Bodymotionless {
   display: block;
 }
 
+.search-page {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: #F4F3F0;
+  padding-top: 104px;
+  padding-bottom: 74px;
+}
+
+.search-page__layout {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.search-page__layout--left {
+  position: relative;
+  display: flex;
+  flex: 1 0 360px;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 40px;
+}
+
+.search-page__layout--right {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.search-checkbox {
+  position: relative;
+  width: 100%;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fff;
+  padding: 32px;
+  padding-top: 42px;
+}
+
+.search-checkbox--block {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-checkbox--block:last-child {
+  margin-bottom: 0;
+}
+
+.search-checkbox--block label:not(.checkbox-container) {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-checkbox--block label:not(.checkbox-container) span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #031B4B;
+  margin-left: 12px;
+}
+
+.search-checkbox--block label:not(.checkbox-container) input {
+  display: none;
+}
+
+.search-checkbox--block label:not(.checkbox-container) input:checked + b {
+  background-color: #739FF3;
+  border-color: #739FF3;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.50016 9.50002L2.00016 6.00002L0.833496 7.16669L5.50016 11.8334L15.5002 1.83335L14.3335 0.666687L5.50016 9.50002Z' fill='white'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.search-checkbox--block label:not(.checkbox-container) b {
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  border: 1px solid #031B4B;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.search-checkbox--button {
+  margin-top: 38px;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  display: flex;
+  min-height: 56px;
+}
+
+.search input {
+  position: relative;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 15px 24px;
+}
+
+.search--line {
+  position: absolute;
+  right: 68px;
+  top: 8px;
+  height: calc(100% - 16px);
+  width: 1px;
+  background: rgba(7, 52, 120, 0.3);
+}
+
+.search--button--del {
+  position: absolute;
+  top: 20px;
+  right: 92px;
+}
+
+.search--button--play {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+}
+
+.search-results {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 24px;
+}
+
+.search-results__item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+}
+
+.search-results__item--title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #004ABA;
+  margin-bottom: 16px;
+}
+
+.search-results__item--title span {
+  font-weight: 800;
+}
+
+.search-results__item--text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+  margin-bottom: 24px;
+}
+
+.search-results__item--text span {
+  font-weight: 700;
+}
+
+.search-results__item--route {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.search-results__item--route--item {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: #004ABA;
+}
+
 @media only screen and (min-width: 701px) {
   .person-page-mobile-h1 {
     display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .topMenu__overlay.topMenu__overlay--active {
+    padding-left: 4vw;
   }
 }
 
@@ -8872,6 +9310,10 @@ body.Bodymotionless {
   .section__header .container {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .department__menu {
+    right: 1px;
   }
 
   .topMenu__item {
@@ -8959,6 +9401,10 @@ body.Bodymotionless {
 
   .section__header__two {
     padding-top: 40px;
+  }
+
+  .footer__lists--item--logo p {
+    margin-left: 24px;
   }
 
   .section__block__textThree .container {
@@ -9326,6 +9772,40 @@ body.Bodymotionless {
     margin-right: 40px;
   }
 
+  .about__contacts {
+    margin-top: 28px;
+  }
+
+  .about__contacts__wrap {
+    flex-flow: row nowrap;
+  }
+
+  .about__contacts__list:nth-child(1) {
+    flex: 0 0 580px;
+    width: 580px;
+    max-width: 580px;
+  }
+
+  .about__contacts__list:nth-child(2) {
+    flex: 1 1 auto;
+  }
+
+  .about__professor {
+    width: calc(100% + 24px);
+    margin-left: -24px;
+    margin-bottom: 0px;
+  }
+
+  .about__professor__item {
+    max-width: calc(50% - 24px);
+    margin-left: 24px;
+  }
+
+  .about .banners {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
   .structure__project-top {
     margin-bottom: 32px;
   }
@@ -9612,6 +10092,34 @@ body.Bodymotionless {
 
   .headerMenuMob--button {
     display: inline-block;
+  }
+
+  .footer__lists--row {
+    flex-flow: row wrap;
+  }
+
+  .footer__lists--column {
+    min-width: 205px;
+    margin-right: 20px !important;
+  }
+
+  .footer__lists--column:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .footer__lists--column:nth-child(4) {
+    min-width: 240px;
+  }
+
+  .footer__lists--item--send {
+    position: absolute;
+    top: 30px;
+    right: -290px;
+  }
+
+  .footer__lists--item--soc {
+    margin-top: 32px;
+    margin-bottom: 24px;
   }
 
   .column__left.block__textOne {
@@ -9918,33 +10426,61 @@ body.Bodymotionless {
     margin-right: 42px;
   }
 
-  .about .banners {
-    width: calc(100% + 24px);
-    align-items: stretch;
-    margin-left: -24px;
-    margin-bottom: 36px;
-    margin-top: 8px;
+  .about {
+    padding-top: 0;
   }
 
-  .about .banners .banner {
-    flex: 0 0 50%;
-    max-width: calc(50% - 24px);
-    margin-left: 24px;
-    margin-bottom: 24px;
+  .about .education.education__couple {
+    margin-bottom: 48px;
   }
 
-  .about .banners {
+  .about__contacts__wrap {
+    flex-flow: row wrap;
     width: 100%;
-    align-items: stretch;
-    margin-left: 0px;
-    margin-top: 8px;
+    margin-left: 0;
   }
 
-  .about .banners .banner {
+  .about__contacts__list:nth-child(1) {
     flex: 0 0 100%;
+    width: 100%;
     max-width: 100%;
+    margin-left: 0;
+    flex-flow: row nowrap;
+  }
+
+  .about__contacts__list:nth-child(2) {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about__contacts__list__column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    flex: 0 0 33.333%;
+    width: 33.333%;
+    max-width: 33.333%;
+    min-width: 33.333%;
+  }
+
+  .about__professor {
+    width: calc(100% + 0px);
     margin-left: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
+  }
+
+  .about__professor__item {
+    flex: 0 0 100%;
+    max-width: calc(100% - 0px);
+    margin-left: 0px;
+  }
+
+  .about .banners {
+    margin-top: 48px;
+    margin-bottom: 48px;
   }
 
   .structure {
@@ -10208,6 +10744,42 @@ body.Bodymotionless {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer__lists--row {
+    justify-content: center;
+  }
+
+  .footer__lists--column:nth-child(1) {
+    order: 1;
+    margin-right: 68px !important;
+  }
+
+  .footer__lists--column:nth-child(2) {
+    order: 3;
+  }
+
+  .footer__lists--column:nth-child(3) {
+    order: 4;
+  }
+
+  .footer__lists--column:nth-child(4) {
+    order: 3;
+    margin-right: 68px !important;
+    min-width: 205px;
+  }
+
+  .footer__lists--string {
+    margin-top: 173px;
+  }
+
+  .footer__lists--item--send {
+    right: auto;
+    top: auto;
+    left: 0;
+    bottom: -84px;
   }
 }
 
@@ -10910,6 +11482,65 @@ body.Bodymotionless {
     padding-bottom: 32px;
   }
 
+  .about__contacts {
+    margin-top: 16px;
+  }
+
+  .about__contacts__wrap {
+    width: 100%;
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+
+  .about__contacts__list:nth-child(1) {
+    flex-flow: row wrap;
+    margin-left: 0;
+  }
+
+  .about__contacts__list__column {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  .about__contacts__list__column:nth-child(3) {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .about__contacts__list__column p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .about__contacts__list p.about__contacts__list--title {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .about__professor__item__title {
+    left: 24px;
+    top: 24px;
+  }
+
+  .about__professor__item__title p {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .about__professor__item__name {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .about__professor__item__desc {
+    padding: 24px;
+  }
+
   .structure {
     padding-top: 40px;
   }
@@ -11175,6 +11806,29 @@ body.Bodymotionless {
   }
 }
 
+@media (max-width: 545px) {
+  .footer__lists--column:nth-child(2) {
+    order: 3;
+    max-width: 120px;
+    min-width: 120px;
+    margin-right: 0px !important;
+  }
+
+  .footer__lists--column:nth-child(3) {
+    max-width: 120px;
+    min-width: 120px;
+    margin-right: 0px !important;
+  }
+
+  .footer__lists--string {
+    margin-top: 100px;
+  }
+
+  .footer__lists--item--soc {
+    margin-top: -26px;
+  }
+}
+
 @media (max-width: 480px) {
   .main__news__list {
     flex-flow: column nowrap;
@@ -11212,6 +11866,51 @@ body.Bodymotionless {
   .accordions.menu-sidebar .accordion__active .accordion__intro {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .footer {
+    padding-top: 53px;
+  }
+
+  .footer .button__footer--mob {
+    display: flex;
+    margin-bottom: 58px;
+  }
+
+  .footer .button__footer--desc {
+    display: none;
+  }
+
+  .footer__lists--row {
+    justify-content: space-between;
+  }
+
+  .footer__lists--column:nth-child(1) {
+    margin-right: 0px !important;
+    min-width: 190px;
+  }
+
+  .footer__lists--column:nth-child(4) {
+    margin-right: 0px !important;
+    min-width: 190px;
+  }
+
+  .footer__lists--column:nth-child(4) .footer__lists--item--link {
+    max-width: 157px;
+  }
+
+  .footer__lists--string {
+    margin-top: 66px;
+  }
+
+  .footer__lists--item--logo p {
+    margin-left: 12px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .footer__lists--item--adress {
+    max-width: 157px;
   }
 
   .block__textOne h2 {
@@ -11387,6 +12086,21 @@ body.Bodymotionless {
     margin-top: 4px;
   }
 
+  .about__professor__item__title p {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .about__professor__item__name {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .about__professor__item__post {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+
   .departmensnts .column__left {
     flex: 1 0 100%;
     min-width: 100%;
@@ -11423,6 +12137,12 @@ body.Bodymotionless {
 
   .followSoc__items {
     margin-top: 16px;
+  }
+}
+
+@media (max-width: 349px) {
+  .footer__lists--item--soc {
+    margin-top: 26px;
   }
 }
 

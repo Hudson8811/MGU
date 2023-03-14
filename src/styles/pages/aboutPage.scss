@@ -2,6 +2,14 @@
 	padding-top: 60px;
 	background: #F4F3F0;
 	padding-bottom: 20px;
+	@include max(md) {
+		padding-top: 0;
+	}
+	.education.education__couple {
+		@include max(md) {
+			margin-bottom: 48px;
+		}
+	}
 	.academic {
 		border-top: none;
 		padding-top: 0;
@@ -10,6 +18,12 @@
 		width: 100%;
 		background: #fff;
 		margin-top: 48px;
+		@include max(lg) {
+			margin-top: 28px;
+		}
+		@include max(sm) {
+			margin-top: 16px;
+		}
 		&__wrap {
 			position: relative;
 			display: flex;
@@ -19,6 +33,20 @@
 			margin-left: -32px;
 			padding-bottom: 60px;
 			padding-top: 60px;
+			@include max(lg) {
+				flex-flow: row nowrap;
+			}
+			@include max(md) {
+				flex-flow: row wrap;
+				width: 100%;
+				margin-left: 0;
+			}
+			@include max(sm) { 
+				width: 100%;
+				padding-bottom: 48px;
+				padding-top: 48px;
+
+			}
 		}
 		&__list {
 			position: relative;
@@ -29,18 +57,78 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			margin-left: 32px;
+			&:nth-child(1) {
+				@include max(lg) {
+					flex: 0 0 580px;
+					width: 580px;
+					max-width: 580px;
+				}
+				@include max(md) {
+					flex: 0 0 100%;
+					width: 100%;
+					max-width: 100%;
+					margin-left: 0;
+					flex-flow: row nowrap;
+				}
+				@include max(sm) {
+					flex-flow: row wrap;
+					margin-left: 0;
+				}
+			}
+			&:nth-child(2) {
+				@include max(lg) {
+					flex: 1 1 auto;
+				}
+				@include max(md) {
+					flex: 1 1 100%;
+					max-width: 100%;
+					width: 100%;
+					margin-left: 0;
+				}
+			}
 			&__map {
 				position: relative;
 				width: 100%;
 				height: 100%;
-				background: #F4F3F0;
+				img {
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
 			}
 			&__column {
 				position: relative;
-				margin-bottom: 60px;
+				margin-bottom: 32px;
 				min-width: 268px;
+				@include max(md) {
+					display: flex;
+					justify-content: flex-start;
+					align-items: flex-start;
+					flex-flow: column nowrap;
+					flex: 0 0 33.333%;
+					width: 33.333%;
+					max-width: 33.333%;
+					min-width: 33.333%;
+				}
+				@include max(sm) { 
+					flex: 0 0 50%;
+					width: 50%;
+					max-width: 50%;
+					min-width: 50%;
+				}
 				&:last-child {
 					margin-bottom: 0;
+				}
+				&:nth-child(3) {
+					width: 100%;
+					@include max(sm) { 
+						flex: 0 0 100%;
+						width: 100%;
+						max-width: 100%;
+						min-width: 100%;
+						margin-bottom: 32px;
+					}
 				}
 				h3 {
 					font-style: normal;
@@ -54,6 +142,11 @@
 					font-weight: 400;
 					font-size: $fz16;
 					line-height: $lh24;
+					color: #031B4B;
+					@include max(sm) {  
+						font-size: $fz14;
+						line-height: $lh20;
+					}	
 				}
 			}	
 			p.about__contacts__list--title {
@@ -61,7 +154,11 @@
 				font-weight: 700;
 				font-size: $fz16;
 				line-height: $lh24;
-				margin-bottom: 32px;
+				margin-bottom: 16px;
+				@include max(sm) {  
+					font-size: $fz14;
+					line-height: $lh20;
+				}
 			}	
 		}
 	}
@@ -74,7 +171,16 @@
     flex-flow: row wrap;
     margin-left: -32px;
 		padding-bottom: 0px;
-		margin-top: 80px;
+		@include max(lg) {
+			width: calc(100% + 24px);
+			margin-left: -24px;
+			margin-bottom: 0px;
+		}
+		@include max(md) {
+			width: calc(100% + 0px);
+			margin-left: 0px;
+			margin-bottom: 0px;
+		}
 		&__item {
 			position: relative;
 			flex: 0 0 50%;
@@ -88,6 +194,16 @@
 			margin-bottom: 32px;
 			background: #104CA6;
 			transition: all .5s;
+			@include max(lg) {
+				max-width: calc( 50% - 24px);
+				margin-left: 24px;
+			}
+			@include max(md) {
+				flex: 0 0 100%;
+				max-width: calc( 100% - 0px);
+				margin-left: 0px;
+				// max-height: 450px;
+			}
 			&:hover {
 				.about__professor__item__title {
 					transition: all .5s;
@@ -114,14 +230,27 @@
 				display: block;
 				left: 32px;
 				top: 32px;
+				@include max(sm) {
+					left: 24px;
+					top: 24px;
+				}
 				p {
 					display: inline;
 					text-align: left;
 					font-style: normal;
 					font-weight: 700;
-					font-size: $fz24;
+					font-size: $fz32;
 					line-height: $lh40;
-					color: #FFFFFF;	
+					color: #FFFFFF;
+					@include max(sm) {
+						font-size: $fz24;
+						line-height: $lh28;
+					}
+					@include max(xs) {
+						font-size: $fz20;
+						line-height: $lh26;
+					}
+
 				}
 		
 			}
@@ -131,7 +260,15 @@
 				font-size: $fz20;
 				line-height: $lh26;
 				color: #FFFFFF;
-				margin-bottom: 8px;				
+				margin-bottom: 8px;	
+				@include max(sm) {
+					font-size: $fz18;
+					line-height: $lh24;
+				}
+				@include max(xs) {
+					font-size: $fz16;
+					line-height: $lh24;
+				}			
 			}
 			&__post {
 				font-style: normal;
@@ -139,6 +276,10 @@
 				font-size: $fz14;
 				line-height: $lh20;
 				color: #FFFFFF;
+				@include max(xs) {
+					font-size: $fz13;
+					line-height: $lh16;
+				}		
 			}
 			&__desc {
 				position: relative;
@@ -149,6 +290,9 @@
 				display: flex;
 				flex-flow: column nowrap;
 				justify-content: flex-end;
+				@include max(sm) {
+					padding: 24px;
+				}
 			}				
 		}
 	}
@@ -182,8 +326,16 @@
     flex-flow: row wrap;
     margin-left: -32px;
     margin-bottom: 0px;
-		padding-bottom: 36px;
+		padding-bottom: 0px;
 		margin-top: 80px;
+		@include max(lg) {  
+			margin-top: 60px;
+			margin-bottom: 0;
+		}
+		@include max(md) {  
+			margin-top: 48px;
+			margin-bottom: 48px;
+		}
 		.banner {
 			position: relative;
 			flex: 0 0 33.333%;
@@ -207,37 +359,4 @@
 			}	
 		}
 	}	
-}
-@include max(md){
-	.about {
-		.banners {
-			width: calc(100% + 24px);
-			align-items: stretch;
-			margin-left: -24px;
-			margin-bottom: 36px;
-			margin-top: 8px;
-			.banner {
-				flex: 0 0 50%;
-				max-width: calc(50% - 24px);
-				margin-left: 24px;
-				margin-bottom: 24px;		
-			}
-		}
-	}
-}
-@include max(md){
-	.about {
-		.banners {
-			width: 100%;
-			align-items: stretch;
-			margin-left: 0px;
-			margin-top: 8px;
-			.banner {
-				flex: 0 0 100%;
-				max-width: 100%;
-				margin-left: 0px;
-				margin-bottom: 24px;		
-			}
-		}
-	}
 }
