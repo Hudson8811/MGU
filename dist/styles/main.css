@@ -9169,7 +9169,7 @@ body.Bodymotionless {
   width: 100%;
   background: #F4F3F0;
   padding-top: 104px;
-  padding-bottom: 74px;
+  padding-bottom: 80px;
 }
 
 .search-page__layout {
@@ -10119,6 +10119,11 @@ body.Bodymotionless {
     margin-left: 24px;
   }
 
+  .search-page {
+    padding-top: 72px;
+    padding-bottom: 80px;
+  }
+
   .search-page__layout--left {
     flex: 1 0 340px;
     padding-right: 0;
@@ -10912,6 +10917,10 @@ body.Bodymotionless {
 
   .educationGallery .block__text__wrap .header__one .column__left.header__one__left {
     display: flex;
+  }
+
+  .search-page {
+    padding-top: 60px;
   }
 
   .search-page__layout--left {
@@ -12018,6 +12027,15 @@ body.Bodymotionless {
   .grid-sizer,
   .grid-item {
     width: calc(50% - 20px);
+  }
+
+  .search-page {
+    padding-top: 40px;
+  }
+
+  .search-results__item--text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
