@@ -66,6 +66,9 @@
 		padding-right: 0;
 	}
 	&__button{
+		@include max(lg) {
+			max-width: 280px;
+		}
 		&--page {
 			padding: 10px 24px;
 			position: relative;
@@ -205,6 +208,7 @@
 		background: rgba(7, 52, 120, 0.3);;
 	}
 	&--button {
+
 		&--del {
 			position: absolute;
 			top: 20px;
