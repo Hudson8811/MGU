@@ -234,3 +234,127 @@
 		}
 	}
 }
+.search-header  {
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	background: #fff;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 92px;
+	padding-left: 136px;
+	padding-right: 136px;
+	height: 400px;
+	@include max(lg) {
+		padding-left: 68px;
+		padding-right: 60px;
+	}
+	@include max(md) {
+		height: 100vh;
+		max-width: 360px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 38px;
+	}
+	&__close {
+		position: absolute;
+		top: 16px;
+		left: 20px;
+		@include max(md) {
+			top: 33px;
+			left: auto;
+			right: 30px;
+		}
+	}
+	&__overlay {
+		position: fixed;
+		width: 100vw;
+		display: none;
+		justify-content: center;
+		top: 91px;
+		left: 0;
+		background: rgba(61, 76, 100, 0.5);
+		z-index: 100;
+		margin-left: auto;
+		margin-right: auto;
+		min-height: 100vh;
+		&.active {
+			display: flex;
+		}
+		@include max(md) {
+			justify-content: flex-end;
+			top: -15px;
+			left: auto;
+			right: 0;
+		}
+	}
+	.search-checkbox {
+		padding-left: 0;
+		padding-right: 0;
+		flex-flow: row wrap;
+		padding-top: 66px;
+		padding-bottom: 0;
+		@include max(md) {
+			height: 100%;
+			display: none;
+			overflow-y: scroll;
+			flex-flow: column nowrap;
+			padding-top: 38px;
+			padding-bottom: 0;
+		}
+		&.active {
+			display: flex;
+		}
+		&--block {
+			width: auto;
+			margin-right: 24px;
+			@include max(md) {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+		&__button{
+			display: none;
+			align-items: center;
+			@include max(md) {
+				display: flex;
+				width: 100%;
+				max-width: 100%;
+				padding-left: 20px;
+				padding-right: 20px;
+				justify-content: center;
+				align-items: center;
+				margin-top: 18px;
+			}
+			&--overlay {
+				&.hidden {
+					display: none;
+				}
+			}
+			&--clear {
+				margin-top: 0;
+				height: 40px;
+				align-items: center;
+				padding: 8px ;
+				display: none;
+				@include max(md) {
+					display: flex;
+					width: 100%;
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	.search {
+		&--button {
+			&--del {
+				display: none;
+			}
+		}
+		input {
+			border: 1px solid rgba(7, 52, 120, 0.2);
+		}
+	}
+}

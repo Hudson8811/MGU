@@ -71,7 +71,8 @@ block content
 								input(type="checkbox" autocomplete="off" name="")
 								b
 								span лаборатории
-						.button.search-checkbox--button применить
+						.button.search-checkbox__button применить
+						.button.search-checkbox__button--clear очистить все
 				.search-page__layout--right
 					.search
 						input(type="search", name="" placeholder="Искать на сайте")
@@ -80,6 +81,9 @@ block content
 						.search--line
 						.search--button--play
 							img(src="img/svg/search-play.svg", alt="")
+					.search-checkbox__button--page.button 
+						!="поиск по фильтру"
+						img(src="img/svg/search--filter.svg", alt="")
 					.search-results
 						.search-results__item
 							.search-results__item--title 

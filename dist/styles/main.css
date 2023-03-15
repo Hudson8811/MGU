@@ -3406,6 +3406,87 @@ a.block__textOne__link--person-colors::after {
   display: none;
 }
 
+.search-header {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 92px;
+  padding-left: 136px;
+  padding-right: 136px;
+  height: 400px;
+}
+
+.search-header__close {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+
+.search-header__overlay {
+  position: fixed;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  top: 91px;
+  left: 0;
+  background: rgba(61, 76, 100, 0.5);
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
+
+.search-header__overlay.active {
+  display: flex;
+}
+
+.search-header .search-checkbox {
+  padding-left: 0;
+  padding-right: 0;
+  flex-flow: row wrap;
+  padding-top: 66px;
+  padding-bottom: 0;
+}
+
+.search-header .search-checkbox.active {
+  display: flex;
+}
+
+.search-header .search-checkbox--block {
+  width: auto;
+  margin-right: 24px;
+}
+
+.search-header .search-checkbox__button {
+  display: none;
+  align-items: center;
+}
+
+.search-header .search-checkbox__button--overlay.hidden {
+  display: none;
+}
+
+.search-header .search-checkbox__button--clear {
+  margin-top: 0;
+  height: 40px;
+  align-items: center;
+  padding: 8px;
+  display: none;
+}
+
+.search-header .search--button--del {
+  display: none;
+}
+
+.search-header .search input {
+  border: 1px solid rgba(7, 52, 120, 0.2);
+}
+
 .section__topMenu {
   width: 100%;
   position: relative;
@@ -9114,6 +9195,38 @@ body.Bodymotionless {
   padding-top: 42px;
 }
 
+.search-checkbox__button--page {
+  padding: 10px 24px;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 40px;
+  display: none;
+  margin-top: 20px;
+}
+
+.search-checkbox__button--page img {
+  margin-left: 12px;
+}
+
+.search-checkbox__button--clear {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+  background: transparent;
+  margin-top: 5px;
+  color: #E94141;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .search-checkbox--block {
   position: relative;
   display: flex;
@@ -9310,6 +9423,11 @@ body.Bodymotionless {
   .section__header .container {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .search-header {
+    padding-left: 68px;
+    padding-right: 60px;
   }
 
   .department__menu {
@@ -9958,6 +10076,15 @@ body.Bodymotionless {
     max-width: calc(33.3333% - 24px);
     margin-left: 24px;
   }
+
+  .search-page__layout--left {
+    flex: 1 0 340px;
+    padding-right: 0;
+  }
+
+  .search-checkbox {
+    padding-right: 0;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -10033,6 +10160,58 @@ body.Bodymotionless {
 
   .header__logo__img {
     height: 42px;
+  }
+
+  .search-header {
+    height: 100vh;
+    max-width: 360px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 38px;
+  }
+
+  .search-header__close {
+    top: 33px;
+    left: auto;
+    right: 30px;
+  }
+
+  .search-header__overlay {
+    justify-content: flex-end;
+    top: -15px;
+    left: auto;
+    right: 0;
+  }
+
+  .search-header .search-checkbox {
+    height: 100%;
+    display: none;
+    overflow-y: scroll;
+    flex-flow: column nowrap;
+    padding-top: 38px;
+    padding-bottom: 0;
+  }
+
+  .search-header .search-checkbox--block {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .search-header .search-checkbox__button {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+  }
+
+  .search-header .search-checkbox__button--clear {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
   }
 
   .section__topMenu {
@@ -10683,6 +10862,14 @@ body.Bodymotionless {
   }
 
   .educationGallery .block__text__wrap .header__one .column__left.header__one__left {
+    display: flex;
+  }
+
+  .search-page__layout--left {
+    display: none;
+  }
+
+  .search-checkbox__button--page {
     display: flex;
   }
 }

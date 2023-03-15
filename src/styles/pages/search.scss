@@ -20,6 +20,13 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 			margin-right: 40px;
+			@include max(lg) {
+				flex: 1 0 340px;
+				padding-right: 0;
+			}
+			@include max(md) {
+				display: none;
+			}
 		}
 	
 		&--right {
@@ -43,6 +50,43 @@
 	background: #fff;
 	padding: 32px;
 	padding-top: 42px;
+	@include max(lg) {
+		padding-right: 0;
+	}
+	&__button{
+		&--page {
+			padding: 10px 24px;
+			position: relative;
+			justify-content: flex-start;
+			align-items: center;
+			min-height: 40px;
+			display: none;
+			margin-top: 20px;
+			@include max(md) {
+				display: flex;
+			}
+			img {
+				margin-left: 12px;
+			}
+		}
+		&--clear {
+			width: 100%;
+			max-width: 300px;
+			padding: 10px 24px;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			min-height: 40px;
+			background: transparent;
+			margin-top: 5px;
+			color: #E94141; 
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 500;
+			font-size: $fz16;
+			line-height: $lh24;					
+		}
+	}
 	&--block {
 		position: relative;
 		display: flex;
