@@ -3419,6 +3419,7 @@ a.block__textOne__link--person-colors::after {
   padding-left: 136px;
   padding-right: 136px;
   height: 400px;
+  z-index: 100;
 }
 
 .search-header__close {
@@ -3427,21 +3428,34 @@ a.block__textOne__link--person-colors::after {
   left: 20px;
 }
 
+.search-header.heightFull {
+  height: 100vh;
+}
+
 .search-header__overlay {
+  position: fixed;
+  width: 100vw;
+  top: 91px;
+  left: 0;
+  height: 100vh;
+  z-index: 50;
+  background: rgba(61, 76, 100, 0.5);
+}
+
+.search-header__wrap {
   position: fixed;
   width: 100vw;
   display: none;
   justify-content: center;
   top: 91px;
   left: 0;
-  background: rgba(61, 76, 100, 0.5);
   z-index: 100;
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
 }
 
-.search-header__overlay.active {
+.search-header__wrap.active {
   display: flex;
 }
 
@@ -9294,12 +9308,39 @@ body.Bodymotionless {
   min-height: 56px;
 }
 
-.search input {
+.search input[type=search] {
   position: relative;
   width: 100%;
   background: #FFFFFF;
   border-radius: 40px;
   padding: 15px 24px;
+  padding-right: 90px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #031B4B;
+}
+
+.search input[type=search]::placeholder {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #C0C0C0;
+}
+
+.search input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-image: url(../img/svg/search--delete.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .search--line {
@@ -10179,7 +10220,14 @@ body.Bodymotionless {
 
   .search-header__overlay {
     justify-content: flex-end;
-    top: -15px;
+    top: 0px;
+    left: auto;
+    right: 0;
+  }
+
+  .search-header__wrap {
+    justify-content: flex-end;
+    top: 0px;
     left: auto;
     right: 0;
   }
@@ -10872,6 +10920,10 @@ body.Bodymotionless {
 
   .search-checkbox__button--page {
     display: flex;
+  }
+
+  .search input[type=search] {
+    padding-right: 80px;
   }
 }
 
@@ -12325,6 +12377,12 @@ body.Bodymotionless {
 
   .followSoc__items {
     margin-top: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .search-header {
+    height: 248px;
   }
 }
 

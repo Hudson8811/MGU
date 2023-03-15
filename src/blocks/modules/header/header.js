@@ -1,5 +1,6 @@
 const searchBtn = $(".header__other__search "),
 			searchClose = $(".search-header__close  "),
+      searchWrap = $(".search-header__wrap"),
       searchOverlay = $(".search-header__overlay"),
       search = $(".search-header ");
 const searchCheckboxButtonPage = $(".search-checkbox__button--page "),
@@ -10,18 +11,27 @@ const searchCheckboxButtonPage = $(".search-checkbox__button--page "),
 //   console.log( index + ": " + $( this ).text() );
 // });
 searchCheckboxButtonPage.on("click", function () {
-	searchOverlay.addClass("active");
+	searchWrap.addClass("active");
 	searchCheckbox.addClass("active");
 	searchCheckboxButtonOverlay.addClass("hidden")
+	search.addClass("heightFull");
 	bodyNoScroll() 
 });
 searchBtn.on("click", function () {
-	searchOverlay.addClass("active");
+	searchWrap.addClass("active");
 	bodyNoScroll() 
 });
 searchClose.on("click", function () {
-	searchOverlay.removeClass("active");
+	searchWrap.removeClass("active");
 	searchCheckbox.removeClass("active");
 	searchCheckboxButtonOverlay.removeClass("hidden")
+	search.removeClass("heightFull");
+	bodyYesScroll()
+});
+searchOverlay .on("click", function () {
+	searchWrap.removeClass("active");
+	searchCheckbox.removeClass("active");
+	searchCheckboxButtonOverlay.removeClass("hidden")
+	search.removeClass("heightFull");
 	bodyYesScroll()
 });

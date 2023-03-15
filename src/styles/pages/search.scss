@@ -49,7 +49,9 @@
 	align-items: flex-start;
 	background: #fff;
 	padding: 32px;
-	padding-top: 42px;
+	padding-top: 42px;	
+	// pointer-events: auto;
+	// cursor: pointer;
 	@include max(lg) {
 		padding-right: 0;
 	}
@@ -58,7 +60,7 @@
 			padding: 10px 24px;
 			position: relative;
 			justify-content: flex-start;
-			align-items: center;
+			align-items: center; 
 			min-height: 40px;
 			display: none;
 			margin-top: 20px;
@@ -148,12 +150,41 @@
 	width: 100%;
 	display: flex;
 	min-height: 56px;
-	input {
+	input[type="search"] {
 		position: relative;
 		width: 100%;
 		background: #FFFFFF;
 		border-radius: 40px;
 		padding: 15px 24px;
+		padding-right: 90px;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 700;
+		font-size: $fz20;
+		line-height: $lh26;
+		color: #031B4B;
+		&::placeholder {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 500;
+			font-size: $fz18;
+			line-height: $lh24;
+			color: #C0C0C0;			
+		}
+		&::-webkit-search-cancel-button {
+			-webkit-appearance: none;
+			appearance: none;
+			height: 16px;
+			width: 16px;
+			background-image: url(../img/svg/search--delete.svg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		@include max(md) {
+			padding-right: 80px;
+
+		}
 	}
 	&--line {
 		position: absolute;
