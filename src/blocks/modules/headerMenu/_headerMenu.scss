@@ -35,7 +35,7 @@
 		transition: all .5s;
 		white-space: nowrap;
 		&--owl {
-			&.active {
+			&.active, &--current-page {
 				background: #fff;
 			}
 		}
@@ -161,7 +161,7 @@
 		margin-bottom: 15px;
 		width: 100%;
 		max-width: 400px;
-		
+
 	}
 }
 .topMenu__overlay--list {
@@ -213,7 +213,7 @@
 	}
 
 }
-@include max(md) { 
+@include max(md) {
 	.section__topMenu {
 		display: none;
 	}
