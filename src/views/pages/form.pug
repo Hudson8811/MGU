@@ -8,6 +8,72 @@ block content
 	include ../../blocks/modules/headerMenu/headerMenu
 	include ../../blocks/modules/breadcrumbs/breadcrumbs
 	.form-page
+		.container
+			h2.form-page__title Анкета слушателя
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title Дополнительная профессиональная программа
+
+				.form-page__layout--right
+					.form__block
+						label
+							b Направление
+							<select class="js-example-form ">
+								<option  value="" disabled> ... </option>  
+								<option  value="" selected>Экология</option>  
+								<option value="" >пункт 2</option>  
+							</select>
+					.form__block
+						label
+							b Программа
+							<select class="js-example-form ">
+								<option  value="" disabled> ... </option>  
+								<option  value="" selected>Экология и рациональное природопользование</option>  
+								<option value="" >пункт 2</option>  
+							</select>
+					.form__block
+						<div class="selectDot">
+							<div class="selectDot--label">
+								<label>
+									<input type="radio" name="selectDot__input--deal" checked="">
+									<b></b>
+									<span>очная</span>
+							</label>
+							<label>
+									<input type="radio" name="selectDot__input--deal">
+									<b></b>
+									<span>очно-заочная</span>
+							</label>
+							<label>
+									<input type="radio" name="selectDot__input--deal">
+									<b></b>
+									<span>заочная</span>
+							</label>
+							</div>									
+
+						</div>
+		.form-page__line
+		.container
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title Информация о слушателе
+
+				.form-page__layout--right
+					.form__block
+						label
+							b Фамилия
+							input(type="text" placeholder="Фамилия")
+					.form__block
+						label
+							b Имя
+							input(type="text" placeholder="Имя")
+					.form__block
+						label
+							b Отчество
+							input(type="text" placeholder="Отчество")
+
+		.form-page__line
+		
 	include ../../blocks/modules/footer/footer
 
 block scripts

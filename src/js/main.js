@@ -9,3 +9,4 @@
 @@include("./import/modules.js")
 @@include("./import/components.js")
 @@include("./import/main-script.js")
+@@include("./import/form.js")

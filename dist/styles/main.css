@@ -9163,6 +9163,308 @@ body.Bodymotionless {
   display: block;
 }
 
+.form-page {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+  background: #F4F3F0;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.form-page__line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  background: rgba(0, 85, 182, 0.3);
+}
+
+.form-page__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #031B4B;
+  margin-bottom: 60px;
+}
+
+.form-page__layout {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.form-page__layout--left {
+  position: relative;
+  display: flex;
+  flex: 1 0 368px;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 32px;
+  padding-top: 40px;
+  padding-bottom: 66px;
+}
+
+.form-page__layout--right {
+  padding-top: 40px;
+  padding-bottom: 66px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.form__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #031B4B;
+}
+
+.form__block {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.form__block label {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form__block label b {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #031B4B;
+  margin-bottom: 8px;
+}
+
+.form__block input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background: #fff;
+  color: #031B4B;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  height: 48px;
+  padding: 12px 16px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.form__block input::placeholder {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #C0C0C0;
+}
+
+.form .select2-container {
+  border: none;
+  background: #fff;
+  color: #031B4B;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  height: 48px;
+  padding: 12px 16px;
+  padding-top: 10px;
+}
+
+.form .select2-container .select2-selection--single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+}
+
+.form .select2-container .select2-dropdown {
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form .select2-container .select2-dropdown .select2-results {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #031B4B;
+}
+
+.form .select2-container .select2-dropdown .select2-results .select2-results__option {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+  padding-left: 16px;
+  transition: all 0.5s;
+}
+
+.form .select2-container .select2-dropdown .select2-results .select2-results__option:hover {
+  transition: all 0.5s;
+  text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
+}
+
+.form .select2-container .select2-dropdown .select2-results .select2-results__option--selected {
+  font-weight: 700;
+}
+
+.form .select2-container .select2-selection__arrow {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 10px;
+  background: url(../img/svg/select2-selection__arrow.svg) no-repeat center center;
+  background-size: contain;
+  transition: transform 0.3s;
+  transform: rotate(0deg);
+}
+
+.form .select2-container .select2-selection__arrow b {
+  display: none;
+}
+
+.form .select2-container--open {
+  transition: all 0.3s;
+}
+
+.form .select2-container--open .select2-selection__arrow {
+  transition: transform 0.3s;
+  transform: rotate(180deg);
+}
+
+.form .periodSelect__date__value__month + .select2-container {
+  margin-right: 32px;
+  width: 144px;
+}
+
+.form .selectDot {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+.form .selectDot:last-child {
+  border-right: none;
+}
+
+.form .selectDot--title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2C2C2C;
+}
+
+.form .selectDot--label {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form .selectDot label {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: auto;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 32px;
+}
+
+.form .selectDot label input {
+  display: none;
+  max-width: 100%;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-right: 11px;
+}
+
+.form .selectDot label span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031B4B;
+}
+
+.form .selectDot label input:checked + b {
+  background: #739FF3;
+  border: 1px solid #739FF3;
+}
+
+.form .selectDot label input:checked + b::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.form .selectDot label input:checked + span {
+  color: #739FF3;
+}
+
+.form .selectDot label b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #031B4B;
+  box-sizing: border-box;
+}
+
+.form .selectDot label b::after {
+  display: none;
+}
+
 .search-page {
   position: relative;
   display: flex;
@@ -10119,6 +10421,11 @@ body.Bodymotionless {
     margin-left: 24px;
   }
 
+  .form-page__layout--left {
+    flex: 1 0 340px;
+    padding-right: 0;
+  }
+
   .search-page {
     padding-top: 72px;
     padding-bottom: 80px;
@@ -10921,6 +11228,10 @@ body.Bodymotionless {
 
   .educationGallery .block__text__wrap .header__one .column__left.header__one__left {
     display: flex;
+  }
+
+  .form-page__layout--left {
+    display: none;
   }
 
   .search-page {
@@ -12031,6 +12342,14 @@ body.Bodymotionless {
   .grid-sizer,
   .grid-item {
     width: calc(50% - 20px);
+  }
+
+  .form-page {
+    padding-top: 40px;
+  }
+
+  .form-page__title {
+    margin-bottom: 40px;
   }
 
   .search-page {

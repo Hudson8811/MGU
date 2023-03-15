@@ -1,0 +1,287 @@
+.form-page {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	height: auto;
+	background: #F4F3F0;
+	padding-top: 60px;
+	padding-bottom: 100px;
+	@include max(sm) {
+		padding-top: 40px;
+	}
+	&__line {
+		position: relative;
+		height: 1px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1440px;
+		background: rgba(0, 85, 182, 0.3);;
+	}
+	&__title {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 800;
+		font-size: $fz32;
+		line-height: $lh40;
+		color: #031B4B;	
+		margin-bottom: 60px;
+		@include max(sm) {
+			margin-bottom: 40px;
+		}	
+	}
+	&__layout  {
+		position: relative;
+		width: 100%;
+		display: flex;
+
+		&--left {
+			position: relative;
+			display: flex;
+			flex: 1 0 368px;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-right: 32px;
+			padding-top: 40px;
+			padding-bottom: 66px;
+			@include max(lg) {
+				flex: 1 0 340px;
+				padding-right: 0;
+			}
+			@include max(md) {
+				display: none;
+			}
+		}
+	
+		&--right {
+			padding-top: 40px;
+			padding-bottom: 66px;
+			position: relative;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex: 1 1 auto;
+			width: 100%;
+		}
+	}
+}
+.form {
+	&__title {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 800;
+		font-size: $fz24;
+		line-height: $lh28;
+		color: #031B4B;
+	}
+	&__block {
+		position: relative;
+		display: flex;
+		width: 100%;
+		margin-bottom: 24px;
+		label {
+			position: relative;
+			width: 100%;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			b {
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 16px;
+				color: #031B4B;	
+				margin-bottom: 8px;		
+			}
+		}
+		input {
+			position: relative;
+			width: 100%;
+			display: flex;
+			background: #fff;
+			color: #031B4B;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 600;
+			font-size: $fz16;
+			line-height: $lh24;
+			height: 48px;
+			padding: 12px 16px;
+			padding-top: 10px;	
+			cursor: pointer;	
+			&::placeholder {
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 600;
+				font-size: $fz16;
+				line-height: $lh24;
+				color: #C0C0C0;
+				
+			}
+		}
+
+	}
+	.select2-container {
+		border: none;
+		background: #fff;
+		color: #031B4B;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 600;
+		font-size: $fz16;
+		line-height: $lh24;
+		height: 48px;
+		padding: 12px 16px;
+		padding-top: 10px;
+		.select2-selection--single {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.select2-selection__rendered {
+				padding-left: 0;
+				padding-right: 0;
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 700;
+				font-size: $fz17T;
+				line-height: $lh24;
+				color: #031B4B;
+			}
+		}
+		.select2-dropdown {
+			border: none;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+			.select2-results {
+				padding-bottom: 16px;
+				padding-top: 16px;
+				border-top: 1px solid $blueDarck;
+				.select2-results__option {
+					font-family: 'Manrope';
+					font-style: normal;
+					font-weight: 400;
+					font-size: $fz17T;
+					line-height: $lh24;
+					color: #031B4B;
+					padding-left: 16px;
+					transition: all .5s;
+					&:hover {
+						transition: all .5s;
+						text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
+					}
+				}
+				.select2-results__option--selected {
+					font-weight: 700;
+				}
+			}
+		}
+		.select2-selection__arrow {
+			position: relative;
+			display: block;
+			width: 20px;
+			height: 10px;
+			background: url(../img/svg/select2-selection__arrow.svg) no-repeat center center;
+			background-size: contain;
+			transition: transform .3s;
+			transform: rotate(0deg);
+			b {
+				display: none;
+			}
+	
+		}
+	}
+	.select2-container--open {
+		transition: all .3s;
+		.select2-selection__arrow {
+			transition: transform .3s;
+			transform: rotate(180deg);
+		}
+	}
+	.periodSelect__date__value__month + .select2-container {
+		margin-right: 32px;
+		width: 144px;	
+	}
+	.selectDot {
+		display: flex;
+		align-items: center; 
+		padding-right: 15px;
+		margin-right: 15px;
+		&:last-child {
+			border-right: none;
+		}
+		&--title {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			color: #2C2C2C;			
+		}
+		&--label {
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+
+
+		}
+		label {
+			display: flex;
+			align-items: center;
+			flex-flow: row nowrap;
+			width: auto;
+			cursor: pointer;
+			font-size: 14px;
+			margin-right: 32px;
+			input {
+				display: none;
+				max-width: 100%;
+				border-radius: 3px;
+				font-size: 14px;
+				margin-top: 4px;
+				margin-right: 11px;
+			}
+			span {
+				font-family: 'Manrope';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				color: #031B4B;				
+			}
+			input:checked+b{
+				background: $blueLight;
+				border: 1px solid $blueLight;
+				&::after {
+					content: "";
+					display: block;
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					background-color: #fff;
+				}
+			}
+			input:checked+span {
+				color: $blueLight;
+			}
+			b {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 20px;
+				height: 20px;
+				margin-bottom: 0;
+				margin-right: 10px;
+				border-radius: 50%;
+				border: 1px solid $blueDarck;
+				box-sizing: border-box;
+				&::after {
+					display: none;
+				}			
+			}
+		}			
+	}
+}
