@@ -9285,6 +9285,18 @@ body.Bodymotionless {
   color: #C0C0C0;
 }
 
+.form__block-double {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form__block-double .form__block {
+  width: calc(50% - 16px);
+}
+
 .form .select2-container {
   border: none;
   background: #fff;

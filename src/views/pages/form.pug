@@ -50,14 +50,12 @@ block content
 									<span>заочная</span>
 							</label>
 							</div>									
-
-						</div>
+						</div>					
 		.form-page__line
 		.container
 			.form-page__layout.form
 				.form-page__layout--left
 					.form__title Информация о слушателе
-
 				.form-page__layout--right
 					.form__block
 						label
@@ -71,7 +69,88 @@ block content
 						label
 							b Отчество
 							input(type="text" placeholder="Отчество")
-
+					.form__block-double
+						.form__block
+							label
+								b Дата рождения
+								input(type="text")
+						.form__block
+							label
+								b СНИЛС
+								input(type="text")
+					.form__block-double
+						.form__block
+							label
+								b E-mail
+								input(type="email", name="")
+						.form__block
+							label
+								b Телефон
+								input(type="tel", name="")
+					.form__block
+						label
+							b Сведения об образовании 
+							<select class="js-example-form ">
+								<option  value="" disabled> ... </option>  
+								<option  value="" selected>Экология и рациональное природопользование</option>  
+								<option value="" >пункт 2</option>  
+							</select>
+					.form__block
+							label
+								b Название учебного заведения
+								input(type="text", name="")
+					.form__block-double
+						.form__block
+							label
+								b Год окончания
+								<select class="js-example-form ">
+									<option  value="" disabled> ... </option>  
+									<option  value="" selected>Экология и рациональное природопользование</option>  
+									<option value="" >пункт 2</option>  
+								</select>
+						.form__block
+							label
+								b Курс обучения 
+								<select class="js-example-form ">
+									<option  value="" disabled> ... </option>  
+									<option  value="" selected>Экология и рациональное природопользование</option>  
+									<option value="" >пункт 2</option>  
+								</select>
+					.form__block-double
+						.form__block
+							label
+								b Наличие ученой степени
+								<select class="js-example-form ">
+									<option  value="" disabled> ... </option>  
+									<option  value="" selected>Экология и рациональное природопользование</option>  
+									<option value="" >пункт 2</option>  
+								</select>
+						.form__block
+							label
+								b Год окончания
+								<select class="js-example-form ">
+									<option  value="" disabled> ... </option>  
+									<option  value="" selected>Экология и рациональное природопользование</option>  
+									<option value="" >пункт 2</option>  
+								</select>
+					.form__block
+						label
+							b Место работы / учебы
+							input(type="text", name="")
+					.form__block-double
+						.form__block
+							label
+								b Должность
+								input(type="text", name="")
+						.form__block
+							label
+								b Стаж
+								<select class="js-example-form ">
+									<option  value="" disabled> ... </option>  
+									<option  value="" selected>Экология и рациональное природопользование</option>  
+									<option value="" >пункт 2</option>  
+								</select>
+					.button.button__blue отправить заявку
 		.form-page__line
 		
 	include ../../blocks/modules/footer/footer

@@ -126,6 +126,19 @@
 		}
 
 	}
+	&__block-double {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+		.form__block {
+			width: calc(50% - 16px);
+			// label {
+			// 	width: calc(100% - 16px);
+			// }
+		}
+	}
 	.select2-container {
 		border: none;
 		background: #fff;

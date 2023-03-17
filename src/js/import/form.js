@@ -6,5 +6,7 @@ $(window).on('load', () => {
 		minimumResultsForSearch: Infinity,
 		dropdownAutoWidth: true,
 	});
+
+	
 });
 
