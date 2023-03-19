@@ -2662,7 +2662,7 @@ a:hover {
   border-bottom: 1px solid rgba(0, 85, 182, 0.3);
 }
 
-.block__textOne--span span {
+.block__textOne--span b {
   position: relative;
   margin-bottom: 8px;
   display: inline-block;
