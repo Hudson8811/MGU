@@ -57,6 +57,7 @@
 			flex-flow: column nowrap;
 			justify-content: flex-start;
 			align-items: flex-start;
+			min-width: 268px;
 			@include max(md) {
 				min-width: 205px;
 				margin-right: 20px !important;
@@ -103,6 +104,9 @@
 
 			}
 			&:nth-child(4) {
+				.footer__lists--item--link {
+					margin-bottom: 6px;
+				}
 				@include max(md) {
 					min-width: 240px;
 				}
@@ -128,7 +132,12 @@
 			width: 100%;
 			justify-content: flex-start;
 			align-items: flex-start;
-			margin-top: 48px;
+			margin-top: 33px;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 500;
+			font-size: $fz12;
+			line-height: $lh16;
 			@media (max-width: 740px) {
 				margin-top: 173px;
 			}
@@ -164,11 +173,15 @@
 				justify-content: flex-start;
 				align-items: flex-end;
 				margin-bottom: 32px;
-				img {
-					width: 30px;
+				width: 40px;
+				@include max(xs) {
+					img {
+						width: 30px;
+					}
 				}
+
 				p {
-					margin-left: 30px;
+					margin-left: 34px;
 					width: 140px;
 					font-style: normal;
 					font-weight: 600;
@@ -261,8 +274,8 @@
 				}				
 			}
 			&--soc {
-				margin-bottom: 48px;
-				margin-top: 48px;
+				margin-bottom: 38px;
+				margin-top: 38px;
 				@include max(md) {
 					margin-top: 32px;
 					margin-bottom: 24px;
@@ -276,6 +289,7 @@
 				.header__other__soc__icon img {
 					margin-right: 24px;
 				}
+
 			}
 		}
 
