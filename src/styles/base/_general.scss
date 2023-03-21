@@ -12,7 +12,7 @@ html {
 	text-decoration-thickness: 1px;
 	text-underline-offset: 2px;
 	text-decoration-skip: none;
-	text-decoration-skip-ink: none;	
+	text-decoration-skip-ink: none;
 }
 .container {
 	box-sizing: border-box;
@@ -76,7 +76,7 @@ a {
 	transition: all .5s;
 	padding-bottom: 8px;
 	border-bottom: 1px solid rgba(0, 85, 182, 0.3);
-	span {
+	b {
 		position: relative;
 		margin-bottom: 8px;
 		display: inline-block;
@@ -320,7 +320,7 @@ a.block__textOne__link {
 				background: #fff;
 				transition: all .5s;
 				img {
-					position: relative;	
+					position: relative;
 					content: url(../img/svg/FootershapeBlue.svg);
 				}
 			}
@@ -538,7 +538,7 @@ a.block__textOne__link {
 			background: #F4F3F0;
 			border: 2px solid #F4F3F0;
 		}
-	
+
 		&:active {
 			background: #F4F3F0;
 			border: 2px solid #F4F3F0;
