@@ -2,7 +2,7 @@
 	position: relative;
 	width: 100%;
 	padding: 21px 0 19px 0;
-	background: #104CA6;
+	background: #004ABA;
 	.container {
 		display: flex;
 		position: relative;
@@ -147,11 +147,11 @@
 	background: #fff;
 	display: none;
 	.header__other__date {
-		color: #104CA6;
+		color: #004ABA;
 		font-weight: 700;
 	}
 	.header__other__week  {
-		color: #104CA6;
+		color: #004ABA;
 	}
 	@include max(md) {
 		display: block;

@@ -2636,13 +2636,13 @@ a {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #104CA6;
+  color: #004ABA;
   transition: all 0.5s;
 }
 
 a:hover {
   transition: all 0.5s;
-  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
+  text-shadow: 0 0 0.15px #004ABA, 0 0 0.15px #004ABA;
 }
 
 .block__textOne--span {
@@ -2672,9 +2672,9 @@ a:hover {
 }
 
 .block__textOne--span:hover {
-  color: #104CA6;
+  color: #004ABA;
   transition: all 0.5s;
-  text-shadow: 0 0 0.15px rgba(255, 255, 255, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(255, 255, 255, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 a.block__textOne__link {
@@ -2685,39 +2685,44 @@ a.block__textOne__link {
   font-weight: 700;
   font-size: 0.875rem;
   margin-left: -12px;
-  line-height: 1.25rem;
+  line-height: 1.25rem !important;
   height: 24px;
-  color: #104CA6;
+  color: #004ABA;
   transition: all 0.5s;
   padding-left: 12px;
-  padding-right: 28px;
+  padding-right: 12px;
   padding-top: 1px;
 }
 
 a.block__textOne__link--opacity {
-  opacity: 0.5;
+  color: #031B4B;
+}
+
+a.block__textOne__link--opacity:hover {
+  text-shadow: none !important;
+  color: #031B4B !important;
 }
 
 a.block__textOne__link--opacity::after {
-  content: url(../img/svg/download.svg) !important;
+  content: url(../img/svg/download--2.svg) !important;
   transform: rotate(0deg);
-  top: 6px;
+  top: 3px !important;
 }
 
 a.block__textOne__link:hover {
   transition: all 0.5s;
   background: #FFFFFF;
   border-radius: 30px;
-  color: #104CA6;
+  color: #004ABA;
   text-decoration: none;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 a.block__textOne__link::after {
   transition: all 0.5s;
-  position: absolute;
-  right: 4px;
-  top: 4px;
+  position: relative;
+  right: -8px;
+  top: 3px;
   display: inline-block;
   content: url(../img/svg/editor__link__2.svg);
 }
@@ -2732,7 +2737,7 @@ a.block__textOne__link--person-colors:hover {
   border-radius: 30px;
   color: #AF8F46;
   text-decoration: none;
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 a.block__textOne__link--person-colors::after {
@@ -2762,7 +2767,7 @@ a.block__textOne__link--person-colors::after {
   border-radius: 30px;
   color: #fff;
   text-decoration: none;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .block__textOne__link__white::after {
@@ -2798,7 +2803,7 @@ a.block__textOne__link--person-colors::after {
   transition: all 0s;
   opacity: 0;
   visibility: hidden;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .block__textOne__link.academic__item__button:hover {
@@ -2808,7 +2813,7 @@ a.block__textOne__link--person-colors::after {
   text-decoration: none;
   padding-left: 12px;
   padding-right: 24px;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .block__textOne__link.academic__item__button:hover p {
@@ -2827,6 +2832,10 @@ a.block__textOne__link--person-colors::after {
   content: url(../img/svg/editor__link__2.svg);
 }
 
+.block__textOne__link--bold {
+  font-weight: 700;
+}
+
 .block-text__mob {
   display: none;
 }
@@ -2840,7 +2849,7 @@ a.block__textOne__link--person-colors::after {
   border: none;
   color: #fff;
   text-decoration: none;
-  background-color: #86acf5;
+  background-color: #739FF3;
   padding: 8px 107px;
   font-family: "Manrope";
   font-style: normal;
@@ -2862,14 +2871,14 @@ a.block__textOne__link--person-colors::after {
 }
 
 .button:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
   transition: all 0.5s;
-  background-color: #739FF3;
+  background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
 }
 
 .button:active {
   transition: all 0.5s;
-  background-color: #739FF3;
+  background: linear-gradient(0deg, rgba(10, 80, 186, 0.2), rgba(10, 80, 186, 0.2)), #739FF3;
 }
 
 .button__footer {
@@ -2925,7 +2934,7 @@ a.block__textOne__link--person-colors::after {
   border: none;
   color: #fff;
   text-decoration: none;
-  background-color: #104CA6;
+  background-color: #004ABA;
   padding: 8px 32px;
   font-family: "Manrope";
   font-style: normal;
@@ -2949,7 +2958,7 @@ a.block__textOne__link--person-colors::after {
 }
 
 .button__blue:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
   transition: all 0.5s;
   background-color: #073478;
 }
@@ -2988,7 +2997,7 @@ a.block__textOne__link--person-colors::after {
 }
 
 .button__ochre:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
   transition: all 0.5s;
   background-color: #946F11;
 }
@@ -3022,11 +3031,11 @@ a.block__textOne__link--person-colors::after {
 .button__border--blueDarck:focus,
 .button__border--blueDarck:hover {
   text-decoration: none;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .button__border--blueDarck:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
   transition: all 0.5s;
   background-color: #031B4B;
   border: 1px solid #031B4B;
@@ -3042,8 +3051,8 @@ a.block__textOne__link--person-colors::after {
 
 .button__border--blue {
   display: inline-block;
-  border: 2px solid #104CA6;
-  color: #104CA6;
+  border: 2px solid #004ABA;
+  color: #004ABA;
   text-decoration: none;
   background-color: transparent;
   padding: 8px 32px;
@@ -3065,20 +3074,20 @@ a.block__textOne__link--person-colors::after {
 .button__border--blue:focus,
 .button__border--blue:hover {
   text-decoration: none;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .button__border--blue:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
   transition: all 0.5s;
   background-color: rgba(0, 85, 182, 0.3);
-  border: 2px solid rgba(0, 85, 182, 0.1);
+  border: 2px solid rgba(0, 85, 182, 0);
 }
 
 .button__border--blue:active {
   transition: all 0.5s;
   background-color: rgba(0, 85, 182, 0.3);
-  border: 2px solid rgba(0, 85, 182, 0.1);
+  border: 2px solid rgba(0, 85, 182, 0);
 }
 
 .button.button__white {
@@ -3117,22 +3126,20 @@ a.block__textOne__link--person-colors::after {
 
 .button.button__white--fill {
   background-color: #FFFFFF;
-  color: #104CA6;
+  color: #004ABA;
   width: auto;
   padding: 3px 32px 6px 32px;
   border: 2px solid #fff;
 }
 
 .button.button__white--fill:hover {
-  border: 2px solid #fff;
-  background: rgba(255, 255, 255, 0);
-  color: #fff;
+  background: #F4F3F0;
+  border: 2px solid #F4F3F0;
 }
 
 .button.button__white--fill:active {
-  border: 2px solid #fff;
-  background: rgba(255, 255, 255, 0);
-  color: #fff;
+  background: #F4F3F0;
+  border: 2px solid #F4F3F0;
 }
 
 .section__title-small {
@@ -3141,7 +3148,7 @@ a.block__textOne__link--person-colors::after {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #104CA6;
+  color: #004ABA;
   text-align: left;
   margin-bottom: 46px;
 }
@@ -3237,7 +3244,7 @@ a.block__textOne__link--person-colors::after {
   position: relative;
   width: 100%;
   padding: 21px 0 19px 0;
-  background: #104CA6;
+  background: #004ABA;
 }
 
 .section__header .container {
@@ -3394,12 +3401,12 @@ a.block__textOne__link--person-colors::after {
 }
 
 .section__header-date .header__other__date {
-  color: #104CA6;
+  color: #004ABA;
   font-weight: 700;
 }
 
 .section__header-date .header__other__week {
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .header__other__mob {
@@ -3534,7 +3541,7 @@ a.block__textOne__link--person-colors::after {
   font-size: 1rem;
   text-align: center;
   line-height: 1.5rem;
-  color: #104CA6;
+  color: #004ABA;
   background: #F4F3F0;
   text-decoration: none;
   cursor: pointer;
@@ -3550,13 +3557,13 @@ a.block__textOne__link--person-colors::after {
 .topMenu__item:hover {
   background: #fff;
   transition: all 0.5s;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .topMenu__item.active__toopMenu {
   background: #fff;
-  color: #104CA6;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  color: #004ABA;
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .topMenu__item.topMenu__item__department {
@@ -3573,7 +3580,7 @@ a.block__textOne__link--person-colors::after {
 
 .topMenu__item.topMenu__item__department.active__toopMenu {
   background: #fff;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .department__menu {
@@ -3742,12 +3749,12 @@ a.block__textOne__link--person-colors::after {
 
 .breadcrumbs__item:hover {
   transition: all 0.3s;
-  color: #104CA6;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  color: #004ABA;
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .breadcrumbs__item:hover:last-child {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 .breadcrumbs__item__icon {
@@ -3779,7 +3786,7 @@ a.block__textOne__link--person-colors::after {
   font-weight: 700;
   font-size: 0.8125rem;
   line-height: 1rem;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .breadcrumbs__item:last-child::after {
@@ -3887,7 +3894,7 @@ a.block__textOne__link--person-colors::after {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 32px;
 }
 
@@ -3901,7 +3908,7 @@ a.block__textOne__link--person-colors::after {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .newsMain__item__desc__text {
@@ -3988,7 +3995,7 @@ button.declaration__item__button {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #104CA6;
+  color: #004ABA;
   background: #F4F3F0;
   border-radius: 4px;
   border: none;
@@ -4099,7 +4106,7 @@ button.declaration__item__button {
 }
 
 .academic__slider-nav .swiper-button-prev::after {
-  color: #104CA6;
+  color: #004ABA;
   content: url(../../../img/svg/seminars__prev.svg);
 }
 
@@ -4109,7 +4116,7 @@ button.declaration__item__button {
 }
 
 .academic__slider-nav .swiper-button-next::after {
-  color: #104CA6;
+  color: #004ABA;
   content: url(../../../img/svg/seminars__next.svg);
 }
 
@@ -4119,7 +4126,7 @@ button.declaration__item__button {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: #104CA6;
+  color: #031B4B;
   margin-bottom: 40px;
 }
 
@@ -4157,7 +4164,7 @@ button.declaration__item__button {
 }
 
 .academic__item:hover {
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .academic__item__title {
@@ -4166,7 +4173,7 @@ button.declaration__item__button {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.625rem;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 16px;
 }
 
@@ -4187,7 +4194,7 @@ button.declaration__item__button {
 }
 
 .academic__item .block__textOne__link.academic__item__button:hover {
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .academic__item .block__textOne__link.academic__item__button:hover .block__textOne__link.academic__item__button {
@@ -4197,7 +4204,7 @@ button.declaration__item__button {
   text-decoration: none;
   padding-left: 12px;
   padding-right: 24px;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .academic__item .block__textOne__link.academic__item__button:hover .block__textOne__link.academic__item__button p {
@@ -4224,7 +4231,7 @@ button.declaration__item__button {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: #104CA6;
+  color: #031B4B;
 }
 
 .main__news__top {
@@ -4265,7 +4272,7 @@ button.declaration__item__button {
 
 .main__news__item:hover {
   transition: all 0.5s;
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 .main__news__item:hover .main__news__item__title {
@@ -4306,7 +4313,7 @@ button.declaration__item__button {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 24px;
 }
 
@@ -4316,7 +4323,7 @@ button.declaration__item__button {
   font-weight: 800;
   font-size: 1.25rem;
   line-height: 1.625rem;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 16px;
 }
 
@@ -4353,7 +4360,7 @@ button.declaration__item__button {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: #104CA6;
+  color: #031B4B;
 }
 
 .seminars__sliders .seminars__top .block__textOne__link {
@@ -4390,7 +4397,7 @@ button.declaration__item__button {
 }
 
 .seminars__sliders .seminars__swiper__navigation .swiper-button-prev::after {
-  color: #104CA6;
+  color: #004ABA;
   content: url(../img/svg/seminars__prev.svg);
 }
 
@@ -4400,7 +4407,7 @@ button.declaration__item__button {
 }
 
 .seminars__sliders .seminars__swiper__navigation .swiper-button-next::after {
-  color: #104CA6;
+  color: #004ABA;
   content: url(../img/svg/seminars__next.svg);
 }
 
@@ -4483,9 +4490,18 @@ button.declaration__item__button {
   padding: 8px 20px;
   padding-right: 0;
   padding-left: 0;
+  height: 40px;
   background: transparent;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
+}
+
+.accordions.menu-sidebar .accordion__intro:hover {
+  transition: all 0.1s;
+  font-weight: 800;
+  text-shadow: none;
+  background: #fff;
 }
 
 .accordions.menu-sidebar .accordion__intro p {
@@ -4494,7 +4510,11 @@ button.declaration__item__button {
 
 .accordions.menu-sidebar .accordion__intro__img {
   width: auto;
-  margin-right: 0;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 13px;
   animation-name: rotationCloseMenuSidebar;
   animation-duration: 0.2s;
   animation-iteration-count: 1;
@@ -4520,9 +4540,12 @@ button.declaration__item__button {
   background: transparent;
   flex-flow: row nowrap;
   width: 100%;
+  transition: all 0.1s;
 }
 
 .accordions.menu-sidebar .accordion__intro a:hover {
+  transition: all 0.1s;
+  font-weight: 800;
   text-shadow: none;
   background: #fff;
 }
@@ -4539,6 +4562,7 @@ button.declaration__item__button {
   font-weight: 600;
   background: transparent;
   max-width: 98%;
+  transition: all 0.1s;
   cursor: pointer;
   color: #031B4B;
   font-style: normal;
@@ -4559,19 +4583,24 @@ button.declaration__item__button {
   font-weight: 600;
   padding-right: 50px;
   width: 100%;
+  transition: all 0.1s;
 }
 
 .accordions.menu-sidebar .accordion__content a:hover {
+  font-weight: 800;
   text-shadow: none;
   background: #fff;
+  transition: all 0.1s;
 }
 
 .accordions.menu-sidebar .accordion__active .accordion__intro {
   color: #031B4B;
-  text-shadow: 0 0 0.1px #031B4B, 0 0 0.1px #031B4B;
+  font-weight: 800;
   font-style: normal;
   font-size: 1rem;
   line-height: 1.5rem;
+  transition: all 0.1s;
+  background: #fff;
 }
 
 .accordions.menu-sidebar .accordion__active .accordion__intro .accordion__intro__img {
@@ -4587,6 +4616,7 @@ button.declaration__item__button {
   opacity: 1;
   width: 100%;
   margin-left: 24px;
+  transition: all 0.1s;
 }
 
 @keyframes rotationOpenMenuSidebar {
@@ -4615,7 +4645,8 @@ button.declaration__item__button {
 
 .menuDepartMob {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -4711,7 +4742,9 @@ button.declaration__item__button {
   display: none;
   margin-bottom: 40px;
   width: 100%;
-  max-width: 100%;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menuDepartMob__overlay {
@@ -4881,11 +4914,17 @@ body.Bodymotionless {
 }
 
 .tabsControls .tabControl.active {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
   transition: all 0.5s;
   background-color: #031B4B;
   border: 1px solid #031B4B;
   color: #fff;
+}
+
+.tabsControls .tabControl:hover {
+  background: #D8E0EC;
+  border: 1px solid #D8E0EC;
+  color: #031B4B;
 }
 
 .tabControl--mat-content {
@@ -5527,7 +5566,7 @@ body.Bodymotionless {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 244px;
 }
 
@@ -5536,7 +5575,7 @@ body.Bodymotionless {
   display: none;
   height: 1px;
   width: 50%;
-  border-top: 1px solid #104CA6;
+  border-top: 1px solid #004ABA;
 }
 
 .block__text__color__line:first-child {
@@ -5617,14 +5656,14 @@ body.Bodymotionless {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #104CA6;
+  color: #004ABA;
   transition: all 0.5s;
 }
 
 .block__textTwo a:hover {
   text-decoration: underline;
   transition: all 0.5s;
-  text-shadow: 0 0 0.15px #104CA6, 0 0 0.15px #104CA6;
+  text-shadow: 0 0 0.15px #004ABA, 0 0 0.15px #004ABA;
 }
 
 .block__textTwo ul {
@@ -5813,7 +5852,7 @@ body.Bodymotionless {
 }
 
 .block__textThree__item:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 .block__textThree__item:hover h2 {
@@ -5849,7 +5888,7 @@ body.Bodymotionless {
   font-weight: 800;
   font-size: 2rem;
   line-height: 2.5rem;
-  color: #104CA6;
+  color: #004ABA;
   transition: all 0.5s;
 }
 
@@ -5865,7 +5904,7 @@ body.Bodymotionless {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .followSoc {
@@ -5885,7 +5924,7 @@ body.Bodymotionless {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 16px;
 }
 
@@ -6006,11 +6045,13 @@ body.Bodymotionless {
   border: none;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
 }
 
 .select2-container .select2-dropdown .select2-results {
   padding-bottom: 16px;
   padding-top: 16px;
+  border-radius: 0;
 }
 
 .select2-container .select2-dropdown .select2-results .select2-results__option {
@@ -6021,23 +6062,28 @@ body.Bodymotionless {
   line-height: 1.5rem;
   color: #031B4B;
   padding-left: 16px;
-  transition: all 0.5s;
+  transition: all 0.1s;
 }
 
 .select2-container .select2-dropdown .select2-results .select2-results__option:hover {
-  transition: all 0.5s;
-  text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
+  transition: all 0.1s;
+  background: #C0C0C0;
 }
 
 .select2-container .select2-dropdown .select2-results .select2-results__option--selected {
   font-weight: 700;
 }
 
+.select2-container .select2-dropdown .select2-results .select2-results__option--selected:hover {
+  transition: all 0.1s;
+  background: #fff;
+}
+
 .select2-container .select2-selection__arrow {
   position: relative;
   display: block;
-  width: 12px;
-  height: 6px;
+  width: 16px;
+  height: 8px;
   background: url(../img/svg/select2-selection__arrow.svg) no-repeat center center;
   background-size: contain;
   transition: transform 0.3s;
@@ -6057,9 +6103,9 @@ body.Bodymotionless {
   transform: rotate(180deg);
 }
 
-.periodSelect__date__value__month + .select2-container {
+.date-month.periodSelect__date__value__month + .select2-container {
   margin-right: 32px;
-  width: 144px;
+  width: 144px !important;
 }
 
 .pagination {
@@ -6086,13 +6132,17 @@ body.Bodymotionless {
   width: 36px;
   height: 36px;
   border-radius: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.375rem;
   background: rgba(255, 255, 255, 0);
   transition: all 0.5s;
   margin: 2px;
 }
 
 .pagination__item__active {
-  background: #104CA6;
+  background: #004ABA;
   color: #fff;
 }
 
@@ -6107,8 +6157,8 @@ body.Bodymotionless {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   border-radius: 30px;
   background: #fff;
   padding-bottom: 4px;
@@ -6134,8 +6184,8 @@ body.Bodymotionless {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   border-radius: 30px;
   background: #fff;
   padding-top: 5px;
@@ -6155,7 +6205,7 @@ body.Bodymotionless {
 }
 
 .pagination__item.pagination__item__active:hover {
-  background: #104CA6;
+  background: #004ABA;
   color: #fff;
 }
 
@@ -6229,9 +6279,12 @@ body.Bodymotionless {
   margin-bottom: 32px;
 }
 
+.block__textOne__link.block__textOne__link__ads--mob {
+  display: none;
+}
+
 .block__textOne__link.block__textOne__link__ads {
   color: #946F11;
-  display: none;
 }
 
 .block__textOne__link.block__textOne__link__ads::after {
@@ -6261,7 +6314,7 @@ body.Bodymotionless {
 }
 
 .ads__item:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 .ads__item__date {
@@ -6329,7 +6382,7 @@ body.Bodymotionless {
 
 .education__item:hover {
   transition: all 0.3s;
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 .education__item:hover .education__item__desc__title {
@@ -6435,11 +6488,11 @@ body.Bodymotionless {
   font-weight: 800;
   font-size: 2.625rem;
   line-height: 3.25rem;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .education__itemWhite:hover {
-  text-shadow: 0 0 0.15px rgba(16, 76, 166, 0), 0 0 0.15px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 .education__itemWhite:hover .education__itemWhite__desc__title {
@@ -6510,7 +6563,7 @@ body.Bodymotionless {
 }
 
 .banner__blue {
-  background: #104CA6;
+  background: #004ABA;
 }
 
 .banner__blueLight {
@@ -6601,6 +6654,8 @@ body.Bodymotionless {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .structureNews__item__tilte {
@@ -6681,6 +6736,7 @@ body.Bodymotionless {
   width: auto;
   white-space: wrap;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .about__banner__button-column .button:first-child {
@@ -6939,7 +6995,7 @@ body.Bodymotionless {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.625rem;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .statements .statement__text {
@@ -6947,7 +7003,7 @@ body.Bodymotionless {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .statements .statement__icon {
@@ -7033,12 +7089,12 @@ body.Bodymotionless {
   margin-right: 37px;
 }
 
-.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label {
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input .search-checkbox--block label {
   position: relative;
   display: flex;
   width: 111px;
   min-width: 111px;
-  flex-flow: column-reverse nowrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   font-style: normal;
@@ -7048,7 +7104,16 @@ body.Bodymotionless {
   color: #031B4B;
 }
 
-.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label input {
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input .search-checkbox--block label span {
+  margin-left: 0;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input .search-checkbox--block label input {
   width: 20px;
   height: 20px;
   margin-bottom: 12px;
@@ -7241,7 +7306,7 @@ body.Bodymotionless {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 24px;
 }
 
@@ -7387,14 +7452,14 @@ body.Bodymotionless {
 
   100% {
     transform-origin: 50% 50%;
-    transform: rotate(30deg);
+    transform: rotate(44deg);
   }
 }
 
 @keyframes rotationClose {
   0% {
     transform-origin: 50% 50%;
-    transform: rotate(30deg);
+    transform: rotate(44deg);
   }
 
   100% {
@@ -7460,7 +7525,7 @@ body.Bodymotionless {
   font-weight: 600;
   font-size: 17px;
   line-height: 24px;
-  color: #104CA6;
+  color: #004ABA;
   margin-bottom: 32px;
 }
 
@@ -7588,7 +7653,7 @@ body.Bodymotionless {
 
 .persons-search-result:hover .persons-search-result__name,
 .persons-search-result:hover .persons-search-result__title {
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .persons-search-result + .persons-search-result {
@@ -7609,7 +7674,7 @@ body.Bodymotionless {
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .person-page-main {
@@ -7626,7 +7691,7 @@ body.Bodymotionless {
   font-weight: 800;
   font-size: 24px;
   line-height: 117%;
-  color: #104CA6;
+  color: #004ABA;
 }
 
 .block__textOne--person-page img {
@@ -7753,7 +7818,7 @@ body.Bodymotionless {
   align-items: flex-end;
   margin-left: 32px;
   margin-bottom: 32px;
-  background: #104CA6;
+  background: #004ABA;
   transition: all 0.5s;
 }
 
@@ -7816,7 +7881,7 @@ body.Bodymotionless {
   width: 50%;
   height: 100%;
   padding: 32px;
-  background: #104CA6;
+  background: #004ABA;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -7907,7 +7972,7 @@ body.Bodymotionless {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: #104CA6;
+  color: #031B4B;
 }
 
 .structure .education {
@@ -8085,7 +8150,7 @@ body.Bodymotionless {
 
 .disserCouncils .section__header__two .column__right .block__textOne__link:hover {
   text-decoration: none;
-  text-shadow: 0 0 0px rgba(16, 76, 166, 0), 0 0 0px rgba(16, 76, 166, 0);
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
 }
 
 .councils {
@@ -8441,6 +8506,10 @@ body.Bodymotionless {
   padding-bottom: 100px;
 }
 
+.educationAdditional .section__title-small {
+  color: #031B4B;
+}
+
 .educationAdditional .education__item:nth-child(1) {
   margin-bottom: 32px;
 }
@@ -8456,6 +8525,10 @@ body.Bodymotionless {
   padding-bottom: 100px;
 }
 
+.studentsTimetable .section__title-small {
+  color: #031B4B;
+}
+
 .studentsTimetable__swiper .seminars__item {
   background: #AF8F46;
 }
@@ -8469,6 +8542,10 @@ body.Bodymotionless {
   background: #F4F3F0;
   min-height: 100vh;
   padding-bottom: 100px;
+}
+
+.enrolled .section__title-small {
+  color: #031B4B;
 }
 
 .enrolled .about__banner__left {
@@ -8547,7 +8624,6 @@ body.Bodymotionless {
 }
 
 .educationExtraYoung {
-  padding-top: 60px;
   background: #F4F3F0;
   min-height: 100vh;
   padding-bottom: 100px;
@@ -8567,6 +8643,7 @@ body.Bodymotionless {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  width: auto;
 }
 
 .seasons--title {
@@ -8583,10 +8660,13 @@ body.Bodymotionless {
   justify-content: flex-start;
   margin-top: 20px;
   align-items: flex-start;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .seasons .season--item {
   margin-right: 20px;
+  white-space: nowrap;
 }
 
 .seasons .season--item-active {
@@ -8595,12 +8675,22 @@ body.Bodymotionless {
   color: #fff;
 }
 
+.seasons .season--item:hover {
+  background: #D8E0EC;
+  border: 1px solid #D8E0EC;
+  color: #031B4B;
+}
+
 .disciplinesProgram .block__text__wrap .column__left {
   padding-right: 40px;
 }
 
 .conferences.studentsQuestion {
   padding-bottom: 100px;
+}
+
+.conferences.studentsQuestion .block__text__wrap .column__left {
+  padding-right: 0;
 }
 
 .conferences.studentsQuestion .block__text__wrap .column__left .button__blue {
@@ -9884,6 +9974,10 @@ body.Bodymotionless {
     padding-top: 40px;
   }
 
+  .footer__lists--column {
+    min-width: auto;
+  }
+
   .footer__lists--item--logo p {
     margin-left: 24px;
   }
@@ -9952,6 +10046,14 @@ body.Bodymotionless {
   .periodSelect__date__value__month + .select2-container {
     margin-right: 32px;
     width: 144px;
+  }
+
+  .block__textOne__link.block__textOne__link__ads--desc {
+    display: none;
+  }
+
+  .block__textOne__link.block__textOne__link__ads--mob {
+    display: inline-block;
   }
 
   .layoutThree__left.layoutThree__left__mob {
@@ -10121,13 +10223,18 @@ body.Bodymotionless {
     align-items: center;
   }
 
-  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label {
-    flex-flow: row-reverse nowrap;
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input .search-checkbox--block label {
+    flex-flow: row nowrap;
     align-items: center;
     width: auto;
   }
 
-  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input label input {
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input .search-checkbox--block label span {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+
+  .periodSelect.periodSelect__graduatePrograms .periodSelect__buttons--input .search-checkbox--block label input {
     margin-bottom: 0;
     margin-right: 12px;
   }
@@ -10408,17 +10515,16 @@ body.Bodymotionless {
     margin-bottom: 16px;
   }
 
-  .educationExtraYoung {
-    padding-top: 40px;
-    padding-bottom: 80px;
-  }
-
   .educationExtraYoung .column__right.header__two__right {
     margin-bottom: 0;
   }
 
   .seasons {
-    display: none;
+    margin-top: 40px;
+  }
+
+  .seasons .season {
+    padding-bottom: 15px;
   }
 
   .conferences.studentsQuestion {
@@ -10910,11 +11016,6 @@ body.Bodymotionless {
     max-width: 100%;
   }
 
-  .section__structureNews.structure__educationPrograms .structureNews .structureNews__item--subtitle-label {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
   .lectureCards .lectureCar {
     padding: 24px;
   }
@@ -11143,8 +11244,8 @@ body.Bodymotionless {
     padding-bottom: 80px;
   }
 
-  .educationExtraYoung {
-    padding-bottom: 80px;
+  .lectureCards .lectureCar {
+    padding-bottom: 32px;
   }
 
   .conferences.studentsQuestion .accordion:last-child {
@@ -11209,24 +11310,6 @@ body.Bodymotionless {
   .structureDepartment__news .header__one {
     padding-bottom: 40px;
     margin-bottom: 0;
-  }
-
-  .structureDepartment__news .header__one .column__right.header__one__right img {
-    display: none;
-  }
-
-  .structureDepartment__news .header__one .column__right.header__one__right .header__one__right--subtitle-mob {
-    display: block;
-  }
-
-  .structureDepartment__news .header__one .header__one__right--title {
-    left: auto;
-    bottom: auto;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    position: relative;
-    color: #031B4B;
-    margin-bottom: 32px;
   }
 
   .structureDepartment__news .newsMain {
@@ -12301,17 +12384,17 @@ body.Bodymotionless {
     padding-bottom: 60px;
   }
 
+  .enrolled .button.button__blueLight {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
   .graduatePrograms {
     padding-bottom: 60px;
   }
 
   .section__editor--extraProgram .header__one--label {
-    width: 100%;
     justify-content: flex-start;
-  }
-
-  .educationExtraYoung {
-    padding-bottom: 60px;
   }
 
   .conferences.studentsQuestion {
@@ -12335,6 +12418,28 @@ body.Bodymotionless {
 
   .conferences.studentsQuestion .block__text__wrap .column__left .studentsQuestion--input {
     margin-bottom: 24px;
+  }
+
+  .structureDepartment__news .header__one .column__right.header__one__right img {
+    display: none;
+  }
+
+  .structureDepartment__news .header__one .column__right.header__one__right .header__one__right--subtitle-mob {
+    display: block;
+  }
+
+  .structureDepartment__news .header__one .header__one__right--title {
+    left: auto;
+    bottom: auto;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    position: relative;
+    color: #031B4B;
+    margin-bottom: 32px;
+  }
+
+  .structureDepartment__news .header__one .header__one__right--title br {
+    display: none;
   }
 
   .newsMain__top {
@@ -12719,6 +12824,11 @@ body.Bodymotionless {
   .studentsTimetable .button.button__blueLight {
     font-size: 1.25rem;
     line-height: 1.25rem;
+  }
+
+  .enrolled .button.button__blueLight {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
   }
 }
 

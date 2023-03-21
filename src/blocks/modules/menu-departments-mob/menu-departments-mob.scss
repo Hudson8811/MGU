@@ -1,6 +1,7 @@
 .menuDepartMob {
 	position: relative;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	&--menu {
 		&--wrap {
@@ -89,7 +90,9 @@
 		display: none;
 		margin-bottom: 40px;
 		width: 100%;
-		max-width: 100%;
+		max-width: 240px;
+		margin-left: auto;
+		margin-right: auto;
 		@include max(md) {
 			display: inline-block;
 		}

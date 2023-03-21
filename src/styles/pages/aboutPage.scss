@@ -192,7 +192,7 @@
 			align-items: flex-end;
 			margin-left: 32px;
 			margin-bottom: 32px;
-			background: #104CA6;
+			background: #004ABA;
 			transition: all .5s;
 			@include max(lg) {
 				max-width: calc( 50% - 24px);
@@ -286,7 +286,7 @@
 				width: 50%;
 				height: 100%;
 				padding: 32px;
-				background: #104CA6;
+				background: #004ABA;
 				display: flex;
 				flex-flow: column nowrap;
 				justify-content: flex-end;

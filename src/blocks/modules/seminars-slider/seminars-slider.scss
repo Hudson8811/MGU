@@ -27,7 +27,7 @@
 			font-weight: 700;
 			font-size: $fz24;
 			line-height: $lh28;
-			color: #104CA6;			
+			color: $blueDarck;			
 		}
 		.block__textOne__link	{
 			margin-top: 5px;
@@ -71,7 +71,7 @@
 				left: 4px;
 				top: 16px;
 				&::after {
-					color: #104CA6;
+					color: #004ABA;
 					content: url(../img/svg/seminars__prev.svg);
 				}
 
@@ -80,7 +80,7 @@
 				right: 4px;
 				top: 13px;
 				&::after {
-					color: #104CA6;
+					color: #004ABA;
 					content: url(../img/svg/seminars__next.svg);
 
 				}

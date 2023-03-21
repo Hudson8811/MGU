@@ -26,10 +26,10 @@
 		transition: all .3s;
 		&:hover {
 			transition: all .3s;
-			color: #104CA6;
-			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+			color: #004ABA;
+			text-shadow: 0 0 0px #004ABA00, 0 0 0px #004ABA00;
 			&:last-child {
-				text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+				text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
 			}
 		}
 		&__icon {
@@ -57,7 +57,7 @@
 			font-weight: 700;
 			font-size: $fz13;
 			line-height: $lh16;
-			color: #104CA6;
+			color: #004ABA;
 			&::after {
 				content: none
 			}

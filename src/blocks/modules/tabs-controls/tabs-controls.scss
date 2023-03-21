@@ -2,11 +2,16 @@
 .tabsControls {
 	.tabControl {
 		&.active {
-			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+			text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
 			transition: all .5s;
 			background-color: $blueDarck;
 			border: 1px solid $blueDarck;
 			color: $white;
+		}
+		&:hover {
+			background: #D8E0EC;
+			border: 1px solid #D8E0EC;
+			color: #031B4B;
 		}
 	}
 

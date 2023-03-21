@@ -10,6 +10,9 @@
 	@include max(sm) {
 		padding-bottom: 60px;
 	}
+	.section__title-small {
+		color: $blueDarck;
+	}
 	.button.button__blueLight {
 		@include max(xs) {
 			font-size: $fz20;

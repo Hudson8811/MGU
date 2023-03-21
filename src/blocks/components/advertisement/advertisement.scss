@@ -16,9 +16,20 @@
 		margin-bottom: 32px;	
 	}
 }
+
+.block__textOne__link.block__textOne__link__ads--desc  {
+	@include max(lg) {
+		display: none;
+	}
+}
+.block__textOne__link.block__textOne__link__ads--mob  {
+	display: none;
+	@include max(lg) {
+		display: inline-block;
+	}
+}
 .block__textOne__link.block__textOne__link__ads {
 	color: #946F11;
-	display: none;
 	&::after{
 		content: url(../img/svg/ads__arrow.svg);
 	}
@@ -43,7 +54,7 @@
 		padding-top: 8px;
 		margin-bottom: 32px;
 		&:hover {
-			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+			text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
 		}
 		&__date{
 			font-family: 'Manrope';

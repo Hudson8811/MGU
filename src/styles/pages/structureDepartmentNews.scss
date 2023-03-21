@@ -51,7 +51,7 @@
 			padding-bottom: 0;
 			img {
 				min-height: 360px;
-				@include max(md) {
+				@include max(sm) {
 					display: none;
 				}
 			}
@@ -61,7 +61,7 @@
 				line-height: $lh22;
 				color: $blueDarck;
 
-				@include max(md) {
+				@include max(sm) {
 					display: block;
 				}
 			}
@@ -75,7 +75,7 @@
 			font-size: 52px;
 			line-height: 58px;
 			color: #FFFFFF;
-			@include max(md) {
+			@include max(sm) {
 				left: auto;
 				bottom: auto;
 				font-size: $fz32;
@@ -83,6 +83,11 @@
 				position: relative;
 				color: $blueDarck;
 				margin-bottom: 32px;
+			}
+			br {
+				@include max(sm) {
+					display: none;
+				}
 			}
 		}
 	}

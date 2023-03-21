@@ -1,18 +1,7 @@
 .educationExtraYoung {
-	padding-top: 60px;
 	background: #F4F3F0;
 	min-height: 100vh;
 	padding-bottom: 100px;
-	@include max(lg) {
-		padding-top: 40px;
-		padding-bottom: 80px;
-	}
-	@include max(md) {
-		padding-bottom: 80px;
-	}
-	@include max(sm) {
-		padding-bottom: 60px;
-	}
 	.column__left.header__two__left {
 		padding-right: 0px;
 		h1 {
@@ -25,14 +14,23 @@
 		}
 	}
 }
+.lectureCards {
+	.lectureCar {
+		@include max(md) {
+			padding-bottom: 32px;
+		}	
+	}
+}
+
 .seasons {
 	position: relative;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
+	width: auto;
 	@include max(lg) {
-		display: none;
+		margin-top: 40px;
 	}
 	&--title  {
 		font-style: normal;
@@ -47,12 +45,23 @@
 		justify-content: flex-start;
 		margin-top: 20px;
 		align-items: flex-start;
+		width: 100%;
+		overflow-x: scroll;
+		@include max(lg) {
+			padding-bottom: 15px;
+		}
 		&--item {
 			margin-right: 20px;
+			white-space: nowrap;
 			&-active {
 				background-color: $blueDarck;
 				border: 1px solid $blueDarck;
 				color: $white;
+			}
+			&:hover {
+				background: #D8E0EC;
+				border: 1px solid #D8E0EC;
+				color: $blueDarck;
 			}
 		}
 	}

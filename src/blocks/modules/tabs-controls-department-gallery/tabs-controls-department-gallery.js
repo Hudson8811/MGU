@@ -76,7 +76,7 @@
 
 				arrowRight:
 				'<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
-				'<div><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.5 17L9.5 9.09195L1.5 1" stroke="#104CA6" stroke-width="1.5"/></svg></div>' +
+				'<div><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.5 17L9.5 9.09195L1.5 1" stroke="#004ABA" stroke-width="1.5"/></svg></div>' +
 				"</button>",
 
 			},

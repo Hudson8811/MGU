@@ -19,15 +19,27 @@
 			padding: 8px 20px;
 			padding-right: 0;
 			padding-left: 0;
+			height: 40px;
 			background: transparent;
 			flex-flow: row nowrap;
 			justify-content: space-between;
+			align-items: center;
+			&:hover {
+				transition: all 0.1s;
+				font-weight: 800;
+				text-shadow: none;
+				background: $white;
+			}
 			p {
 				padding-left: 20px;
 			}
 			&__img {
 				width: auto;
-				margin-right: 0;
+				height: auto;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-right: 13px;
 				animation-name: rotationCloseMenuSidebar;
 				animation-duration: .2s;
 				animation-iteration-count: 1;
@@ -51,7 +63,10 @@
 				background: transparent;
 				flex-flow: row nowrap;
 				width: 100%;
+				transition: all 0.1s;
 				&:hover {
+					transition: all 0.1s;
+					font-weight: 800;
 					text-shadow: none;
 					background: $white;
 				}
@@ -70,6 +85,7 @@
 			font-weight: 600;
 			background: transparent;
 			max-width: 98%;
+			transition: all 0.1s;
 			cursor: pointer;
 			color: $blueDarck;
 			font-style: normal;
@@ -88,9 +104,12 @@
 				font-weight: 600;
 				padding-right: 50px;
 				width: 100%;
+				transition: all 0.1s;
 				&:hover {
+					font-weight: 800;
 					text-shadow: none;
 					background: $white;
+					transition: all 0.1s;
 				}
 			}
 		} 
@@ -98,10 +117,12 @@
 		&__active {
 			.accordion__intro {
 				color: $blueDarck;
-				text-shadow: 0 0 0.1px $blueDarck, 0 0 0.1px $blueDarck;
+				font-weight: 800;
 				font-style: normal;
 				font-size: $fz16;
 				line-height: $lh24;
+				transition: all 0.1s;
+				background: $white;
 				@include max(sm) {
 					font-size: 18px;
 					line-height: 24px;
@@ -124,6 +145,7 @@
 				opacity: 1;
 				width: 100%;
 				margin-left: 24px;
+				transition: all 0.1s;
 	
 			}
 	

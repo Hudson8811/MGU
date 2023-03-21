@@ -15,6 +15,7 @@
 	}
 	.block__text__wrap {
 		.column__left {
+			padding-right: 0;
 			@include max(md) {
 				padding-bottom: 0;
 			}

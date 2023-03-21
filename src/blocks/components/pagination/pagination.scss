@@ -20,11 +20,15 @@
 		width: 36px;
 		height: 36px;
 		border-radius: 30px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: $fz16;
+		line-height: $lh22;
 		background: rgba(255, 255, 255, 0);
 		transition: all .5s;
 		margin: 2px;
 		&__active {
-			background: #104CA6;
+			background: #004ABA;
 			color: #fff;
 		}
 		&:hover {
@@ -38,8 +42,8 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		width: 36px;
-		height: 36px;
+		width: 48px;
+		height: 48px;
 		border-radius: 30px;
 		background: #fff;
 		padding-bottom: 4px;
@@ -62,8 +66,8 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		width: 36px;
-		height: 36px;
+		width: 48px;
+		height: 48px;
 		border-radius: 30px;
 		background: #fff;
 		padding-top: 5px;
@@ -84,7 +88,7 @@
 
 .pagination__item.pagination__item__active {
 	&:hover {
-		background: #104CA6;
+		background: #004ABA;
 		color: #fff;
 	}
 }

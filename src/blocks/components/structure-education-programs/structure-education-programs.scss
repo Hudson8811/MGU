@@ -65,10 +65,10 @@
 					line-height: $lh20;
 					color: $white;
 					background: $greenLight;
-					@include max(md) {
-						width: 100%;
-						justify-content: flex-start;
-					}
+					// @include max(md) {
+					// 	width: 100%;
+					// 	justify-content: flex-start;
+					// }
 					&--blue {
 						background: $blueLight;
 					}

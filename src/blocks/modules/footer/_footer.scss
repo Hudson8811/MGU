@@ -58,6 +58,10 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 			min-width: 268px;
+			
+			@include max(lg) {
+				min-width: auto;
+			}
 			@include max(md) {
 				min-width: 205px;
 				margin-right: 20px !important;

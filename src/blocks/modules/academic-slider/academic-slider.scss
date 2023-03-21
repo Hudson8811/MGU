@@ -31,7 +31,7 @@
 			left: 4px;
 			top: 16px;
 			&::after {
-				color: #104CA6;
+				color: #004ABA;
 				content: url(../../../img/svg/seminars__prev.svg);
 			}
 
@@ -40,7 +40,7 @@
 			right: 4px;
 			top: 13px;
 			&::after {
-				color: #104CA6;
+				color: #004ABA;
 				content: url(../../../img/svg/seminars__next.svg);
 
 			}
@@ -53,7 +53,7 @@
 		font-weight: 700;
 		font-size: $fz24;
 		line-height: $lh28;
-		color: #104CA6;
+		color: $blueDarck;
 		margin-bottom: 40px;
 		@include max(sm) {
 			font-size: $fz20;
@@ -100,7 +100,7 @@
 		min-height: 240px;
 		height: 100%;
 		&:hover {
-			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+			text-shadow: 0 0 0px #004ABA00, 0 0 0px #004ABA00;
 		}
 		&__title {
 			font-family: 'Manrope';
@@ -108,7 +108,7 @@
 			font-weight: 700;
 			font-size: $fz20;
 			line-height: $lh26;
-			color: #104CA6;	
+			color: #004ABA;	
 			margin-bottom: 16px;		
 		}
 
@@ -126,7 +126,7 @@
 			left: 24px;
 			bottom: 24px;
 			&:hover {
-				text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+				text-shadow: 0 0 0px #004ABA00, 0 0 0px #004ABA00;
 				.block__textOne__link.academic__item__button {
 					transition: all .3s;
 					background: #F4F3F0;
@@ -134,7 +134,7 @@
 					text-decoration: none;
 					padding-left: 12px;
 					padding-right: 24px;
-					text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+					text-shadow: 0 0 0px #004ABA00, 0 0 0px #004ABA00;
 					p {
 						transition: all 3s;
 						display: block;

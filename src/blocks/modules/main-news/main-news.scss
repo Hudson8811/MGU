@@ -13,7 +13,7 @@
 		font-weight: 700;
 		font-size: $fz24;
 		line-height: $lh28;
-		color: #104CA6;			
+		color: $blueDarck;			
 	}
 	&__top {
 		position: relative;
@@ -83,7 +83,7 @@
 		}
 		&:hover {
 			transition: all 0.5s;
-			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+			text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
 			.main__news__item__title {
 				transition: all 0.5s;
 				text-decoration-line: underline;
@@ -119,7 +119,7 @@
 			font-weight: 500;
 			font-size: $fz14;
 			line-height: $lh20;
-			color: #104CA6;
+			color: #004ABA;
 			margin-bottom: 24px;				
 		}
 		&__title {
@@ -128,7 +128,7 @@
 			font-weight: 800;
 			font-size: $fz20;
 			line-height: $lh26;
-			color: #104CA6;
+			color: #004ABA;
 			margin-bottom: 16px;
 			@include max(md) {
 				font-size: $fz18;

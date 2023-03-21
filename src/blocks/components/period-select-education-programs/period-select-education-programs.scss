@@ -121,35 +121,50 @@
 				min-width: 140px;
 				align-items: center;
 			}
-			label {
-				position: relative;
-				display: flex;	
-				width: 111px;	
-				min-width: 111px;	
-				flex-flow: column-reverse nowrap;
-				justify-content: flex-start;
-				align-items: flex-start;
-				font-style: normal;
-				font-weight: 600;
-				font-size: $fz14;
-				line-height: $lh20;
-				color: $blueDarck;
-				@include max(lg) {
-					flex-flow: row-reverse nowrap;
-					align-items: center;
-					width: auto;
-				}
-				input {
-					width: 20px;
-					height: 20px;
-					margin-bottom: 12px;
-					border: 1px solod $blueDarck;
-					@include max(lg) {
-						margin-bottom: 0;
-						margin-right: 12px;
+			.search-checkbox--block  {
+				label {
+					position: relative;
+					display: flex;	
+					width: 111px;	
+					min-width: 111px;	
+					flex-flow: column nowrap;
+					justify-content: flex-start;
+					align-items: flex-start;
+					font-style: normal;
+					font-weight: 600;
+					font-size: $fz14;
+					line-height: $lh20;
+					color: $blueDarck;
+					span {
+						margin-left: 0;
+						margin-top: 12px;
+						font-style: normal;
+						font-weight: 600;
+						font-size: $fz14;
+						line-height: $lh20;						
 					}
-				}
+					@include max(lg) {
+						flex-flow: row nowrap;
+						align-items: center;
+						width: auto;
+						span {
+							margin-top: 0;
+							margin-left: 12px;
+						}
+					}
+					input {
+						width: 20px;
+						height: 20px;
+						margin-bottom: 12px;
+						border: 1px solod $blueDarck;
+						@include max(lg) {
+							margin-bottom: 0;
+							margin-right: 12px;
+						}
+					}
+				}				
 			}
+
 
 		}
 	}

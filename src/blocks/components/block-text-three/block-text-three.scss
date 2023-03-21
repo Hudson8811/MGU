@@ -46,7 +46,7 @@
 		}
 
 		&:hover {
-			text-shadow: 0 0 0.15px #104ca600, 0 0 0.15px #104ca600;
+			text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
 
 			h2 {
 				transition: all .3s;
@@ -78,7 +78,7 @@
 			font-weight: 800;
 			font-size: $fz32;
 			line-height: $lh40;
-			color: #104CA6;
+			color: #004ABA;
 			transition: all .5s;
 			@include max(md) {
 				padding-top: 24px;
@@ -98,7 +98,7 @@
 			font-weight: 500;
 			font-size: $fz16;
 			line-height: $lh24;
-			color: #104CA6;
+			color: #004ABA;
 			@include max(md) {
 				padding-left: 24px;
 				padding-right: 24px;

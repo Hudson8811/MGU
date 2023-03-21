@@ -28,7 +28,7 @@
 		font-size: $fz16;
 		text-align: center;
 		line-height: $lh24;
-		color: #104CA6;
+		color: #004ABA;
 		background: #F4F3F0;
 		text-decoration: none;
 		cursor: pointer;
@@ -42,13 +42,13 @@
 		&:hover {
 			background: #fff;
 			transition: all .5s;
-			text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+			text-shadow: 0 0 0px #004ABA00, 0 0 0px #004ABA00;
 
 		}
 		&.active__toopMenu {
 			 background: #fff;
-			 color: #104CA6;
-			 text-shadow: 0 0 0px #104ca600, 0 0 0px #104ca600;
+			 color: #004ABA;
+			 text-shadow: 0 0 0px #004ABA00, 0 0 0px #004ABA00;
 		}
 
 	}
@@ -65,7 +65,7 @@
 	}
 	&.active__toopMenu {
 		 background: #fff;
-		 color: #104CA6;
+		 color: #004ABA;
 	}
 }
 .department__menu {
