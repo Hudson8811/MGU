@@ -6,9 +6,27 @@
 	height: auto;
 	background: #F4F3F0;
 	padding-top: 60px;
-	padding-bottom: 100px;
+	padding-bottom: 34px;
 	@include max(sm) {
 		padding-top: 40px;
+	}
+	.container {
+		&:first-child {
+			.form-page__layout--left {
+				border-top: 1px solid rgba(0, 85, 182, 0.3);
+				@include max(lg) {
+					border-top: none;
+				}
+
+			}
+			.form-page__layout--right {
+				border-top: 1px solid rgba(0, 85, 182, 0.3);
+				@include max(lg) {
+					border-top: none;
+				}
+			}
+		}
+
 	}
 	&__line {
 		position: relative;
@@ -17,7 +35,10 @@
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1440px;
-		background: rgba(0, 85, 182, 0.3);;
+		background: rgba(0, 85, 182, 0.3);
+		@include max(lg) {
+			display: none;
+		}
 	}
 	&__title {
 		font-family: 'Manrope';
@@ -35,7 +56,9 @@
 		position: relative;
 		width: 100%;
 		display: flex;
-
+		@include max(lg) {
+			flex-flow: column nowrap;
+		}
 		&--left {
 			position: relative;
 			display: flex;
@@ -47,11 +70,12 @@
 			padding-top: 40px;
 			padding-bottom: 66px;
 			@include max(lg) {
-				flex: 1 0 340px;
+				flex: 1 0 auto;
+				margin-right: 0;
 				padding-right: 0;
-			}
-			@include max(md) {
-				display: none;
+				padding-top: 0;
+				padding-bottom: 32px;
+				border-bottom: 1px solid rgba(0, 85, 182, 0.3);
 			}
 		}
 	
@@ -65,6 +89,10 @@
 			align-items: flex-start;
 			flex: 1 1 auto;
 			width: 100%;
+			@include max(lg) {
+				padding-top: 40px;
+				border: none;
+			}
 		}
 	}
 }
@@ -76,12 +104,125 @@
 		font-size: $fz24;
 		line-height: $lh28;
 		color: #031B4B;
+		@include max(lg) {
+			br {
+				display: none;
+			}
+		}
+		@include max(sm) {
+			font-size: $fz20;
+			line-height: $lh26;
+		}
+	}
+	&__feedback {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-flow: column nowrap;
+		&--program {
+			.form__block {
+				&:nth-last-child(-n+2) {
+					@include max(sm) {
+						margin-bottom: 0;
+					}					
+				}
+			}
+			.selectDot--label {
+				label {
+					@include max(sm) {
+						margin-top: 24px;
+					}
+				}
+			}
+
+		}
+		&--entity {
+			.form__block--customer {
+				margin-top: 0;
+
+			}	
+			.form__block--assent {
+				margin-top: 36px;			
+			}
+		}
+		form {
+			width: 100%;
+		}
+	}
+	&__button {
+		margin-top: 36px;
+		@include max(xs) {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 	&__block {
 		position: relative;
 		display: flex;
+		flex-flow: column nowrap;
 		width: 100%;
+		max-width: 100%;
 		margin-bottom: 24px;
+		&__wrap {
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-flow: column nowrap;
+			width: 100%;
+
+		}
+		.selectDot--label {
+			@include max(md) {
+				flex-flow: row wrap;
+			}
+		}
+		&__title {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 700;
+			font-size: $fz20;
+			line-height: $lh26;
+			color: $blueDarck;
+			margin-bottom: 24px;			
+		}
+		&--customer {
+			margin-top: 36px;
+		}
+		&--assent {
+			margin-top: 36px;
+			@include max(sm) {
+				font-weight: 600;
+				font-size: $fz14;
+				line-height: $lh20;
+								
+			}
+		}
+		.search-checkbox--block {
+			label:not(.checkbox-container) {
+				flex-flow: row nowrap;
+				align-items: flex-start;
+				justify-content: flex-start;
+				span {
+					font-weight: 600;
+					font-size: $fz16;
+					line-height: $lh24;
+					color: $blueDarck;
+					text-align: left;
+					@include max(sm) {
+						font-weight: 600;
+						font-size: $fz14;
+						line-height: $lh20;
+										
+					}
+				}
+			}
+		}
+		&.not-selected {
+			opacity: 0.5;
+		}
 		label {
 			position: relative;
 			width: 100%;
@@ -89,14 +230,58 @@
 			flex-flow: column nowrap;
 			justify-content: flex-start;
 			align-items: flex-start;
+			&.error {
+				input {
+					border: 1px solid #E94141;
+
+				}
+				&::after {
+					content: url(../img/svg/form-error.svg);
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					right: 22px;
+					bottom: 14px;
+					display: block;
+				}
+				&::before {
+					content: 'Информация об ошибке или незаполненном поле';
+					width: auto;
+					position: absolute;
+					left: 0;
+					bottom: -20px;
+					display: inline-block;
+					color: #E94141;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 13px;
+					line-height: 16px;
+					@include max(xs) {
+						display: none;
+					}
+				}
+			}	
 			b {
+				position: relative;
+				display: flex;
 				font-family: 'Manrope';
 				font-style: normal;
+				align-items: center;
 				font-weight: 400;
 				font-size: 13px;
 				line-height: 16px;
 				color: #031B4B;	
-				margin-bottom: 8px;		
+				margin-bottom: 8px;
+				&.label {
+					&::after {
+						content: url(../img/svg/form-Subtract.svg);
+						display: block;
+						position: relative;
+						margin-left: 9px;
+						width: 14px;
+						height: 14px;
+					}
+				}		
 			}
 		}
 		input {
@@ -113,7 +298,8 @@
 			height: 48px;
 			padding: 12px 16px;
 			padding-top: 10px;	
-			cursor: pointer;	
+			cursor: pointer;
+
 			&::placeholder {
 				font-family: 'Manrope';
 				font-style: normal;
@@ -122,6 +308,9 @@
 				line-height: $lh24;
 				color: #C0C0C0;
 				
+			}
+			&:focus {
+				border: 1px solid #031B4B;
 			}
 		}
 
@@ -132,11 +321,19 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		width: 100%;
+		@include max(sm) {
+			flex-flow: column nowrap;
+		}
 		.form__block {
-			width: calc(50% - 16px);
+			width: 100%;
+			max-width: calc(50% - 16px);
 			// label {
 			// 	width: calc(100% - 16px);
 			// }
+			@include max(sm) {
+				flex-flow: column nowrap;
+				max-width: 100%;
+			}
 		}
 	}
 	.select2-container {

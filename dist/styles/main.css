@@ -9353,7 +9353,15 @@ body.Bodymotionless {
   height: auto;
   background: #F4F3F0;
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 34px;
+}
+
+.form-page .container:first-child .form-page__layout--left {
+  border-top: 1px solid rgba(0, 85, 182, 0.3);
+}
+
+.form-page .container:first-child .form-page__layout--right {
+  border-top: 1px solid rgba(0, 85, 182, 0.3);
 }
 
 .form-page__line {
@@ -9415,11 +9423,83 @@ body.Bodymotionless {
   color: #031B4B;
 }
 
+.form__feedback {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+
+.form__feedback--entity .form__block--customer {
+  margin-top: 0;
+}
+
+.form__feedback--entity .form__block--assent {
+  margin-top: 36px;
+}
+
+.form__feedback form {
+  width: 100%;
+}
+
+.form__button {
+  margin-top: 36px;
+}
+
 .form__block {
   position: relative;
   display: flex;
+  flex-flow: column nowrap;
   width: 100%;
+  max-width: 100%;
   margin-bottom: 24px;
+}
+
+.form__block__wrap {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.form__block__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #031B4B;
+  margin-bottom: 24px;
+}
+
+.form__block--customer {
+  margin-top: 36px;
+}
+
+.form__block--assent {
+  margin-top: 36px;
+}
+
+.form__block .search-checkbox--block label:not(.checkbox-container) {
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.form__block .search-checkbox--block label:not(.checkbox-container) span {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #031B4B;
+  text-align: left;
+}
+
+.form__block.not-selected {
+  opacity: 0.5;
 }
 
 .form__block label {
@@ -9431,14 +9511,54 @@ body.Bodymotionless {
   align-items: flex-start;
 }
 
+.form__block label.error input {
+  border: 1px solid #E94141;
+}
+
+.form__block label.error::after {
+  content: url(../img/svg/form-error.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 22px;
+  bottom: 14px;
+  display: block;
+}
+
+.form__block label.error::before {
+  content: "Информация об ошибке или незаполненном поле";
+  width: auto;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  display: inline-block;
+  color: #E94141;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 .form__block label b {
+  position: relative;
+  display: flex;
   font-family: "Manrope";
   font-style: normal;
+  align-items: center;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #031B4B;
   margin-bottom: 8px;
+}
+
+.form__block label b.label::after {
+  content: url(../img/svg/form-Subtract.svg);
+  display: block;
+  position: relative;
+  margin-left: 9px;
+  width: 14px;
+  height: 14px;
 }
 
 .form__block input {
@@ -9467,6 +9587,10 @@ body.Bodymotionless {
   color: #C0C0C0;
 }
 
+.form__block input:focus {
+  border: 1px solid #031B4B;
+}
+
 .form__block-double {
   position: relative;
   display: flex;
@@ -9476,7 +9600,8 @@ body.Bodymotionless {
 }
 
 .form__block-double .form__block {
-  width: calc(50% - 16px);
+  width: 100%;
+  max-width: calc(50% - 16px);
 }
 
 .form .select2-container {
@@ -10630,9 +10755,38 @@ body.Bodymotionless {
     margin-left: 24px;
   }
 
+  .form-page .container:first-child .form-page__layout--left {
+    border-top: none;
+  }
+
+  .form-page .container:first-child .form-page__layout--right {
+    border-top: none;
+  }
+
+  .form-page__line {
+    display: none;
+  }
+
+  .form-page__layout {
+    flex-flow: column nowrap;
+  }
+
   .form-page__layout--left {
-    flex: 1 0 340px;
+    flex: 1 0 auto;
+    margin-right: 0;
     padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+  }
+
+  .form-page__layout--right {
+    padding-top: 40px;
+    border: none;
+  }
+
+  .form__title br {
+    display: none;
   }
 
   .search-page {
@@ -11447,8 +11601,8 @@ body.Bodymotionless {
     display: flex;
   }
 
-  .form-page__layout--left {
-    display: none;
+  .form__block .selectDot--label {
+    flex-flow: row wrap;
   }
 
   .search-page {
@@ -12586,6 +12740,40 @@ body.Bodymotionless {
     margin-bottom: 40px;
   }
 
+  .form__title {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .form__feedback--program .form__block:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+
+  .form__feedback--program .selectDot--label label {
+    margin-top: 24px;
+  }
+
+  .form__block--assent {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .form__block .search-checkbox--block label:not(.checkbox-container) span {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .form__block-double {
+    flex-flow: column nowrap;
+  }
+
+  .form__block-double .form__block {
+    flex-flow: column nowrap;
+    max-width: 100%;
+  }
+
   .search-page {
     padding-top: 40px;
   }
@@ -12959,6 +13147,15 @@ body.Bodymotionless {
   .conferences.studentsQuestion .block__text__wrap .column__left .button__blue {
     width: 100%;
     max-width: 100%;
+  }
+
+  .form__button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form__block label.error::before {
+    display: none;
   }
 }
 

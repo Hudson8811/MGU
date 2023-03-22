@@ -383,23 +383,26 @@
             <div class="form__title">Дополнительная профессиональная программа</div>
           </div>
           <div class="form-page__layout--right">
-            <div class="form__block">
-              <label><b>Направление</b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
+            <div class="form__feedback form__feedback--program"> 
+              <form>
+                <div class="form__block__wrap">
+                  <div class="form__block">
+                    <label><b>Направление</b><select class="js-example-form ">
+<option  value="" selected> ... </option>   
 <option  value="" selected>Экология</option>  
 <option value="" >пункт 2</option>  
 </select>
-              </label>
-            </div>
-            <div class="form__block">
-              <label><b>Программа</b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
+                    </label>
+                  </div>
+                  <div class="form__block">
+                    <label><b>Программа</b><select class="js-example-form ">
+<option  value="" selected> ... </option>   
 <option  value="" selected>Экология и рациональное природопользование</option>  
 <option value="" >пункт 2</option>  
 </select>
-              </label>
-            </div>
-            <div class="form__block"><div class="selectDot">
+                    </label>
+                  </div>
+                  <div class="form__block"><div class="selectDot">
 <div class="selectDot--label">
 <label>
 <input type="radio" name="selectDot__input--deal" checked="">
@@ -417,7 +420,10 @@
 <span>заочная</span>
 </label>
 </div>									
-</div>					
+</div>	
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -426,122 +432,224 @@
       <div class="container">
         <div class="form-page__layout form">
           <div class="form-page__layout--left">
-            <div class="form__title">Информация о слушателе</div>
+            <div class="form__title">Информация <br>о слушателе
+            </div>
           </div>
           <div class="form-page__layout--right">
-            <div class="form__block">
-              <label><b>Фамилия</b>
-                <input type="text" placeholder="Фамилия">
-              </label>
-            </div>
-            <div class="form__block">
-              <label><b>Имя</b>
-                <input type="text" placeholder="Имя">
-              </label>
-            </div>
-            <div class="form__block">
-              <label><b>Отчество</b>
-                <input type="text" placeholder="Отчество">
-              </label>
-            </div>
-            <div class="form__block-double">
-              <div class="form__block">
-                <label><b>Дата рождения</b>
-                  <input type="text">
-                </label>
-              </div>
-              <div class="form__block">
-                <label><b>СНИЛС</b>
-                  <input type="text">
-                </label>
-              </div>
-            </div>
-            <div class="form__block-double">
-              <div class="form__block">
-                <label><b>E-mail</b>
-                  <input type="email" name="">
-                </label>
-              </div>
-              <div class="form__block">
-                <label><b>Телефон</b>
-                  <input type="tel" name="">
-                </label>
-              </div>
-            </div>
-            <div class="form__block">
-              <label><b>Сведения об образовании </b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
+            <div class="form__feedback form__feedback--customer"> 
+              <form>
+                <div class="form__block__wrap">
+                  <div class="form__block">
+                    <label><b>Фамилия</b>
+                      <input type="text" placeholder="Фамилия">
+                    </label>
+                  </div>
+                  <div class="form__block">
+                    <label><b>Имя</b>
+                      <input type="text" placeholder="Имя">
+                    </label>
+                  </div>
+                  <div class="form__block">
+                    <label class="error"><b>Отчество</b>
+                      <input type="text" placeholder="Отчество">
+                    </label>
+                  </div>
+                  <div class="form__block-double">
+                    <div class="form__block">
+                      <label><b>Дата рождения</b>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="form__block">
+                      <label><b class="label">СНИЛС</b>
+                        <input type="text" placeholder="ХХХ-ХХХ-ХХХ YY">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__block-double">
+                    <div class="form__block">
+                      <label><b>E-mail</b>
+                        <input type="email" name="" placeholder="адрес электронной почты">
+                      </label>
+                    </div>
+                    <div class="form__block">
+                      <label><b>Телефон</b>
+                        <input type="tel" name="" placeholder="+7 (000) 000 00 00 ">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__block">
+                    <label><b>Сведения об образовании </b><select class="js-example-form ">
+<option  value="" selected> ... </option>   
 <option  value="" selected>Экология и рациональное природопользование</option>  
 <option value="" >пункт 2</option>  
 </select>
-              </label>
-            </div>
-            <div class="form__block">
-              <label><b>Название учебного заведения</b>
-                <input type="text" name="">
-              </label>
-            </div>
-            <div class="form__block-double">
-              <div class="form__block">
-                <label><b>Год окончания</b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
-<option  value="" selected>Экология и рациональное природопользование</option>  
+                    </label>
+                  </div>
+                  <div class="form__block">
+                    <label><b>Название учебного заведения</b>
+                      <input type="text" name="" placeholder="Название учебного заведения">
+                    </label>
+                  </div>
+                  <div class="form__block-double">
+                    <div class="form__block">
+                      <label><b>Год окончания</b><select class="js-example-form ">
+<option  value="" selected> ... </option>   
+<option  value="">пункт 1</option>  
 <option value="" >пункт 2</option>  
 </select>
-                </label>
-              </div>
-              <div class="form__block">
-                <label><b>Курс обучения </b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
-<option  value="" selected>Экология и рациональное природопользование</option>  
+                      </label>
+                    </div>
+                    <div class="form__block not-selected">
+                      <label><b>Курс обучения </b><select class="js-example-form ">
+<option  value="" selected> ... </option>   
+<option  value="">пункт 1</option>  
 <option value="" >пункт 2</option>  
 </select>
-                </label>
-              </div>
-            </div>
-            <div class="form__block-double">
-              <div class="form__block">
-                <label><b>Наличие ученой степени</b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
-<option  value="" selected>Экология и рациональное природопользование</option>  
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__block-double">
+                    <div class="form__block">
+                      <label><b>Наличие ученой степени</b><select class="js-example-form ">
+<option  value="" selected> ... </option>   
+<option  value="">пункт 1</option>  
 <option value="" >пункт 2</option>  
 </select>
-                </label>
-              </div>
-              <div class="form__block">
-                <label><b>Год окончания</b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
-<option  value="" selected>Экология и рациональное природопользование</option>  
+                      </label>
+                    </div>
+                    <div class="form__block not-selected">
+                      <label><b>Год окончания</b><select class="js-example-form ">
+<option  value="" selected> ... </option>   
+<option  value="">пункт 1</option>  
 <option value="" >пункт 2</option>  
 </select>
-                </label>
-              </div>
-            </div>
-            <div class="form__block">
-              <label><b>Место работы / учебы</b>
-                <input type="text" name="">
-              </label>
-            </div>
-            <div class="form__block-double">
-              <div class="form__block">
-                <label><b>Должность</b>
-                  <input type="text" name="">
-                </label>
-              </div>
-              <div class="form__block">
-                <label><b>Стаж</b><select class="js-example-form ">
-<option  value="" disabled> ... </option>  
-<option  value="" selected>Экология и рациональное природопользование</option>  
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__block">
+                    <label><b class="label">Место работы / учебы</b>
+                      <input type="text" name="" placeholder="Название учебного заведения / название компании">
+                    </label>
+                  </div>
+                  <div class="form__block-double">
+                    <div class="form__block">
+                      <label><b>Должность</b>
+                        <input type="text" name="" placeholder="Название должности">
+                      </label>
+                    </div>
+                    <div class="form__block">
+                      <label><b class="label">Стаж</b><select class="js-example-form ">
+<option  value="" selected> ... </option>  
+<option  value="" >пункт 2</option>  
 <option value="" >пункт 2</option>  
 </select>
-                </label>
-              </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__block form__block--customer">
+                    <div class="form__block__title">Вы являетесь заказчиком и слушателем одновременно? </div><div class="selectDot">
+<div class="selectDot--label">
+<label>
+<input type="radio" name="selectDot__input--customer" checked="">
+<b></b>
+<span>Да</span>
+</label>
+<label>
+<input type="radio" name="selectDot__input--customer">
+<b></b>
+<span>Нет</span>
+</label>
+</div>									
+</div>	
+                  </div>
+                  <div class="form__block form__block--assent">
+                    <div class="search-checkbox--block"> 
+                      <label> 
+                        <input type="checkbox" autocomplete="off" name="" checked=""><b></b><span>Даю согласие на обработку своих персональных данных, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование и уничтожение персональных данных, в порядке, установленном Федеральным законом от 27 июля 2006 г. №152-ФЗ «О персональных данных».			</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="button button__blue">отправить заявку</div>
+            <div class="button button__blue form__button">отправить заявку</div>
           </div>
         </div>
       </div>
       <div class="form-page__line"></div>
+      <div class="container">
+        <div class="form-page__layout form">
+          <div class="form-page__layout--left">
+            <div class="form__title"> Информация <br>о заказчике
+            </div>
+          </div>
+          <div class="form-page__layout--right">
+            <div class="form__feedback form__feedback--entity">
+              <form>
+                <div class="form__block__wrap">
+                  <div class="form__block form__block--customer">
+                    <div class="form__block__title">Заказчик является юридическим лицом?  </div><div class="selectDot">
+<div class="selectDot--label">
+<label>
+<input type="radio" name="selectDot__input--legal-entity" checked="">
+<b></b>
+<span>Да</span>
+</label>
+<label>
+<input type="radio" name="selectDot__input--legal-entity">
+<b></b>
+<span>Нет</span>
+</label>
+</div>									
+</div>	
+                  </div>
+                  <div class="form__block">
+                    <label><b>Название организации</b>
+                      <input type="text" placeholder="Название организации">
+                    </label>
+                  </div>
+                  <div class="form__block">
+                    <label><b>Фамилия уполномоченного представителя</b>
+                      <input type="text" placeholder="Фамилия">
+                    </label>
+                  </div>
+                  <div class="form__block">
+                    <label class="error"><b>Имя уполномоченного представителя</b>
+                      <input type="text" placeholder="Имя ">
+                    </label>
+                  </div>
+                  <div class="form__block">
+                    <label><b>Отчество уполномоченного представителя</b>
+                      <input type="text" placeholder="Отчество ">
+                    </label>
+                  </div>
+                  <div class="form__block-double">
+                    <div class="form__block">
+                      <label><b>E-mail</b>
+                        <input type="email" name="" placeholder="адрес электронной почты">
+                      </label>
+                    </div>
+                    <div class="form__block">
+                      <label><b>Телефон</b>
+                        <input type="tel" name="" placeholder="+7 (000) 000 00 00 ">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__block form__block--assent">
+                    <div class="search-checkbox--block"> 
+                      <label> 
+                        <input type="checkbox" autocomplete="off" name="" checked=""><b></b><span>Даю согласие на обработку своих персональных данных, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование и уничтожение персональных данных, в порядке, установленном Федеральным законом от 27 июля 2006 г. №152-ФЗ «О персональных данных».			</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="button button__blue form__button">отправить заявку</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer"> 
       <div class="container"> 
