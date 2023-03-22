@@ -20,6 +20,12 @@
 			padding-bottom: 32px;
 		}	
 	}
+	.lectureCar--button {
+		@include max(xs) {
+			width: 100%;
+			max-width: 100%;
+		}		
+	}
 }
 
 .seasons {

@@ -482,7 +482,10 @@ a.block__textOne__link {
 		text-decoration: none;
 		color: #004ABA;
 	}
-
+	@include max(xs) {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
 	&:hover {
 		text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
 		transition: all .5s;
@@ -682,5 +685,7 @@ a.block__textOne__link {
 		display: none;
 	}
 }
-
+.block-text__extra-bold {
+	font-weight: 800;
+}
 //Сетка №2

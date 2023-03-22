@@ -87,11 +87,13 @@ function tabHover() {
 }
 var topMenutabNavs = document.querySelectorAll(".topMenu-tab");
 var topMenutabPanes = document.querySelectorAll(".topMenu-pane");
+var topMenuOverlayBg = document.querySelector(".topMenu__overlay__bg");
 
 if(topMenutabNavs !==null & topMenutabPanes !==null) {
 	topMenutabHover() 
 }
 function topMenuNotHover() {
+	topMenuOverlayBg.classList.remove("active");
 	for (var i = 0; i < topMenutabNavs.length; i++) {
 		topMenutabNavs[i].classList.remove("active");
 		topMenutabNavs[i].classList.remove("notActive");
@@ -113,7 +115,8 @@ function topMenutabHover() {
 		
 						if (activeTabAttr === contentAttr) {
 							topMenutabNavs[j].classList.add("active");
-							topMenutabPanes[j].classList.add("topMenu__overlay--active"); 
+							topMenutabPanes[j].classList.add("topMenu__overlay--active");
+							topMenuOverlayBg.classList.add("active"); 
 							// topMenutabNavs[j].classList.remove("notActive");
 							// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
 						} else {

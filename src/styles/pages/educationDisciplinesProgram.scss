@@ -2,6 +2,14 @@
 	.block__text__wrap {
 		.column__left {
 			padding-right: 40px;
+			.block__textOne a {
+				&.active {
+					color: $blue;
+				}
+				b {
+					text-decoration: none;
+				}
+			} 
 		}
 	}
 
