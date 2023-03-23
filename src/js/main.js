@@ -4,7 +4,9 @@
 @@include("../../node_modules/masonry-layout/dist/masonry.pkgd.js")
 //@@include("../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js")
 @@include("./libs/jquery.fancybox.min.js")
+
 @@include("./libs/flatpickr.min.js")
+@@include("./libs/flatpickr-ru-locale.js")
 @@include("./libs/swiper-bundle.min.js")
 @@include("./libs/jquery.hoverIntent.min.js")
 @@include("./import/modules.js")
