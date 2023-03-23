@@ -1,3 +1,26 @@
+.datepicker-btns{
+	display: flex;
+	justify-content: space-between;
+  }
+  .datepicker-btn{
+	display: inline-block;
+	border-radius: 50px;
+	border: 1px solid blue;
+	padding: 5px;
+	box-sizing: border-box;
+	width: calc(50% - 5px);
+	max-width: calc(50% - 5px);
+	cursor: pointer;
+  }
+
+
+
+  .flatpickr-time{
+	display: none !important;
+  }
+
+
+
 .form-page {
 	position: relative;
 	display: flex;
@@ -46,11 +69,11 @@
 		font-weight: 800;
 		font-size: $fz32;
 		line-height: $lh40;
-		color: #031B4B;	
+		color: #031B4B;
 		margin-bottom: 60px;
 		@include max(sm) {
 			margin-bottom: 40px;
-		}	
+		}
 	}
 	&__layout  {
 		position: relative;
@@ -78,7 +101,7 @@
 				border-bottom: 1px solid rgba(0, 85, 182, 0.3);
 			}
 		}
-	
+
 		&--right {
 			padding-top: 40px;
 			padding-bottom: 66px;
@@ -126,7 +149,7 @@
 				&:nth-last-child(-n+2) {
 					@include max(sm) {
 						margin-bottom: 0;
-					}					
+					}
 				}
 			}
 			.selectDot--label {
@@ -142,9 +165,9 @@
 			.form__block--customer {
 				margin-top: 0;
 
-			}	
+			}
 			.form__block--assent {
-				margin-top: 36px;			
+				margin-top: 36px;
 			}
 		}
 		form {
@@ -186,7 +209,7 @@
 			font-size: $fz20;
 			line-height: $lh26;
 			color: $blueDarck;
-			margin-bottom: 24px;			
+			margin-bottom: 24px;
 		}
 		&--customer {
 			margin-top: 36px;
@@ -197,7 +220,7 @@
 				font-weight: 600;
 				font-size: $fz14;
 				line-height: $lh20;
-								
+
 			}
 		}
 		.search-checkbox--block {
@@ -215,7 +238,7 @@
 						font-weight: 600;
 						font-size: $fz14;
 						line-height: $lh20;
-										
+
 					}
 				}
 			}
@@ -260,7 +283,7 @@
 						display: none;
 					}
 				}
-			}	
+			}
 			b {
 				position: relative;
 				display: flex;
@@ -270,7 +293,7 @@
 				font-weight: 400;
 				font-size: 13px;
 				line-height: 16px;
-				color: #031B4B;	
+				color: #031B4B;
 				margin-bottom: 8px;
 				&.label {
 					&::after {
@@ -281,7 +304,7 @@
 						width: 14px;
 						height: 14px;
 					}
-				}		
+				}
 			}
 		}
 		input {
@@ -297,7 +320,7 @@
 			line-height: $lh24;
 			height: 48px;
 			padding: 12px 16px;
-			padding-top: 10px;	
+			padding-top: 10px;
 			cursor: pointer;
 
 			&::placeholder {
@@ -307,7 +330,7 @@
 				font-size: $fz16;
 				line-height: $lh24;
 				color: #C0C0C0;
-				
+
 			}
 			&:focus {
 				border: 1px solid #031B4B;
@@ -402,7 +425,7 @@
 			b {
 				display: none;
 			}
-	
+
 		}
 	}
 	.select2-container--open {
@@ -414,11 +437,11 @@
 	}
 	.periodSelect__date__value__month + .select2-container {
 		margin-right: 32px;
-		width: 144px;	
+		width: 144px;
 	}
 	.selectDot {
 		display: flex;
-		align-items: center; 
+		align-items: center;
 		padding-right: 15px;
 		margin-right: 15px;
 		&:last-child {
@@ -429,7 +452,7 @@
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 20px;
-			color: #2C2C2C;			
+			color: #2C2C2C;
 		}
 		&--label {
 			position: relative;
@@ -460,7 +483,7 @@
 				font-weight: 600;
 				font-size: 16px;
 				line-height: 24px;
-				color: #031B4B;				
+				color: #031B4B;
 			}
 			input:checked+b{
 				background: $blueLight;
@@ -490,8 +513,8 @@
 				box-sizing: border-box;
 				&::after {
 					display: none;
-				}			
+				}
 			}
-		}			
+		}
 	}
 }
