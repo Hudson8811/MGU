@@ -11001,19 +11001,6 @@ body.Bodymotionless {
   width: 100%;
 }
 
-.education-center .pagination__wrap--desc {
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-
-.education-center .pagination__wrap--mob {
-  position: relative;
-  width: 100%;
-  display: none;
-  margin-top: 48px;
-}
-
 @media only screen and (min-width: 701px) {
   .person-page-mobile-h1 {
     display: none;
@@ -12595,16 +12582,13 @@ body.Bodymotionless {
     order: 2;
   }
 
-  .education-center .block__textTwo {
+  .education-center .pagination {
     order: 3;
+    margin-bottom: 48px;
   }
 
-  .education-center .pagination__wrap--desc {
-    display: none;
-  }
-
-  .education-center .pagination__wrap--mob {
-    display: flex;
+  .education-center .block__textTwo {
+    order: 4;
   }
 }
 
