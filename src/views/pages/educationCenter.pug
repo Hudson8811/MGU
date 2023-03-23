@@ -1,0 +1,33 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Education Center";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	//- include ../../blocks/modules/block-text-one/block-text-one
+	.section.education-center
+		.container
+			.header__one
+				.column__left.header__one__left
+					h1  Центр развития школьного географического образования
+				.column__right.header__one__right
+					img(src="img/projectPage/project__top__picture.png", alt="")
+			.block__text__wrap
+				.column__left
+					include ../../blocks/components/block-text-one-education-center/block-text-one-education-center
+				.column__right
+					include ../../blocks/components/block-text-two-education-center/block-text-two-education-center
+					.education-center--title Новости  Центра 
+					include ../../blocks/modules/news-main/news-main
+					.pagination__wrap--desc
+						include ../../blocks/components/pagination/pagination
+			.pagination__wrap--mob
+				include ../../blocks/components/pagination/pagination
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
