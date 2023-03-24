@@ -452,7 +452,18 @@ span.flatpickr-weekday {
 		width: 100%;
 		max-width: 100%;
 		margin-bottom: 24px;
-
+		&--date {
+			label {
+				&::after {
+					position: absolute;
+					content: url(../../img/svg/date.svg);
+					width: 20px;
+					height: 20px;
+					top: 37px;
+					right: 22px;
+				}
+			}
+		}
 		&__wrap {
 			position: relative;
 			display: flex;

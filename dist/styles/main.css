@@ -10644,6 +10644,15 @@ span.flatpickr-weekday:last-child {
   margin-bottom: 24px;
 }
 
+.form__block--date label::after {
+  position: absolute;
+  content: url(../../img/svg/date.svg);
+  width: 20px;
+  height: 20px;
+  top: 37px;
+  right: 22px;
+}
+
 .form__block__wrap {
   position: relative;
   display: flex;
