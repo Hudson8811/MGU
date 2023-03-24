@@ -8,11 +8,11 @@
 	padding-bottom: 0px;
 	margin-top: 16px;
 	margin-bottom: 48px;
-	margin-bottom: 80px;
+	margin-bottom: 48px;
 	@include max(lg) {
 		width: calc(100% + 24px);
 		margin-left: -24px;
-		margin-bottom: 60px;
+		margin-bottom: 28px;
 	}
 	@include max(sm) {
 		width: calc(100% + 0px);
@@ -41,15 +41,6 @@
 			background: #D8E0EC;
 			text-shadow: 0 0 0px transparent, 0 0 0px transparent;		
 		}
-		&:nth-child(4) {
-			margin-bottom: 0;
-		}
-		&:nth-child(5) {
-			margin-bottom: 0;
-		}
-		&:last-child {
-			margin-bottom: 0;
-		}
 		@include max(lg) {
 			flex: 0 0 50%;
 			max-width: calc( 50% - 24px);
@@ -72,15 +63,6 @@
 			max-width: calc( 100% - 0px);
 			margin-left: 0px;
 			margin-bottom: 24px;
-			&:nth-child(5) {
-				margin-bottom: 24px;
-			}
-			&:nth-child(4) {
-				margin-bottom: 24px;
-			}
-			&:last-child {
-				margin-bottom: 0;
-			}
 		}
 		&__desc {
 			position: relative;
@@ -109,10 +91,9 @@
 		}
 		&__icon {
 			position: absolute;
-			top: 33px;
-			right: 33px;
-			width: 50px;
-			height: 66px;
+			right: 16px;
+			width: 84px;
+			height: 84px;
 		}
 	}
 }

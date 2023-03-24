@@ -7016,7 +7016,7 @@ body.Bodymotionless {
   padding-bottom: 0px;
   margin-top: 16px;
   margin-bottom: 48px;
-  margin-bottom: 80px;
+  margin-bottom: 48px;
 }
 
 .statements .statement {
@@ -7041,18 +7041,6 @@ body.Bodymotionless {
   transition: all 0.3s;
   background: #D8E0EC;
   text-shadow: 0 0 0px transparent, 0 0 0px transparent;
-}
-
-.statements .statement:nth-child(4) {
-  margin-bottom: 0;
-}
-
-.statements .statement:nth-child(5) {
-  margin-bottom: 0;
-}
-
-.statements .statement:last-child {
-  margin-bottom: 0;
 }
 
 .statements .statement__desc {
@@ -7085,10 +7073,9 @@ body.Bodymotionless {
 
 .statements .statement__icon {
   position: absolute;
-  top: 33px;
-  right: 33px;
-  width: 50px;
-  height: 66px;
+  right: 16px;
+  width: 84px;
+  height: 84px;
 }
 
 .periodSelect.periodSelect__graduatePrograms {
@@ -10413,7 +10400,7 @@ body.Bodymotionless {
   .statements {
     width: calc(100% + 24px);
     margin-left: -24px;
-    margin-bottom: 60px;
+    margin-bottom: 28px;
   }
 
   .statements .statement {
@@ -12261,18 +12248,6 @@ body.Bodymotionless {
     max-width: calc(100% - 0px);
     margin-left: 0px;
     margin-bottom: 24px;
-  }
-
-  .statements .statement:nth-child(5) {
-    margin-bottom: 24px;
-  }
-
-  .statements .statement:nth-child(4) {
-    margin-bottom: 24px;
-  }
-
-  .statements .statement:last-child {
-    margin-bottom: 0;
   }
 
   .lectureCards .lectureCar {
