@@ -38,6 +38,21 @@ html {
 	}
 }
 
+.oversize{
+	max-width: 50vw;
+}
+.oversize:not(.calculated){
+	opacity: 0;
+}
+.overpaste{
+	float: left;
+	clear: left;
+}
+.overpasteTemp{
+	float: left;
+	clear: left;
+}
+
 .title__32 {
 	font-style: normal;
 	font-weight: 800;

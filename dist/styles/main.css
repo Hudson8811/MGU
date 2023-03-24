@@ -3521,6 +3521,24 @@ html {
   margin: 0 auto;
 }
 
+.oversize {
+  max-width: 50vw;
+}
+
+.oversize:not(.calculated) {
+  opacity: 0;
+}
+
+.overpaste {
+  float: left;
+  clear: left;
+}
+
+.overpasteTemp {
+  float: left;
+  clear: left;
+}
+
 .title__32 {
   font-style: normal;
   font-weight: 800;
@@ -9374,6 +9392,7 @@ body.Bodymotionless {
 
 .column__left {
   flex: 1 0 368px;
+  max-width: 368px;
 }
 
 .column__right {
@@ -11952,6 +11971,7 @@ span.flatpickr-weekday:last-child {
 
   .column__left {
     flex: 1 0 296px;
+    max-width: 296px;
   }
 
   .column__right {
@@ -12748,6 +12768,7 @@ span.flatpickr-weekday:last-child {
 
   .column__left {
     flex: 1 0 224px;
+    max-width: 224px;
   }
 
   .column__left.header__one__left {
