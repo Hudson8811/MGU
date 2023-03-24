@@ -9,10 +9,13 @@ $(document).click(function (e) {
 });
 	var delaymenuBtn;
 	menuBtn.mouseenter(function () {
+		topMenuNotHover()
+		NotHover();
+		bodyYesScroll()
+		searchWrap.removeClass("active");
 		delaymenuBtn = setTimeout(function () {
 			menu.addClass("department__menu--active");
-			topMenuNotHover()
-			NotHover();
+
 		}, 200);
 	});
 	menuBtn.mouseleave(function () {
@@ -20,6 +23,8 @@ $(document).click(function (e) {
 	});
 	menu.mouseleave(function () {
 		menu.removeClass("department__menu--active");
+		NotHover();
+		topMenuNotHover()
 	});
 
 
@@ -87,20 +92,25 @@ function tabHover() {
 }
 var topMenutabNavs = document.querySelectorAll(".topMenu-tab");
 var topMenutabPanes = document.querySelectorAll(".topMenu-pane");
+var departmentMenu = document.querySelector(".department__menu");
+let searchHeaderWrap = document.querySelector(".search-header__wrap");
 var topMenuOverlayBg = document.querySelector(".topMenu__overlay__bg");
+var topMenuOverlayBgWhite = document.querySelector(".topMenu__overlay__bg--white");
 
 if(topMenutabNavs !==null & topMenutabPanes !==null) {
 	topMenutabHover() 
 }
 function topMenuNotHover() {
+
 	topMenuOverlayBg.classList.remove("active");
+	topMenuOverlayBgWhite.classList.remove("active");
 	for (var i = 0; i < topMenutabNavs.length; i++) {
 		topMenutabNavs[i].classList.remove("active");
 		topMenutabNavs[i].classList.remove("notActive");
 	}
 	for (var i = 0; i < topMenutabPanes.length; i++) {
-		topMenutabPanes[i].classList.remove("active");
-		topMenutabPanes[i].classList.remove("notActive");
+		topMenutabPanes[i].classList.remove("topMenu__overlay--active");
+		topMenutabNavs[i].classList.remove("notActive");
 	}
 }
 function topMenutabHover() {
@@ -108,15 +118,20 @@ function topMenutabHover() {
 		var delayTopMenutabNavs;
 		topMenutabNavs[i].addEventListener("mouseover", function(e){
 			e.preventDefault();	
+			NotHover();
+			bodyYesScroll()
 			var activeTabAttr = e.target.getAttribute("data-tab");			
 				delayTopMenutabNavs= setTimeout(function () {
 					for (var j = 0; j < topMenutabNavs.length; j++) {
 						var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
 		
 						if (activeTabAttr === contentAttr) {
+							searchHeaderWrap.classList.remove("active");
 							topMenutabNavs[j].classList.add("active");
 							topMenutabPanes[j].classList.add("topMenu__overlay--active");
 							topMenuOverlayBg.classList.add("active"); 
+							topMenuOverlayBgWhite.classList.add("active"); 
+							departmentMenu.classList.remove("department__menu--active")
 							// topMenutabNavs[j].classList.remove("notActive");
 							// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
 						} else {

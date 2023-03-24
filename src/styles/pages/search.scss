@@ -186,6 +186,7 @@
 		}
 		&::-webkit-search-cancel-button {
 			-webkit-appearance: none;
+			display: none;
 			appearance: none;
 			height: 16px;
 			width: 16px;
@@ -193,6 +194,7 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
+			
 		}
 		@include max(md) {
 			padding-right: 80px;
@@ -213,6 +215,12 @@
 			position: absolute;
 			top: 20px;
 			right: 92px;
+			opacity: .3;
+			transition: all .3s;
+			&:hover {
+				transition: all .3s;
+				opacity: 1;
+			}
 		}
 		&--play {
 			position: absolute;

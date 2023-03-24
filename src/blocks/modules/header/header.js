@@ -35,3 +35,11 @@ searchOverlay .on("click", function () {
 	search.removeClass("heightFull");
 	bodyYesScroll()
 });
+
+// function searchCloseActive() {
+// 	searchWrap.removeClass("active");
+// 	searchCheckbox.removeClass("active");
+// 	searchCheckboxButtonOverlay.removeClass("hidden")
+// 	search.removeClass("heightFull");
+// 	bodyYesScroll()
+// }

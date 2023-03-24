@@ -46,6 +46,10 @@
 				background: #fff;
 			}
 		}
+		&--wrap {
+			position: relative;
+			width: auto;
+		}
 		&:hover {
 			background: #fff;
 			transition: all .5s;
@@ -61,7 +65,24 @@
 	}
 
 }
-.topMenu__item.topMenu__item__department {
+.topMenu__item__department {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	flex: 1 0 auto;
+	padding: 10px 25px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: $fz16;
+	text-align: center;
+	line-height: $lh24;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all .5s;
+	white-space: nowrap;	
 	background: #AF8F46;
 	color: #fff;
 	min-width: 151px;
@@ -77,10 +98,11 @@
 }
 .department__menu {
 	position: absolute;
-	right: 2px;
+	right: 1px;
 	display: none;
 	padding: 24px;
 	z-index: 200;
+	min-width: 508px;
 	background: $ocher;
 	@include max(lg) {
 		right: 1px;
@@ -116,8 +138,10 @@
 	position: absolute;
 	left: 0;
 	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1168px;
 	bottom: -716px;
-	width: 100vw;
 	min-height: 0vh;
 	display: block;
 	visibility: hidden;
@@ -125,7 +149,7 @@
 	padding: 0;
 	z-index: 200;
 	transition: opacity 0s;
-	background: $white;
+	// background: $white;
 	// &::after {
 	// 	content: '';
 	// 	position: absolute;
@@ -139,7 +163,7 @@
 		display: flex;
 		opacity: 1;
 		visibility: inherit;
-		transition: opacity 1s;
+		transition: opacity .8s;
 		// padding: 20px;
 		// padding-top: 68px;
 		// padding-left: 136px;
@@ -162,16 +186,30 @@
 			transition: all .7s;
 			height: 100%;
 			visibility: inherit;
-		}		
+		}	
+		&--white {
+			position: absolute;
+			background: #fff;
+			height: 0px;
+			&.active {
+				opacity: 1;
+				transition: all .7s;
+				height: 716px;
+				visibility: inherit;
+			}	
+		}	
 	}
 	&--close {
 		position: absolute;
 		left: 20px;
-		top: 16px;
-		z-index: 120;
+		top: 150px;
+		z-index: 520;
 		height: 28px;
 		width: 28px;
 		opacity: 0.3;
+		@include max(lg) {
+			top: 145px;			
+		}
 		@include max(md) {
 			height: 20px;
 			width: 20px;			
@@ -207,7 +245,7 @@
 			max-width: 1168px;
 			margin-left: auto;
 			margin-right: auto;
-			background: $white;
+			// background: $white;
 			padding-top: 68px;
 			@include max (lg) {
 				width: 1168px;
@@ -270,7 +308,7 @@
 	}
 }
 @include max(lg) {
-	.topMenu__item {
+	.topMenu__item,.topMenu__item__department {
 		font-weight: 700;
 		font-size: $fz14;
 		line-height: $lh20;
