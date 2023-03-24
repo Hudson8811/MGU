@@ -3564,7 +3564,8 @@ a:hover {
   border-bottom: 1px solid rgba(0, 85, 182, 0.3);
 }
 
-.block__textOne--span b {
+.block__textOne--span b,
+.block__textOne--span span {
   position: relative;
   margin-bottom: 8px;
   display: inline-block;
@@ -4240,6 +4241,7 @@ a.block__textOne__link--person-colors::after {
   transition: all 0.3s;
   background: rgba(255, 255, 255, 0);
   border-radius: 20px;
+  margin-left: 17px;
 }
 
 .header__other__search img {
@@ -6350,6 +6352,11 @@ body.Bodymotionless {
 
 .footer__lists--column:nth-child(4) .footer__lists--item--link {
   margin-bottom: 6px;
+}
+
+.footer__lists--column:nth-child(4) .footer__lists--item--link a {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .footer__lists--string {

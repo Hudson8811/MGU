@@ -110,6 +110,11 @@
 			&:nth-child(4) {
 				.footer__lists--item--link {
 					margin-bottom: 6px;
+					a {
+						font-size: $fz12;
+						line-height: $lh16;
+					}
+
 				}
 				@include max(md) {
 					min-width: 240px;
