@@ -12,6 +12,31 @@
 	@include max(xs) {
 		padding-top: 53px;
 	}
+	&__button--up {
+		position: absolute;
+		top: -86px;
+		right: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		background: #fff;
+		border-radius: 50px;
+		transition: all .3s;
+		&:hover {
+			img {
+				transition: all .3s;
+				opacity: 1;
+			}
+		}
+		img {
+			transition: all .3s;
+			opacity: .3;
+		}
+
+
+	}
 	.button__footer{
 		&--mob {
 			display: none;

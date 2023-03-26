@@ -6368,6 +6368,30 @@ body.Bodymotionless {
   color: #fff;
 }
 
+.footer__button--up {
+  position: absolute;
+  top: -86px;
+  right: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.footer__button--up:hover img {
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.footer__button--up img {
+  transition: all 0.3s;
+  opacity: 0.3;
+}
+
 .footer .button__footer--mob {
   display: none;
   width: 100%;
@@ -7103,7 +7127,7 @@ body.Bodymotionless {
 
 .select2-container .select2-dropdown .select2-results .select2-results__option:hover {
   transition: all 0.1s;
-  background: #C0C0C0;
+  background: #F4F3F0;
 }
 
 .select2-container .select2-dropdown .select2-results .select2-results__option--selected {
