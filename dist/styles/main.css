@@ -5676,7 +5676,7 @@ button.declaration__item__button {
 
 .menuDepartMob {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   width: 100%;
 }
@@ -6369,8 +6369,8 @@ body.Bodymotionless {
 }
 
 .footer__button--up {
-  position: absolute;
-  top: -86px;
+  position: fixed;
+  bottom: 400px;
   right: 48px;
   display: flex;
   justify-content: center;
@@ -9268,6 +9268,11 @@ body.Bodymotionless {
   display: none;
 }
 
+.disserCouncil .header__one .column__left {
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+
 .international {
   min-height: 100vh;
   background: #F4F3F0;
@@ -9275,6 +9280,7 @@ body.Bodymotionless {
 
 .international .header__one .column__left {
   flex: 1 0 100%;
+  max-width: 100%;
   padding-bottom: 60px;
 }
 
@@ -9289,6 +9295,7 @@ body.Bodymotionless {
 
 .conferences .header__one .column__left {
   flex: 1 0 100%;
+  max-width: 100%;
   padding-bottom: 60px;
 }
 
@@ -12340,6 +12347,10 @@ span.flatpickr-weekday:last-child {
 
   .accordions.menu-sidebar {
     display: none;
+  }
+
+  .menuDepartMob {
+    display: flex;
   }
 
   .menuDepartMob--button {

@@ -13,8 +13,8 @@
 		padding-top: 53px;
 	}
 	&__button--up {
-		position: absolute;
-		top: -86px;
+		position: fixed;
+		bottom: 400px;
 		right: 48px;
 		display: flex;
 		justify-content: center;

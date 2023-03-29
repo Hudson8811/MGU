@@ -2,4 +2,10 @@
 	.column__right.header__one__right {
 		display: none;
 	}
+	.header__one {
+		.column__left {
+			flex: 1 0 100%;
+			max-width: 100%;
+		}
+	}
 }

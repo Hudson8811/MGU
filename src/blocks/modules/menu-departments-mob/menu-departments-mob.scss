@@ -1,8 +1,11 @@
 .menuDepartMob {
 	position: relative;
-	display: flex;
+	display: none;
 	justify-content: center;
 	width: 100%;
+	@include max(md) {
+		display: flex;
+	}
 	&--menu {
 		&--wrap {
 			z-index: 10;
