@@ -12,3 +12,4 @@
 @@include("../../blocks/modules/tabs-controls/tabs-controls.js")
 @@include("../../blocks/modules/tabs-controls-students/tabs-controls-students.js")
 @@include("../../blocks/modules/tabs-controls-department-gallery/tabs-controls-department-gallery.js")
+@@include("../../blocks/modules/footer/footer.js")

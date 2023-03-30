@@ -4603,7 +4603,6 @@ a.block__textOne__link--person-colors::after {
   margin-left: auto;
   margin-right: auto;
   max-width: 1168px;
-  bottom: -716px;
   min-height: 0vh;
   display: block;
   visibility: hidden;
@@ -4618,14 +4617,14 @@ a.block__textOne__link--person-colors::after {
   opacity: 1;
   visibility: inherit;
   transition: opacity 0.8s;
-  min-height: 716px;
+  min-height: 516px;
 }
 
 .topMenu__overlay__bg {
   display: block;
   position: fixed;
   height: 0;
-  width: 100vw;
+  width: 0vw;
   top: 0px;
   left: 0;
   z-index: 20;
@@ -4640,6 +4639,7 @@ a.block__textOne__link--person-colors::after {
   transition: all 0.7s;
   height: 100%;
   visibility: inherit;
+  width: 100%;
 }
 
 .topMenu__overlay__bg--white {
@@ -4651,7 +4651,7 @@ a.block__textOne__link--person-colors::after {
 .topMenu__overlay__bg--white.active {
   opacity: 1;
   transition: all 0.7s;
-  height: 716px;
+  min-height: 716px;
   visibility: inherit;
 }
 
@@ -4689,11 +4689,14 @@ a.block__textOne__link--person-colors::after {
 .topMenu__overlay--list__wrap {
   position: relative;
   display: flex;
-  width: 100vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
   z-index: 100;
   max-width: 1168px;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
   padding-top: 68px;
 }
 
@@ -4719,17 +4722,17 @@ a.block__textOne__link--person-colors::after {
 }
 
 .topMenu__overlay--list.menu-pane {
-  position: absolute;
-  left: 423px;
-  top: 0px;
+  position: relative;
   min-height: 0vh;
   display: flex;
   visibility: hidden;
   opacity: 0;
   padding: 0;
   z-index: 200;
-  width: 0;
+  width: 0vw;
+  min-width: 0vw;
   height: 0;
+  margin-right: 0;
   transition: opacity 0s;
 }
 
@@ -4743,9 +4746,6 @@ a.block__textOne__link--person-colors::after {
   opacity: 1;
   visibility: inherit;
   transition: opacity 1s;
-  padding: 20px;
-  padding-top: 68px;
-  min-height: 650px;
   height: auto;
 }
 
@@ -6370,13 +6370,13 @@ body.Bodymotionless {
 
 .footer__button--up {
   position: fixed;
-  bottom: 400px;
   right: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  z-index: 500;
   background: #fff;
   border-radius: 50px;
   transition: all 0.3s;
@@ -14222,7 +14222,7 @@ span.flatpickr-weekday:last-child {
 
   .footer .button__footer--mob {
     display: flex;
-    margin-bottom: 58px;
+    margin-bottom: 53px;
   }
 
   .footer .button__footer--desc {
@@ -14248,7 +14248,7 @@ span.flatpickr-weekday:last-child {
   }
 
   .footer__lists--string {
-    margin-top: 66px;
+    margin-top: 50px;
   }
 
   .footer__lists--item--logo img {
@@ -14523,6 +14523,10 @@ span.flatpickr-weekday:last-child {
 
   .search-header {
     height: 248px;
+  }
+
+  .footer__lists--item--soc {
+    margin-top: -20px;
   }
 }
 

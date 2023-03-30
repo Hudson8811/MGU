@@ -14,13 +14,14 @@
 	}
 	&__button--up {
 		position: fixed;
-		bottom: 400px;
+		// bottom: 48px;
 		right: 48px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 44px;
 		height: 44px;
+		z-index: 500;
 		background: #fff;
 		border-radius: 50px;
 		transition: all .3s;
@@ -44,7 +45,7 @@
 			max-width: 100%;
 			@include max(xs) {
 				display: flex;
-				margin-bottom: 58px;
+				margin-bottom: 53px;
 			}
 		}
 		&--desc {
@@ -179,7 +180,7 @@
 				margin-top: 100px;
 			}
 			@include max(xs) {
-				margin-top: 66px;
+				margin-top: 50px;
 			}
 		}
 		&--item {
@@ -316,6 +317,9 @@
 				}
 				@media (max-width: 545px) { 
 					margin-top: -26px;
+				}
+				@media (max-width: 360px) { 
+					margin-top: -20px;
 				}
 				@media (max-width: 349px) { 
 					margin-top: 26px;

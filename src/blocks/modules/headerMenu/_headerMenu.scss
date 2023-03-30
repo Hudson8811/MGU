@@ -141,7 +141,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1168px;
-	bottom: -716px;
+	// bottom: -716px;
 	min-height: 0vh;
 	display: block;
 	visibility: hidden;
@@ -167,13 +167,13 @@
 		// padding: 20px;
 		// padding-top: 68px;
 		// padding-left: 136px;
-		min-height: 716px;
+		min-height: 516px;
 	}
 	&__bg {
 		display: block;
 		position: fixed;
 		height: 0;
-		width: 100vw;
+		width: 0vw;
 		top: 0px;
 		left: 0;
 		z-index: 20;
@@ -186,6 +186,7 @@
 			transition: all .7s;
 			height: 100%;
 			visibility: inherit;
+			width: 100%;
 		}	
 		&--white {
 			position: absolute;
@@ -194,7 +195,7 @@
 			&.active {
 				opacity: 1;
 				transition: all .7s;
-				height: 716px;
+				min-height: 716px;
 				visibility: inherit;
 			}	
 		}	
@@ -240,12 +241,14 @@
 		&__wrap {
 			position: relative;
 			display: flex;
-			width: 100vw;
+			justify-content: flex-start;
+			align-items: flex-start;
+			width: 100%;
 			z-index: 100;
 			max-width: 1168px;
 			margin-left: auto;
 			margin-right: auto;
-			// background: $white;
+			height: auto;
 			padding-top: 68px;
 			@include max (lg) {
 				width: 1168px;
@@ -279,17 +282,17 @@
 }
 
 .topMenu__overlay--list.menu-pane {
-	position: absolute;
-	left: 423px;
-	top: 0px;
+	position: relative;
 	min-height: 0vh;
 	display: flex;
 	visibility: hidden;
 	opacity: 0;
 	padding: 0;
 	z-index: 200;
-	width: 0;
+	width: 0vw;
+	min-width: 0vw;
 	height: 0;
+	margin-right: 0;
 	transition: opacity 0s;
 	.topMenu__overlay--item {
 		max-width: none;
@@ -300,9 +303,9 @@
 		opacity: 1;
 		visibility: inherit;
 		transition: opacity 1s;
-		padding: 20px;
-		padding-top: 68px;
-		min-height: 650px;
+		// padding: 20px;
+		// padding-top: 68px;
+		// min-height: 650px;
 		height: auto;
 		// overflow: auto;
 	}
