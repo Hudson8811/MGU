@@ -81,15 +81,15 @@ if(menuDepartButton !== null) {
 		bodyNoScroll() 
 	});
 	
-	function bodyNoScroll() {
-		let bodyBodymotionless = document.querySelector('body')
-		bodyBodymotionless.classList.add("Bodymotionless")
+	// function bodyNoScroll() {
+	// 	let bodyBodymotionless = document.querySelector('body')
+	// 	bodyBodymotionless.classList.add("Bodymotionless")
 		
-	}
-	function bodyYesScroll() {
-		let bodyBodymotionless = document.querySelector('body')
-		bodyBodymotionless.classList.remove("Bodymotionless")	
-	}
+	// }
+	// function bodyYesScroll() {
+	// 	let bodyBodymotionless = document.querySelector('body')
+	// 	bodyBodymotionless.classList.remove("Bodymotionless")	
+	// }
 	
 }
 
