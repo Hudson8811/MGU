@@ -4722,16 +4722,16 @@ a.block__textOne__link--person-colors::after {
 }
 
 .topMenu__overlay--list.menu-pane {
-  position: relative;
-  min-height: 0vh;
+  position: absolute;
   display: flex;
   visibility: hidden;
   opacity: 0;
   padding: 0;
   z-index: 200;
-  width: 0vw;
-  min-width: 0vw;
-  height: 0;
+  width: auto;
+  height: auto;
+  left: 440px;
+  top: 68px;
   margin-right: 0;
   transition: opacity 0s;
 }
@@ -4741,12 +4741,9 @@ a.block__textOne__link--person-colors::after {
 }
 
 .topMenu__overlay--list.menu-pane.active {
-  width: auto;
-  height: auto;
   opacity: 1;
   visibility: inherit;
   transition: opacity 1s;
-  height: auto;
 }
 
 .breadcrumbs {
@@ -6076,7 +6073,12 @@ body.Bodymotionless {
 .headerMenuMob--lang {
   position: absolute;
   left: 33px;
-  top: 22px;
+  top: 27px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #031B4B;
   cursor: pointer;
 }
 
@@ -6101,6 +6103,18 @@ body.Bodymotionless {
 .headerMenuMob--button {
   display: none;
   border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.headerMenuMob--button.notActive {
+  opacity: 0;
+  display: none;
+  transition: all 0.5s;
+}
+
+.headerMenuMob--button.active {
+  display: inline-block;
+  transition: all 0.5s;
 }
 
 .headerMenuMob--soc {
@@ -6124,7 +6138,6 @@ body.Bodymotionless {
   position: relative;
   width: 100%;
   background: transparent;
-  margin-top: 20px;
 }
 
 .headerMenuMob__overlay--close {
@@ -6371,6 +6384,7 @@ body.Bodymotionless {
 .footer__button--up {
   position: fixed;
   right: 48px;
+  bottom: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12359,6 +12373,8 @@ span.flatpickr-weekday:last-child {
 
   .headerMenuMob--button {
     display: inline-block;
+    opacity: 1;
+    transition: all 0.5s;
   }
 
   .footer__lists--row {

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-	$('body').append('<div class="footer__button--up"><img src="img/svg/button--up-1.svg" alt=""></div>');            
 	$(window).scroll(function() {
 		var $height = $(window).height()
 			if ($(this).scrollTop() > $height) {

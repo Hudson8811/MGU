@@ -87,7 +87,7 @@ function tabHover() {
 					tabNavs[j].classList.remove("active");
 					tabPanes[j].classList.remove("active");
 				}
-				maxHeightMenuPane()			
+				// maxHeightMenuPane()			
 			};
 			
 		});
@@ -148,8 +148,8 @@ function topMenutabHover() {
 							topMenutabPanes[j].classList.remove("topMenu__overlay--active");
 							
 						}
+						maxHeightMenuPane()	
 					};
-					maxHeightMenuPane()
 			}, 200);
 
 		});
@@ -161,18 +161,23 @@ function topMenutabHover() {
 }
 
 function maxHeightMenuPane() {
-	// var heights = $(".topMenu__overlay--list.menu-pane.active").map(function ()
-	// {
-	// 		return $(this).height();
+	var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function ()
+	{		
+			var f = $(this).height();
+			// console.log(f)
+			return $(this).height();
 			
-	// }).get();
- var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap").height()
+	}).get();
+	// var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map().height()
+//  var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap").height()
 
-	console.log(heights)
-	// maxHeight = Math.max.apply(null, heights);
+	// console.log(heights)
+	maxHeight = Math.max.apply(null, heights);
+	console.log(maxHeight)
 	// console.log("maxHeight" + maxHeight )
 	// console.log("maxHeight" + maxHeight )
-	$(".topMenu__overlay__bg--white").height(heights + 200);
+	// $(".topMenu__overlay__bg--white").height(heights + 200);
+	$(".topMenu__overlay__bg--white").height(maxHeight + 200);
 
 }
 // maxHeightMenuPane()

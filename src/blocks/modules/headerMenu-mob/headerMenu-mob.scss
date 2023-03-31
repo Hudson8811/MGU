@@ -58,7 +58,12 @@
 	&--lang {
 		position: absolute;
 		left: 33px;
-		top: 22px;
+		top: 27px;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 20px;
+		color: #031B4B;
 		cursor: pointer;
 	}
 	&--footer {
@@ -81,8 +86,20 @@
 	&--button {
 		display: none;
 		border-radius: 0;
+		margin-bottom: 20px;
 		@include max(md) {
 			display: inline-block;
+			opacity: 1;
+			transition: all .5s;
+		}
+		&.notActive {
+			opacity: 0;
+			display: none;
+			transition: all .5s;
+		}
+		&.active {
+			display: inline-block;
+			transition: all .5s;
 		}
 	}
 	&--soc {
@@ -106,7 +123,6 @@
 	position: relative;
 	width: 100%;
 	background: transparent;
-	margin-top: 20px;
 	&--close {
 		position: absolute;
 		right: 35px;
