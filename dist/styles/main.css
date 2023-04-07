@@ -10747,13 +10747,21 @@ span.flatpickr-weekday:last-child {
   margin-bottom: 24px;
 }
 
-.form__block--date label::after {
-  position: absolute;
-  content: url(../../img/svg/date.svg);
-  width: 20px;
-  height: 20px;
-  top: 37px;
-  right: 22px;
+.form__block--date label {
+  /*&::after {
+  	position: absolute;
+  	width: 20px;
+  	height: 20px;
+  	top: 37px;
+  	right: 22px;
+  }*/
+}
+
+.form__block--date input {
+  background: url(../img/svg/date.svg), #ffffff !important;
+  background-size: 22px 22px !important;
+  background-position: calc(100% - 21px) 13px !important;
+  background-repeat: no-repeat !important;
 }
 
 .form__block__wrap {
@@ -10810,32 +10818,41 @@ span.flatpickr-weekday:last-child {
   align-items: flex-start;
 }
 
+.form__block label.error {
+  /*&::after {
+  	content: url(../img/svg/form-error.svg);
+  	width: 24px;
+  	height: 24px;
+  	position: absolute;
+  	right: 22px;
+  	bottom: 14px;
+  	display: block;
+  }*/
+  /*&::before {
+  	content: 'Информация об ошибке или незаполненном поле';
+  	width: auto;
+  	position: absolute;
+  	left: 0;
+  	bottom: -20px;
+  	display: inline-block;
+  	color: #E94141;
+  	font-style: normal;
+  	font-weight: 400;
+  	font-size: 13px;
+  	line-height: 16px;
+
+  	@include max(xs) {
+  		display: none;
+  	}
+  }*/
+}
+
 .form__block label.error input {
   border: 1px solid #E94141;
-}
-
-.form__block label.error::after {
-  content: url(../img/svg/form-error.svg);
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  right: 22px;
-  bottom: 14px;
-  display: block;
-}
-
-.form__block label.error::before {
-  content: "Информация об ошибке или незаполненном поле";
-  width: auto;
-  position: absolute;
-  left: 0;
-  bottom: -20px;
-  display: inline-block;
-  color: #E94141;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  background: url(../img/svg/form-error.svg), #ffffff;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: calc(100% - 20px) 12px;
 }
 
 .form__block label b {
@@ -11081,6 +11098,17 @@ span.flatpickr-weekday:last-child {
 
 .form .selectDot label b::after {
   display: none;
+}
+
+.form-error-text {
+  max-width: 100%;
+  margin-top: 7px;
+  display: inline-block;
+  color: #E94141;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .search-page {
@@ -14510,7 +14538,7 @@ span.flatpickr-weekday:last-child {
     max-width: 100%;
   }
 
-  .form__block label.error::before {
+  .form-error-text {
     display: none;
   }
 }

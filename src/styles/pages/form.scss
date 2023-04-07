@@ -454,14 +454,19 @@ span.flatpickr-weekday {
 		margin-bottom: 24px;
 		&--date {
 			label {
-				&::after {
+				/*&::after {
 					position: absolute;
-					content: url(../../img/svg/date.svg);
 					width: 20px;
 					height: 20px;
 					top: 37px;
 					right: 22px;
-				}
+				}*/
+			}
+			input {
+				background: url(../img/svg/date.svg), #ffffff !important;
+				background-size: 22px 22px !important;
+				background-position: calc(100% - 21px) 13px !important;
+				background-repeat: no-repeat !important;
 			}
 		}
 		&__wrap {
@@ -543,10 +548,14 @@ span.flatpickr-weekday {
 			&.error {
 				input {
 					border: 1px solid #E94141;
+					background: url(../img/svg/form-error.svg), #ffffff;
+					background-repeat: no-repeat;
+					background-size: 24px 24px;
+					background-position: calc(100% - 20px) 12px;
 
 				}
 
-				&::after {
+				/*&::after {
 					content: url(../img/svg/form-error.svg);
 					width: 24px;
 					height: 24px;
@@ -554,9 +563,9 @@ span.flatpickr-weekday {
 					right: 22px;
 					bottom: 14px;
 					display: block;
-				}
+				}*/
 
-				&::before {
+				/*&::before {
 					content: 'Информация об ошибке или незаполненном поле';
 					width: auto;
 					position: absolute;
@@ -572,7 +581,7 @@ span.flatpickr-weekday {
 					@include max(xs) {
 						display: none;
 					}
-				}
+				}*/
 			}
 
 			b {
@@ -839,5 +848,22 @@ span.flatpickr-weekday {
 				}
 			}
 		}
+	}
+}
+
+
+.form-error-text{
+	max-width: 100%;
+    margin-top: 7px;
+	//margin-bottom: -23px;
+	display: inline-block;
+	color: #E94141;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+
+	@include max(xs) {
+		display: none;
 	}
 }
