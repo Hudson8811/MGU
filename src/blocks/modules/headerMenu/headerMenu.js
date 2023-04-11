@@ -53,7 +53,7 @@ var tabNavs = document.querySelectorAll(".menu-tab");
 var tabPanes = document.querySelectorAll(".menu-pane");
 
 if(tabNavs !==null & tabPanes !==null) {
-	tabHover() 
+	tabHover()
 }
 function NotHover() {
 	for (var i = 0; i < tabNavs.length; i++) {
@@ -77,23 +77,23 @@ function tabHover() {
 
 				if (activeTabAttr === contentAttr) {
 					tabNavs[j].classList.add("active");
-					tabPanes[j].classList.add("active"); 
+					tabPanes[j].classList.add("active");
 					tabNavs[j].classList.remove("notActive");
 					tabPanes[j].classList.remove("notActive");
-					
+
 				} else {
 					tabNavs[j].classList.add("notActive");
-					tabPanes[j].classList.add("notActive"); 
+					tabPanes[j].classList.add("notActive");
 					tabNavs[j].classList.remove("active");
 					tabPanes[j].classList.remove("active");
 				}
-				// maxHeightMenuPane()			
+				// maxHeightMenuPane()
 			};
-			
+
 		});
-		
+
 	}
-	
+
 }
 var topMenutabNavs = document.querySelectorAll(".topMenu-tab");
 var topMenutabPanes = document.querySelectorAll(".topMenu-pane");
@@ -103,7 +103,7 @@ var topMenuOverlayBg = document.querySelector(".topMenu__overlay__bg");
 var topMenuOverlayBgWhite = document.querySelector(".topMenu__overlay__bg--white");
 
 if(topMenutabNavs !==null & topMenutabPanes !==null) {
-	topMenutabHover() 
+	topMenutabHover()
 }
 function topMenuNotHover() {
 
@@ -122,51 +122,52 @@ function topMenutabHover() {
 	for (var i = 0; i < topMenutabNavs.length; i++) {
 		var delayTopMenutabNavs;
 		topMenutabNavs[i].addEventListener("mouseover", function(e){
-			e.preventDefault();	
+			e.preventDefault();
 			NotHover();
 			bodyYesScroll()
 
 			var activeTabAttr = e.target.getAttribute("data-tab");
-			var activeTab = e.target;		
+			var activeTab = e.target;
 			delayTopMenutabNavs= setTimeout(function () {
 					for (var j = 0; j < topMenutabNavs.length; j++) {
 						var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
-		
+
 						if (activeTabAttr === contentAttr) {
 							searchHeaderWrap.classList.remove("active");
 							topMenutabNavs[j].classList.add("active");
 							topMenutabPanes[j].classList.add("topMenu__overlay--active");
-							topMenuOverlayBg.classList.add("active"); 
-							topMenuOverlayBgWhite.classList.add("active"); 
+							topMenuOverlayBg.classList.add("active");
+							topMenuOverlayBgWhite.classList.add("active");
 							departmentMenu.classList.remove("department__menu--active")
 							// topMenutabNavs[j].classList.remove("notActive");
 							// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
 						} else {
 							// topMenutabNavs[j].classList.add("notActive");
-							// topMenutabPanes[j].classList.add("notActive"); 
+							// topMenutabPanes[j].classList.add("notActive");
 							topMenutabNavs[j].classList.remove("active");
 							topMenutabPanes[j].classList.remove("topMenu__overlay--active");
-							
+
 						}
-						maxHeightMenuPane()	
+						maxHeightMenuPane()
+
 					};
 			}, 200);
 
 		});
 		topMenutabNavs[i].addEventListener("mouseout", function(e){
-			e.preventDefault();	
+			e.preventDefault();
 			window.clearTimeout(delayTopMenutabNavs);
 		});
 	}
 }
 
 function maxHeightMenuPane() {
-	var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function ()
-	{		
+	var heights = $(".topMenu__overlay.topMenu-pane"+'.topMenu__overlay--active'+" .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function ()
+	{
 			var f = $(this).height();
 			// console.log(f)
 			return $(this).height();
-			
+
 	}).get();
 	// var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map().height()
 //  var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap").height()
@@ -177,7 +178,10 @@ function maxHeightMenuPane() {
 	// console.log("maxHeight" + maxHeight )
 	// console.log("maxHeight" + maxHeight )
 	// $(".topMenu__overlay__bg--white").height(heights + 200);
-	$(".topMenu__overlay__bg--white").height(maxHeight + 200);
+	$(".topMenu__overlay__bg--white").height(maxHeight + $('.section__topMenu').height() + $('.section__header').height() + 150);
 
 }
-// maxHeightMenuPane()
+maxHeightMenuPane();
+$(window).on('resize', function(){
+	maxHeightMenuPane();
+})

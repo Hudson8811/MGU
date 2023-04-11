@@ -2915,7 +2915,7 @@ var tabNavs = document.querySelectorAll(".menu-tab");
 var tabPanes = document.querySelectorAll(".menu-pane");
 
 if(tabNavs !==null & tabPanes !==null) {
-	tabHover() 
+	tabHover()
 }
 function NotHover() {
 	for (var i = 0; i < tabNavs.length; i++) {
@@ -2939,23 +2939,23 @@ function tabHover() {
 
 				if (activeTabAttr === contentAttr) {
 					tabNavs[j].classList.add("active");
-					tabPanes[j].classList.add("active"); 
+					tabPanes[j].classList.add("active");
 					tabNavs[j].classList.remove("notActive");
 					tabPanes[j].classList.remove("notActive");
-					
+
 				} else {
 					tabNavs[j].classList.add("notActive");
-					tabPanes[j].classList.add("notActive"); 
+					tabPanes[j].classList.add("notActive");
 					tabNavs[j].classList.remove("active");
 					tabPanes[j].classList.remove("active");
 				}
-				// maxHeightMenuPane()			
+				// maxHeightMenuPane()
 			};
-			
+
 		});
-		
+
 	}
-	
+
 }
 var topMenutabNavs = document.querySelectorAll(".topMenu-tab");
 var topMenutabPanes = document.querySelectorAll(".topMenu-pane");
@@ -2965,7 +2965,7 @@ var topMenuOverlayBg = document.querySelector(".topMenu__overlay__bg");
 var topMenuOverlayBgWhite = document.querySelector(".topMenu__overlay__bg--white");
 
 if(topMenutabNavs !==null & topMenutabPanes !==null) {
-	topMenutabHover() 
+	topMenutabHover()
 }
 function topMenuNotHover() {
 
@@ -2984,51 +2984,52 @@ function topMenutabHover() {
 	for (var i = 0; i < topMenutabNavs.length; i++) {
 		var delayTopMenutabNavs;
 		topMenutabNavs[i].addEventListener("mouseover", function(e){
-			e.preventDefault();	
+			e.preventDefault();
 			NotHover();
 			bodyYesScroll()
 
 			var activeTabAttr = e.target.getAttribute("data-tab");
-			var activeTab = e.target;		
+			var activeTab = e.target;
 			delayTopMenutabNavs= setTimeout(function () {
 					for (var j = 0; j < topMenutabNavs.length; j++) {
 						var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
-		
+
 						if (activeTabAttr === contentAttr) {
 							searchHeaderWrap.classList.remove("active");
 							topMenutabNavs[j].classList.add("active");
 							topMenutabPanes[j].classList.add("topMenu__overlay--active");
-							topMenuOverlayBg.classList.add("active"); 
-							topMenuOverlayBgWhite.classList.add("active"); 
+							topMenuOverlayBg.classList.add("active");
+							topMenuOverlayBgWhite.classList.add("active");
 							departmentMenu.classList.remove("department__menu--active")
 							// topMenutabNavs[j].classList.remove("notActive");
 							// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
 						} else {
 							// topMenutabNavs[j].classList.add("notActive");
-							// topMenutabPanes[j].classList.add("notActive"); 
+							// topMenutabPanes[j].classList.add("notActive");
 							topMenutabNavs[j].classList.remove("active");
 							topMenutabPanes[j].classList.remove("topMenu__overlay--active");
-							
+
 						}
-						maxHeightMenuPane()	
+						maxHeightMenuPane()
+
 					};
 			}, 200);
 
 		});
 		topMenutabNavs[i].addEventListener("mouseout", function(e){
-			e.preventDefault();	
+			e.preventDefault();
 			window.clearTimeout(delayTopMenutabNavs);
 		});
 	}
 }
 
 function maxHeightMenuPane() {
-	var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function ()
-	{		
+	var heights = $(".topMenu__overlay.topMenu-pane"+'.topMenu__overlay--active'+" .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function ()
+	{
 			var f = $(this).height();
 			// console.log(f)
 			return $(this).height();
-			
+
 	}).get();
 	// var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map().height()
 //  var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap").height()
@@ -3039,10 +3040,13 @@ function maxHeightMenuPane() {
 	// console.log("maxHeight" + maxHeight )
 	// console.log("maxHeight" + maxHeight )
 	// $(".topMenu__overlay__bg--white").height(heights + 200);
-	$(".topMenu__overlay__bg--white").height(maxHeight + 200);
+	$(".topMenu__overlay__bg--white").height(maxHeight + $('.section__topMenu').height() + $('.section__header').height() + 150);
 
 }
-// maxHeightMenuPane()
+maxHeightMenuPane();
+$(window).on('resize', function(){
+	maxHeightMenuPane();
+})
 
 let menuDeparttabNavsClose = document.querySelector(".menuDepartMob__overlay--close");
 let menuDepartBG = document.querySelector(".menuDepartMob--menu-bg");
@@ -3638,15 +3642,17 @@ function calcualteLongImages(){
     });
 }
 $(window).on('load', () => {
-	$('.js-example-form').select2({
-		theme: "custom-theme",
-		language: 'ru',
-		width: '100%',
-		minimumResultsForSearch: Infinity,
-		dropdownAutoWidth: true,
-	});
+	function initSelectsLikeAnketaPage(){
+		$('.js-example-form:not(.select2-hidden-accessible').select2({
+			theme: "custom-theme",
+			language: 'ru',
+			width: '100%',
+			minimumResultsForSearch: Infinity,
+			dropdownAutoWidth: true,
+		});
+	}
 
-
+	initSelectsLikeAnketaPage();
 
 	function yearsGenerator(startYear) {
 		var currentYear = new Date().getFullYear(), years = [];
@@ -3658,97 +3664,114 @@ $(window).on('load', () => {
 	}
 
 
-	const datePickerInput = document.getElementById('date-picker');
+	function initDatePicker(){
 
-	// Initialize the date picker
-	var flatpickrItem = flatpickr(datePickerInput, {
-		enableTime: true,
-		dateFormat: 'Y-m-d',
-		minDate: '01.01.1900',
-		locale: 'ru',
-		disableMobile: true,
-		onOpen: [
-			function (selectedDates, dateStr, instance) {
-				var container = $(instance.calendarContainer);
+		const datePickerInput = document.getElementById('date-picker');
+		// Initialize the date picker
+		if(!$(datePickerInput).hasClass('js-flag-init-dp')){
+			var flatpickrItem = flatpickr(datePickerInput, {
+				enableTime: true,
+				dateFormat: 'Y-m-d',
+				minDate: '01.01.1900',
+				locale: 'ru',
+				disableMobile: true,
+				onOpen: [
+					function (selectedDates, dateStr, instance) {
+						var container = $(instance.calendarContainer);
 
-				var cal_year=false;
-				var cal_month=false;
-				var cal_custom_year=false;
-				var cal_custom_month=false;
-
-
-				if (container.find('.datepicker-btns').length < 1) {
-					container.find('.flatpickr-innerContainer').after('<div class="datepicker-btns"><div class="datepicker-btn datepicker-btn--reject js-datepicker-btn-reject"><span>отмена</span></div><div class="datepicker-btn datepicker-btn--accept js-datepicker-btn-accept"><span>выбрать</span></div></div>');
-
-					var years = yearsGenerator(1900);
-					var years_opt_list = '';
-					var currentYear = new Date().getFullYear()
-					years.forEach(year => {
-						if(year===currentYear){
-							years_opt_list += '<option  value="' + year + '" selected>' + year + '</option>';
-
-						}
-						else{
-							years_opt_list += '<option  value="' + year + '">' + year + '</option>';
-						}
-					});
-
-					var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-
-					container.find('.flatpickr-months').before('<div class="flatpickr-custom-selects"><div class="flatpickr-custom-select flatpickr-custom-select--month">' +
-						'<select class="js-example-form">' + '<option class="flatpickr-monthDropdown-month" value="0" tabindex="-1">Январь</option><option class="flatpickr-monthDropdown-month" value="1" tabindex="-1">Февраль</option><option class="flatpickr-monthDropdown-month" value="2" tabindex="-1">Март</option><option class="flatpickr-monthDropdown-month" value="3" tabindex="-1">Апрель</option><option class="flatpickr-monthDropdown-month" value="4" tabindex="-1">Май</option><option class="flatpickr-monthDropdown-month" value="5" tabindex="-1">Июнь</option><option class="flatpickr-monthDropdown-month" value="6" tabindex="-1">Июль</option><option class="flatpickr-monthDropdown-month" value="7" tabindex="-1">Август</option><option class="flatpickr-monthDropdown-month" value="8" tabindex="-1">Сентябрь</option><option class="flatpickr-monthDropdown-month" value="9" tabindex="-1">Октябрь</option><option class="flatpickr-monthDropdown-month" value="10" tabindex="-1">Ноябрь</option><option class="flatpickr-monthDropdown-month" value="11" tabindex="-1">Декабрь</option>' + '</select><div class="simple-select2-items-wrapper"></div>' +
-						'</div><div class="flatpickr-custom-select flatpickr-custom-select--year">' +
-						'<select class="js-example-form">' + years_opt_list + '</select><div class="simple-select2-items-wrapper"></div>' +
-						'</div></div>');
+						var cal_year=false;
+						var cal_month=false;
+						var cal_custom_year=false;
+						var cal_custom_month=false;
 
 
-					dropdownParent: $(this).siblings('.simple-select2-items-wrapper')
+						if (container.find('.datepicker-btns').length < 1) {
+							container.find('.flatpickr-innerContainer').after('<div class="datepicker-btns"><div class="datepicker-btn datepicker-btn--reject js-datepicker-btn-reject"><span>отмена</span></div><div class="datepicker-btn datepicker-btn--accept js-datepicker-btn-accept"><span>выбрать</span></div></div>');
 
-					var cal_year=container.find('.numInput.cur-year');
-					var cal_month=container.find('.flatpickr-monthDropdown-months');
-					var cal_custom_year=container.find('.flatpickr-custom-select--year select');
-					var cal_custom_month=container.find('.flatpickr-custom-select--month select');
+							var years = yearsGenerator(1900);
+							var years_opt_list = '';
+							var currentYear = new Date().getFullYear()
+							years.forEach(year => {
+								if(year===currentYear){
+									years_opt_list += '<option  value="' + year + '" selected>' + year + '</option>';
 
-					cal_custom_year.on('change',function(){
-						console.log($(this).val());
-						//cal_year.val($(this).val());
+								}
+								else{
+									years_opt_list += '<option  value="' + year + '">' + year + '</option>';
+								}
+							});
 
-						flatpickrItem.jumpToDate(new Date(cal_custom_year.val(),cal_custom_month.val(),1));
+							var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
 
-					});
-					cal_custom_month.on('change',function(){
-						console.log($(this).val());
-						cal_month.val($(this).val());
-						flatpickrItem.changeMonth(parseInt($(this).val()), false);
-					});
+							container.find('.flatpickr-months').before('<div class="flatpickr-custom-selects"><div class="flatpickr-custom-select flatpickr-custom-select--month">' +
+								'<select class="js-example-form">' + '<option class="flatpickr-monthDropdown-month" value="0" tabindex="-1">Январь</option><option class="flatpickr-monthDropdown-month" value="1" tabindex="-1">Февраль</option><option class="flatpickr-monthDropdown-month" value="2" tabindex="-1">Март</option><option class="flatpickr-monthDropdown-month" value="3" tabindex="-1">Апрель</option><option class="flatpickr-monthDropdown-month" value="4" tabindex="-1">Май</option><option class="flatpickr-monthDropdown-month" value="5" tabindex="-1">Июнь</option><option class="flatpickr-monthDropdown-month" value="6" tabindex="-1">Июль</option><option class="flatpickr-monthDropdown-month" value="7" tabindex="-1">Август</option><option class="flatpickr-monthDropdown-month" value="8" tabindex="-1">Сентябрь</option><option class="flatpickr-monthDropdown-month" value="9" tabindex="-1">Октябрь</option><option class="flatpickr-monthDropdown-month" value="10" tabindex="-1">Ноябрь</option><option class="flatpickr-monthDropdown-month" value="11" tabindex="-1">Декабрь</option>' + '</select><div class="simple-select2-items-wrapper"></div>' +
+								'</div><div class="flatpickr-custom-select flatpickr-custom-select--year">' +
+								'<select class="js-example-form">' + years_opt_list + '</select><div class="simple-select2-items-wrapper"></div>' +
+								'</div></div>');
 
 
-					container.find('.js-example-form').each(function (index) {
-						var select = $(this);
-						select.select2({
-							theme: "custom-theme",
-							language: 'ru',
-							width: '100%',
-							minimumResultsForSearch: Infinity,
-							dropdownAutoWidth: true,
 							dropdownParent: $(this).siblings('.simple-select2-items-wrapper')
-						});
-					});
+
+							var cal_year=container.find('.numInput.cur-year');
+							var cal_month=container.find('.flatpickr-monthDropdown-months');
+							var cal_custom_year=container.find('.flatpickr-custom-select--year select');
+							var cal_custom_month=container.find('.flatpickr-custom-select--month select');
+
+							cal_custom_year.on('change',function(){
+								console.log($(this).val());
+								//cal_year.val($(this).val());
+
+								flatpickrItem.jumpToDate(new Date(cal_custom_year.val(),cal_custom_month.val(),1));
+
+							});
+							cal_custom_month.on('change',function(){
+								console.log($(this).val());
+								cal_month.val($(this).val());
+								flatpickrItem.changeMonth(parseInt($(this).val()), false);
+							});
 
 
-					//'<select class="js-example-form"><option  value="" selected>Экология и рациональное природопользование</option></select>'
-				}
+							container.find('.js-example-form').each(function (index) {
+								var select = $(this);
+								select.select2({
+									theme: "custom-theme",
+									language: 'ru',
+									width: '100%',
+									minimumResultsForSearch: Infinity,
+									dropdownAutoWidth: true,
+									dropdownParent: $(this).siblings('.simple-select2-items-wrapper')
+								});
+							});
 
 
-				cal_custom_year.val(cal_year.val()).trigger('change')
-				cal_custom_month.val(cal_month.val()).trigger('change')
+							//'<select class="js-example-form"><option  value="" selected>Экология и рациональное природопользование</option></select>'
+						}
 
-			}
-		],
-	});
+
+						cal_custom_year.val(cal_year.val()).trigger('change')
+						cal_custom_month.val(cal_month.val()).trigger('change')
+
+					}
+				],
+			});
+			$(datePickerInput).addClass('js-flag-init-dp');
+
+
+			$('body').on('click', '.js-datepicker-btn-reject, .js-datepicker-btn-accept', function () {
+				flatpickrItem.close();
+			});
+		}
+	}
+	initDatePicker();
 
 	$('body').on('click', '.js-datepicker-btn-reject, .js-datepicker-btn-accept', function () {
 		flatpickrItem.close();
+	});
+
+	$('body').on('reinitAnketaFormCompomnents', function () {
+		initSelectsLikeAnketaPage();
+		initDatePicker();
+
 	});
 
 
