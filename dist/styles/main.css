@@ -239,7 +239,8 @@ a {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+  visibility: visible;
 }
 
 .clearfix {
@@ -4167,7 +4168,11 @@ a.block__textOne__link--person-colors::after {
 }
 
 .section__header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  transition: 1s;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 21px 0 19px 0;
   background: #004ABA;
@@ -4462,15 +4467,23 @@ a.block__textOne__link--person-colors::after {
 }
 
 .section__topMenu {
+  position: sticky;
+  transition: 1s;
+  top: 0;
   width: 100%;
   position: relative;
   background: #F4F3F0;
   border-bottom: 2px solid #fff;
-  z-index: 50;
+  z-index: 49;
+  visibility: visible;
 }
 
 .section__topMenu .container {
   position: relative;
+}
+
+.header_hidden {
+  transform: translateY(-101%);
 }
 
 .topMenu {
@@ -4706,10 +4719,10 @@ a.block__textOne__link--person-colors::after {
   display: inline-block;
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: #031B4B;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   width: 100%;
   max-width: 400px;
 }
@@ -6399,12 +6412,12 @@ body.Bodymotionless {
 
 .footer__button--up:hover img {
   transition: all 0.3s;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .footer__button--up img {
   transition: all 0.3s;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .footer .button__footer--mob {
