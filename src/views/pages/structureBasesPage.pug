@@ -12,7 +12,40 @@ block content
 		include ../../blocks/modules/header-text-two-structure-bases/header-text-two-structure-bases		
 		.container 
 			.map
+				.map__content 
+					img(src="img/map.png", alt="").map--picture
+					.map__item.position-right(style="top: 6.8%;left: 50%")
+						.map__item--label
+							img(src="img/svg/map-icon--1.svg", alt="") 
+						.map__item--text 
+							!="Хибинская УНБ"
+					.map__item.position-top(style="top: 33%;left: 59%")
+						.map__item--label
+							img(src="img/svg/map-icon--2.svg", alt="") 
+						.map__item--text 
+							!="Архангельсская УНС"
+					.map__item.position-top(style="top: 48%;left:42%")
+						.map__item--label
+							img(src="img/svg/map-icon--3.svg", alt="") 
+						.map__item--text 
+							!="Красновидовская УНБ"
+					.map__item.position-right(style="top:51%;left:47%")
+						.map__item--label
+							img(src="img/svg/map-icon--4.svg", alt="") 
+						.map__item--text 
+							!="УБ Озеры"
+					.map__item.position-bottom.big-line(style="top:50%;left:43%")
+						.map__item--label
+							img(src="img/svg/map-icon--5.svg", alt="") 
+						.map__item--text 
+							!="Сатинская УНБ"
+					.map__item.position-top(style="top: 92%;left:47%")
+						.map__item--label
+							img(src="img/svg/map-icon--6.svg", alt="") 
+						.map__item--text 
+							!="Эльбрусская УНБ"
 
+	include ../../blocks/modules/footer/footer
 block scripts
 	script(src="js/vendor.js")
 	script(src="js/main.js")

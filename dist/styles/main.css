@@ -5152,7 +5152,7 @@ button.declaration__item__button {
 
 .academic__slider-nav .swiper-button-prev::after {
   color: #004ABA;
-  content: url(../../../img/svg/seminars__prev.svg);
+  content: url(../img/svg/seminars__prev.svg);
 }
 
 .academic__slider-nav .swiper-button-next {
@@ -5162,7 +5162,7 @@ button.declaration__item__button {
 
 .academic__slider-nav .swiper-button-next::after {
   color: #004ABA;
-  content: url(../../../img/svg/seminars__next.svg);
+  content: url(../img/svg/seminars__next.svg);
 }
 
 .academic__title {
@@ -9140,13 +9140,142 @@ body.Bodymotionless {
 
 .map {
   position: relative;
+  display: block;
+  padding-top: 100%;
+  margin-top: 44px;
+}
+
+.map__item {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -8px;
+  border-radius: 50px;
+  background: #004ABA;
+  z-index: 10;
+}
+
+.map__item.position-right .map__item--label {
+  top: -23px;
+  left: 53px;
+}
+
+.map__item.position-right .map__item--label::before {
+  left: -37px;
+  top: 17px;
+}
+
+.map__item.position-right .map__item--text {
+  top: -7px;
+  left: 105px;
+}
+
+.map__item.position-top .map__item--label {
+  top: -94px;
+  left: -24px;
+}
+
+.map__item.position-top .map__item--label::before {
+  left: 15px;
+  bottom: -30px;
+  transform: rotate(90deg);
+}
+
+.map__item.position-top .map__item--text {
+  top: -79px;
+  left: 28px;
+}
+
+.map__item.position-bottom .map__item--label {
+  top: 68px;
+  left: -24px;
+}
+
+.map__item.position-bottom .map__item--label::before {
+  left: 5px;
+  top: -38px;
+  transform: rotate(90deg);
+}
+
+.map__item.position-bottom .map__item--text {
+  top: 83px;
+  left: 28px;
+}
+
+.map__item--label {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #004ABA;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
+}
+
+.map__item--label::before {
+  display: inline-block;
+  content: "-----";
+  position: absolute;
+  font-size: 20px;
+  white-space: nowrap;
+  color: #004ABA;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.map__item--label img {
+  position: absolute;
+  display: block;
+}
+
+.map__item--text {
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  background: #004ABA;
+  padding-left: 20px;
+  width: auto;
+  z-index: 3;
+  border-radius: 0 14px 14px 0;
+  padding-right: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.map__item.big-line .map__item--label::before {
+  content: "--------";
+}
+
+.map__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.map--picture {
+  position: absolute;
   width: 100%;
-  min-height: 650px;
-  margin-top: 44px;
-  background: #fff;
+  height: 100%;
+  display: block;
+  z-index: 5;
+}
+
+.map::before {
+  display: block;
+  content: "";
+  width: 100%;
 }
 
 .structureBases .column__left {
@@ -12005,6 +12134,10 @@ span.flatpickr-weekday:last-child {
     margin-bottom: 20px;
   }
 
+  .map {
+    margin-top: 8px;
+  }
+
   .disserCouncils {
     padding-bottom: 60px;
   }
@@ -14201,6 +14334,73 @@ span.flatpickr-weekday:last-child {
   .block__textOne--person-page img {
     margin-right: 0;
     margin-bottom: 32px;
+  }
+
+  .structureBases {
+    padding-bottom: 63px;
+  }
+
+  .map {
+    padding-top: 0;
+  }
+
+  .map__item {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    border-radius: 0;
+    background: transparent;
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .map__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .map__item--label {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+  }
+
+  .map__item--label::before {
+    display: none;
+  }
+
+  .map__item--text {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    margin-left: -15px;
+  }
+
+  .map__content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+  }
+
+  .map--picture {
+    display: none;
+  }
+
+  .map::before {
+    display: none;
   }
 }
 
