@@ -2862,62 +2862,64 @@ $('.js-students-timetable-blue').each(function(){
 
 $(document).ready(() => { // DOM готов к взаимодейтсвию
 
-	const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
+	const onScrollHeader = () => {
 
-		const header = $('.section__header') // находим header и записываем в константу
+		const header = $('.section__header')
 
-		let prevScroll = $(window).scrollTop() // узнаем на сколько была прокручена страница ранее
-		let currentScroll // на сколько прокручена страница сейчас (пока нет значения)
+		let prevScroll = $(window).scrollTop()
+		let currentScroll
 
-		$(window).scroll(() => { // при прокрутке страницы
+		$(window).scroll(() => {
 
-			currentScroll = $(window).scrollTop() // узнаем на сколько прокрутили страницу
+			currentScroll = $(window).scrollTop()
 
-			const headerHidden = () => header.hasClass('header_hidden') // узнаем скрыт header или нет
+			const headerHidden = () => header.hasClass('header_hidden')
 
-			if (currentScroll > prevScroll && !headerHidden()) { // если прокручиваем страницу вниз и header не скрыт
-				header.addClass('header_hidden') // то скрываем header
+			if (currentScroll > prevScroll && !headerHidden()) {
+				header.addClass('header_hidden')
 			}
-			if (currentScroll < prevScroll && headerHidden()) { // если прокручиваем страницу вверх и header скрыт
-				header.removeClass('header_hidden') // то отображаем header
+			if (currentScroll < prevScroll && headerHidden()) {
+				header.removeClass('header_hidden')
 			}
 
-			prevScroll = currentScroll // записываем на сколько прокручена страница на данный момент
+			prevScroll = currentScroll
 
 		})
 
 	}
 
-	onScrollHeader() // вызываем основную функцию onScrollHeader
-	const onScrollHeaderMenu = () => { // объявляем основную функцию onScrollHeader
+	onScrollHeader()
+	const onScrollHeaderMenu = () => {
 
-		const header = $('.section__topMenu') // находим header и записываем в константу
+		const header = $('.section__topMenu')
 
-		let prevScroll = $(window).scrollTop() // узнаем на сколько была прокручена страница ранее
-		let currentScroll // на сколько прокручена страница сейчас (пока нет значения)
+		let prevScroll = $(window).scrollTop()
+		let currentScroll
 
-		$(window).scroll(() => { // при прокрутке страницы
+		$(window).scroll(() => {
 
-			currentScroll = $(window).scrollTop() // узнаем на сколько прокрутили страницу
+			currentScroll = $(window).scrollTop()
 
-			const headerHidden = () => header.hasClass('header_hidden') // узнаем скрыт header или нет
+			const headerHidden = () => header.hasClass('header__menu--hidden')
 
-			if (currentScroll > prevScroll && !headerHidden()) { // если прокручиваем страницу вниз и header не скрыт
-				header.addClass('header_hidden') // то скрываем header
+			if (currentScroll > prevScroll && !headerHidden()) {
+				header.addClass('header__menu--hidden')
 			}
-			if (currentScroll < prevScroll && headerHidden()) { // если прокручиваем страницу вверх и header скрыт
-				header.removeClass('header_hidden') // то отображаем header
+			if (currentScroll < prevScroll && headerHidden()) {
+				header.removeClass('header__menu--hidden')
 			}
 
-			prevScroll = currentScroll // записываем на сколько прокручена страница на данный момент
+			prevScroll = currentScroll
 
 		})
 
 	}
 
-	onScrollHeaderMenu() // вызываем основную функцию onScrollHeader
+	onScrollHeaderMenu()
 
 })
+
+
 const menuBtn = $(".topMenu__item__department"),
 	menu = $(".department__menu");
 
@@ -2957,6 +2959,7 @@ $(document).click(function (e) {
 		topMenuoverlay.removeClass("topMenu__overlay--active");
 		NotHover();
 		topMenuNotHover()
+		bodyYesScroll()
 	};
 });
 
@@ -3025,7 +3028,7 @@ if (topMenutabNavs !== null & topMenutabPanes !== null) {
 	topMenutabHover()
 }
 function topMenuNotHover() {
-
+	bodyYesScroll()
 	topMenuOverlayBg.classList.remove("active");
 	topMenuOverlayBgWhite.classList.remove("active");
 	for (var i = 0; i < topMenutabNavs.length; i++) {
@@ -3043,7 +3046,7 @@ function topMenutabHover() {
 		topMenutabNavs[i].addEventListener("mouseover", function (e) {
 			e.preventDefault();
 			NotHover();
-			bodyYesScroll()
+			// bodyNoScroll()
 
 			var activeTabAttr = e.target.getAttribute("data-tab");
 			var activeTab = e.target;
@@ -3068,7 +3071,7 @@ function topMenutabHover() {
 
 					}
 					maxHeightMenuPane()
-
+					bodyNoScroll()
 				};
 			}, 200);
 
@@ -3365,15 +3368,15 @@ if(headerMenuMobButton !== null) {
 	
 }
 	
-function bodyNoScroll() {
-	let bodyBodymotionless = document.querySelector('body')
-	bodyBodymotionless.classList.add("Bodymotionless")
+// function bodyNoScroll() {
+// 	let bodyBodymotionless = document.querySelector('body')
+// 	bodyBodymotionless.classList.add("Bodymotionless")
 	
-}
-function bodyYesScroll() {
-	let bodyBodymotionless = document.querySelector('body')
-	bodyBodymotionless.classList.remove("Bodymotionless")	
-}
+// }
+// function bodyYesScroll() {
+// 	let bodyBodymotionless = document.querySelector('body')
+// 	bodyBodymotionless.classList.remove("Bodymotionless")	
+// }
 
 
 	///tabs
@@ -3591,33 +3594,33 @@ accordions.forEach((accordion) => {
 });
 
 //search persons
-jQuery(function($){
+jQuery(function ($) {
 
 });
 
 var allowWhile = true;
-$(window).on('load',function (){
+$(window).on('load', function () {
     calcualteLongImages();
-    $(window).on('resize',function (){
+    $(window).on('resize', function () {
         allowWhile = false;
         calcualteLongImages();
     })
 });
 
 
-function calcualteLongImages(){
+function calcualteLongImages() {
     let additionalMargin = 25;
     $('.overpaste').remove();
     $('.overpasteTemp').remove();
     if ($(window).innerWidth() <= 700) return false;
-    $('.oversize').each(function() {
-        let imgDom =  $(this);
+    $('.oversize').each(function () {
+        let imgDom = $(this);
         let newImg = new Image();
         newImg.src = imgDom.attr('src');
         let width = newImg.naturalWidth;
         let height = newImg.naturalHeight;
 
-        imgDom.css({'width': width});
+        imgDom.css({ 'width': width });
 
         let currentRealWidth = imgDom.innerWidth();
         let currentRealHeight = imgDom.innerHeight();
@@ -3633,7 +3636,7 @@ function calcualteLongImages(){
         let textBlocks = $('.block__text__wrap .block__textTwo').children().not('br, .block-text__mob');
 
         let startCollision = false;
-        textBlocks.each(function() {
+        textBlocks.each(function () {
             let textBlock = $(this);
 
             let textBlockOffset = textBlock.position();
@@ -3645,7 +3648,7 @@ function calcualteLongImages(){
                 newWidht < textBlockWidth &&
                 imgTopPosition < textBlockOffset.top + textBlockHeight &&
                 imgTopPosition + currentRealHeight > textBlockOffset.top
-            ){
+            ) {
                 if (!startCollision) startCollision = true;
 
                 let blankHeight, polygon, blankTop;
@@ -3659,12 +3662,12 @@ function calcualteLongImages(){
                     'height': targetHeight,
                 }).prependTo(textBlock);
 
-               let tempBlock = textBlock.find('.overpasteTemp');
+                let tempBlock = textBlock.find('.overpasteTemp');
                 allowWhile = true;
                 let i = 0;
-                while(textBlock.innerHeight() > tempBlock.innerHeight() && allowWhile && i < 10){
+                while (textBlock.innerHeight() > tempBlock.innerHeight() && allowWhile && i < 10) {
                     targetHeight += additionalMargin;
-                    tempBlock.css('height',targetHeight);
+                    tempBlock.css('height', targetHeight);
                     textBlockHeight = textBlock.innerHeight()
                     i++;
                 }
@@ -3672,30 +3675,39 @@ function calcualteLongImages(){
                 tempBlock.remove();
 
 
-               if (imgTopPosition + currentRealHeight > textBlockOffset.top + textBlockHeight && imgTopPosition > textBlockOffset.top){
-                   blankHeight = textBlockOffset.top + textBlockHeight - imgTopPosition;
-                   blankTop = textBlockHeight - blankHeight;
-                   polygon = `polygon(0px ${blankTop}px, ${targetWidth}px ${blankTop}px, ${targetWidth}px ${targetHeight}px, 0px ${targetHeight}px)`;
-               } else if (imgTopPosition + currentRealHeight < textBlockOffset.top + textBlockHeight && imgTopPosition <= textBlockOffset.top){
-                   blankHeight = imgTopPosition + currentRealHeight - textBlockOffset.top;
-                   blankTop = 0;
-                   polygon = `polygon(0px ${blankTop}px, ${targetWidth}px ${blankTop}px, ${targetWidth}px ${blankHeight}px, 0px ${blankHeight}px)`;
-               } else {
-                   blankTop = 0;
-                   polygon = `polygon(0px ${blankTop}px, ${targetWidth}px ${blankTop}px, ${targetWidth}px ${targetHeight}px, 0px ${targetHeight}px)`;
-               }
+                if (imgTopPosition + currentRealHeight > textBlockOffset.top + textBlockHeight && imgTopPosition > textBlockOffset.top) {
+                    blankHeight = textBlockOffset.top + textBlockHeight - imgTopPosition;
+                    blankTop = textBlockHeight - blankHeight;
+                    polygon = `polygon(0px ${blankTop}px, ${targetWidth}px ${blankTop}px, ${targetWidth}px ${targetHeight}px, 0px ${targetHeight}px)`;
+                } else if (imgTopPosition + currentRealHeight < textBlockOffset.top + textBlockHeight && imgTopPosition <= textBlockOffset.top) {
+                    blankHeight = imgTopPosition + currentRealHeight - textBlockOffset.top;
+                    blankTop = 0;
+                    polygon = `polygon(0px ${blankTop}px, ${targetWidth}px ${blankTop}px, ${targetWidth}px ${blankHeight}px, 0px ${blankHeight}px)`;
+                } else {
+                    blankTop = 0;
+                    polygon = `polygon(0px ${blankTop}px, ${targetWidth}px ${blankTop}px, ${targetWidth}px ${targetHeight}px, 0px ${targetHeight}px)`;
+                }
 
-               $('<div>').attr('class', 'overpaste').css({
-                   'width': targetWidth,
-                   'height': targetHeight,
-                   'shape-outside': polygon
-               }).prependTo(textBlock);
+                $('<div>').attr('class', 'overpaste').css({
+                    'width': targetWidth,
+                    'height': targetHeight,
+                    'shape-outside': polygon
+                }).prependTo(textBlock);
             } else {
                 if (startCollision) return false;
             }
         });
         imgDom.addClass('calculated');
     });
+}
+function bodyNoScroll() {
+    let bodyBodymotionless = document.querySelector('body')
+    bodyBodymotionless.classList.add("Bodymotionless")
+
+}
+function bodyYesScroll() {
+    let bodyBodymotionless = document.querySelector('body')
+    bodyBodymotionless.classList.remove("Bodymotionless")
 }
 $(window).on('load', () => {
 	function initSelectsLikeAnketaPage(){

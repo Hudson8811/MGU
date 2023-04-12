@@ -3,9 +3,11 @@
 	display: none;
 	justify-content: center;
 	width: 100%;
+
 	@include max(md) {
 		display: flex;
 	}
+
 	&--menu {
 		&--wrap {
 			z-index: 10;
@@ -26,6 +28,7 @@
 			padding-bottom: 60px;
 			overflow: hidden;
 		}
+
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -37,8 +40,9 @@
 		opacity: 0;
 
 		z-index: 200;
-	
+
 		transition: opacity 0s;
+
 		&-bg {
 			width: 100vw;
 			height: 100vh;
@@ -48,6 +52,7 @@
 			background: rgba(61, 76, 100, 0.5);
 			z-index: 0;
 		}
+
 		&.menuDepartMob--menu--active {
 			display: flex;
 			opacity: 1;
@@ -56,6 +61,7 @@
 			min-height: 100vh;
 		}
 	}
+
 	&--title {
 		position: relative;
 		font-style: normal;
@@ -64,12 +70,14 @@
 		line-height: $lh24;
 		color: $ocher;
 	}
+
 	&--lang {
 		position: absolute;
 		left: 33px;
 		top: 22px;
 		cursor: pointer;
 	}
+
 	&--footer {
 		position: absolute;
 		width: 90%;
@@ -86,6 +94,7 @@
 		color: $blueDarck;
 		padding-top: 20px;
 	}
+
 	&--button {
 		position: sticky;
 		top: 20px;
@@ -96,6 +105,7 @@
 		max-width: 240px;
 		margin-left: auto;
 		margin-right: auto;
+
 		@include max(md) {
 			display: inline-block;
 		}
@@ -108,11 +118,13 @@
 	background: transparent;
 	margin-top: 20px;
 	max-width: calc(100% - 0px);
+
 	&--close {
 		position: absolute;
 		right: 35px;
 		top: 24px;
 	}
+
 	&--list {
 		position: relative;
 		display: flex;
@@ -123,6 +135,7 @@
 		width: 100%;
 		height: calc(100vh - 200px);
 		overflow-y: auto;
+
 		p {
 			&::before {
 				content: url(../img/svg/menu-sideb-arrrow.svg);
@@ -136,7 +149,8 @@
 
 		}
 	}
-	&--item{
+
+	&--item {
 		position: relative;
 		display: inline-block;
 		font-style: normal;
@@ -151,20 +165,24 @@
 
 	}
 }
+
 .menuDepartMob__overlay--list {
 	.menuDepartMob-tab {
 		&.notActive {
 			color: rgba(7, 52, 120, 0.3);
 		}
+
 		&.active {
 			text-shadow: 0 0 0.15px $blueDarck, 0 0 0.15px $blueDarck;
 		}
 	}
 }
+
 .menuDepartMob__overlay--list__start {
 	position: absolute;
 	top: 0;
 	left: 0;
+
 	&.notActive {
 		position: absolute;
 		top: 0;
@@ -173,6 +191,7 @@
 		// opacity: 0;
 		pointer-events: none;
 	}
+
 	&.active {
 		transition: all 0.5s;
 		position: absolute;
@@ -181,8 +200,9 @@
 		left: 0;
 		pointer-events: auto;
 	}
-	
+
 }
+
 .menuDepartMob__overlay--list.menuDepartMob-pane {
 	position: absolute;
 	right: -288px;
@@ -197,13 +217,15 @@
 	height: 0;
 	transition: all 0.5s;
 	background: $white;
+
 	.menuDepartMob__overlay--item__back {
-		border-top: 1px solid  rgba(7, 52, 120, 0.3);
-		border-bottom: 1px solid  rgba(7, 52, 120, 0.3) !important;
+		border-top: 1px solid rgba(7, 52, 120, 0.3);
+		border-bottom: 1px solid rgba(7, 52, 120, 0.3) !important;
 		font-weight: 700 !important;
 		font-size: $fz16 !important;
 		line-height: $lh24 !important;
 		padding-left: 40px;
+
 		&::before {
 			content: url(../img/svg/menu-sideb-arrrow.svg);
 			position: absolute;
@@ -215,14 +237,16 @@
 			transform: rotate(180deg);
 		}
 	}
+
 	.menuDepartMob__overlay--item {
 		font-style: normal;
 		font-weight: 400;
 		font-size: $fz14;
 		line-height: $lh20;
 		color: $blueDarck;
-		border-bottom: 1px solid  rgba(0, 85, 182, 0.1);
+		border-bottom: 1px solid rgba(0, 85, 182, 0.1);
 	}
+
 	&.notActive {
 		position: absolute;
 		top: 0;
@@ -231,6 +255,7 @@
 		// opacity: 0;
 		pointer-events: none;
 	}
+
 	&.active {
 		width: 100%;
 		height: auto;
@@ -242,10 +267,6 @@
 		height: calc(100vh - 250px);
 		overflow: auto;
 	}
-}body.Bodymotionless {
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
 }
 
 .tabsControls {
@@ -256,6 +277,7 @@
 	padding-bottom: 24px;
 	margin-bottom: 40px;
 	border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+
 	.tabControl {
 		margin-right: 20px;
 		margin-bottom: 16px;

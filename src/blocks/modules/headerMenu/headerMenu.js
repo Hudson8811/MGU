@@ -1,61 +1,63 @@
 $(document).ready(() => { // DOM готов к взаимодейтсвию
 
-	const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
+	const onScrollHeader = () => {
 
-		const header = $('.section__header') // находим header и записываем в константу
+		const header = $('.section__header')
 
-		let prevScroll = $(window).scrollTop() // узнаем на сколько была прокручена страница ранее
-		let currentScroll // на сколько прокручена страница сейчас (пока нет значения)
+		let prevScroll = $(window).scrollTop()
+		let currentScroll
 
-		$(window).scroll(() => { // при прокрутке страницы
+		$(window).scroll(() => {
 
-			currentScroll = $(window).scrollTop() // узнаем на сколько прокрутили страницу
+			currentScroll = $(window).scrollTop()
 
-			const headerHidden = () => header.hasClass('header_hidden') // узнаем скрыт header или нет
+			const headerHidden = () => header.hasClass('header_hidden')
 
-			if (currentScroll > prevScroll && !headerHidden()) { // если прокручиваем страницу вниз и header не скрыт
-				header.addClass('header_hidden') // то скрываем header
+			if (currentScroll > prevScroll && !headerHidden()) {
+				header.addClass('header_hidden')
 			}
-			if (currentScroll < prevScroll && headerHidden()) { // если прокручиваем страницу вверх и header скрыт
-				header.removeClass('header_hidden') // то отображаем header
+			if (currentScroll < prevScroll && headerHidden()) {
+				header.removeClass('header_hidden')
 			}
 
-			prevScroll = currentScroll // записываем на сколько прокручена страница на данный момент
+			prevScroll = currentScroll
 
 		})
 
 	}
 
-	onScrollHeader() // вызываем основную функцию onScrollHeader
-	const onScrollHeaderMenu = () => { // объявляем основную функцию onScrollHeader
+	onScrollHeader()
+	const onScrollHeaderMenu = () => {
 
-		const header = $('.section__topMenu') // находим header и записываем в константу
+		const header = $('.section__topMenu')
 
-		let prevScroll = $(window).scrollTop() // узнаем на сколько была прокручена страница ранее
-		let currentScroll // на сколько прокручена страница сейчас (пока нет значения)
+		let prevScroll = $(window).scrollTop()
+		let currentScroll
 
-		$(window).scroll(() => { // при прокрутке страницы
+		$(window).scroll(() => {
 
-			currentScroll = $(window).scrollTop() // узнаем на сколько прокрутили страницу
+			currentScroll = $(window).scrollTop()
 
-			const headerHidden = () => header.hasClass('header_hidden') // узнаем скрыт header или нет
+			const headerHidden = () => header.hasClass('header__menu--hidden')
 
-			if (currentScroll > prevScroll && !headerHidden()) { // если прокручиваем страницу вниз и header не скрыт
-				header.addClass('header_hidden') // то скрываем header
+			if (currentScroll > prevScroll && !headerHidden()) {
+				header.addClass('header__menu--hidden')
 			}
-			if (currentScroll < prevScroll && headerHidden()) { // если прокручиваем страницу вверх и header скрыт
-				header.removeClass('header_hidden') // то отображаем header
+			if (currentScroll < prevScroll && headerHidden()) {
+				header.removeClass('header__menu--hidden')
 			}
 
-			prevScroll = currentScroll // записываем на сколько прокручена страница на данный момент
+			prevScroll = currentScroll
 
 		})
 
 	}
 
-	onScrollHeaderMenu() // вызываем основную функцию onScrollHeader
+	onScrollHeaderMenu()
 
 })
+
+
 const menuBtn = $(".topMenu__item__department"),
 	menu = $(".department__menu");
 
@@ -95,6 +97,7 @@ $(document).click(function (e) {
 		topMenuoverlay.removeClass("topMenu__overlay--active");
 		NotHover();
 		topMenuNotHover()
+		bodyYesScroll()
 	};
 });
 
@@ -163,7 +166,7 @@ if (topMenutabNavs !== null & topMenutabPanes !== null) {
 	topMenutabHover()
 }
 function topMenuNotHover() {
-
+	bodyYesScroll()
 	topMenuOverlayBg.classList.remove("active");
 	topMenuOverlayBgWhite.classList.remove("active");
 	for (var i = 0; i < topMenutabNavs.length; i++) {
@@ -181,7 +184,7 @@ function topMenutabHover() {
 		topMenutabNavs[i].addEventListener("mouseover", function (e) {
 			e.preventDefault();
 			NotHover();
-			bodyYesScroll()
+			// bodyNoScroll()
 
 			var activeTabAttr = e.target.getAttribute("data-tab");
 			var activeTab = e.target;
@@ -206,7 +209,7 @@ function topMenutabHover() {
 
 					}
 					maxHeightMenuPane()
-
+					bodyNoScroll()
 				};
 			}, 200);
 

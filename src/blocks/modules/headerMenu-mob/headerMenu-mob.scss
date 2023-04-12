@@ -19,6 +19,7 @@
 			padding-bottom: 60px;
 			overflow: hidden;
 		}
+
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -30,6 +31,7 @@
 		opacity: 0;
 		z-index: 200;
 		transition: opacity 0s;
+
 		&-bg {
 			width: 100vw;
 			height: 100vh;
@@ -39,6 +41,7 @@
 			background: rgba(61, 76, 100, 0.5);
 			z-index: 0;
 		}
+
 		&.headerMenuMob--menu--active {
 			display: flex;
 			opacity: 1;
@@ -47,6 +50,7 @@
 			min-height: 100vh;
 		}
 	}
+
 	&--title {
 		position: relative;
 		font-style: normal;
@@ -55,6 +59,7 @@
 		line-height: $lh24;
 		color: $ocher;
 	}
+
 	&--lang {
 		position: absolute;
 		left: 33px;
@@ -66,6 +71,7 @@
 		color: #031B4B;
 		cursor: pointer;
 	}
+
 	&--footer {
 		position: absolute;
 		width: 90%;
@@ -83,34 +89,40 @@
 		color: $blueDarck;
 		padding-top: 20px;
 	}
+
 	&--button {
 		display: none;
 		border-radius: 0;
 		margin-bottom: 20px;
+
 		@include max(md) {
 			display: inline-block;
 			opacity: 1;
 			transition: all .5s;
 		}
+
 		&.notActive {
 			opacity: 0;
 			display: none;
 			transition: all .5s;
 		}
+
 		&.active {
 			display: inline-block;
 			transition: all .5s;
 		}
 	}
+
 	&--soc {
 		position: absolute;
-    width: 90%;
-    bottom: 72px;
-    left: 35px;
+		width: 90%;
+		bottom: 72px;
+		left: 35px;
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
 		z-index: 200;
+
 		&__item {
 			display: block;
 			margin-right: 20px;
@@ -123,11 +135,13 @@
 	position: relative;
 	width: 100%;
 	background: transparent;
+
 	&--close {
 		position: absolute;
 		right: 35px;
 		top: 24px;
 	}
+
 	&--list {
 		position: relative;
 		display: flex;
@@ -138,6 +152,7 @@
 		width: 100%;
 		height: calc(100vh - 250px);
 		overflow-y: auto;
+
 		p {
 			&::before {
 				content: url(../img/svg/menu-sideb-arrrow.svg);
@@ -151,7 +166,8 @@
 
 		}
 	}
-	&--item{
+
+	&--item {
 		position: relative;
 		display: inline-block;
 		font-style: normal;
@@ -166,21 +182,25 @@
 
 	}
 }
+
 .headerMenuMob__overlay--list {
 	.headerMenuMob-tab {
 		&.notActive {
 			color: rgba(7, 52, 120, 0.3);
 		}
+
 		&.active {
 			width: 100%;
 			text-shadow: 0 0 0.15px $blueDarck, 0 0 0.15px $blueDarck;
 		}
 	}
 }
+
 .headerMenuMob__overlay--list__start {
 	position: absolute;
 	top: 0;
 	left: 0;
+
 	&.notActive {
 		position: absolute;
 		top: 0;
@@ -189,6 +209,7 @@
 		// opacity: 0;
 		pointer-events: none;
 	}
+
 	&.active {
 		transition: all 0.5s;
 		position: absolute;
@@ -197,11 +218,13 @@
 		left: 0;
 		pointer-events: auto;
 	}
-	
+
 }
+
 .headerMenuMob__overlay--list.headerMenuMob__overlay--list.quickAccessEducation {
 	z-index: 300;
 }
+
 .headerMenuMob__overlay--list.headerMenuMob-pane {
 	position: absolute;
 	right: -288px;
@@ -216,13 +239,15 @@
 	height: 0;
 	transition: all 0.5s;
 	background: $white;
+
 	.headerMenuMob__overlay--item__back {
-		border-top: 1px solid  rgba(7, 52, 120, 0.3);
-		border-bottom: 1px solid  rgba(7, 52, 120, 0.3) !important;
+		border-top: 1px solid rgba(7, 52, 120, 0.3);
+		border-bottom: 1px solid rgba(7, 52, 120, 0.3) !important;
 		font-weight: 700 !important;
 		font-size: $fz16 !important;
 		line-height: $lh20 !important;
 		padding-left: 40px;
+
 		&::before {
 			content: url(../img/svg/menu-sideb-arrrow.svg);
 			position: absolute;
@@ -241,8 +266,9 @@
 		font-size: $fz14;
 		line-height: $lh20;
 		color: $blueDarck;
-		border-bottom: 1px solid  rgba(0, 85, 182, 0.1);
+		border-bottom: 1px solid rgba(0, 85, 182, 0.1);
 	}
+
 	&.notActive {
 		position: absolute;
 		top: 0;
@@ -251,6 +277,7 @@
 		// opacity: 0;
 		pointer-events: none;
 	}
+
 	&.active {
 		width: 100%;
 		height: auto;
@@ -263,6 +290,7 @@
 		overflow: auto;
 	}
 }
+
 .headerMenuMob__overlay--list.headerMenuMob-paneTwo {
 	position: absolute;
 	right: -288px;
@@ -277,13 +305,15 @@
 	height: 0;
 	transition: all 0.5s;
 	background: $white;
-	.headerMenuMob__overlay--item__backTwo{
-		border-top: 1px solid  rgba(7, 52, 120, 0.3);
-		border-bottom: 1px solid  rgba(7, 52, 120, 0.3) !important;
+
+	.headerMenuMob__overlay--item__backTwo {
+		border-top: 1px solid rgba(7, 52, 120, 0.3);
+		border-bottom: 1px solid rgba(7, 52, 120, 0.3) !important;
 		font-weight: 700 !important;
 		font-size: $fz16 !important;
 		line-height: $lh20 !important;
 		padding-left: 40px;
+
 		&::before {
 			content: url(../img/svg/menu-sideb-arrrow.svg);
 			position: absolute;
@@ -295,15 +325,17 @@
 			transform: rotate(180deg);
 		}
 	}
+
 	.headerMenuMob__overlay--item {
 		font-style: normal;
 		font-weight: 400;
 		font-size: $fz14;
 		line-height: $lh20;
 		color: $blueDarck;
-		border-bottom: 1px solid  rgba(0, 85, 182, 0.1);
+		border-bottom: 1px solid rgba(0, 85, 182, 0.1);
 
 	}
+
 	&.notActive {
 		position: absolute;
 		top: 0;
@@ -312,6 +344,7 @@
 		// opacity: 0;
 		pointer-events: none;
 	}
+
 	&.active {
 		width: 100%;
 		height: auto;
@@ -324,9 +357,10 @@
 		overflow: auto;
 	}
 }
+
 body.Bodymotionless {
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	overflow: hidden;
 }
 
@@ -338,6 +372,7 @@ body.Bodymotionless {
 	padding-bottom: 24px;
 	margin-bottom: 40px;
 	border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+
 	.tabControl {
 		margin-right: 20px;
 		margin-bottom: 16px;

@@ -1,9 +1,8 @@
 .section__topMenu {
 	position: sticky;
 	transition: 1s;
-	top: 0;
+	top: 91px;
 	width: 100%;
-	position: relative;
 	background: #F4F3F0;
 	border-bottom: 2px solid #fff;
 	z-index: 49;
@@ -31,6 +30,10 @@
 
 .header_hidden {
 	transform: translateY(-101%);
+}
+
+.header__menu--hidden {
+	transform: translateY(-180px);
 }
 
 
@@ -176,6 +179,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1168px;
+	// background: #fff;
+	// border: 1px solid #000;
 	// bottom: -716px;
 	min-height: 0vh;
 	display: block;
@@ -228,7 +233,7 @@
 		}
 
 		&--white {
-			position: absolute;
+			position: fixed;
 			background: #fff;
 			height: 0px;
 
