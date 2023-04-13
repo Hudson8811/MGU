@@ -27,6 +27,8 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 	}
 
 	onScrollHeader()
+
+
 	const onScrollHeaderMenu = () => {
 
 		const header = $('.section__topMenu')
@@ -90,21 +92,29 @@ menu.mouseleave(function () {
 
 const topMenu = $(".topMenu__item--owl"),
 	topMenuoverlay = $(".topMenu__overlay"),
+	topMenuOverlayBgClose = $(".topMenu__overlay__bg "),
 	topMenuOverlayClose = $(".topMenu__overlay--close");
 
-$(document).click(function (e) {
-	if (!topMenuoverlay.is(e.target) && !topMenuoverlay.is(e.target) && topMenuoverlay.has(e.target).length === 0) {
-		topMenuoverlay.removeClass("topMenu__overlay--active");
-		NotHover();
-		topMenuNotHover()
-		bodyYesScroll()
-	};
-});
+// $(document).click(function (e) {
+// 	if (!topMenuoverlay.is(e.target) && !topMenuoverlay.is(e.target) && topMenuoverlay.has(e.target).length === 0) {
+// 		topMenuoverlay.removeClass("topMenu__overlay--active");
+// 		NotHover();
+// 		topMenuNotHover()
+// 		// bodyYesScroll()
+// 	};
+// });
 
 topMenuOverlayClose.on("click", function () {
 	topMenuoverlay.removeClass("topMenu__overlay--active");
 	NotHover();
 	topMenuNotHover()
+	bodyYesScroll()
+});
+topMenuOverlayBgClose.on("click", function () {
+	topMenuoverlay.removeClass("topMenu__overlay--active");
+	NotHover();
+	topMenuNotHover()
+	bodyYesScroll()
 });
 
 
@@ -166,18 +176,21 @@ if (topMenutabNavs !== null & topMenutabPanes !== null) {
 	topMenutabHover()
 }
 function topMenuNotHover() {
-	bodyYesScroll()
-	topMenuOverlayBg.classList.remove("active");
-	topMenuOverlayBgWhite.classList.remove("active");
-	for (var i = 0; i < topMenutabNavs.length; i++) {
-		topMenutabNavs[i].classList.remove("active");
-		topMenutabNavs[i].classList.remove("notActive");
-	}
-	for (var i = 0; i < topMenutabPanes.length; i++) {
-		topMenutabPanes[i].classList.remove("topMenu__overlay--active");
-		topMenutabNavs[i].classList.remove("notActive");
+	if (topMenutabNavs !== null & topMenutabPanes !== null) {
+		// bodyYesScroll()
+		topMenuOverlayBg.classList.remove("active");
+		topMenuOverlayBgWhite.classList.remove("active");
+		for (var i = 0; i < topMenutabNavs.length; i++) {
+			topMenutabNavs[i].classList.remove("active");
+			topMenutabNavs[i].classList.remove("notActive");
+		}
+		for (var i = 0; i < topMenutabPanes.length; i++) {
+			topMenutabPanes[i].classList.remove("topMenu__overlay--active");
+			topMenutabNavs[i].classList.remove("notActive");
+		}
 	}
 }
+
 function topMenutabHover() {
 	for (var i = 0; i < topMenutabNavs.length; i++) {
 		var delayTopMenutabNavs;
