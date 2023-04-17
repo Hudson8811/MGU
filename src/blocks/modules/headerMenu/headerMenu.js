@@ -14,14 +14,14 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 
 			const headerHidden = () => header.hasClass('header_hidden')
 
-			if (currentScroll > 129 && currentScroll > prevScroll && headerHidden()) {
+			if (currentScroll > 0 && currentScroll > prevScroll && headerHidden()) {
 				header.removeClass('header_hidden')
 			}
 			if (currentScroll < prevScroll && !headerHidden()) {
 
 				header.addClass('header_hidden')
 			}
-			if (currentScroll < 129 && currentScroll < prevScroll && headerHidden()) {
+			if (currentScroll < 1 && currentScroll < prevScroll && headerHidden()) {
 
 				header.removeClass('header_hidden')
 			}
@@ -50,14 +50,14 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 
 			const headerHidden = () => header.hasClass('header__menu--hidden')
 
-			if (currentScroll > 129 && currentScroll > prevScroll && headerHidden()) {
+			if (currentScroll > 0 && currentScroll > prevScroll && headerHidden()) {
 				header.removeClass('header__menu--hidden')
 			}
 			if (currentScroll < prevScroll && !headerHidden()) {
 
 				header.addClass('header__menu--hidden')
 			}
-			if (currentScroll < 129 && currentScroll < prevScroll && headerHidden()) {
+			if (currentScroll < 1 && currentScroll < prevScroll && headerHidden()) {
 
 				header.removeClass('header__menu--hidden')
 			}

@@ -2671,15 +2671,15 @@ span.flatpickr-weekday {
 }
 
 /**
- * Swiper 8.4.7
+ * Swiper 8.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2023 Vladimir Kharlampidi
+ * Copyright 2014-2022 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: January 30, 2023
+ * Released on: November 21, 2022
  */
 
 @font-face {
@@ -2867,7 +2867,6 @@ span.flatpickr-weekday {
 
 .swiper-centered > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: center center;
-  scroll-snap-stop: always;
 }
 
 .swiper-virtual .swiper-slide {
@@ -4477,18 +4476,50 @@ a.block__textOne__link--person-colors::after {
   position: relative;
 }
 
+@keyframes headerTopPartShow {
+  0% {
+    top: 0;
+    transform: translateY(-91px);
+  }
+
+  100% {
+    top: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes headerBottomPartShow {
+  0% {
+    top: 0;
+    transform: translateY(-91px);
+  }
+
+  100% {
+    top: 0;
+    transform: translateY(91px);
+  }
+}
+
 .header_hidden {
   position: sticky;
-  top: -91px;
   transition: 1s;
-  transform: translateY(91px);
+  top: 0;
+  animation: headerTopPartShow 1s ease 0s 1 normal forwards;
+}
+
+.section__topMenu-placeholder {
+  height: 46px;
+}
+
+.section__topMenu:not(.header__menu--hidden) {
+  position: absolute;
 }
 
 .header__menu--hidden {
-  position: sticky;
-  top: -91px;
+  position: fixed;
   transition: 1s;
-  transform: translateY(182px);
+  top: 0;
+  animation: headerBottomPartShow 1s ease 0s 1 normal forwards;
 }
 
 .topMenu {
@@ -11616,6 +11647,10 @@ span.flatpickr-weekday:last-child {
     padding-right: 60px;
   }
 
+  .section__topMenu-placeholder {
+    height: 38px;
+  }
+
   .department__menu {
     right: 1px;
   }
@@ -12499,6 +12534,10 @@ span.flatpickr-weekday:last-child {
     display: flex;
     width: 100%;
     max-width: 100%;
+  }
+
+  .section__topMenu-placeholder {
+    display: none;
   }
 
   .topMenu__overlay--close {
