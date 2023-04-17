@@ -5,6 +5,7 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 		const header = $('.section__header')
 
 		let prevScroll = $(window).scrollTop()
+		let windowHeight = $(window).height();
 		let currentScroll
 
 		$(window).scroll(() => {
@@ -12,8 +13,10 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 			currentScroll = $(window).scrollTop()
 
 			const headerHidden = () => header.hasClass('header_hidden')
+			console.log(prevScroll)
+			console.log(currentScroll)
 
-			if (currentScroll > prevScroll && !headerHidden()) {
+			if (currentScroll > 200 && currentScroll > prevScroll && !headerHidden()) {
 				header.addClass('header_hidden')
 			}
 			if (currentScroll < prevScroll && headerHidden()) {
@@ -34,6 +37,8 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 		const header = $('.section__topMenu')
 
 		let prevScroll = $(window).scrollTop()
+		let windowHeight = $(window).height();
+
 		let currentScroll
 
 		$(window).scroll(() => {
@@ -42,7 +47,7 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 
 			const headerHidden = () => header.hasClass('header__menu--hidden')
 
-			if (currentScroll > prevScroll && !headerHidden()) {
+			if (currentScroll > 200 && currentScroll > prevScroll && !headerHidden()) {
 				header.addClass('header__menu--hidden')
 			}
 			if (currentScroll < prevScroll && headerHidden()) {

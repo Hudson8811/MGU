@@ -1,7 +1,8 @@
 .section__topMenu {
-	position: sticky;
+	position: relative;
+	// position: sticky;
 	transition: 1s;
-	top: 91px;
+	// top: 91px;
 	width: 100%;
 	background: #F4F3F0;
 	border-bottom: 2px solid #fff;
@@ -29,11 +30,16 @@
 // }
 
 .header_hidden {
-	transform: translateY(-101%);
+	position: sticky;
+	top: -91px;
+	transition: 1s;
+	transform: translateY(91px);
 }
 
 .header__menu--hidden {
-	transform: translateY(-180px);
+	position: sticky;
+	top: -91px;
+	transform: translateY(182px);
 }
 
 
