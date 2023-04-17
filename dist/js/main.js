@@ -2875,13 +2875,16 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 			currentScroll = $(window).scrollTop()
 
 			const headerHidden = () => header.hasClass('header_hidden')
-			console.log(prevScroll)
-			console.log(currentScroll)
 
-			if (currentScroll > 200 && currentScroll > prevScroll && !headerHidden()) {
+			if (currentScroll > 129 && currentScroll > prevScroll && headerHidden()) {
+				header.removeClass('header_hidden')
+			}
+			if (currentScroll < prevScroll && !headerHidden()) {
+
 				header.addClass('header_hidden')
 			}
-			if (currentScroll < prevScroll && headerHidden()) {
+			if (currentScroll < 129 && currentScroll < prevScroll && headerHidden()) {
+
 				header.removeClass('header_hidden')
 			}
 
@@ -2909,10 +2912,15 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 
 			const headerHidden = () => header.hasClass('header__menu--hidden')
 
-			if (currentScroll > 200 && currentScroll > prevScroll && !headerHidden()) {
+			if (currentScroll > 129 && currentScroll > prevScroll && headerHidden()) {
+				header.removeClass('header__menu--hidden')
+			}
+			if (currentScroll < prevScroll && !headerHidden()) {
+
 				header.addClass('header__menu--hidden')
 			}
-			if (currentScroll < prevScroll && headerHidden()) {
+			if (currentScroll < 129 && currentScroll < prevScroll && headerHidden()) {
+
 				header.removeClass('header__menu--hidden')
 			}
 
@@ -3111,11 +3119,7 @@ function maxHeightMenuPane() {
 	// var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map().height()
 	//  var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap").height()
 
-	// console.log(heights)
 	maxHeight = Math.max.apply(null, heights);
-	console.log(maxHeight)
-	// console.log("maxHeight" + maxHeight )
-	// console.log("maxHeight" + maxHeight )
 	// $(".topMenu__overlay__bg--white").height(heights + 200);
 	$(".topMenu__overlay__bg--white").height(maxHeight + $('.section__topMenu').height() + $('.section__header').height() + 150);
 

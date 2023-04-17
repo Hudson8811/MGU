@@ -39,6 +39,7 @@
 .header__menu--hidden {
 	position: sticky;
 	top: -91px;
+	transition: 1s;
 	transform: translateY(182px);
 }
 
