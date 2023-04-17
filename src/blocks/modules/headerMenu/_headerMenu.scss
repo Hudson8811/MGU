@@ -64,17 +64,19 @@
 }
 
 
-.section__topMenu-placeholder{
+.section__topMenu-placeholder {
 	height: 46px;
-	@media only screen and (max-width: 1200px){
+
+	@media only screen and (max-width: 1200px) {
 		height: 38px;
 	}
-	@media only screen and (max-width: 992px){
+
+	@media only screen and (max-width: 992px) {
 		display: none;
 	}
 }
 
-.section__topMenu:not(.header__menu--hidden){
+.section__topMenu:not(.header__menu--hidden) {
 	position: absolute;
 
 }

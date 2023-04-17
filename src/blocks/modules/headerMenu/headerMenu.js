@@ -32,8 +32,6 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 
 	}
 
-	onScrollHeader()
-
 
 	const onScrollHeaderMenu = () => {
 
@@ -67,8 +65,15 @@ $(document).ready(() => { // DOM готов к взаимодейтсвию
 		})
 
 	}
-
-	onScrollHeaderMenu()
+	$(function () {
+		if ($(window).width() > 992) {
+			onScrollHeader()
+			onScrollHeaderMenu()
+		}
+		else {
+			return
+		}
+	});
 
 })
 
