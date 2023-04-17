@@ -4508,6 +4508,10 @@ a.block__textOne__link--person-colors::after {
   animation: headerTopPartShow 1s ease 0s 1 normal forwards;
 }
 
+.section__topMenu:not(.header__menu--hidden) {
+  top: 91px;
+}
+
 .section__topMenu-placeholder {
   height: 46px;
 }
