@@ -1,5 +1,6 @@
+
 $(window).on('load', () => {
-	function initSelectsLikeAnketaPage(){
+	function initSelectsLikeAnketaPage() {
 		$('.js-example-form:not(.select2-hidden-accessible').select2({
 			theme: "custom-theme",
 			language: 'ru',
@@ -21,11 +22,11 @@ $(window).on('load', () => {
 	}
 
 
-	function initDatePicker(){
+	function initDatePicker() {
 
 		const datePickerInput = document.getElementById('date-picker');
 		// Initialize the date picker
-		if(!$(datePickerInput).hasClass('js-flag-init-dp')){
+		if (!$(datePickerInput).hasClass('js-flag-init-dp')) {
 			var flatpickrItem = flatpickr(datePickerInput, {
 				enableTime: true,
 				dateFormat: 'Y-m-d',
@@ -36,10 +37,10 @@ $(window).on('load', () => {
 					function (selectedDates, dateStr, instance) {
 						var container = $(instance.calendarContainer);
 
-						var cal_year=false;
-						var cal_month=false;
-						var cal_custom_year=false;
-						var cal_custom_month=false;
+						var cal_year = false;
+						var cal_month = false;
+						var cal_custom_year = false;
+						var cal_custom_month = false;
 
 
 						if (container.find('.datepicker-btns').length < 1) {
@@ -49,11 +50,11 @@ $(window).on('load', () => {
 							var years_opt_list = '';
 							var currentYear = new Date().getFullYear()
 							years.forEach(year => {
-								if(year===currentYear){
+								if (year === currentYear) {
 									years_opt_list += '<option  value="' + year + '" selected>' + year + '</option>';
 
 								}
-								else{
+								else {
 									years_opt_list += '<option  value="' + year + '">' + year + '</option>';
 								}
 							});
@@ -69,19 +70,19 @@ $(window).on('load', () => {
 
 							dropdownParent: $(this).siblings('.simple-select2-items-wrapper')
 
-							var cal_year=container.find('.numInput.cur-year');
-							var cal_month=container.find('.flatpickr-monthDropdown-months');
-							var cal_custom_year=container.find('.flatpickr-custom-select--year select');
-							var cal_custom_month=container.find('.flatpickr-custom-select--month select');
+							var cal_year = container.find('.numInput.cur-year');
+							var cal_month = container.find('.flatpickr-monthDropdown-months');
+							var cal_custom_year = container.find('.flatpickr-custom-select--year select');
+							var cal_custom_month = container.find('.flatpickr-custom-select--month select');
 
-							cal_custom_year.on('change',function(){
+							cal_custom_year.on('change', function () {
 								console.log($(this).val());
 								//cal_year.val($(this).val());
 
-								flatpickrItem.jumpToDate(new Date(cal_custom_year.val(),cal_custom_month.val(),1));
+								flatpickrItem.jumpToDate(new Date(cal_custom_year.val(), cal_custom_month.val(), 1));
 
 							});
-							cal_custom_month.on('change',function(){
+							cal_custom_month.on('change', function () {
 								console.log($(this).val());
 								cal_month.val($(this).val());
 								flatpickrItem.changeMonth(parseInt($(this).val()), false);
@@ -131,7 +132,11 @@ $(window).on('load', () => {
 
 	});
 
-
+	tippy('.label--tooltips', {
+		theme: 'tomato',
+		content: 'Global content',
+		arrow: tippy.roundArrow,
+	});
 
 
 });

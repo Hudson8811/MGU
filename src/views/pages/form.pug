@@ -85,7 +85,10 @@ block content
 											input#date-picker(type="text")
 									.form__block
 										label
-											b.label СНИЛС
+											b.label
+												!="СНИЛС"
+												div(data-tippy-content="требуется для внесения данных в ФИС ФРДО").label--tooltips
+													img(src="img/svg/form-Subtract.svg", alt="")
 											input(type="text" placeholder="ХХХ-ХХХ-ХХХ YY")
 								.form__block-double
 									.form__block
@@ -144,8 +147,10 @@ block content
 											</select>
 								.form__block
 									label
-										b.label Место работы / учебы
-										input(type="text", name="" placeholder="Название учебного заведения / название компании")
+										b.label
+											!="Место работы / учебы"
+											button(data-tippy-content="для продолжающих образование указывается место учебы").label--tooltips
+												img(src="img/svg/form-Subtract.svg", alt="")
 								.form__block-double
 									.form__block
 										label
@@ -153,7 +158,10 @@ block content
 											input(type="text", name="" placeholder="Название должности")
 									.form__block
 										label
-											b.label Стаж
+											b.label
+												!="Стаж"
+												button(data-tippy-content="полных лет").label--tooltips
+													img(src="img/svg/form-Subtract.svg", alt="")
 											<select class="js-example-form ">
 												<option  value="" selected> ... </option>
 												<option  value="" >пункт 2</option>
@@ -245,5 +253,5 @@ block content
 	include ../../blocks/modules/footer/footer
 
 block scripts
-	script(src="js/vendor.js")
+	//- script(src="js/vendor.js")
 	script(src="js/main.js")
