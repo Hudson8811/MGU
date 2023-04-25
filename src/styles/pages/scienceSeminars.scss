@@ -5,35 +5,39 @@
 	width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
-	margin-bottom: 80px;
+
 	&__list {
 		position: relative;
-    display: flex;
-    width: calc(100% + 32px);
-    align-items: stretch;
-    flex-flow: row wrap;
-    margin-left: -32px;
+		display: flex;
+		width: calc(100% + 32px);
+		align-items: stretch;
+		flex-flow: row wrap;
+		margin-left: -32px;
 		padding-bottom: 0px;
 		margin-top: 16px;
 		margin-bottom: 48px;
+
 		@include max(lg) {
 			width: calc(100% + 24px);
 			margin-left: -24px;
 		}
+
 		@include max(md) {
 			width: calc(100% + 16px);
 			margin-left: -16px;
 			padding-bottom: 84px;
 		}
+
 		@include max(sm) {
 			width: calc(100% + 0px);
 			margin-left: 0px;
 		}
 	}
+
 	&__item {
 		position: relative;
 		flex: 0 0 33.3333%;
-		max-width: calc( 33.3333% - 32px);
+		max-width: calc(33.3333% - 32px);
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
@@ -47,18 +51,21 @@
 		min-height: 480px;
 		margin-left: 32px;
 		transition: background .3s;
+
 		@include max(lg) {
 			flex: 0 0 33.333%;
 			max-width: calc(33.3333% - 24px);
 			margin-left: 24px;
 			margin-bottom: 24px;
 		}
+
 		@include max(md) {
 			flex: 0 0 50%;
 			max-width: calc(50% - 16px);
 			margin-left: 16px;
 			margin-bottom: 16px;
 		}
+
 		@include max(sm) {
 			flex: 0 0 100%;
 			max-width: calc(100% - 0px);
@@ -66,9 +73,11 @@
 			margin-bottom: 16px;
 			min-height: 480px;
 		}
+
 		&:hover {
 			transition: background .3s;
-			background: darken( #739FF3, 7%);
+			background: darken(#739FF3, 7%);
+
 			.seminars__item__title {
 				transition: all .3s;
 				text-decoration-line: underline;
@@ -78,20 +87,23 @@
 				text-decoration-skip-ink: none;
 			}
 		}
+
 		&__title {
 			font-style: normal;
 			font-weight: 800;
 			font-size: $fz24;
 			line-height: $lh28;
-			color: #FFFFFF;			
+			color: #FFFFFF;
 		}
+
 		&__text {
 			font-style: normal;
 			font-weight: 500;
 			font-size: $fz16;
 			line-height: $lh24;
-			color: #FFFFFF;			
+			color: #FFFFFF;
 		}
+
 		img {
 			position: absolute;
 			width: 100%;
@@ -100,6 +112,6 @@
 			left: 0;
 			object-fit: cover;
 			object-position: 50% 50%;
-		}		
+		}
 	}
 }
