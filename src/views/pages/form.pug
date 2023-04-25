@@ -89,7 +89,7 @@ block content
 												!="СНИЛС"
 												div(data-tippy-content="требуется для внесения данных в ФИС ФРДО").label--tooltips
 													img(src="img/svg/form-Subtract.svg", alt="")
-											input(type="text" placeholder="ХХХ-ХХХ-ХХХ YY")
+											input.js-mask-snils(type="text" placeholder="ХХХ-ХХХ-ХХХ YY")
 								.form__block-double
 									.form__block
 										label
@@ -98,7 +98,7 @@ block content
 									.form__block
 										label
 											b Телефон
-											input(type="tel", name="" placeholder="+7 (000) 000 00 00 ")
+											input.js-mask-phone(type="tel", name="" placeholder="+7 (000) 000 00 00 ")
 								.form__block
 									label
 										b Сведения об образовании
@@ -240,7 +240,7 @@ block content
 									.form__block
 										label
 											b Телефон
-											input(type="tel", name="" placeholder="+7 (000) 000 00 00 ")
+											input.js-mask-phone(type="tel", name="" placeholder="+7 (000) 000 00 00 ")
 								.form__block.form__block--assent
 									.search-checkbox--block
 										label

@@ -137,7 +137,8 @@ $(window).on('load', () => {
 		content: 'Global content',
 		arrow: tippy.roundArrow,
 	});
-
+	$('.js-mask-phone').mask('+7(000)000-00-00');
+	$('.js-mask-snils').mask('000-000-000 00');
 
 });
 
