@@ -1,5 +1,8 @@
 @import "import/normalize";
 @import "import/extendedNormalization.scss";
+input, select, textarea{
+	border-radius: 0;
+}
 @import "import/libs/select2";
 @import "import/libs/jquery.fancybox.min";
 @import "import/libs/flatpickr.min";

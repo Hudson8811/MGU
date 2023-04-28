@@ -7,6 +7,8 @@ $(window).on('load', () => {
 			width: '100%',
 			minimumResultsForSearch: Infinity,
 			dropdownAutoWidth: true,
+			dropdownCssClass: 'select2-named-example-form__dd',
+			selectionCssClass: 'select2-named-example-form'
 		});
 	}
 
@@ -31,6 +33,7 @@ $(window).on('load', () => {
 				enableTime: true,
 				dateFormat: 'Y-m-d',
 				minDate: '01.01.1900',
+				static: true,
 				locale: 'ru',
 				disableMobile: true,
 				onOpen: [
@@ -115,7 +118,9 @@ $(window).on('load', () => {
 			$(datePickerInput).addClass('js-flag-init-dp');
 
 
-			$('body').on('click', '.js-datepicker-btn-reject, .js-datepicker-btn-accept', function () {
+			$('body').on('click', '.js-datepicker-btn-reject, .js-datepicker-btn-accept', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
 				flatpickrItem.close();
 			});
 		}

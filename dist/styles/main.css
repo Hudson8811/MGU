@@ -284,6 +284,12 @@ ol li {
   padding: 0px 0;
 }
 
+input,
+select,
+textarea {
+  border-radius: 0;
+}
+
 .select2-container {
   box-sizing: border-box;
   display: inline-block;
@@ -2723,15 +2729,15 @@ span.flatpickr-weekday {
 }
 
 /**
- * Swiper 8.4.7
+ * Swiper 8.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2023 Vladimir Kharlampidi
+ * Copyright 2014-2022 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: January 30, 2023
+ * Released on: November 21, 2022
  */
 
 @font-face {
@@ -2919,7 +2925,6 @@ span.flatpickr-weekday {
 
 .swiper-centered > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: center center;
-  scroll-snap-stop: always;
 }
 
 .swiper-virtual .swiper-slide {
@@ -10654,6 +10659,10 @@ body.Bodymotionless {
   opacity: 1;
 }
 
+.flatpickr-wrapper {
+  width: 100%;
+}
+
 .flatpickr-calendar {
   width: 252px;
   padding: 12px 24px 24px 24px;
@@ -10873,7 +10882,7 @@ span.flatpickr-weekday:last-child {
   padding-right: 12px;
 }
 
-.flatpickr-custom-select .select2-container .select2-dropdown {
+.flatpickr-custom-select .select2-container .select2-dropdown .select2-results__options {
   overflow: auto;
   max-height: 186px;
 }
@@ -11174,7 +11183,7 @@ span.flatpickr-weekday:last-child {
   max-width: calc(50% - 16px);
 }
 
-.form .select2-container {
+.form .form__block:not(.form__block--date) .select2-container {
   border: none;
   background: #fff;
   color: #031B4B;
@@ -11188,13 +11197,13 @@ span.flatpickr-weekday:last-child {
   padding-top: 10px;
 }
 
-.form .select2-container .select2-selection--single {
+.form .form__block:not(.form__block--date) .select2-container .select2-selection--single {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.form .select2-container .select2-selection--single .select2-selection__rendered {
+.form .form__block:not(.form__block--date) .select2-container .select2-selection--single .select2-selection__rendered {
   padding-left: 0;
   padding-right: 0;
   font-family: "Manrope";
@@ -11205,19 +11214,19 @@ span.flatpickr-weekday:last-child {
   color: #031B4B;
 }
 
-.form .select2-container .select2-dropdown {
+.form .form__block:not(.form__block--date) .select2-container .select2-dropdown {
   border: none;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.form .select2-container .select2-dropdown .select2-results {
+.form .form__block:not(.form__block--date) .select2-container .select2-dropdown .select2-results {
   padding-bottom: 16px;
   padding-top: 16px;
   border-top: 1px solid #031B4B;
 }
 
-.form .select2-container .select2-dropdown .select2-results .select2-results__option {
+.form .form__block:not(.form__block--date) .select2-container .select2-dropdown .select2-results .select2-results__option {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
@@ -11228,16 +11237,16 @@ span.flatpickr-weekday:last-child {
   transition: all 0.5s;
 }
 
-.form .select2-container .select2-dropdown .select2-results .select2-results__option:hover {
+.form .form__block:not(.form__block--date) .select2-container .select2-dropdown .select2-results .select2-results__option:hover {
   transition: all 0.5s;
   text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
 }
 
-.form .select2-container .select2-dropdown .select2-results .select2-results__option--selected {
+.form .form__block:not(.form__block--date) .select2-container .select2-dropdown .select2-results .select2-results__option--selected {
   font-weight: 700;
 }
 
-.form .select2-container .select2-selection__arrow {
+.form .form__block:not(.form__block--date) .select2-container .select2-selection__arrow {
   position: relative;
   display: block;
   width: 20px;
@@ -11248,15 +11257,15 @@ span.flatpickr-weekday:last-child {
   transform: rotate(0deg);
 }
 
-.form .select2-container .select2-selection__arrow b {
+.form .form__block:not(.form__block--date) .select2-container .select2-selection__arrow b {
   display: none;
 }
 
-.form .select2-container--open {
+.form .form__block:not(.form__block--date) .select2-container--open {
   transition: all 0.3s;
 }
 
-.form .select2-container--open .select2-selection__arrow {
+.form .form__block:not(.form__block--date) .select2-container--open .select2-selection__arrow {
   transition: transform 0.3s;
   transform: rotate(180deg);
 }
@@ -11378,6 +11387,12 @@ span.flatpickr-weekday:last-child {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
+}
+
+.select2-named-example-form__dd .select2-results__options {
+  max-height: 200px;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .search-page {

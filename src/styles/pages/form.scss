@@ -68,6 +68,9 @@
 
 
 
+.flatpickr-wrapper {
+	width: 100%;
+}
 
 .flatpickr-calendar {
 	width: 252px;
@@ -274,7 +277,7 @@ span.flatpickr-weekday {
 
 .flatpickr-custom-select {
 
-	.select2-container .select2-dropdown {
+	.select2-container .select2-dropdown .select2-results__options {
 		overflow: auto;
 		max-height: 186px;
 
@@ -711,6 +714,8 @@ span.flatpickr-weekday {
 		}
 	}
 
+	.form__block:not(.form__block--date){
+
 	.select2-container {
 		border: none;
 		background: #fff;
@@ -798,6 +803,7 @@ span.flatpickr-weekday {
 			transform: rotate(180deg);
 		}
 	}
+}
 
 	.periodSelect__date__value__month+.select2-container {
 		margin-right: 32px;
@@ -930,4 +936,10 @@ span.flatpickr-weekday {
 	@include max(xs) {
 		display: none;
 	}
+}
+
+.select2-named-example-form__dd .select2-results__options{
+	max-height: 200px;
+	overflow: auto;
+	overflow-x: hidden;
 }
