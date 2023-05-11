@@ -7,7 +7,9 @@
 	padding-top: 6px;
 	padding-bottom: 18px;
 	padding-left: 26px;
-	
+	&__home {
+		padding-left: 12px;
+	}
 	&__item {
 		position: relative;
 		width: auto;
@@ -32,19 +34,24 @@
 				text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
 			}
 		}
+
 		&__icon {
 			position: absolute;
 			top: 1px;
 			left: 0;
-			display: inline;
+			display: block;
 			width: 12px;
+
+			transition: all .3s;
+			content: url(../img/svg/home.svg);
+			&:hover {
+				transition: all .3s;
+				content: url(../img/svg/home-fill.svg);
+			}
+
 		}
 		&:first-child {
-			width: 12px;
 			margin-right: 8px;
-			&::after {
-				content: none
-			}
 		}
 		&::after {
 			position: relative;

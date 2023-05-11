@@ -5541,7 +5541,6 @@ topMenuOverlayBgClose.on("click", function () {
 });
 
 
-
 var tabNavs = document.querySelectorAll(".menu-tab");
 var tabPanes = document.querySelectorAll(".menu-pane");
 
@@ -5558,6 +5557,14 @@ function NotHover() {
 		tabPanes[i].classList.remove("notActive");
 	}
 }
+tabNavs.forEach(item => {
+	item.addEventListener('mouseout', function () {
+		for (var i = 0; i < tabNavs.length; i++) {
+			// tabNavs[i].classList.remove("active");
+			tabNavs[i].classList.remove("notActive");
+		}
+	})
+})
 function tabHover() {
 	for (var i = 0; i < tabNavs.length; i++) {
 
@@ -5595,6 +5602,9 @@ let searchHeaderWrap = document.querySelector(".search-header__wrap");
 var topMenuOverlayBg = document.querySelector(".topMenu__overlay__bg");
 var topMenuOverlayBgWhite = document.querySelector(".topMenu__overlay__bg--white");
 
+$( "#outer" ).on( "mouseleave", function() {
+	$( "#log" ).append( "<div>Handler for `mouseleave` called.</div>" );
+  } );
 if (topMenutabNavs !== null & topMenutabPanes !== null) {
 	topMenutabHover()
 }
