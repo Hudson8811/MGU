@@ -6453,6 +6453,20 @@ button.declaration__item__button {
   border-bottom: 1px solid rgba(0, 85, 182, 0.1);
 }
 
+.headerMenuMob__overlay--list.headerMenuMob-paneTwo .headerMenuMob-tabTwo--title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #004ABA;
+  margin-top: 20px;
+}
+
+.headerMenuMob__overlay--list.headerMenuMob-paneTwo .headerMenuMob-tabTwo--title::before {
+  content: none;
+}
+
 .headerMenuMob__overlay--list.headerMenuMob-paneTwo.notActive {
   position: absolute;
   top: 0;

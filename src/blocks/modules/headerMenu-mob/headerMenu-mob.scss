@@ -273,12 +273,12 @@
 		font-style: normal;
 		font-weight: 600;
 		font-size: $fz14;
-		line-height: $lh20;		
+		line-height: $lh20;
 		color: #004ABA;
 		margin-top: 20px;
 		&::before {
 			content: none;
-		}		
+		}
 	}
 	&.notActive {
 		position: absolute;
@@ -345,6 +345,20 @@
 		color: $blueDarck;
 		border-bottom: 1px solid rgba(0, 85, 182, 0.1);
 
+	}
+
+
+	.headerMenuMob-tabTwo--title {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 600;
+		font-size: $fz14;
+		line-height: $lh20;
+		color: #004ABA;
+		margin-top: 20px;
+		&::before {
+			content: none;
+		}
 	}
 
 	&.notActive {

@@ -6206,14 +6206,15 @@ function calcualteLongImages() {
 
         imgDom.css({ 'width': width });
 
-        let currentRealWidth = imgDom.innerWidth();
-        let currentRealHeight = imgDom.innerHeight();
+        let currentRealWidth = imgDom.innerWidth()+6;
+        let currentRealHeight = imgDom.innerHeight()+20*2;
 
         let leftColung = $('.block__text__wrap .column__left')
         let leftColungWidth = leftColung.outerWidth();
         let leftColungmargin = parseInt(leftColung.css('margin-right'))
 
-        let imgTopPosition = imgDom.position().top;
+        let imgTopPosition = imgDom.position().top-20;
+
 
         let newWidht = currentRealWidth - leftColungWidth - leftColungmargin;
 
