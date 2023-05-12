@@ -121,8 +121,10 @@ const topMenu = $(".topMenu__item--owl"),
 // 		// bodyYesScroll()
 // 	};
 // });
-
-topMenuOverlayClose.on("click", function () {
+// topMenuOverlayClose.mouseover(function(){
+// 	console.log("topMenuOverlayClose")
+//   });
+topMenuOverlayBgClose.mouseover(function () {
 	topMenuoverlay.removeClass("topMenu__overlay--active");
 	NotHover();
 	topMenuNotHover()
@@ -197,9 +199,7 @@ let searchHeaderWrap = document.querySelector(".search-header__wrap");
 var topMenuOverlayBg = document.querySelector(".topMenu__overlay__bg");
 var topMenuOverlayBgWhite = document.querySelector(".topMenu__overlay__bg--white");
 
-$( "#outer" ).on( "mouseleave", function() {
-	$( "#log" ).append( "<div>Handler for `mouseleave` called.</div>" );
-  } );
+
 if (topMenutabNavs !== null & topMenutabPanes !== null) {
 	topMenutabHover()
 }
