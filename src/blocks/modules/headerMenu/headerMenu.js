@@ -124,7 +124,7 @@ const topMenu = $(".topMenu__item--owl"),
 // topMenuOverlayClose.mouseover(function(){
 // 	console.log("topMenuOverlayClose")
 //   });
-topMenuOverlayBgClose.mouseover(function () {
+/*topMenuOverlayBgClose*/$('.section__header, .topMenu, .topMenu__overlay__bg:not(.topMenu__overlay__bg--white) ').mouseover(function () {
 	topMenuoverlay.removeClass("topMenu__overlay--active");
 	NotHover();
 	topMenuNotHover()
@@ -162,6 +162,24 @@ tabNavs.forEach(item => {
 		}
 	})
 })
+var is_right_part_hovered = false;
+$(document).ready(() => {
+	$('.menu-pane').on('mouseover', function () {
+		is_right_part_hovered = true;
+
+		for (var i = 0; i < tabNavs.length; i++) {
+		for (var j = 0; j < tabNavs.length; j++) {
+
+				tabNavs[j].classList.add("notActive");
+				tabPanes[j].classList.add("notActive");
+			}
+		}
+	}).on('mouseout', function () {
+		is_right_part_hovered = false;
+	});
+});
+
+
 function tabHover() {
 	for (var i = 0; i < tabNavs.length; i++) {
 
@@ -179,8 +197,11 @@ function tabHover() {
 					tabPanes[j].classList.remove("notActive");
 
 				} else {
-					tabNavs[j].classList.add("notActive");
-					tabPanes[j].classList.add("notActive");
+
+					/*					
+						tabNavs[j].classList.add("notActive");
+						tabPanes[j].classList.add("notActive");
+*/
 					tabNavs[j].classList.remove("active");
 					tabPanes[j].classList.remove("active");
 				}

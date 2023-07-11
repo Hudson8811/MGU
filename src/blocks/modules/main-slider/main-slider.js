@@ -7,7 +7,11 @@ $('.js-main__slider').each(function(){
 		// watchOverflow: true,
 		// watchSlidesVisibility: true,
 		// watchSlidesProgress: true,
-		// preventInteractionOnTransition: true,
+		// preventInteractionOnTransition: true,   
+		autoplay: {
+			delay: 2500,
+		},
+		speed: 600,
 		slidesPerView: 1,
 		navigation: {
 				nextEl: slider.find('.swiper-button-next')[0],
@@ -28,5 +32,10 @@ $('.js-main__slider').each(function(){
 		//         spaceBetween: 30
 		//     },
 		// }
+	});
+
+
+	slider.find('.main__slide__picture').on('click',function(){
+		mainSlider.slideNext();
 	});
 })

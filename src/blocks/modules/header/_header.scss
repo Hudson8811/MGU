@@ -212,6 +212,8 @@
 	.section__header {
 		padding-top: 15px;
 		padding-bottom: 15px;
+		position: sticky;
+		top: 0;
 
 		.container {
 			padding-left: 32px;
@@ -481,8 +483,12 @@
 	}
 
 	.search {
-		input {
+		input, input[type="search"] {
 			border: 1px solid rgba(7, 52, 120, 0.2);
+			transition: border .3s;
+			&:focus{
+				border-color: #004ABA;
+			}
 		}
 	}
 }

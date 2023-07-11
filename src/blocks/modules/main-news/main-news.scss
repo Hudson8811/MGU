@@ -149,7 +149,11 @@
 			@include max(md) {
 				font-size: $fz14;
 				line-height: $lh22;
-			}			
+			}		
+			a{
+				display: inline;
+				font: inherit;
+			}	
 		}
 	}
 }

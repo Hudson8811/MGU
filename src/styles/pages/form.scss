@@ -712,98 +712,124 @@ span.flatpickr-weekday {
 				max-width: 100%;
 			}
 		}
-	}
 
-	.form__block:not(.form__block--date){
+		&--3-1 {
 
-	.select2-container {
-		border: none;
-		background: #fff;
-		color: #031B4B;
-		font-family: 'Manrope';
-		font-style: normal;
-		font-weight: 600;
-		font-size: $fz16;
-		line-height: $lh24;
-		height: 48px;
-		padding: 12px 16px;
-		padding-top: 10px;
+			.form__block {
+				width: 100%;
+				max-width: calc(76.042% - 16px);
 
-		.select2-selection--single {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+				@include max(sm) {
+					flex-flow: column nowrap;
+					max-width: 100%;
+				}
 
-			.select2-selection__rendered {
-				padding-left: 0;
-				padding-right: 0;
-				font-family: 'Manrope';
-				font-style: normal;
-				font-weight: 700;
-				font-size: $fz17T;
-				line-height: $lh24;
-				color: #031B4B;
-			}
-		}
+				&:nth-child(2) {
+					max-width: calc(23.958% - 16px);
 
-		.select2-dropdown {
-			border: none;
-			background: #FFFFFF;
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-
-			.select2-results {
-				padding-bottom: 16px;
-				padding-top: 16px;
-				border-top: 1px solid $blueDarck;
-
-				.select2-results__option {
-					font-family: 'Manrope';
-					font-style: normal;
-					font-weight: 400;
-					font-size: $fz17T;
-					line-height: $lh24;
-					color: #031B4B;
-					padding-left: 16px;
-					transition: all .5s;
-
-					&:hover {
-						transition: all .5s;
-						text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
+					@include max(sm) {
+						flex-flow: column nowrap;
+						max-width: 100%;
 					}
 				}
 
-				.select2-results__option--selected {
+				// label {
+				// 	width: calc(100% - 16px);
+				// }
+			}
+		}
+	}
+
+	.form__block:not(.form__block--date) {
+
+		.select2-container {
+			border: none;
+			background: #fff;
+			color: #031B4B;
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 600;
+			font-size: $fz16;
+			line-height: $lh24;
+			height: 48px;
+			padding: 12px 16px;
+			padding-top: 10px;
+
+			.select2-selection--single {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				.select2-selection__rendered {
+					padding-left: 0;
+					padding-right: 0;
+					font-family: 'Manrope';
+					font-style: normal;
 					font-weight: 700;
+					font-size: $fz17T;
+					line-height: $lh24;
+					color: #031B4B;
 				}
 			}
-		}
 
-		.select2-selection__arrow {
-			position: relative;
-			display: block;
-			width: 20px;
-			height: 10px;
-			background: url(../img/svg/select2-selection__arrow.svg) no-repeat center center;
-			background-size: contain;
-			transition: transform .3s;
-			transform: rotate(0deg);
+			.select2-dropdown {
+				border: none;
+				background: #FFFFFF;
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
-			b {
-				display: none;
+				.select2-results {
+					padding-bottom: 16px;
+					padding-top: 16px;
+					border-top: 1px solid $blueDarck;
+
+					.select2-results__option {
+						font-family: 'Manrope';
+						font-style: normal;
+						font-weight: 400;
+						font-size: $fz17T;
+						line-height: $lh24;
+						color: #031B4B;
+						padding-left: 16px;
+						transition: all .5s;
+
+						&:hover {
+							transition: all .5s;
+							text-shadow: 0 0 0px #031B4B, 0 0 0px #031B4B;
+						}
+					}
+
+					.select2-results__option--selected {
+						font-weight: 700;
+					}
+				}
 			}
 
+			.select2-selection__arrow {
+				position: relative;
+				display: block;
+				width: 20px;
+				height: 10px;
+				background: url(../img/svg/select2-selection__arrow.svg) no-repeat center center;
+				background-size: contain;
+				transition: transform .3s;
+				transform: rotate(0deg);
+
+				b {
+					display: none;
+				}
+
+			}
+		}
+
+		.select2-container--open {
+			transition: all .3s;
+
+			.select2-selection__arrow {
+				transition: transform .3s;
+				transform: rotate(180deg);
+			}
 		}
 	}
-
-	.select2-container--open {
-		transition: all .3s;
-
-		.select2-selection__arrow {
-			transition: transform .3s;
-			transform: rotate(180deg);
-		}
-	}
-}
 
 	.periodSelect__date__value__month+.select2-container {
 		margin-right: 32px;
@@ -898,6 +924,66 @@ span.flatpickr-weekday {
 				}
 			}
 		}
+
+		&--checkbox {
+			label {
+
+				input:checked+b {
+					background: none;
+					border: 1px solid $blueLight;
+
+					&::after {
+						content: "";
+						display: block;
+						width: 100%;
+						height: 100%;
+						border-radius: 0;
+						background-color: #739FF3;
+						opacity: 1;
+						transition-duration: .3s;
+					}
+				}
+
+				input:checked+span {
+					color: $blueLight;
+				}
+
+				b {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 20px;
+					height: 20px;
+					margin-bottom: 0;
+					margin-right: 10px;
+					border-radius: 50%;
+					border: 1px solid $blueDarck;
+					box-sizing: border-box;
+					border-radius: 0;
+
+					&::after {
+						content: "";
+						opacity: 0;
+						pointer-events: none;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						display: block;
+
+						background-color: #739FF3;
+						border-color: #739FF3;
+						background-image: url(../img/svg/search--shape.svg);
+						background-repeat: no-repeat;
+						background-position: center center;
+
+					}
+				}
+			}
+		}
+
+
 	}
 }
 
@@ -938,8 +1024,50 @@ span.flatpickr-weekday {
 	}
 }
 
-.select2-named-example-form__dd .select2-results__options{
+.select2-named-example-form__dd .select2-results__options {
 	max-height: 200px;
 	overflow: auto;
 	overflow-x: hidden;
+}
+
+
+
+
+.seminar-register-title {
+	color: $blue;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px;
+	@include max(sm) {
+
+	}
+}
+
+.seminar-register-theme {
+	color: $blue;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+
+	@include max(sm) {
+		font-size: 1.25rem;
+		line-height: 1.625rem;
+	}
+}
+
+.seminar-register-date-time {
+	color: $blue;
+	margin-top: 40px;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	@include max(sm) {
+		font-size: 1.25rem;
+		line-height: 1.625rem;
+		margin-top: 30px;
+	}
+
 }

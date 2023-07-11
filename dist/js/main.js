@@ -5209,7 +5209,11 @@ $('.js-main__slider').each(function(){
 		// watchOverflow: true,
 		// watchSlidesVisibility: true,
 		// watchSlidesProgress: true,
-		// preventInteractionOnTransition: true,
+		// preventInteractionOnTransition: true,   
+		autoplay: {
+			delay: 2500,
+		},
+		speed: 600,
 		slidesPerView: 1,
 		navigation: {
 				nextEl: slider.find('.swiper-button-next')[0],
@@ -5230,6 +5234,11 @@ $('.js-main__slider').each(function(){
 		//         spaceBetween: 30
 		//     },
 		// }
+	});
+
+
+	slider.find('.main__slide__picture').on('click',function(){
+		mainSlider.slideNext();
 	});
 })
 
@@ -5529,7 +5538,7 @@ const topMenu = $(".topMenu__item--owl"),
 // topMenuOverlayClose.mouseover(function(){
 // 	console.log("topMenuOverlayClose")
 //   });
-topMenuOverlayBgClose.mouseover(function () {
+/*topMenuOverlayBgClose*/$('.section__header, .topMenu, .topMenu__overlay__bg:not(.topMenu__overlay__bg--white) ').mouseover(function () {
 	topMenuoverlay.removeClass("topMenu__overlay--active");
 	NotHover();
 	topMenuNotHover()
@@ -5567,6 +5576,24 @@ tabNavs.forEach(item => {
 		}
 	})
 })
+var is_right_part_hovered = false;
+$(document).ready(() => {
+	$('.menu-pane').on('mouseover', function () {
+		is_right_part_hovered = true;
+
+		for (var i = 0; i < tabNavs.length; i++) {
+		for (var j = 0; j < tabNavs.length; j++) {
+
+				tabNavs[j].classList.add("notActive");
+				tabPanes[j].classList.add("notActive");
+			}
+		}
+	}).on('mouseout', function () {
+		is_right_part_hovered = false;
+	});
+});
+
+
 function tabHover() {
 	for (var i = 0; i < tabNavs.length; i++) {
 
@@ -5584,8 +5611,11 @@ function tabHover() {
 					tabPanes[j].classList.remove("notActive");
 
 				} else {
-					tabNavs[j].classList.add("notActive");
-					tabPanes[j].classList.add("notActive");
+
+					/*					
+						tabNavs[j].classList.add("notActive");
+						tabPanes[j].classList.add("notActive");
+*/
 					tabNavs[j].classList.remove("active");
 					tabPanes[j].classList.remove("active");
 				}
@@ -5687,6 +5717,19 @@ $(window).on('resize', function () {
 	maxHeightMenuPane();
 })
 
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+// We listen to the resize event
+window.addEventListener('resize', () => {
+// We execute the same script as before
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+
+
 let menuDeparttabNavsClose = document.querySelector(".menuDepartMob__overlay--close");
 let menuDepartBG = document.querySelector(".menuDepartMob--menu-bg");
 let menuDepartMob = document.querySelector(".menuDepartMob--menu");
@@ -5744,6 +5787,20 @@ if(menuDepartButton !== null) {
 		menuDeparttabPanes[i].classList.remove("notActive");
 		}
 	}
+
+	$('body').append('<div class="depart-mobmenu-btn-scroll"><div class="depart-mobmenu-btn-scroll__burger"> <span></span></div></div>');
+
+	$(window).on('scroll',function(){
+		if($(window).scrollTop()>=window.innerHeight/2){
+			$('.depart-mobmenu-btn-scroll').addClass('depart-mobmenu-btn-scroll--active');
+		}
+		else{
+			$('.depart-mobmenu-btn-scroll').removeClass('depart-mobmenu-btn-scroll--active');
+		}
+	});
+	$('.depart-mobmenu-btn-scroll').on('click', function(){
+		$(menuDepartButton).trigger('click');
+	});
 	
 	menuDeparttabNavsClose.addEventListener("click", function () {
 		menuDepartMob.classList.remove("menuDepartMob--menu--active");

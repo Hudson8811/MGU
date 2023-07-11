@@ -176,6 +176,12 @@
 		font-size: $fz20;
 		line-height: $lh26;
 		color: #031B4B;
+		
+		border: 1px solid #FFFFFF;
+		transition: border .3s;
+		&:focus{
+			border-color: #004ABA;
+		}
 		&::placeholder {
 			font-family: 'Manrope';
 			font-style: normal;

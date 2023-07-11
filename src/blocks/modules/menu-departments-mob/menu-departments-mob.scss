@@ -22,6 +22,7 @@
 			width: 100%;
 			max-width: 288px;
 			height: 100vh;
+			height: calc(var(--vh) * 100);
 			padding-top: 78px;
 			padding-left: 35px;
 			padding-right: 31px;
@@ -46,6 +47,7 @@
 		&-bg {
 			width: 100vw;
 			height: 100vh;
+			height: calc(var(--vh) * 100);
 			position: fixed;
 			top: 0;
 			right: 0;
@@ -59,6 +61,7 @@
 			visibility: inherit;
 			transition: opacity 1s;
 			min-height: 100vh;
+			min-height: calc(var(--vh) * 100);
 		}
 	}
 
@@ -134,6 +137,7 @@
 		margin-right: 0px;
 		width: 100%;
 		height: calc(100vh - 200px);
+		height: calc(var(--vh) * 100 - 200px);
 		overflow-y: auto;
 
 		p {
@@ -265,6 +269,7 @@
 		transition: all 0.5s;
 		padding: 0;
 		height: calc(100vh - 250px);
+		height: calc(var(--vh) * 100 - 250px);
 		overflow: auto;
 	}
 }
@@ -283,3 +288,85 @@
 		margin-bottom: 16px;
 	}
 }
+
+
+.depart-mobmenu-btn-scroll{
+	position: fixed;
+	top: 88px;
+	right: 20px;
+	background: #AF8F46;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 50;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s;
+
+	@include min(993) {
+		display: none;
+	}
+
+	&--active{
+		opacity: 1;
+		pointer-events: all;
+	}
+	
+
+}
+.depart-mobmenu-btn-scroll__burger{
+
+	position: relative;
+	width: 22px;
+	height: 16px;
+	cursor: pointer;
+	transition-duration: .2s;
+
+	span,
+	span::before,
+	span::after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 22px;
+		height: 2px;
+		margin-top: -1px;
+		margin-left: -11px;
+		background: #ffffff;
+	}
+
+	span::before,
+	span::after {
+		content: '';
+		transition: 0.2s;
+	}
+
+	span::before {
+		transform: translateY(-6px);
+	}
+
+	span::after {
+		transform: translateY(6px);
+	}
+
+	&--active {
+
+		span {
+			height: 0;
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+}
+	
+

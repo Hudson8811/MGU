@@ -8,6 +8,7 @@
 	line-height: $lh24;
 	color: $blueDarck;
 	margin-bottom: 32px;
+
 	p {
 		position: relative;
 		width: 100%;
@@ -18,12 +19,14 @@
 		line-height: $lh24;
 		color: $blueDarck;
 	}
+
 	img {
 		position: relative;
 		width: 100%;
 		height: auto;
 		margin-bottom: 40px;
 	}
+
 	h2 {
 		position: relative;
 		width: 100%;
@@ -35,6 +38,7 @@
 		color: $blueDarck;
 
 	}
+
 	h3 {
 		position: relative;
 		width: 100%;
@@ -43,13 +47,19 @@
 		font-weight: 700;
 		font-size: $fz17;
 		line-height: $lh24;
-		color: $blueDarck;	
+		color: $blueDarck;
 	}
-	p,h2,h3,h4,h5 {
+
+	p,
+	h2,
+	h3,
+	h4,
+	h5 {
 		a {
 			margin-bottom: 0;
 		}
 	}
+
 	a {
 		position: relative;
 		display: inline-block;
@@ -62,12 +72,14 @@
 		line-height: $lh24;
 		color: #004ABA;
 		transition: all .5s;
+
 		&:hover {
 			text-decoration: underline;
 			transition: all .5s;
 			text-shadow: 0 0 0.15px #004ABA, 0 0 0.15px #004ABA;
 		}
 	}
+
 	ul {
 		position: relative;
 		display: block;
@@ -75,6 +87,7 @@
 		padding-left: 25px;
 		padding-top: 0;
 		margin-top: 0;
+
 		li {
 			position: relative;
 			font-family: 'Manrope';
@@ -84,6 +97,7 @@
 			line-height: $lh24;
 			color: $blueDarck;
 			list-style-type: none;
+
 			&::before {
 				content: '';
 				display: block;
@@ -99,6 +113,7 @@
 			}
 		}
 	}
+
 	ol {
 		width: 100%;
 		position: relative;
@@ -106,6 +121,7 @@
 		padding-left: 25px;
 		padding-top: 0;
 		margin-top: 0;
+
 		li {
 			width: 100%;
 			position: relative;
@@ -117,13 +133,27 @@
 			color: $blueDarck;
 		}
 	}
+
+	ul,
+	ol {
+		li+li {
+
+			margin-top: 16px;
+
+			@include max(sm) {
+				margin-top: 10px;
+			}
+		}
+	}
+
 	blockquote {
 		position: relative;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 20px;
-		color: rgba(7, 52, 120, 0.8);		
+		color: rgba(7, 52, 120, 0.8);
 	}
+
 	.textTwo__table {
 		position: relative;
 		width: 100%;
@@ -135,15 +165,18 @@
 		width: 100%;
 		margin-bottom: 40px;
 		border-collapse: collapse;
+
 		tbody {
 			position: relative;
 			width: 100%;
 		}
+
 		tr {
 			position: relative;
 			vertical-align: text-top;
 			border-top: 1px solid rgba(0, 85, 182, 0.3);
 			border-bottom: 1px solid rgba(0, 85, 182, 0.3);
+
 			th {
 				font-family: 'Manrope';
 				font-style: normal;
@@ -157,12 +190,14 @@
 				color: rgba(0, 85, 182, 0.5);
 				text-align: left;
 				white-space: nowrap;
-				
+
 			}
-			th + th + th {
+
+			th+th+th {
 				text-align: right;
 			}
-			td  {
+
+			td {
 				font-family: 'Manrope';
 				font-style: normal;
 				font-weight: 400;
@@ -171,7 +206,8 @@
 				color: $blueDarck;
 				text-align: left;
 				padding: 20px 8px;
-				b{
+
+				b {
 					text-align: left;
 					font-family: 'Manrope';
 					font-style: normal;
@@ -180,44 +216,53 @@
 					line-height: $lh24;
 					color: $blueDarck;
 				}
-				
+
 			}
-			td + td + td {
+
+			td+td+td {
 				text-align: right;
 			}
 		}
 	}
 }
+
 @include max(md) {
-	.block__textTwo .textTwo__table {	
+	.block__textTwo .textTwo__table {
 		position: relative;
 		width: calc(100vw - 320px);
 		overflow: auto;
+
 		table {
 			width: 700px;
 		}
 	}
 
 }
+
 @include max(sm) {
-	.block__textTwo .textTwo__table {	
+	.block__textTwo .textTwo__table {
 		position: relative;
 		width: calc(100vw - 40px);
 		overflow: auto;
+
 		table {
 			width: 700px;
 		}
 	}
+
 	.block__text__color {
 		margin-bottom: 32px;
+
 		&__line {
 			display: block;
 		}
 	}
+
 	.block__textTwo__blockPicture.block-text__mob {
 		display: inline-block;
 		width: 100%;
 		margin-bottom: 32px;
+
 		img {
 
 			position: relative;
@@ -225,36 +270,48 @@
 			height: auto;
 			margin-right: 16px;
 		}
+
 		blockquote {
 			position: relative;
 			width: 100%;
 			height: auto;
 		}
 	}
+
 	.news .block__text__wrap .column__left {
 		display: none;
 		padding: 30px;
 	}
+
 	.block__textTwo {
 		font-weight: 400;
 		font-size: 14px;
 		line-height: $lh22;
+
 		p {
-				font-weight: 400;
-				font-size: $fz14;
-				line-height: $lh22;
+			font-weight: 400;
+			font-size: $fz14;
+			line-height: $lh22;
 		}
+
 		img {
 			margin-bottom: 24px;
 		}
-		p,h2,h3,h4,h5 {
+
+		p,
+		h2,
+		h3,
+		h4,
+		h5 {
 			a {
 				margin-bottom: 0;
 			}
 		}
+
 		a {
 			font-size: $fz14;
 		}
+
 		ul {
 			li {
 				font-weight: 400;
@@ -262,6 +319,7 @@
 				line-height: $lh22;
 			}
 		}
+
 		ol {
 			li {
 				font-weight: 400;
@@ -271,11 +329,13 @@
 		}
 	}
 }
+
 @include max(xs) {
 	.block__textTwo {
 		font-weight: 400;
 		font-size: $fz14;
 		line-height: $lh22;
+
 		table {
 			margin-bottom: 32px;
 		}

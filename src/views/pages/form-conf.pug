@@ -1,0 +1,131 @@
+
+
+extends ../layouts/default
+
+block variables
+	- const title = "About Page";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.form-page
+		.container
+			h2.form-page__title Регистрация на конференцию
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title Название конференции
+
+				.form-page__layout--right
+					h1.seminar-register-title XXII международная научно-практическая конференция «Актуальные проблемы экологии и природопользования»
+
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title Тема и дата проведения
+
+				.form-page__layout--right
+					.seminar-register-theme Здесь будет автоматически подгружаться тема (название) актуального на данный момент семинара
+					.seminar-register-date-time 22 октября 2023   |  19:00 Мск
+
+		.form-page__line
+		.container
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title
+						!="Информация <br>о слушателе"
+				.form-page__layout--right
+					.form__feedback.form__feedback--customer
+						form
+							.form__block__wrap
+
+								.form__block-double
+									.form__block
+										label
+											b Обращение
+											<select class="js-example-form ">
+												<option  value="" selected> ... </option>
+												<option  value="" >Господин</option>
+												<option value="" >Госпожа</option>
+											</select>
+									.form__block
+										label
+											b Фамилия
+											input(type="text" placeholder="Фамилия")
+
+								.form__block-double
+									.form__block
+										label
+											b Имя
+											input(type="text" placeholder="Имя")
+									.form__block
+										label
+											b Отчество
+											input(type="text" placeholder="Отчество")
+
+								.form__block-double
+									.form__block.form__block--date
+										label
+											b Дата рождения
+											input#date-picker(type="text")
+									.form__block
+										label
+											b Ученая степень
+											<select class="js-example-form ">
+												<option  value="" selected> ... </option>
+												<option  value="" >Нет</option>
+												<option value="" >Кандидат наук</option>
+												<option value="" >Доктор наук</option>
+												<option value="" >Академик</option>
+											</select>
+
+								.form__block
+									label
+										b Место работы или учебы
+									.selectDot-chb-group
+										<div class="selectDot selectDot--checkbox">
+											<div class="selectDot--label">
+												<label>
+													<input type="checkbox" name="selectDot__input--deal" checked="">
+													<b></b>
+													<span>МГУ имени М.В.Ломоносова</span>
+												</label>
+												<label>
+													<input type="checkbox" name="selectDot__input--deal">
+													<b></b>
+													<span>другое</span>
+												</label>
+											</div>
+										</div>
+
+								.form__block
+									label
+										input#date-picker(type="text" placeholder="Место работы или учебы")
+								.form__block-double
+									.form__block
+										label
+											b Страна
+											<select class="js-example-form " placeholder="Выбрать страну">
+												<option  value="" selected> ... </option>
+												<option  value="" selected>Экология и рациональное природопользование</option>
+												<option value="" >пункт 2</option>
+											</select>
+									.form__block
+										label
+											b Город
+											input(type="text", name="" placeholder="Город")
+
+
+								.form__block.form__block--assent
+									.search-checkbox--block
+										label
+											input(type="checkbox" autocomplete="off" name="" checked="")
+											b
+											span Даю согласие на обработку своих персональных данных, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование и уничтожение персональных данных, в порядке, установленном Федеральным законом от 27 июля 2006 г. №152-ФЗ «О персональных данных».
+					.button.button__blue.form__button отправить заявку
+
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	//- script(src="js/vendor.js")
+	script(src="js/main.js")

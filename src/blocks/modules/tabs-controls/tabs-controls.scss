@@ -7,6 +7,7 @@
 			background-color: $blueDarck;
 			border: 1px solid $blueDarck;
 			color: $white;
+			pointer-events: none;
 		}
 		&:hover {
 			background: #D8E0EC;

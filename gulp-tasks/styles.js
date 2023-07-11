@@ -4,6 +4,7 @@ import { paths } from "../gulpfile.babel";
 import gulp from "gulp";
 import gulpif from "gulp-if";
 import rename from "gulp-rename";
+import notify from "gulp-notify";
 import dartsass from "sass";
 import gulpsass from "gulp-sass";
 import mincss from "gulp-clean-css";
@@ -23,7 +24,11 @@ gulp.task("styles", () => {
     return gulp.src(paths.styles.src)
         .pipe(gulpif(!production, sourcemaps.init()))
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass({errLogToConsole: false})).on('error', function(err) {
+            notify().write(err);
+            console.log(err);
+            this.emit('end');
+        })
         .pipe(groupmedia())
         .pipe(gulpif(production, autoprefixer({
             cascade: false,

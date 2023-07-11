@@ -1,0 +1,79 @@
+extends ../layouts/default
+
+block variables
+	- const title = "About Page";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/headerMenu/headerMenu
+	include ../../blocks/modules/breadcrumbs/breadcrumbs
+	.form-page
+		.container
+			h2.form-page__title Регистрация на семинар
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title Название семинара
+				.form-page__layout--right
+					h1.seminar-register-title Научный семинар «Культурный ландшафт»
+
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title Тема и дата проведения
+
+				.form-page__layout--right
+					.seminar-register-theme Здесь будет автоматически подгружаться тема (название) актуального на данный момент семинара
+					.seminar-register-date-time 22 октября 2023   |  19:00 Мск
+
+		.form-page__line
+		.container
+			.form-page__layout.form
+				.form-page__layout--left
+					.form__title
+						!="Информация <br>о слушателе"
+				.form-page__layout--right
+					.form__feedback.form__feedback--customer
+						form
+							.form__block__wrap
+								.form__block
+									label
+										b Фамилия
+										input(type="text" placeholder="Фамилия")
+								.form__block
+									label
+										b Имя
+										input(type="text" placeholder="Имя")
+								.form__block
+									label.error
+										b Отчество
+										input(type="text" placeholder="Отчество")
+										.form-error-text Информация об ошибке или незаполненном поле
+
+
+
+
+								.form__block-double
+									.form__block
+										label
+											b Организация
+											input(type="text" placeholder="Название огранизации")
+									.form__block
+										label
+											b Позиция
+											input(type="text" placeholder="Ваша позиция в организации")
+
+
+
+								.form__block.form__block--assent
+									.search-checkbox--block
+										label
+											input(type="checkbox" autocomplete="off" name="" checked="")
+											b
+											span Даю согласие на обработку своих персональных данных, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование и уничтожение персональных данных, в порядке, установленном Федеральным законом от 27 июля 2006 г. №152-ФЗ «О персональных данных».
+					.button.button__blue.form__button отправить заявку
+
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	//- script(src="js/vendor.js")
+	script(src="js/main.js")

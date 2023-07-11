@@ -1,4 +1,17 @@
 
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+// We listen to the resize event
+window.addEventListener('resize', () => {
+// We execute the same script as before
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+
+
 let menuDeparttabNavsClose = document.querySelector(".menuDepartMob__overlay--close");
 let menuDepartBG = document.querySelector(".menuDepartMob--menu-bg");
 let menuDepartMob = document.querySelector(".menuDepartMob--menu");
@@ -56,6 +69,20 @@ if(menuDepartButton !== null) {
 		menuDeparttabPanes[i].classList.remove("notActive");
 		}
 	}
+
+	$('body').append('<div class="depart-mobmenu-btn-scroll"><div class="depart-mobmenu-btn-scroll__burger"> <span></span></div></div>');
+
+	$(window).on('scroll',function(){
+		if($(window).scrollTop()>=window.innerHeight/2){
+			$('.depart-mobmenu-btn-scroll').addClass('depart-mobmenu-btn-scroll--active');
+		}
+		else{
+			$('.depart-mobmenu-btn-scroll').removeClass('depart-mobmenu-btn-scroll--active');
+		}
+	});
+	$('.depart-mobmenu-btn-scroll').on('click', function(){
+		$(menuDepartButton).trigger('click');
+	});
 	
 	menuDeparttabNavsClose.addEventListener("click", function () {
 		menuDepartMob.classList.remove("menuDepartMob--menu--active");
