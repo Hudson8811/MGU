@@ -25,7 +25,6 @@ gulp.task("styles", () => {
         .pipe(gulpif(!production, sourcemaps.init()))
         .pipe(plumber())
         .pipe(sass({errLogToConsole: false})).on('error', function(err) {
-            notify().write(err);
             console.log(err);
             this.emit('end');
         })

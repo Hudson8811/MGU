@@ -124,7 +124,7 @@ const topMenu = $(".topMenu__item--owl"),
 // topMenuOverlayClose.mouseover(function(){
 // 	console.log("topMenuOverlayClose")
 //   });
-/*topMenuOverlayBgClose*/$('.section__header, .topMenu, .topMenu__overlay__bg:not(.topMenu__overlay__bg--white) ').mouseover(function () {
+/*topMenuOverlayBgClose*/$('.topMenu__overlay__bg:not(.topMenu__overlay__bg--white) ').mouseover(function () {
 	topMenuoverlay.removeClass("topMenu__overlay--active");
 	NotHover();
 	topMenuNotHover()
