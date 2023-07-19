@@ -351,6 +351,40 @@ block content
 											span Даю согласие на обработку своих персональных данных, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование и уничтожение персональных данных, в порядке, установленном Федеральным законом от 27 июля 2006 г. №152-ФЗ «О персональных данных».
 					.button.button__blue.form__button отправить заявку
 
+	div(style="display:none;")
+		#form-success-modal.form-info-modal
+			.form-info-modal__inner
+				.form-info-modal__icon 
+					img(src="img/svg/form-icon-success.svg", alt="")
+				.form-info-modal__group(data-type="main")
+					.form-info-modal__title Спасибо, заявка отправлена
+					.form-info-modal__text После обработки заявки <br> с&nbsp;вами свяжется наш куратор
+					.form-info-modal__btns 
+						.form-info-modal__btn.button.button__blue(data-fancybox-close) ок
+
+				.form-info-modal__group.hide(data-type="seminar")
+					.form-info-modal__title Спасибо, запрос отправлен
+					.form-info-modal__text В случае проведения семинара в смешанном или онлайн-формате мы вышлем вам ссылку для подключения к трансляции
+					.form-info-modal__btns 
+						.form-info-modal__btn.button.button__blue(data-fancybox-close) ок
+
+				.form-info-modal__group.hide(data-type="conf")
+					.form-info-modal__title Спасибо,  <br> вы успешно зарегистрировались
+					.form-info-modal__text Ждем вас на конференции!
+					.form-info-modal__btns 
+						.form-info-modal__btn.button.button__blue(data-fancybox-close) ок
+
+		#form-error-modal.form-info-modal
+			.form-info-modal__inner
+				.form-info-modal__icon 
+					img(src="img/svg/form-icon-err.svg", alt="")
+				.form-info-modal__title Упс... Что-то пошло не так
+				.form-info-modal__text Пожалуйста, попробуйте снова <br> или&nbsp;напишите нам о проблеме
+				.form-info-modal__btns 
+					.form-info-modal__btn.button.button__blue(data-fancybox-close) попробовать снова
+				a.form-info-modal__problem(href="mailto:info@geogr.msu.ru") написать о проблеме
+
+
 
 	include ../../blocks/modules/footer/footer
 

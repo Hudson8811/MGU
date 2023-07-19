@@ -1039,9 +1039,8 @@ span.flatpickr-weekday {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 40px;
-	@include max(sm) {
 
-	}
+	@include max(sm) {}
 }
 
 .seminar-register-theme {
@@ -1064,10 +1063,109 @@ span.flatpickr-weekday {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 28px;
+
 	@include max(sm) {
 		font-size: 1.25rem;
 		line-height: 1.625rem;
 		margin-top: 30px;
 	}
 
+}
+
+
+
+.fancybox-form-info-modal {
+	&.fancybox-is-open .fancybox-bg {
+		opacity: 1;
+		background: rgba(61, 76, 100, 0.5);
+	}
+}
+
+.form-info-modal {
+	width: 767px;
+	max-width: 100%;
+	padding: 100px;
+	text-align: center;
+	@include max(sm) {
+		padding: 40px 20px;
+		width: 500px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+
+		svg {
+			width: 60px;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+
+	&__group {
+		&:not(.hide) {
+			display: flex;
+		}
+
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title,
+	&__text,
+	&__btns {
+		margin-top: 48px;
+		@include max(sm) {
+margin-top: 32px;
+
+		}
+	}
+
+	&__title {
+		color: #031B4B;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 125%;
+		@include max(sm) {
+			font-size: 24px; 
+			line-height: 28px;
+		}
+	}
+
+	&__text {
+		color: #031B4B;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 130%;
+		@include max(sm) {
+			font-size: $fz14;
+			line-height: $lh20;
+
+		}
+	}
+
+	&__btns {}
+
+	&__btn {}
+
+	&__problem {
+		margin-top: 16px;
+		color: #004ABA;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 142.857%;
+		@include max(sm) {
+
+			font-size: $fz14;
+			line-height: $lh20;
+		}
+	}
 }

@@ -11619,6 +11619,74 @@ span.flatpickr-weekday:last-child {
   line-height: 28px;
 }
 
+.fancybox-form-info-modal.fancybox-is-open .fancybox-bg {
+  opacity: 1;
+  background: rgba(61, 76, 100, 0.5);
+}
+
+.form-info-modal {
+  width: 767px;
+  max-width: 100%;
+  padding: 100px;
+  text-align: center;
+}
+
+.form-info-modal__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-info-modal__icon {
+  display: flex;
+  justify-content: center;
+}
+
+.form-info-modal__icon svg {
+  width: 60px;
+  height: auto;
+  max-width: 100%;
+}
+
+.form-info-modal__group {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-info-modal__group:not(.hide) {
+  display: flex;
+}
+
+.form-info-modal__title,
+.form-info-modal__text,
+.form-info-modal__btns {
+  margin-top: 48px;
+}
+
+.form-info-modal__title {
+  color: #031B4B;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 125%;
+}
+
+.form-info-modal__text {
+  color: #031B4B;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.form-info-modal__problem {
+  margin-top: 16px;
+  color: #004ABA;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+
 .search-page {
   position: relative;
   display: flex;
@@ -14789,6 +14857,32 @@ span.flatpickr-weekday:last-child {
     font-size: 1.25rem;
     line-height: 1.625rem;
     margin-top: 30px;
+  }
+
+  .form-info-modal {
+    padding: 40px 20px;
+    width: 500px;
+  }
+
+  .form-info-modal__title,
+  .form-info-modal__text,
+  .form-info-modal__btns {
+    margin-top: 32px;
+  }
+
+  .form-info-modal__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .form-info-modal__text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .form-info-modal__problem {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .search-page {
