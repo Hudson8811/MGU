@@ -6668,8 +6668,8 @@ function openErrModal() {
 };
 
 $(function() {
-	openSuccessModal('main');
+	/*openSuccessModal('main');
 	openSuccessModal('seminar');
 	openSuccessModal('conf');
-	openErrModal();
+	openErrModal();*/
 });

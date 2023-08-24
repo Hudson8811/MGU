@@ -7414,6 +7414,16 @@ body.Bodymotionless {
   width: 144px !important;
 }
 
+.pagination-arrows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 4;
+}
+
 .pagination {
   position: relative;
   width: 100%;
@@ -7427,7 +7437,12 @@ body.Bodymotionless {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px 58px;
+  margin-top: -2px;
 }
 
 .pagination__item {
@@ -7447,7 +7462,7 @@ body.Bodymotionless {
   margin: 2px;
 }
 
-.pagination__item__active {
+.pagination__item--current {
   background: #004ABA;
   color: #fff;
 }
@@ -7457,8 +7472,14 @@ body.Bodymotionless {
   background: #D8E0EC;
 }
 
+.pagination__prev,
+.pagination__next {
+  pointer-events: all;
+  position: absolute;
+  top: -6px;
+}
+
 .pagination__prev {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7470,6 +7491,7 @@ body.Bodymotionless {
   padding-bottom: 4px;
   padding-right: 3px;
   transition: all 0.5s;
+  left: 0;
 }
 
 .pagination__prev::after {
@@ -7485,7 +7507,6 @@ body.Bodymotionless {
 }
 
 .pagination__next {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7497,6 +7518,7 @@ body.Bodymotionless {
   padding-top: 5px;
   padding-left: 4px;
   transition: all 0.5s;
+  right: 0;
 }
 
 .pagination__next::after {
@@ -7510,7 +7532,11 @@ body.Bodymotionless {
   background: #D8E0EC;
 }
 
-.pagination__item.pagination__item__active:hover {
+.pagination__dots {
+  margin: 0 14px;
+}
+
+.pagination__item--current:hover {
   background: #004ABA;
   color: #fff;
 }

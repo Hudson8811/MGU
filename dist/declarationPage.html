@@ -578,11 +578,60 @@
                 <button class="declaration__item__button declaration__button__two" style="display: none;">читать объявление полностью</button>
               </div>
             </div>
+            <!--.pagination
+            .pagination__prev 
+            .pagination__items 
+            	a.pagination__item.pagination__item__active 1
+            	a.pagination__item 2
+            	a.pagination__item 3
+            	a.pagination__item 4
+            .pagination__next
+            
+            
+            
+            -->
             <div class="pagination">
-              <div class="pagination__prev"> </div>
-              <div class="pagination__items"> <a class="pagination__item pagination__item__active">1</a><a class="pagination__item">2</a><a class="pagination__item">3</a><a class="pagination__item">4</a></div>
-              <div class="pagination__next"></div>
+              <div class="pagination-arrows"><a class="pagination__prev" id="navigation_3_previous_page" href="/structure/departments/soils/?PAGEN_3=7" target="_self"></a><a class="pagination__next" id="navigation_3_next_page" href="/structure/departments/soils/?PAGEN_3=9" target="_self"></a></div>
+              <div class="pagination__items"><a class="pagination__item" href="/structure/departments/soils/" target="_self">1</a><a class="pagination__item" href="/structure/departments/soils/?PAGEN_3=2" target="_self">2</a>
+                <div class="pagination__dots">	...			</div><a class="pagination__item" href="/structure/departments/soils/?PAGEN_3=6" target="_self">61</a><a class="pagination__item" href="/structure/departments/soils/?PAGEN_3=7" target="_self">72</a><span class="pagination__item pagination__item--current">82</span><a class="pagination__item" href="/structure/departments/soils/?PAGEN_3=9" target="_self">93</a><a class="pagination__item" href="/structure/departments/soils/?PAGEN_3=10" target="_self">104</a>
+                <div class="pagination__dots">	...			</div><a class="pagination__item" href="/structure/departments/soils/?PAGEN_3=83" target="_self">83</a><a class="pagination__item" href="/structure/departments/soils/?PAGEN_3=84" target="_self">84</a>
+              </div>
             </div>
+            <!--
+            .pagination
+            	a.pagination__prev(href='/structure/departments/soils/?PAGEN_3=7' target='_self')
+            	.pagination__items
+            		a.pagination__item(href='/structure/departments/soils/?PAGEN_3=6' target='_self') 6
+            		a.pagination__item(href='/structure/departments/soils/?PAGEN_3=7' target='_self') 7
+            		.pagination__item.pagination__item__active 8
+            		a.pagination__item(href='/structure/departments/soils/?PAGEN_3=9' target='_self') 9
+            		a.pagination__item(href='/structure/departments/soils/?PAGEN_3=10' target='_self') 10
+            	a.pagination__next(href='/structure/departments/soils/?PAGEN_3=9' target='_self')
+            
+            
+            
+            .navigation
+            	.navigation-arrows
+            		span.arrow ←
+            		span.ctrl  ctrl
+            		a#navigation_3_previous_page(href='/structure/departments/soils/?PAGEN_3=7' target='_self') предыдущая
+            		a#navigation_3_next_page(href='/structure/departments/soils/?PAGEN_3=9' target='_self') следующая
+            		span.ctrl ctrl 
+            		span.arrow →
+            	.navigation-pages
+            		span.navigation-title Страницы:
+            		a(href='/structure/departments/soils/' target='_self') 1
+            		a(href='/structure/departments/soils/?PAGEN_3=2' target='_self') 2
+            		| 	...			
+            		a(href='/structure/departments/soils/?PAGEN_3=6' target='_self') 6
+            		a(href='/structure/departments/soils/?PAGEN_3=7' target='_self') 7
+            		span.nav-current-page 8
+            		a(href='/structure/departments/soils/?PAGEN_3=9' target='_self') 9
+            		a(href='/structure/departments/soils/?PAGEN_3=10' target='_self') 10
+            		| 	...			
+            		a(href='/structure/departments/soils/?PAGEN_3=83' target='_self') 83
+            		a(href='/structure/departments/soils/?PAGEN_3=84' target='_self') 84
+            -->
           </div>
         </div>
       </div>
