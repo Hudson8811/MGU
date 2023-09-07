@@ -5698,7 +5698,7 @@ function topMenutabHover() {
 }
 
 function maxHeightMenuPane() {
-	var heights = $(".topMenu__overlay.topMenu-pane" + '.topMenu__overlay--active' + " .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function () {
+	var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function () {
 		var f = $(this).height();
 		// console.log(f)
 		return $(this).height();
@@ -5709,7 +5709,7 @@ function maxHeightMenuPane() {
 
 	maxHeight = Math.max.apply(null, heights);
 	// $(".topMenu__overlay__bg--white").height(heights + 200);
-	$(".topMenu__overlay__bg--white").height(maxHeight + $('.section__topMenu').height() + $('.section__header').height() + 150);
+	$(".topMenu__overlay__bg--white").height(maxHeight + $('.section__topMenu').height() + $('.section__header').height() + 150 - 58);
 
 }
 maxHeightMenuPane();
