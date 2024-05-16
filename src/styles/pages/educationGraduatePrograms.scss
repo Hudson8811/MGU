@@ -21,7 +21,7 @@
 			@include max(xs) {
 				min-height: 348px;
 			}
-			.structureNews__item__tilte {
+			.structureNews__item__tilte.title__32 {
 				width: 100%;
 				font-size: 24px !important;
 				line-height: 1.17em !important;
@@ -29,6 +29,14 @@
 					font-size: 18px !important;
 					line-height: 1.33em !important;
 					margin-bottom: 24px;
+					span {
+						font-size: 18px !important;
+						line-height: 1.33em !important;
+					}
+				}
+				span {
+					font-size: 24px !important;
+					line-height: 1.17em !important;
 				}
 			}
 			.structureNews--button {
