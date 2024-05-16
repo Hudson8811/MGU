@@ -2729,15 +2729,15 @@ span.flatpickr-weekday {
 }
 
 /**
- * Swiper 8.4.7
+ * Swiper 8.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2023 Vladimir Kharlampidi
+ * Copyright 2014-2022 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: January 30, 2023
+ * Released on: November 21, 2022
  */
 
 @font-face {
@@ -2925,7 +2925,6 @@ span.flatpickr-weekday {
 
 .swiper-centered > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: center center;
-  scroll-snap-stop: always;
 }
 
 .swiper-virtual .swiper-slide {
@@ -10048,8 +10047,8 @@ body.Bodymotionless {
 
 .graduatePrograms .section__structureNews.structure__educationPrograms .structureNews__item .structureNews__item__tilte {
   width: 100%;
-  font-size: 24px;
-  line-height: 1.17em;
+  font-size: 24px !important;
+  line-height: 1.17em !important;
 }
 
 .graduatePrograms__header {
@@ -15289,8 +15288,8 @@ span.flatpickr-weekday:last-child {
   }
 
   .graduatePrograms .section__structureNews.structure__educationPrograms .structureNews__item .structureNews__item__tilte {
-    font-size: 18px;
-    line-height: 1.33em;
+    font-size: 18px !important;
+    line-height: 1.33em !important;
     margin-bottom: 24px;
   }
 
