@@ -4736,7 +4736,8 @@ a.block__textOne__link--person-colors::after {
   opacity: 1;
   visibility: inherit;
   transition: opacity 0.8s;
-  min-height: 516px;
+  min-height: 400px;
+  height: 400px;
 }
 
 .topMenu__overlay__bg {
@@ -4770,7 +4771,7 @@ a.block__textOne__link--person-colors::after {
 .topMenu__overlay__bg--white.active {
   opacity: 1;
   transition: all 0.2s;
-  min-height: 716px;
+  height: 537px;
   visibility: inherit;
 }
 
@@ -4798,9 +4799,11 @@ a.block__textOne__link--person-colors::after {
 .topMenu__overlay--list {
   position: relative;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 0 40px;
+  max-height: 320px;
   margin-right: 40px;
   min-width: 400px;
 }
@@ -4816,7 +4819,8 @@ a.block__textOne__link--person-colors::after {
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  padding-top: 68px;
+  padding-top: 40px;
+  overflow: hidden;
 }
 
 .topMenu__overlay--item {
@@ -4828,8 +4832,7 @@ a.block__textOne__link--person-colors::after {
   line-height: 1.25rem;
   color: #031B4B;
   margin-bottom: 8px;
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
 }
 
 .topMenu__overlay--list .menu-tab.notActive {
@@ -4850,13 +4853,13 @@ a.block__textOne__link--person-colors::after {
   width: auto;
   height: auto;
   left: 440px;
-  top: 34px;
+  top: 40px;
   margin-right: 0;
   transition: opacity 0s;
 }
 
 .topMenu__overlay--list.menu-pane .topMenu__overlay--item {
-  max-width: none;
+  width: 340px;
 }
 
 .topMenu__overlay--list.menu-pane.active {

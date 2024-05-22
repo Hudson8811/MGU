@@ -265,7 +265,8 @@
 		// padding: 20px;
 		// padding-top: 68px;
 		// padding-left: 136px;
-		min-height: 516px;
+		min-height: 400px;
+		height: 400px;
 	}
 
 	&__bg {
@@ -297,7 +298,8 @@
 			&.active {
 				opacity: 1;
 				transition: all .2s;
-				min-height: 716px;
+				height: 537px;
+				//min-height: 716px;
 				visibility: inherit;
 			}
 		}
@@ -342,9 +344,11 @@
 	&--list {
 		position: relative;
 		display: flex;
-		flex-flow: column nowrap;
+		flex-flow: column wrap;
 		justify-content: flex-start;
 		align-items: flex-start;
+		gap: 0 40px;
+		max-height: calc(400px - 80px);
 		margin-right: 40px;
 		min-width: 400px;
 
@@ -359,7 +363,8 @@
 			margin-left: auto;
 			margin-right: auto;
 			height: auto;
-			padding-top: 68px;
+			padding-top: 40px;
+			overflow: hidden;
 
 			@include max (lg) {
 				width: 1168px;
@@ -377,8 +382,7 @@
 		line-height: $lh20;
 		color: $blueDarck;
 		margin-bottom: 8px;
-		width: 100%;
-		max-width: 400px;
+		width: 400px;
 
 	}
 }
@@ -405,13 +409,12 @@
 	width: auto;
 	height: auto;
 	left: 440px;
-	top: 34px;
-
+	top: 40px;
 	margin-right: 0;
 	transition: opacity 0s;
 
 	.topMenu__overlay--item {
-		max-width: none;
+		width: 340px;
 	}
 
 	&.active {

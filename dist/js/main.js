@@ -5637,6 +5637,7 @@ var topMenuOverlayBgWhite = document.querySelector(".topMenu__overlay__bg--white
 
 if (topMenutabNavs !== null & topMenutabPanes !== null) {
 	topMenutabHover()
+	topMenutabClick()
 }
 function topMenuNotHover() {
 	if (topMenutabNavs !== null & topMenutabPanes !== null) {
@@ -5657,10 +5658,16 @@ function topMenuNotHover() {
 function topMenutabHover() {
 	for (var i = 0; i < topMenutabNavs.length; i++) {
 		var delayTopMenutabNavs;
+
 		topMenutabNavs[i].addEventListener("mouseover", function (e) {
 			e.preventDefault();
+
+			//если меню ещё не открыто
+			if(document.querySelector('.section__topMenu .topMenu__overlay--active') === null) return
+
 			NotHover();
 			// bodyNoScroll()
+
 
 			var activeTabAttr = e.target.getAttribute("data-tab");
 			var activeTab = e.target;
@@ -5697,7 +5704,53 @@ function topMenutabHover() {
 	}
 }
 
+function topMenutabClick() {
+	for (var i = 0; i < topMenutabNavs.length; i++) {
+		var delayTopMenutabNavs;
+
+		topMenutabNavs[i].addEventListener("click", function (e) {
+			e.preventDefault();
+
+			//если меню уже
+			if(document.querySelector('.section__topMenu .topMenu__overlay--active') !== null) return
+
+			NotHover();
+			// bodyNoScroll()
+
+
+			var activeTabAttr = e.target.getAttribute("data-tab");
+			var activeTab = e.target;
+			delayTopMenutabNavs = setTimeout(function () {
+				for (var j = 0; j < topMenutabNavs.length; j++) {
+					var contentAttr = topMenutabPanes[j].getAttribute("data-tab-content");
+
+					if (activeTabAttr === contentAttr) {
+						searchHeaderWrap.classList.remove("active");
+						topMenutabNavs[j].classList.add("active");
+						topMenutabPanes[j].classList.add("topMenu__overlay--active");
+						topMenuOverlayBg.classList.add("active");
+						topMenuOverlayBgWhite.classList.add("active");
+						departmentMenu.classList.remove("department__menu--active")
+						// topMenutabNavs[j].classList.remove("notActive");
+						// topMenutabPanes[j].classList.remove("topMenu__overlay--active");
+					} else {
+						// topMenutabNavs[j].classList.add("notActive");
+						// topMenutabPanes[j].classList.add("notActive");
+						topMenutabNavs[j].classList.remove("active");
+						topMenutabPanes[j].classList.remove("topMenu__overlay--active");
+
+					}
+					maxHeightMenuPane()
+					bodyNoScroll()
+				};
+			}, 200);
+
+		});
+	}
+}
+
 function maxHeightMenuPane() {
+	return
 	var heights = $(".topMenu__overlay.topMenu-pane.topMenu__overlay--active .topMenu__overlay--list__wrap .topMenu__overlay--list").map(function () {
 		var f = $(this).height();
 		// console.log(f)
