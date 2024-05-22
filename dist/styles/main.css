@@ -10111,8 +10111,12 @@ body.Bodymotionless {
   background: #E99C41;
 }
 
-.section__editor--extraProgram .column__left.header__one__left {
-  justify-content: space-between;
+.section__editor--extraProgram .header__one {
+  align-items: flex-start;
+}
+
+.section__editor--extraProgram .header__one .column__left.header__one__left {
+  max-width: 100%;
 }
 
 .educationExtraYoung {
@@ -12042,6 +12046,34 @@ span.flatpickr-weekday:last-child {
 @media only screen and (min-width: 993px) {
   .depart-mobmenu-btn-scroll {
     display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  .section__editor--extraProgram .header__one .column__left.header__one__left {
+    padding: 24px 32px 32px;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+    gap: 110px;
+    max-width: 961px;
+  }
+
+  .section__editor--extraProgram .header__one .column__left.header__one__left h1 {
+    color: #fff;
+  }
+
+  .section__editor--extraProgram .header__one .column__right.header__one__right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+  }
+
+  .section__editor--extraProgram .header__one .column__right.header__one__right img {
+    min-height: auto;
   }
 }
 
@@ -15277,8 +15309,8 @@ span.flatpickr-weekday:last-child {
   .column__left.header__one__left h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
   }
 
   .studentsTimetable .button.button__blueLight {
