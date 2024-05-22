@@ -11397,10 +11397,14 @@ span.flatpickr-weekday:last-child {
   padding-right: 0;
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 700;
-  font-size: 1.0625rem;
+  font-weight: 600;
+  font-size: 1rem;
   line-height: 1.5rem;
   color: #031B4B;
+}
+
+.form .form__block:not(.form__block--date) .select2-container .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+  color: #C0C0C0;
 }
 
 .form .form__block:not(.form__block--date) .select2-container .select2-dropdown {
@@ -11601,6 +11605,75 @@ span.flatpickr-weekday:last-child {
   background-image: url(../img/svg/search--shape.svg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.form .field-file {
+  margin-top: 12px;
+  position: relative;
+  width: fit-content;
+  padding: 0;
+  border: none;
+}
+
+.form .field-file--full {
+  background-color: #D8E0EC;
+}
+
+.form .field-file--full .field-file__fakeinput {
+  padding: 6px 12px;
+}
+
+.form .field-file--full .field-file__fakeinput .icon-empty {
+  display: none;
+}
+
+.form .field-file--full .field-file__fakeinput .icon-full {
+  display: block;
+}
+
+.form .field-file__fakeinput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 10px;
+  padding: 9px 2px;
+  color: #031B4B;
+  font-size: 13px;
+  line-height: 1.2em;
+  min-height: 36px;
+  cursor: pointer;
+}
+
+.form .field-file__fakeinput .icon-empty {
+  width: 20px;
+  height: 18px;
+  display: block;
+}
+
+.form .field-file__fakeinput .icon-empty svg {
+  width: 100%;
+  height: 100%;
+}
+
+.form .field-file__fakeinput .icon-full {
+  display: none;
+  width: 14px;
+  height: 14px;
+}
+
+.form .field-file__fakeinput .icon-full svg {
+  width: 100%;
+  height: 100%;
+}
+
+.form .field-file__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -10;
 }
 
 .tippy-box[data-theme~=tomato] {

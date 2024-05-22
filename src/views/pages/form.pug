@@ -22,17 +22,17 @@ block content
 									label
 										b Направление
 										<select class="js-example-form ">
-											<option  value="" selected> ... </option>
-											<option  value="" selected>Экология</option>
-											<option value="" >пункт 2</option>
+											<option  value="..."> ... </option>
+											<option  value="Экология" selected>Экология</option>
+											<option value="пункт 2" >пункт 2</option>
 										</select>
 								.form__block
 									label
 										b Программа
 										<select class="js-example-form ">
-											<option  value="" selected> ... </option>
-											<option  value="" selected>Экология и рациональное природопользование</option>
-											<option value="" >пункт 2</option>
+											<option  value="..."> ... </option>
+											<option  value="Экология и рациональное природопользование" selected>Экология и рациональное природопользование</option>
+											<option value="пункт 2" >пункт 2</option>
 										</select>
 								.form__block
 									<div class="selectDot">
@@ -43,14 +43,14 @@ block content
 												<span>очная</span>
 										</label>
 										<label>
-												<input type="radio" name="selectDot__input--deal">
-												<b></b>
-												<span>очно-заочная</span>
+											<input type="radio" name="selectDot__input--deal">
+											<b></b>
+											<span>очно-заочная</span>
 										</label>
 										<label>
-												<input type="radio" name="selectDot__input--deal">
-												<b></b>
-												<span>заочная</span>
+											<input type="radio" name="selectDot__input--deal">
+											<b></b>
+											<span>заочная</span>
 										</label>
 										</div>
 									</div>
@@ -88,186 +88,204 @@ block content
 											b.label
 												!="СНИЛС"
 												div(data-tippy-content="требуется для внесения данных в ФИС ФРДО").label--tooltips
-													img(src="img/svg/form-Subtract.svg", alt="")
+													img(src="img/svg/form-Subtract.svg" alt="")
 											input.js-mask-snils(type="text" placeholder="ХХХ-ХХХ-ХХХ YY")
 								.form__block-double
 									.form__block
 										label
 											b E-mail
-											input(type="email", name="" placeholder="адрес электронной почты")
+											input(type="email" name="" placeholder="адрес электронной почты")
 									.form__block
 										label
 											b Телефон
-											input.js-mask-phone(type="tel", name="" placeholder="+7 (000) 000 00 00 ")
+											input.js-mask-phone(type="tel" name="" placeholder="+7 (000) 000 00 00 ")
 								.form__block
 									label
 										b Сведения об образовании
 										<select class="js-example-form ">
-											<option  value="" selected> ... </option>
-											<option  value="" selected>Экология и рациональное природопользование</option>
-											<option value="" >пункт 2</option>
+											<option></option>
+											<option  value="..."> ... </option>
+											<option  value="Экология и рациональное природопользование">Экология и рациональное природопользование</option>
+											<option value="пункт 2" >пункт 2</option>
 										</select>
+
+									label.field-file(data-js='fieldFile')
+										span.field-file__fakeinput
+											span.icon-empty
+												svg(width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+													path(d="M5.26116 14.1708L12.9827 6.52457C13.656 5.8578 14.7477 5.8578 15.421 6.52457C16.0944 7.19134 16.0944 8.2724 15.421 8.93917L6.88675 17.3903C5.54007 18.7238 3.35668 18.7238 2.01001 17.3903C0.663331 16.0567 0.663331 13.8946 2.01001 12.5611L12.1699 2.50024C14.1899 0.49992 17.465 0.49992 19.485 2.50024C21.505 4.50056 21.505 7.74372 19.485 9.74404L10.1379 19" stroke="#031B4B")
+											span(data-js='fileName') Прикрепить диплом (без вкладыша)
+											span.icon-full(data-js='iconFull')
+												svg(width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+													path(d="M15 1L1 15" stroke="#031B4B")
+													path(d="M1 1L15 15" stroke="#031B4B")
+										input.field-file__input(type='file' accept="application/msword, application/pdf, image/*")
 								.form__block
-										label
-											b Название учебного заведения
-											input(type="text", name="" placeholder="Название учебного заведения")
+									label
+										b Название учебного заведения
+										input(type="text" name="" placeholder="Название учебного заведения")
 								.form__block-double
 									.form__block
 										label
 											b Год окончания
 											<select class="js-example-form ">
-												<option  value="" selected> ... </option>
-												<option  value="">пункт 1</option>
-												<option value="" >пункт 2</option>
+												<option></option>
+												<option  value="..."> ... </option>
+												<option  value="пункт 1">пункт 1</option>
+												<option value="пункт 2" >пункт 2</option>
 											</select>
 									.form__block.not-selected
 										label
 											b Курс обучения
 											<select class="js-example-form ">
-												<option  value="" selected> ... </option>
-												<option  value="">пункт 1</option>
-												<option value="" >пункт 2</option>
+												<option></option>
+												<option  value="..."> ... </option>
+												<option  value="пункт 1">пункт 1</option>
+												<option value="пункт 2" >пункт 2</option>
 											</select>
 								.form__block-double
 									.form__block
 										label
 											b Наличие ученой степени
 											<select class="js-example-form ">
-												<option  value="" selected> ... </option>
-												<option  value="">пункт 1</option>
-												<option value="" >пункт 2</option>
+												<option></option>
+												<option  value="..."> ... </option>
+												<option  value="пункт 1">пункт 1</option>
+												<option value="пункт 2" >пункт 2</option>
 											</select>
 									.form__block.not-selected
 										label
 											b Год окончания
 											<select class="js-example-form ">
-												<option  value="" selected> ... </option>
-												<option  value="">пункт 1</option>
-												<option value="" >пункт 2</option>
+												<option></option>
+												<option  value="..."> ... </option>
+												<option  value="пункт 1">пункт 1</option>
+												<option value="пункт 2" >пункт 2</option>
 											</select>
 								.form__block
 									label
 										b.label
 											!="Место работы / учебы"
 											div(data-tippy-content="для продолжающих образование указывается место учебы").label--tooltips
-												img(src="img/svg/form-Subtract.svg", alt="")
+												img(src="img/svg/form-Subtract.svg" alt="")
 								.form__block-double
 									.form__block
 										label
 											b Должность
-											input(type="text", name="" placeholder="Название должности")
+											input(type="text" name="" placeholder="Название должности")
 									.form__block
 										label
 											b.label
 												!="Стаж"
 												div(data-tippy-content="полных лет").label--tooltips
-													img(src="img/svg/form-Subtract.svg", alt="")
+													img(src="img/svg/form-Subtract.svg" alt="")
 											<select class="js-example-form ">
-												<option  value="" selected> ... </option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
-												<option  value="" >пункт 2</option>
-												<option value="" >пункт 2</option>
+												<option></option>
+												<option  value="..."> ... </option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
+												<option  value="пункт 2" >пункт 2</option>
+												<option value="пункт 2" >пункт 2</option>
 											</select>
 								.form__block.form__block--customer
 									.form__block__title Вы являетесь заказчиком и слушателем одновременно?
@@ -279,9 +297,9 @@ block content
 												<span>Да</span>
 										</label>
 										<label>
-												<input type="radio" name="selectDot__input--customer">
-												<b></b>
-												<span>Нет</span>
+											<input type="radio" name="selectDot__input--customer">
+											<b></b>
+											<span>Нет</span>
 										</label>
 										</div>
 									</div>
@@ -312,9 +330,9 @@ block content
 												<span>Да</span>
 										</label>
 										<label>
-												<input type="radio" name="selectDot__input--legal-entity">
-												<b></b>
-												<span>Нет</span>
+											<input type="radio" name="selectDot__input--legal-entity">
+											<b></b>
+											<span>Нет</span>
 										</label>
 										</div>
 									</div>
@@ -338,11 +356,11 @@ block content
 									.form__block
 										label
 											b E-mail
-											input(type="email", name="" placeholder="адрес электронной почты")
+											input(type="email" name="" placeholder="адрес электронной почты")
 									.form__block
 										label
 											b Телефон
-											input.js-mask-phone(type="tel", name="" placeholder="+7 (000) 000 00 00 ")
+											input.js-mask-phone(type="tel" name="" placeholder="+7 (000) 000 00 00 ")
 								.form__block.form__block--assent
 									.search-checkbox--block
 										label
@@ -355,7 +373,7 @@ block content
 		#form-success-modal.form-info-modal
 			.form-info-modal__inner
 				.form-info-modal__icon 
-					img(src="img/svg/form-icon-success.svg", alt="")
+					img(src="img/svg/form-icon-success.svg" alt="")
 				.form-info-modal__group(data-type="main")
 					.form-info-modal__title Спасибо, заявка отправлена
 					.form-info-modal__text После обработки заявки <br> с&nbsp;вами свяжется наш куратор
@@ -377,7 +395,7 @@ block content
 		#form-error-modal.form-info-modal
 			.form-info-modal__inner
 				.form-info-modal__icon 
-					img(src="img/svg/form-icon-err.svg", alt="")
+					img(src="img/svg/form-icon-err.svg" alt="")
 				.form-info-modal__title Упс... Что-то пошло не так
 				.form-info-modal__text Пожалуйста, попробуйте снова <br> или&nbsp;напишите нам о проблеме
 				.form-info-modal__btns 

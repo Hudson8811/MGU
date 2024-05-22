@@ -9,7 +9,8 @@ $( window ).on( 'load', () => {
 			minimumResultsForSearch: Infinity,
 			dropdownAutoWidth: true,
 			dropdownCssClass: 'select2-named-example-form__dd',
-			selectionCssClass: 'select2-named-example-form'
+			selectionCssClass: 'select2-named-example-form',
+			placeholder: 'Выбрать'
 		} );
 	}
 
@@ -228,7 +229,40 @@ $( window ).on( 'load', () => {
       "AGREE_PROCESSING": "Y"
   }*/
 
-} );
+  	function fileFieldInit() {
+		const fieldLabels = document.querySelectorAll('[data-js="fieldFile"]');
+
+		if(fieldLabels.length < 1) return
+
+		fieldLabels.forEach(fieldLabel => {
+			let field = fieldLabel.querySelector('input');
+			let fileName = fieldLabel.querySelector('[data-js="fileName"]');
+			let fieldPlaceholder = fileName.innerHTML;
+			let fullIcon = fieldLabel.querySelector('[data-js="iconFull"]');
+
+			field.addEventListener('change', () => {
+				if(field.files.length > 0) {
+					fieldLabel.classList.add('field-file--full');
+					fileName.innerHTML = field.files[0].name;
+				} else {
+					fieldLabel.classList.remove('field-file--full')
+					fileName.innerHTML = fieldPlaceholder;
+				}
+			})
+
+			fullIcon.addEventListener('click', (e) => {
+				e.preventDefault()
+				e.stopPropagation()
+				field.value = '';
+				fieldLabel.classList.remove('field-file--full')
+				fileName.innerHTML = fieldPlaceholder;
+			})
+		})
+	}
+
+	fileFieldInit()
+
+});
 
 
 
