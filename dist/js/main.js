@@ -5596,35 +5596,53 @@ $(document).ready(() => {
 
 function tabHover() {
 	for (var i = 0; i < tabNavs.length; i++) {
-
+		
 		tabNavs[i].addEventListener("mouseover", function (e) {
 			e.preventDefault();
-			var activeTabAttr = e.target.getAttribute("data-tab");
 
-			for (var j = 0; j < tabNavs.length; j++) {
-				var contentAttr = tabPanes[j].getAttribute("data-tab-content");
+			let mouseoutTrigger = false
 
-				if (activeTabAttr === contentAttr) {
-					tabNavs[j].classList.add("active");
-					tabPanes[j].classList.add("active");
-					tabNavs[j].classList.remove("notActive");
-					tabPanes[j].classList.remove("notActive");
+			e.target.addEventListener("mouseout", mouseoutHandler)
 
-				} else {
-
-					/*					
-						tabNavs[j].classList.add("notActive");
-						tabPanes[j].classList.add("notActive");
-*/
-					tabNavs[j].classList.remove("active");
-					tabPanes[j].classList.remove("active");
+			setTimeout(() => {
+				if(!mouseoutTrigger) {
+					var activeTabAttr = e.target.getAttribute("data-tab");
+		
+					for (var j = 0; j < tabNavs.length; j++) {
+						var contentAttr = tabPanes[j].getAttribute("data-tab-content");
+		
+						if (activeTabAttr === contentAttr) {
+							tabNavs[j].classList.add("active");
+							tabPanes[j].classList.add("active");
+							tabNavs[j].classList.remove("notActive");
+							tabPanes[j].classList.remove("notActive");
+		
+						} else {
+		
+							/*					
+								tabNavs[j].classList.add("notActive");
+								tabPanes[j].classList.add("notActive");
+							*/
+							tabNavs[j].classList.remove("active");
+							tabPanes[j].classList.remove("active");
+						}
+						// maxHeightMenuPane()
+					};
 				}
-				// maxHeightMenuPane()
-			};
+				e.target.removeEventListener("mouseout", mouseoutHandler)
+
+
+			}, 200)
+
+
+			function mouseoutHandler() {
+				mouseoutTrigger = true;
+			}
 
 		});
 
 	}
+
 
 }
 var topMenutabNavs = document.querySelectorAll(".topMenu-tab");
@@ -5768,6 +5786,28 @@ function maxHeightMenuPane() {
 maxHeightMenuPane();
 $(window).on('resize', function () {
 	maxHeightMenuPane();
+})
+
+function menuHeight() {
+
+	let menuLists = document.querySelectorAll(".topMenu__overlay--list")
+	let menuWraps = document.querySelectorAll(".topMenu__overlay")
+	let menuBg = document.querySelector(".topMenu__overlay__bg--white")
+
+	let heights = [...menuLists].map(item => item.offsetHeight)
+
+	let maxHeight = Math.max.apply(Math, heights);
+
+	menuWraps.forEach(item => {
+		item.style.height = maxHeight + 80 + 'px'
+	})
+
+	menuBg.style.height = maxHeight + 80 + 135 + 'px'
+
+}
+
+document.addEventListener("DOMContentLoaded", ()=>{
+	menuHeight()
 })
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit

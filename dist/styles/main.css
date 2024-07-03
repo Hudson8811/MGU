@@ -4737,7 +4737,7 @@ a.block__textOne__link--person-colors::after {
   visibility: inherit;
   transition: opacity 0.8s;
   min-height: 400px;
-  height: 400px;
+  height: auto;
 }
 
 .topMenu__overlay__bg {
@@ -4803,7 +4803,6 @@ a.block__textOne__link--person-colors::after {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0 40px;
-  max-height: 320px;
   margin-right: 40px;
   min-width: 400px;
 }
@@ -4820,6 +4819,7 @@ a.block__textOne__link--person-colors::after {
   margin-right: auto;
   height: auto;
   padding-top: 40px;
+  padding-bottom: 32px;
   overflow: hidden;
 }
 
@@ -4840,12 +4840,15 @@ a.block__textOne__link--person-colors::after {
 }
 
 .topMenu__overlay--list .menu-tab.active {
-  text-shadow: 0 0 0.15px #031B4B, 0 0 0.15px #031B4B;
+  text-shadow: 0 0 0.15px #004ABA, 0 0 0.15px #004ABA;
+  color: #004ABA;
 }
 
 .topMenu__overlay--list.menu-pane {
   position: absolute;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   visibility: hidden;
   opacity: 0;
   padding: 0;
