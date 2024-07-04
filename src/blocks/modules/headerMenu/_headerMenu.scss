@@ -313,6 +313,7 @@
 		height: 28px;
 		width: 28px;
 		opacity: 0.3;
+		cursor: pointer;
 
 		@include max(lg) {
 			top: 145px;
@@ -384,6 +385,10 @@
 		color: $blueDarck;
 		margin-bottom: 8px;
 		width: 400px;
+
+		&:hover {
+			color: #004ABA;
+		}
 
 	}
 }

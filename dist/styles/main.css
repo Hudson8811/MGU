@@ -4783,6 +4783,7 @@ a.block__textOne__link--person-colors::after {
   height: 28px;
   width: 28px;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .topMenu__overlay--close:hover {
@@ -4833,6 +4834,10 @@ a.block__textOne__link--person-colors::after {
   color: #031B4B;
   margin-bottom: 8px;
   width: 400px;
+}
+
+.topMenu__overlay--item:hover {
+  color: #004ABA;
 }
 
 .topMenu__overlay--list .menu-tab.notActive {
