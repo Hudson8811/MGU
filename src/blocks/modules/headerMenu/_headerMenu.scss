@@ -245,7 +245,7 @@
 	opacity: 0;
 	padding: 0;
 	z-index: 200;
-	transition: opacity 0s;
+	transition: opacity 0.3s;
 
 	// background: $white;
 	// &::after {
@@ -280,11 +280,11 @@
 		opacity: 0;
 		visibility: hidden;
 		background: rgba(61, 76, 100, 0.5);
-		transition: all .2s;
+		transition: all .5s;
 
 		&.active {
 			opacity: 1;
-			transition: all .2s;
+			transition: all .5s;
 			height: 100%;
 			visibility: inherit;
 			width: 100%;
@@ -297,7 +297,7 @@
 
 			&.active {
 				opacity: 1;
-				transition: all .2s;
+				transition: all .5s;
 				height: 537px;
 				//min-height: 716px;
 				visibility: inherit;
@@ -420,7 +420,7 @@
 	left: 440px;
 	top: 40px;
 	margin-right: 0;
-	transition: opacity 0s;
+	transition: opacity 0.5s;
 
 	.topMenu__overlay--item {
 		width: 340px;

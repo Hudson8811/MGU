@@ -4728,7 +4728,7 @@ a.block__textOne__link--person-colors::after {
   opacity: 0;
   padding: 0;
   z-index: 200;
-  transition: opacity 0s;
+  transition: opacity 0.3s;
 }
 
 .topMenu__overlay.topMenu__overlay--active {
@@ -4751,12 +4751,12 @@ a.block__textOne__link--person-colors::after {
   opacity: 0;
   visibility: hidden;
   background: rgba(61, 76, 100, 0.5);
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 .topMenu__overlay__bg.active {
   opacity: 1;
-  transition: all 0.2s;
+  transition: all 0.5s;
   height: 100%;
   visibility: inherit;
   width: 100%;
@@ -4770,7 +4770,7 @@ a.block__textOne__link--person-colors::after {
 
 .topMenu__overlay__bg--white.active {
   opacity: 1;
-  transition: all 0.2s;
+  transition: all 0.5s;
   height: 537px;
   visibility: inherit;
 }
@@ -4863,7 +4863,7 @@ a.block__textOne__link--person-colors::after {
   left: 440px;
   top: 40px;
   margin-right: 0;
-  transition: opacity 0s;
+  transition: opacity 0.5s;
 }
 
 .topMenu__overlay--list.menu-pane .topMenu__overlay--item {
