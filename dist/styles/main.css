@@ -2729,15 +2729,15 @@ span.flatpickr-weekday {
 }
 
 /**
- * Swiper 8.4.5
+ * Swiper 8.4.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2022 Vladimir Kharlampidi
+ * Copyright 2014-2023 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: November 21, 2022
+ * Released on: January 30, 2023
  */
 
 @font-face {
@@ -2925,6 +2925,7 @@ span.flatpickr-weekday {
 
 .swiper-centered > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: center center;
+  scroll-snap-stop: always;
 }
 
 .swiper-virtual .swiper-slide {
@@ -4904,19 +4905,9 @@ a.block__textOne__link--person-colors::after {
   margin-top: 10px;
   line-height: 1rem;
   margin-right: 8px;
-  height: 16px;
+  min-height: 16px;
   color: rgba(0, 85, 182, 0.5);
   transition: all 0.3s;
-}
-
-.breadcrumbs__item:hover {
-  transition: all 0.3s;
-  color: #004ABA;
-  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
-}
-
-.breadcrumbs__item:hover:last-child {
-  text-shadow: 0 0 0.15px rgba(0, 74, 186, 0), 0 0 0.15px rgba(0, 74, 186, 0);
 }
 
 .breadcrumbs__item__icon {
@@ -4955,6 +4946,22 @@ a.block__textOne__link--person-colors::after {
 
 .breadcrumbs__item:last-child::after {
   content: none;
+}
+
+.breadcrumbs__item-a {
+  font: inherit;
+  color: inherit;
+  display: flex;
+  position: static;
+}
+
+.breadcrumbs__item-a:hover {
+  transition: all 0.3s;
+  color: #004ABA;
+  text-shadow: 0 0 0px rgba(0, 74, 186, 0), 0 0 0px rgba(0, 74, 186, 0);
+  /*&:last-child {
+  	text-shadow: 0 0 0.15px #004ABA00, 0 0 0.15px #004ABA00;
+  }*/
 }
 
 .section__header__two {

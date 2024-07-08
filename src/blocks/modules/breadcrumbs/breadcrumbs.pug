@@ -1,9 +1,14 @@
 .section__breadcrumbs
-	.container 
+	.container
+		//актуальная версия хлебных крошек, пригодная для микроразметки
 		.breadcrumbs
-			a.breadcrumbs__item.breadcrumbs__home
-				img.breadcrumbs__item__icon(src="", alt="icon")
-			a.breadcrumbs__item 
-				| Реализуемые проекты
-			a.breadcrumbs__item.breadcrumbs__item__active
-				| Инструментальный аэрозольный комплекс
+			li.breadcrumbs__item.breadcrumbs__home
+				a.breadcrumbs__item-a(href="")
+					.breadcrumbs__item__icon
+					span(style="display:none;") Главная
+			li.breadcrumbs__item
+				a.breadcrumbs__item-a(href="")
+					span Реализуемые проекты
+			li.breadcrumbs__item.breadcrumbs__item__active
+				.breadcrumbs__item-a
+					span Инструментальный аэрозольный комплекс
