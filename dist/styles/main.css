@@ -12165,7 +12165,8 @@ span.flatpickr-weekday:last-child {
   }
 
   .section__editor--extraProgram .header__one .column__right.header__one__right img {
-    min-height: auto;
+    min-height: 100%;
+    height: 100%;
   }
 }
 
