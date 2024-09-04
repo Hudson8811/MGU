@@ -2729,15 +2729,15 @@ span.flatpickr-weekday {
 }
 
 /**
- * Swiper 8.4.7
+ * Swiper 8.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2023 Vladimir Kharlampidi
+ * Copyright 2014-2022 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: January 30, 2023
+ * Released on: November 21, 2022
  */
 
 @font-face {
@@ -2925,7 +2925,6 @@ span.flatpickr-weekday {
 
 .swiper-centered > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: center center;
-  scroll-snap-stop: always;
 }
 
 .swiper-virtual .swiper-slide {
@@ -12138,13 +12137,17 @@ span.flatpickr-weekday:last-child {
 }
 
 @media (min-width: 1201px) {
+  .section__editor--extraProgram .header__one {
+    height: 360px;
+  }
+
   .section__editor--extraProgram .header__one .column__left.header__one__left {
     padding: 24px 32px 32px;
     position: relative;
     justify-content: space-between;
     z-index: 1;
-    gap: 110px;
     max-width: 961px;
+    height: 100%;
   }
 
   .section__editor--extraProgram .header__one .column__left.header__one__left h1 {
