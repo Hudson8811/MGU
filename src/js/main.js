@@ -1,7 +1,7 @@
 //библиотеки
-@@include("../../node_modules/jquery/dist/jquery.min.js")
-@@include("../../node_modules/select2/dist/js/select2.full.min.js")
-@@include("../../node_modules/masonry-layout/dist/masonry.pkgd.js")
+@@include("./libs/jquery.min.js")
+@@include("./libs/select2.full.min.js")
+@@include("./libs/masonry.pkgd.js")
 //@@include("../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js")
 @@include("./libs/jquery.fancybox.min.js")
 @@include("./libs/jquery.mask.min.js")
@@ -16,3 +16,4 @@
 @@include("./import/components.js")
 @@include("./import/main-script.js")
 @@include("./import/form.js")
+
