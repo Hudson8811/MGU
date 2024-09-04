@@ -12138,13 +12138,17 @@ span.flatpickr-weekday:last-child {
 }
 
 @media (min-width: 1201px) {
+  .section__editor--extraProgram .header__one {
+    height: 360px;
+  }
+
   .section__editor--extraProgram .header__one .column__left.header__one__left {
     padding: 24px 32px 32px;
     position: relative;
     justify-content: space-between;
     z-index: 1;
-    gap: 110px;
     max-width: 961px;
+    height: 100%;
   }
 
   .section__editor--extraProgram .header__one .column__left.header__one__left h1 {
